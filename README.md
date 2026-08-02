@@ -21,39 +21,69 @@ semanario/
 └── db/                        # Esquema de suscriptores (Neon/Postgres)
 ```
 
-## Cómo se genera
+## Pipeline: de Slack al inbox
 
-Cada **lunes en la noche** un cron del bot (Hermes/Pudú) revisa el historial de Slack de la semana (domingo → sábado) y:
+Tres pasos, en tres momentos distintos — en ese orden importa: **la edición
+queda publicada en la web horas antes de que se envíe el correo**, así que el
+link "ver en el navegador" del correo siempre apunta a una página que ya existe.
+
+### 1. Generación — lunes en la noche
+
+Un cron del bot (Hermes/Pudú) revisa el historial de Slack de la semana
+(domingo → sábado) y:
 
 1. Lee los canales de contenido: #ai, #musiqueria, #juegos, #lifehacks, #diy, #ux, #desarrollo, #cultura, #comunidad, #eventos-juntas, #frontend, #backend, #liderazgo, #mascotas, #moneas, #persa, #remoto.
 2. Arma el resumen de actividad (mensajes por día, día más activo, personas nuevas).
 3. Cuenta pegas: `se publicaron [XX] pegas nuevas en pegas.devschile.cl y [X] anuncios en #trabajos`.
 4. Filtra links útiles (sin memes) y genera frases con contexto por canal.
 5. Revisa #anuncios: si hubo mensajes en la semana, va como bloque destacado al inicio; si no, se omite.
-6. Genera `ediciones/YYYY-MM-DD/newsletter.html` + `resumen.md` y pushea.
+6. Rellena los `{{PLACEHOLDERS}}` de `template.html` (el diseño base, email-safe,
+   600px) y escribe el resultado ya renderizado —sin placeholders— en
+   `ediciones/YYYY-MM-DD/newsletter.html` + `resumen.md` (la fuente de datos en
+   texto plano, para la versión texto del correo).
+7. Pushea a `main`.
 
-El newsletter se envía los **martes en la mañana** usando la edición del lunes.
+### 2. Publicación — automática, al pushear
 
-## La web
+Ese push dispara un build y deploy de Netlify. `scripts/build.mjs` arma el
+directorio `dist/` que se publica en
+[semanario.devschile.cl](https://semanario.devschile.cl):
 
-El sitio se despliega en Netlify desde este mismo repo: cada push a `main`
-dispara un build y deploy automático a
-[semanario.devschile.cl](https://semanario.devschile.cl).
+- copia los estáticos de la landing (`css/`, `js/`, `assets/`),
+- transforma cada `ediciones/YYYY-MM-DD/newsletter.html` en
+  `dist/newsletter/YYYY-MM-DD/index.html` — la versión web de esa edición,
+- **genera la lista de ediciones leyendo las carpetas de `ediciones/`** e
+  inyecta las últimas 4 en la portada y el archivo completo en `/newsletter/`.
+  Nadie edita ese listado a mano.
 
 | Ruta | Qué es |
 |---|---|
 | `/` | Landing con el formulario de suscripción |
 | `/newsletter/` | Archivo con todas las ediciones |
-| `/newsletter/YYYY-MM-DD/` | Una edición |
+| `/newsletter/YYYY-MM-DD/` | Una edición, en su versión web |
 | `/ediciones/*` | Redirige (301) a `/newsletter/*` |
 
-`scripts/build.mjs` arma el directorio `dist/` que Netlify publica: copia los
-estáticos, transforma `ediciones/YYYY-MM-DD/newsletter.html` en
-`newsletter/YYYY-MM-DD/index.html` y **genera la lista de ediciones leyendo las
-carpetas**. Nadie edita ese listado a mano: el bot pushea su edición del lunes y
-la portada se actualiza sola en el deploy.
+Este paso ocurre el lunes en la noche, apenas se pushea — no el martes cuando
+se manda el correo. Para cuando el envío ocurre, la página ya lleva horas viva.
 
-### Suscripciones
+### 3. Envío — martes en la mañana
+
+`scripts/enviar.mjs` (lo corre el cron del bot; el workflow de
+`.github/workflows/enviar.yml` es solo respaldo manual) toma la edición más
+reciente de `ediciones/` y le hace dos inyecciones antes de mandarla por
+Mailgun a los suscriptores `confirmed` de Neon:
+
+- **Ver en el navegador** (marcador `<!--VER_HTML-->` en el header del
+  template): el mismo link para todos, apunta a la página que el paso 2 ya
+  publicó — `{SITE_URL}/newsletter/YYYY-MM-DD/`.
+- **Baja en un clic** (marcador `<!-- BAJA_LINK -->` en el footer): un link
+  distinto por destinatario, con su `unsubscribe_token` de la base — más el
+  header `List-Unsubscribe` para el botón nativo de Gmail/Outlook.
+
+Si la edición más reciente tiene más de 3 días, el script aborta (para no
+reenviar una edición vieja). Un fallo de envío individual no corta la lista.
+
+## Suscripciones
 
 El alta la maneja una Netlify Function que escribe en Postgres (Neon). El flujo
 es double opt-in: alta → `pending`, Mailgun manda el correo de confirmación,
@@ -69,7 +99,7 @@ su token de baja.
 Si el envío por Mailgun falla, el alta en la base **no se revierte** — queda
 como `pending` y el error solo se loguea (`netlify/functions/subscribe.mjs`).
 
-### Correr en local
+## Desarrollo local
 
 ```bash
 npm install

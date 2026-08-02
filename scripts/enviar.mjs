@@ -6,6 +6,8 @@
  *      el lunes en la noche).
  *   2. Consulta en Neon los suscriptores con status = 'confirmed'.
  *   3. Envía por Mailgun un correo por suscriptor (concurrencia 8), con:
+ *        - link "ver en el navegador" hacia /newsletter/YYYY-MM-DD/ — el mismo
+ *          para todos, apunta a la página que Netlify ya publicó al pushear
  *        - link de baja único por destinatario (token de la base)
  *        - header List-Unsubscribe + List-Unsubscribe-Post (one-click de Gmail)
  *        - dirección física en el pie (requisito legal de envío masivo)
@@ -84,6 +86,16 @@ function inyectarBajaHtml(html, bajaUrl) {
     `· <a href="${bajaUrl}" style="color:#2DD4BF;text-decoration:none;">` +
     'Darse de baja en un clic</a>';
   return html.replace(/<!--\s*BAJA_LINK[\s\S]*?-->/g, link);
+}
+
+/**
+ * Reemplaza el marcador <!--VER_HTML--> del template por el link a la edición
+ * ya publicada. Es el mismo link para todos los destinatarios (a diferencia
+ * del de baja), así que se inyecta una sola vez sobre el HTML base.
+ */
+function inyectarVerHtml(html, verUrl) {
+  const link = `<a href="${verUrl}" style="color:#2DD4BF;text-decoration:none;">Ver la versión web →</a>`;
+  return html.replace(/<!--\s*VER_HTML\s*-->/g, link);
 }
 
 function inyectarBajaTexto(texto, bajaUrl) {
@@ -165,7 +177,13 @@ if (!lista.length) {
 const rango = edicion.titulo.match(/edición del\s+(.+)$/i)?.[1] ?? edicion.fecha;
 const subject = `📰 Semanario devsChile — edición del ${rango}`;
 
-const { ok, fallos } = await enviarLista(lista, edicion.html, edicion.texto, subject);
+// La página de esta edición ya está publicada: Netlify la desplegó al pushear
+// (lunes en la noche), horas antes de este envío (martes en la mañana).
+const verUrl = `${SITE_URL}/newsletter/${edicion.fecha}/`;
+const htmlBase = inyectarVerHtml(edicion.html, verUrl);
+const textoBase = `Ver en el navegador: ${verUrl}\n\n${edicion.texto}`;
+
+const { ok, fallos } = await enviarLista(lista, htmlBase, textoBase, subject);
 
 const eventos = await statsEventos(lista.map((s) => s.email));
 const bajas24h = await bajasRecientes();
