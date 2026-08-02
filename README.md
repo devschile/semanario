@@ -2,6 +2,8 @@
 
 Newsletter semanal de la comunidad [devsChile](https://devschile.cl): resumen de la actividad de la semana, pegas nuevas y los links más útiles compartidos en los canales de contenido.
 
+🔗 **[semanario.devschile.cl](https://semanario.devschile.cl)** — landing de suscripción y archivo de ediciones.
+
 ## Estructura
 
 ```
@@ -34,7 +36,9 @@ El newsletter se envía los **martes en la mañana** usando la edición del lune
 
 ## La web
 
-El sitio se despliega en Netlify desde este mismo repo.
+El sitio se despliega en Netlify desde este mismo repo: cada push a `main`
+dispara un build y deploy automático a
+[semanario.devschile.cl](https://semanario.devschile.cl).
 
 | Ruta | Qué es |
 |---|---|
@@ -52,20 +56,24 @@ la portada se actualiza sola en el deploy.
 ### Suscripciones
 
 El alta la maneja una Netlify Function que escribe en Postgres (Neon). El flujo
-es double opt-in: alta → `pending`, se confirma con un token → `confirmed`, y
-cada correo lleva su token de baja.
+es double opt-in: alta → `pending`, Mailgun manda el correo de confirmación,
+se confirma con el token del link → `confirmed`. Cada correo de edición lleva
+su token de baja.
 
 | Endpoint | Qué hace |
 |---|---|
-| `POST /api/subscribe` | Da de alta un correo en estado `pending` |
+| `POST /api/subscribe` | Da de alta un correo en `pending` y dispara el correo de confirmación (Mailgun) |
 | `GET /api/confirmar?token=` | Confirma la suscripción |
 | `GET /api/baja?token=` | Da de baja |
+
+Si el envío por Mailgun falla, el alta en la base **no se revierte** — queda
+como `pending` y el error solo se loguea (`netlify/functions/subscribe.mjs`).
 
 ### Correr en local
 
 ```bash
 npm install
-cp .env.example .env     # y completar DATABASE_URL con la connection string de Neon
+cp .env.example .env     # completar DATABASE_URL (Neon) y las variables MAILGUN_*
 npm run db:schema        # crea la tabla subscribers (idempotente)
 npm run dev              # build + netlify dev en localhost:8888
 ```
