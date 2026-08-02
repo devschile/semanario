@@ -1,4 +1,6 @@
 import { neon } from '@neondatabase/serverless';
+import { enviarCorreo } from './lib/mailgun.mjs';
+import { correoConfirmacion } from './lib/plantillas.mjs';
 
 const sql = neon(process.env.DATABASE_URL);
 
@@ -60,11 +62,15 @@ export default async (request, context) => {
       RETURNING id, status, confirm_token, (xmax = 0) AS is_new
     `;
 
-    // TODO(email): mandar el correo de confirmación con este link.
-    // Mientras no haya proveedor configurado, queda en el log de la función.
     if (row.status === 'pending') {
       const confirmUrl = `${process.env.SITE_URL ?? ''}/api/confirmar?token=${row.confirm_token}`;
-      console.log(`[semanario] confirmación pendiente para ${email}: ${confirmUrl}`);
+      try {
+        await enviarCorreo({ to: email, ...correoConfirmacion({ confirmUrl }) });
+      } catch (error) {
+        // La fila ya quedó guardada — no fallamos el alta por un problema de
+        // envío. Queda logueado para reintentar el correo a mano si hace falta.
+        console.error(`[semanario] no se pudo enviar confirmación a ${email}:`, error);
+      }
     }
 
     // Respuesta siempre igual, exista o no el correo en la base: si dijéramos
