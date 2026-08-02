@@ -167,8 +167,48 @@ const subject = `📰 Semanario devsChile — edición del ${rango}`;
 
 const { ok, fallos } = await enviarLista(lista, edicion.html, edicion.texto, subject);
 
+const eventos = await statsEventos(lista.map((s) => s.email));
+const bajas24h = await bajasRecientes();
+
 console.log(`✔ ${ok}/${lista.length} enviados (edición ${edicion.fecha})`);
 if (fallos.length) {
-  console.error(`✖ Fallaron ${fallos.length}: ${fallos.join(', ')}`);
-  process.exitCode = 1;
+  console.error(`✖ Fallaron en el envío ${fallos.length}: ${fallos.join(', ')}`);
+}
+const p = (k) => eventos[k] ?? 0;
+console.log(
+  `📊 Stats (ventana 30 min): delivered=${p('delivered')} opened=${p('opened')} ` +
+    `failed=${p('failed')} unsubscribed=${p('unsubscribed')} · bajas 24h=${bajas24h}`,
+);
+if (fallos.length) process.exitCode = 1;
+
+/** Cuenta eventos recientes de Mailgun para los destinatarios del envío. */
+async function statsEventos(recipientes) {
+  const set = new Set(recipientes.map((e) => e.toLowerCase()));
+  const desde = Math.floor(Date.now() / 1000) - 1800; // últimos 30 min
+  const url = `${BASE}/v3/${DOMINIO}/events?begin=${desde}&ascending=yes&limit=300`;
+  const response = await fetch(url, {
+    headers: {
+      authorization: `Basic ${Buffer.from(`api:${API_KEY}`).toString('base64')}`,
+    },
+  });
+  if (!response.ok) return {};
+  const data = await response.json();
+  const conteo = {};
+  for (const item of data.items ?? []) {
+    if (set.has(String(item.recipient ?? '').toLowerCase()) && item.event) {
+      conteo[item.event] = (conteo[item.event] ?? 0) + 1;
+    }
+  }
+  return conteo;
+}
+
+/** Bajas registradas en Neon (vía /api/baja o one-click) en las últimas 24h. */
+async function bajasRecientes() {
+  const [row] = await sql`
+    SELECT count(*)::int AS n
+      FROM subscribers
+     WHERE status = 'unsubscribed'
+       AND unsubscribed_at > now() - interval '1 day'
+  `;
+  return row?.n ?? 0;
 }

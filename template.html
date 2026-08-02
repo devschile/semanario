@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semanario devsChile — edición del 26 jul al 1 ago 2026</title>
+<title>Semanario devsChile — edición del {{RANGO}}</title>
 </head>
 <body style="margin:0;padding:0;background-color:#100A1C;font-family:'Fira Sans','Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
 <center>
-  <!-- Preheader (oculto) -->
+  <!-- Preheader (oculto) — el job del martes reemplaza {{PREHEADER}} por el resumen de la edición -->
   <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
-    📰 Semanario devsChile — 392 pegas nuevas, el día más activo fue el miércoles 29 · Resumen de la semana
+    📰 Semanario devsChile — {{PREHEADER}}
   </div>
 
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#100A1C" style="background-color:#100A1C;">
@@ -28,7 +28,7 @@
                   </td>
                   <td align="right" style="color:#9794A8;font-size:12px;line-height:1.4;">
                     Edición de esta semana<br>
-                    <span style="color:#2DD4BF;font-weight:600;">26 jul – 1 ago 2026</span>
+                    <span style="color:#2DD4BF;font-weight:600;">{{RANGO}}</span>
                   </td>
                 </tr>
                 <tr>
@@ -40,27 +40,24 @@
             </td>
           </tr>
 
-          <!-- RESUMEN DE LA SEMANA -->
+          <!-- RESUMEN DE LA SEMANA — {{ACTIVIDAD}}: párrafo con personas nuevas, mensajes, día más activo -->
           <tr>
             <td style="padding:28px 32px 6px 32px;">
               <h2 style="margin:0 0 14px 0;font-size:18px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;font-weight:700;">📊 La semana en números</h2>
               <p style="margin:0 0 12px 0;font-size:14px;line-height:1.7;color:#C9C6D8;">
-                Se sumaron <strong style="color:#2DD4BF;">~7 personas nuevas</strong> a la comunidad y se movieron <strong style="color:#2DD4BF;">~490 mensajes</strong>
-                en los canales de contenido. El día más activo fue el <strong style="color:#2DD4BF;">miércoles 29 (~146 mensajes)</strong>,
-                que coincidió con la discusión de APV e inversiones en #lifehacks, el hilo de música FLAC en #diy
-                y la conversación sobre modelos locales (Kimi/LLM) en #ai.
+                {{ACTIVIDAD}}
               </p>
             </td>
           </tr>
 
-          <!-- DESTACADO: #anuncios (omitido si no hay mensajes en la semana) -->
+          <!-- DESTACADO: #anuncios — {{ANUNCIOS}}. Si no hubo mensajes en la semana, dejar el bloque completo comentado. -->
           <!--
           <tr>
             <td style="padding:14px 32px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#1B1730;border:1px solid #2DD4BF;border-radius:6px;">
                 <tr>
                   <td style="padding:14px 18px;font-size:14px;color:#C9C6D8;line-height:1.6;border-left:3px solid #2DD4BF;">
-                    <strong style="color:#2DD4BF;">📢 Anuncio de la comunidad:</strong> …resumen del mensaje de #anuncios…
+                    <strong style="color:#2DD4BF;">📢 Anuncio de la comunidad:</strong> {{ANUNCIOS}}
                   </td>
                 </tr>
               </table>
@@ -68,20 +65,15 @@
           </tr>
           -->
 
-          <!-- PEGAS -->
+          <!-- PEGAS — {{PEGAS}}: párrafo con el total + lista de destacadas (sueldos como badges verdes #4ADE80) -->
           <tr>
             <td style="padding:22px 32px 6px 32px;">
               <h2 style="margin:0 0 14px 0;font-size:18px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;font-weight:700;">💼 Pegas</h2>
               <p style="margin:0 0 12px 0;font-size:14px;line-height:1.7;color:#C9C6D8;">
-                Se publicaron <strong style="color:#2DD4BF;">392 pegas nuevas</strong> en
-                <a href="https://pegas.devschile.cl" style="color:#2DD4BF;text-decoration:none;">pegas.devschile.cl</a>
-                (19 anuncios automáticos + ~16 avisos manuales en #trabajos). Destacadas de la semana:
+                {{PEGAS}}
               </p>
               <ul style="margin:0 0 6px 0;padding-left:20px;font-size:14px;line-height:1.9;color:#C9C6D8;">
-                <li><strong style="color:#ffffff;">Tech Lead Engineer</strong> @ Checkr · <span style="display:inline-block;padding:1px 8px;border-radius:999px;background-color:#143322;color:#4ADE80;font-size:12px;font-weight:600;">USD 4.700–5.700/mes</span> · <a href="https://www.getonbrd.com/jobs/tech-lead-engineer-checkr-santiago" style="color:#2DD4BF;text-decoration:none;">ver</a></li>
-                <li><strong style="color:#ffffff;">Ing. DevOps Senior</strong> @ ChileCompra · <span style="display:inline-block;padding:1px 8px;border-radius:999px;background-color:#143322;color:#4ADE80;font-size:12px;font-weight:600;">USD 3.700/mes</span> · <a href="https://www.getonbrd.com/jobs/ingeniero-a-devops-senior-direccion-chilecompra-santiago" style="color:#2DD4BF;text-decoration:none;">ver</a></li>
-                <li><strong style="color:#ffffff;">Senior Infra Engineer</strong> @ Buffer · <span style="display:inline-block;padding:1px 8px;border-radius:999px;background-color:#143322;color:#4ADE80;font-size:12px;font-weight:600;">USD 164k+ anuales</span> · remoto, semana de 4 días · <a href="https://buffer.com/journey/1ee8b707-48a0-40cc-a319-3fb7c665a1e8" style="color:#2DD4BF;text-decoration:none;">ver</a></li>
-                <li><strong style="color:#ffffff;">ML Engineer</strong> · <span style="display:inline-block;padding:1px 8px;border-radius:999px;background-color:#143322;color:#4ADE80;font-size:12px;font-weight:600;">USD 8.000–11.000/mes</span> · <a href="https://www.linkedin.com/posts/tonyteshara_looking-for-a-really-strong-ml-engineer-in-share-7487576653850669056-I8iL/" style="color:#2DD4BF;text-decoration:none;">ver</a></li>
+                {{PEGAS_DESTACADAS}}
               </ul>
               <p style="margin:14px 0 0 0;">
                 <a href="https://pegas.devschile.cl" style="display:inline-block;padding:10px 20px;border-radius:999px;background-color:#2DD4BF;color:#06210F;font-weight:700;font-size:13px;text-decoration:none;">Ver todas las pegas →</a>
@@ -89,68 +81,16 @@
             </td>
           </tr>
 
-          <!-- LO MEJOR DE LA SEMANA -->
+          <!-- LO MEJOR DE LA SEMANA — {{CANALES}}: un bloque pill + lista por canal -->
           <tr>
             <td style="padding:22px 32px 8px 32px;">
               <h2 style="margin:0 0 14px 0;font-size:18px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;font-weight:700;">📌 Lo que se compartió esta semana</h2>
 
-              <p style="margin:18px 0 8px 0;">
-                <span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">#ai</span>
-              </p>
-              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">
-                <li>El jueves 30 Héctor compartió un post sobre correr <em>Kimi K3</em> localmente — y cuánta RAM necesitas · <a href="https://www.linkedin.com/posts/what-does-it-take-to-run-kimi-k3-locally-share-7488709349154955264-FIuX/" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-                <li>El viernes 31 gmq avisó que mejoraron el <em>deepseek-v4-flash</em> según Artificial Analysis · <a href="https://artificialanalysis.ai/models/deepseek-v4-flash" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-                <li>El jueves 30 se presentó <em>buzz.xyz</em>, "un Slack para personas y agentes" · <a href="https://buzz.xyz/" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-                <li>El martes 28 Darío Macchi pasó el panel de LeadDev <em>"Effective verification for humans and agents"</em> · <a href="https://leaddev.com/event/effective-verification-for-humans-and-agents" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-              </ul>
-
-              <p style="margin:18px 0 8px 0;">
-                <span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">#desarrollo</span>
-              </p>
-              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">
-                <li>El lunes 27 se compartieron <em>distroless</em> (imágenes Docker minimalistas) · <a href="https://github.com/GoogleContainerTools/distroless" style="color:#2DD4BF;text-decoration:none;">link</a> y <em>scriptc</em>, compilador TypeScript→C de Vercel Labs · <a href="https://github.com/vercel-labs/scriptc" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-                <li>El jueves 30 arveja destapó la polémica de DHH y el CEO de Shopify · <a href="https://po-ru.com/2026/07/29/it-doesnt-matter-whether-matz-is-nice" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-              </ul>
-
-              <p style="margin:18px 0 8px 0;">
-                <span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">#lifehacks</span>
-              </p>
-              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">
-                <li>El miércoles 29 hubo un hilo de oro sobre <em>APV</em>: Fintual vs AFP directa (sin comisiones) y régimen A vs B · <a href="https://fintual.cl/apv" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-                <li>El jueves 30 ivm encontró el <em>MacBook Neo</em> más barato en MercadoLibre ($642.103) que en la web de Apple ($799.999) · <a href="https://www.mercadolibre.cl/apple-2026-macbook-neo-de-13-pulgadas-chip-a18-pro-de-apple-con-cpu-de-6-nucleos-y-gpu-de-5-nucleos-8gb-memoria-unificada-256gb-amarillo-citrico-distribuidor-autorizado/p/MLC1066172677" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-                <li>El lunes 27 ivm alertó sobre <em>Vector Capital</em> en r/ChileInversiones · <a href="https://www.reddit.com/r/ChileInversiones/comments/1v4n28y/alerta_vector_capital_tiene_la_cagada/" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-              </ul>
-
-              <p style="margin:18px 0 8px 0;">
-                <span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">#diy</span>
-              </p>
-              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">
-                <li>El miércoles 29 asilva compartió su stack completo de música FLAC: Nicotine+/Soulseek, MusicBrainz Picard y Navidrome/Jellyfin</li>
-                <li>El jueves 30 valfar preguntó si vale la pena una ingleteadora telescópica vs fija · <a href="https://www.mercadolibre.cl/p/MLC23202196" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-              </ul>
-
-              <p style="margin:18px 0 8px 0;">
-                <span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">#juegos</span>
-              </p>
-              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">
-                <li>El viernes 31 livercake presentó <em>supermuseum</em>: juegos DOS jugables en el browser · <a href="https://supermuseum.netlify.app/?play=dos" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-                <li>El lunes 27 krobus recomendó <em>DragonSword: Awakening</em> en Steam, gacha sin gastar plata · <a href="https://store.steampowered.com/app/4570720/DragonSword__Awakening/" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-              </ul>
-
-              <p style="margin:18px 0 8px 0;">
-                <span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">#comunidad</span>
-                <span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">#eventos-juntas</span>
-                <span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">#remoto</span>
-              </p>
-              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">
-                <li>El lunes 27 Jorge compartió los libros <em>"La IA I y II"</em> gratis · <a href="https://danielatik.com/laia/" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-                <li>El viernes 31 se anunció la <em>Game Jam 2026</em> de Koding Vibes · <a href="https://kodingvibes.github.io/gamejam-2026/" style="color:#2DD4BF;text-decoration:none;">link</a></li>
-                <li>El miércoles 29 arveja confirmó que Scotiabank ya no es gratis para recibir pagos internacionales (USD 35,7) — el repo <a href="https://github.com/devschile/remoto-desde-chile" style="color:#2DD4BF;text-decoration:none;">remoto-desde-chile</a> necesita actualización</li>
-              </ul>
+              {{CANALES}}
             </td>
           </tr>
 
-          <!-- FOOTER -->
+          <!-- FOOTER — no tocar: dirección legal y marcador BAJA_LINK van fijos -->
           <tr>
             <td bgcolor="#0B0713" style="background-color:#0B0713;border-top:1px solid #2A2444;padding:22px 32px;color:#9794A8;font-size:12px;line-height:1.7;">
               <div style="color:#ffffff;font-weight:700;margin-bottom:2px;font-family:'Inconsolata','Courier New',monospace;font-size:14px;">devs<span style="color:#2DD4BF;">Chile</span></div>
