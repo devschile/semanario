@@ -24,3 +24,7 @@ Thumbs.db
 
 # Salida del build (se regenera con `npm run build`)
 dist/
+
+# Artefactos del build local de funciones
+netlify/functions/*.zip
+netlify/functions/manifest.json
