@@ -1,0 +1,26 @@
+# Variables de entorno — NUNCA commitear (contiene la connection string de Neon)
+.env
+.env.*
+!.env.example
+
+# Dependencias
+node_modules/
+
+# Netlify
+.netlify/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Salida del build (se regenera con `npm run build`)
+dist/

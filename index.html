@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🗞️ Semanario devsChile — el resumen semanal de la comunidad</title>
+  <meta name="description" content="Los links más útiles que pasaron por los canales de devsChile, cada semana en tu correo. Gratis, sin spam.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="🗞️ Semanario devsChile">
+  <meta property="og:description" content="Los links más útiles que pasaron por los canales de devsChile, cada semana en tu correo.">
+  <meta property="og:locale" content="es_CL">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Inconsolata:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/devschile-logo.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#suscribirse">Saltar al formulario</a>
+
+  <header class="site-header">
+    <a class="brand" href="https://devschile.cl">
+      <img src="/assets/devschile-logo.png" alt="devsChile" width="36" height="36">
+      <span class="brand-name">&lt;devschile/&gt;</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#ediciones">Ediciones</a>
+      <a class="btn-primary btn-sm" href="#suscribirse">Suscribirme</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ── Hero ─────────────────────────────────────────────────────── -->
+    <section class="hero">
+      <span class="badge">Newsletter semanal · gratis</span>
+
+      <h1>🗞️ Semanario <span class="accent">devsChile</span></h1>
+
+      <p class="lead">
+        Cada semana pasan cientos de links por los canales de la comunidad y
+        se pierden en el scroll. Nosotros los juntamos, los ordenamos y te
+        los mandamos por correo: <strong>lo mejor de la semana, en un solo
+        mail</strong>.
+      </p>
+
+      <!-- Formulario de suscripción -->
+      <form class="signup" id="suscribirse" novalidate>
+        <div class="signup-row">
+          <label class="sr-only" for="email">Tu correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tu@correo.cl"
+            autocomplete="email"
+            required
+            aria-describedby="signup-msg">
+          <button class="btn-primary" type="submit">
+            Suscribirme
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <p class="signup-msg" id="signup-msg" role="status" aria-live="polite"></p>
+
+        <p class="signup-note">
+          Un correo por semana, los martes. Sin spam, sin promos, y te podís
+          desuscribir de un click.
+        </p>
+      </form>
+
+      <ul class="hero-stats">
+        <li><strong>17</strong> canales revisados</li>
+        <li><strong>1</strong> correo por semana</li>
+        <li><strong>0</strong> spam</li>
+      </ul>
+    </section>
+
+    <!-- ── Qué trae ─────────────────────────────────────────────────── -->
+    <section class="section">
+      <h2>Qué llega en cada edición</h2>
+      <div class="grid">
+        <article class="card card-static">
+          <h3>🔗 Links de la semana</h3>
+          <p>Lo que se compartió en <code>#general</code>, <code>#frontend</code>, <code>#backend</code> y compañía, filtrado y con contexto de por qué vale la pena.</p>
+        </article>
+        <article class="card card-static">
+          <h3>💬 Hilos que valieron la pena</h3>
+          <p>Esa discusión larga sobre tooling, arquitectura o sueldos que te perdiste porque estabas trabajando. Resumida.</p>
+        </article>
+        <article class="card card-static">
+          <h3>💼 Pegas y oportunidades</h3>
+          <p>Un pantallazo de lo nuevo en <a href="https://pegas.devschile.cl">pegas.devschile.cl</a> y ofertas que pasaron por los canales.</p>
+        </article>
+        <article class="card card-static">
+          <h3>📅 Eventos y meetups</h3>
+          <p>Qué se viene en Chile —presencial y online— para que no te enteres el día después.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Historial de ediciones ───────────────────────────────────── -->
+    <section class="section" id="ediciones">
+      <div class="section-head">
+        <h2>Ediciones anteriores</h2>
+        <p class="section-sub">Todo el archivo es público. Léelo antes de suscribirte.</p>
+      </div>
+
+      <ol class="editions">
+        <!-- build:ediciones -->
+        <!-- /build:ediciones -->
+      </ol>
+
+      <p class="editions-more">
+        <a href="/newsletter/">Ver todas las ediciones →</a>
+      </p>
+    </section>
+
+    <!-- ── CTA final ────────────────────────────────────────────────── -->
+    <section class="section cta-final">
+      <h2>¿Te sumas?</h2>
+      <p class="lead">Toma 5 segundos y te ahorra scrollear 5 días de canales.</p>
+      <a class="btn-primary btn-lg" href="#suscribirse">Suscribirme al Semanario</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Hecho por la comunidad
+      <a href="https://devschile.cl">devsChile</a>
+      · <a href="https://github.com/devschile">GitHub</a>
+      · <a href="https://pegas.devschile.cl">Pegas</a>
+    </p>
+    <p class="footer-muted">El huemul con astas de <code>{ }</code> es marca de devsChile.</p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+[build]
+  # dist/ lo arma scripts/build.mjs — nunca se commitea (ver .gitignore).
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[dev]
+  # Sitio estático: se sirve dist/ tal cual, sin servidor de framework.
+  # El build lo corre el script `npm run dev` antes de levantar esto.
+  framework = "#static"
+  publish = "dist"
+  port = 8888
+
+# Las ediciones se publican en /newsletter/ (ahí las copia el build), pero el
+# bot escribe en ediciones/. Si alguien llega por la ruta del repo, lo mandamos
+# a la canónica.
+[[redirects]]
+  from = "/ediciones/*"
+  to = "/newsletter/:splat"
+  status = 301
+  force = true

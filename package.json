@@ -1,0 +1,18 @@
+{
+  "name": "semanario-devschile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "🗞️ Semanario devsChile — landing de suscripción y archivo de ediciones",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && netlify dev",
+    "db:schema": "node --env-file=.env db/migrate.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^27.0.1"
+  }
+}
