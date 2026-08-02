@@ -1,0 +1,28 @@
+name: 🗞️ Enviar Semanario
+
+on:
+  schedule:
+    # Martes 09:00 hora de Chile. 13:00 UTC = 09:00 CLT en invierno,
+    # 10:00 CLT en verano (no hay cron con horario DST; la deriva es tolerable).
+    - cron: '0 13 * * 2'
+  workflow_dispatch: # permite un envío manual de prueba
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Enviar la edición más reciente
+        run: node scripts/enviar.mjs
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          MAILGUN_API_KEY: ${{ secrets.MAILGUN_API_KEY }}
+          MAILGUN_DOMAIN: ${{ secrets.MAILGUN_DOMAIN }}
+          MAILGUN_REGION: ${{ secrets.MAILGUN_REGION }}
+          MAILGUN_FROM: ${{ secrets.MAILGUN_FROM }}
+          SITE_URL: ${{ secrets.SITE_URL }}

@@ -29,6 +29,7 @@ const ENVOLTORIO = (contenidoInterior) => `<!DOCTYPE html>
             <td bgcolor="#0B0713" style="background-color:#0B0713;border-top:1px solid #2A2444;padding:22px 32px;color:#9794A8;font-size:12px;line-height:1.7;">
               La comunidad de developers más grande de Chile ·
               <a href="https://devschile.cl" style="color:#2DD4BF;text-decoration:none;">devschile.cl</a>
+              <div style="margin-top:8px;">devsChile SpA · Dr. M. Barros Borgoño 71, Of. 1105, Providencia, Santiago, Chile</div>
             </td>
           </tr>
         </table>
