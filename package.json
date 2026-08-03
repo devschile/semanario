@@ -10,7 +10,8 @@
     "db:schema": "node --env-file=.env db/migrate.mjs"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^1.0.0"
+    "@neondatabase/serverless": "^1.0.0",
+    "posthog-js": "^1.410.4"
   },
   "devDependencies": {
     "netlify-cli": "^27.0.1"

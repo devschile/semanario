@@ -169,7 +169,9 @@ for (const carpeta of ['css', 'js', 'assets']) {
 }
 
 // Portada, con las últimas 4 ediciones inyectadas.
-const index = await readFile(path.join(raiz, 'index.html'), 'utf8');
+const index = (await readFile(path.join(raiz, 'index.html'), 'utf8'))
+  .replace('__POSTHOG_PROJECT_TOKEN__', process.env.POSTHOG_PROJECT_TOKEN ?? '__POSTHOG_PROJECT_TOKEN__')
+  .replace('__POSTHOG_HOST__', process.env.POSTHOG_HOST ?? '__POSTHOG_HOST__');
 const destacadas = ediciones.slice(0, 4);
 await writeFile(
   path.join(dist, 'index.html'),
