@@ -9,8 +9,12 @@ export default async (request) => {
   const site = process.env.SITE_URL ?? new URL(request.url).origin;
   const token = new URL(request.url).searchParams.get('token') ?? '';
 
-  const redirect = (estado) =>
-    Response.redirect(`${site}/?confirmacion=${estado}`, 302);
+  const redirect = (estado, subscriberId) => {
+    const location = new URL('/', site);
+    location.searchParams.set('confirmacion', estado);
+    if (subscriberId) location.searchParams.set('subscriber', subscriberId);
+    return Response.redirect(location, 302);
+  };
 
   if (!UUID_RE.test(token)) return redirect('invalido');
 
@@ -26,7 +30,7 @@ export default async (request) => {
       RETURNING id
     `;
 
-    return redirect(row ? 'ok' : 'invalido');
+    return redirect(row ? 'ok' : 'invalido', row?.id);
   } catch (error) {
     console.error('[semanario] error al confirmar:', error);
     return redirect('error');

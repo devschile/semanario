@@ -50,6 +50,11 @@ form.addEventListener('submit', async (event) => {
 
     if (!response.ok) throw new Error('HTTP ' + response.status);
 
+    window.posthog?.capture('subscription_requested', {
+      signup_method: 'email',
+      source: 'landing',
+    });
+
     form.querySelector('.signup-row').hidden = true;
     setMessage('¡Listo! Revisa tu correo para confirmar la suscripción 🗞️', 'success');
   } catch (error) {
@@ -66,6 +71,7 @@ form.addEventListener('submit', async (event) => {
 (function mostrarEstadoDeRetorno() {
   const params = new URLSearchParams(window.location.search);
   const confirmacion = params.get('confirmacion');
+  const subscriberId = params.get('subscriber');
   const baja = params.get('baja');
 
   const mensajes = {
@@ -92,6 +98,13 @@ form.addEventListener('submit', async (event) => {
   const [texto, tipo] = entrada;
   setMessage(texto, tipo);
   if (tipo === 'success') form.querySelector('.signup-row').hidden = true;
+
+  if (confirmacion === 'ok' && subscriberId) {
+    window.posthog?.identify(subscriberId);
+    window.posthog?.capture('subscription_confirmed', {
+      confirmation_method: 'email_link',
+    });
+  }
 
   form.scrollIntoView({ block: 'center' });
   window.history.replaceState({}, '', window.location.pathname);
