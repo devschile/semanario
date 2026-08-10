@@ -94,6 +94,8 @@ Durante la semana se publicaron **87 pegas nuevas** en [pegas.devschile.cl](http
 
 Héctor anunció el lanzamiento del Semanario: una invitación a suscribirse para recibir semanalmente pegas, links con contexto y anuncios, sin ruido. [Inscripción en semanario.devschile.cl](https://semanario.devschile.cl/).
 
+También lanzamos la primera versión de **Chucao**, el design system de devsChile. Está disponible en [NPM como `@devschile/chucao`](https://www.npmjs.com/package/@devschile/chucao) y su documentación vive en [devschile.github.io/chucao](https://devschile.github.io/chucao/). Seguiremos desarrollándolo para los productos de la comunidad: los aportes son bienvenidos. Gracias a [irmirx](https://www.instagram.com/irmirx/) por la ilustración que inspira el logo del proyecto.
+
 ---
 
 **Nota editorial:** se omitieron imágenes/CDN, memes sin contexto y enlaces de redes sociales que no tenían información suficiente para ser útiles fuera de su conversación original.
