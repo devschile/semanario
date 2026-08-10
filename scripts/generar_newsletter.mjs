@@ -58,6 +58,7 @@ const destacadas = lista(subsection(pegas, 'Destacadas con sueldo visible'))
   .map(x => `<li>${markup(x)}</li>`).join('\n                ');
 const links = section('Links de la semana');
 const anuncios = section('#anuncios').replace(/^\*\*Nota editorial:[\s\S]*$/m, '').trim();
+const anunciosHtml = markup(anuncios).replace(/\n\s*\n/g, '<br><br>');
 
 html = html
   .replaceAll('{{RANGO}}', rango)
@@ -69,7 +70,7 @@ html = html
 
 if (anuncios) {
   html = html
-    .replaceAll('{{ANUNCIOS}}', markup(anuncios))
+    .replaceAll('{{ANUNCIOS}}', anunciosHtml)
     .replace('          <!--\n          <tr>', '          <tr>')
     .replace('          </tr>\n          -->\n\n          <!-- PEGAS', '          </tr>\n\n          <!-- PEGAS');
 } else {
