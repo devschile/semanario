@@ -6,7 +6,6 @@
 
 - **567 mensajes** publicados en los canales incluidos, sin contar eventos de entrada.
 - **Jueves 6** fue el día más activo, con **240 mensajes**. El hilo que más prendió fue en **#juegos**: la conversación sobre cómo se renderizan los juegos del [Super Museum](https://supermuseum.netlify.app/) reunió **52 respuestas**.
-- Se estiman **~17 miembros nuevos** a partir de los eventos `JOIN` únicos vistos en **#comunidad**. Es una estimación: el token disponible no expone la fecha de creación de usuarios para calcular la cifra exacta.
 
 ## Pegas
 
