@@ -10,7 +10,7 @@
 
 ## Pegas
 
-Durante la semana se publicaron **87 pegas nuevas** en [pegas.devschile.cl](http://pegas.devschile.cl), mediante **12 anuncios automáticos** del bot d4rkmul, más **17 avisos manuales** en el canal. El conteo excluye mensajes de karma del bot y no incorpora como vacante separada avisos repetidos.
+Durante la semana se publicaron **87 pegas nuevas** en [pegas.devschile.cl](http://pegas.devschile.cl), mediante **12 anuncios automáticos** del bot d4rkmul, más **17 avisos manuales** en el canal.
 
 ### Destacadas con sueldo visible
 
