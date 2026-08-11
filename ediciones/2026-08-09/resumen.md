@@ -1,10 +1,8 @@
 # Semanario devsChile — semana del 3 al 9 de agosto de 2026
 
-> Recopilación para edición humana. Ventana: lunes 3 de agosto, 00:00 → domingo 9 de agosto, 21:02 (hora de Chile). Los links fueron curados desde los canales públicos del semanario.
-
 ## Actividad de la comunidad
 
-- **567 mensajes** publicados en los canales incluidos, sin contar eventos de entrada.
+- **567 mensajes** publicados en los canales incluidos.
 - **Jueves 6** fue el día más activo, con **240 mensajes**. El hilo que más prendió fue en **#juegos**: la conversación sobre cómo se renderizan los juegos del [Super Museum](https://supermuseum.netlify.app/) reunió **52 respuestas**.
 
 ## Pegas
