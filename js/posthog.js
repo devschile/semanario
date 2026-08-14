@@ -31,6 +31,11 @@
   });
   window.posthog.startExceptionAutocapture();
 
+  // Este proyecto de PostHog es compartido con otros sitios de devsChile
+  // (ej. tienda, pegas) — se etiqueta cada evento con site='semanario' para
+  // poder filtrar sin depender de $host.
+  window.posthog.register({ site: 'semanario' });
+
   const script = document.createElement('script');
   script.async = true;
   script.src = config.host.replace('.i.posthog.com', '-assets.i.posthog.com') + '/static/array.js';
