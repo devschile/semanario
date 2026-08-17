@@ -30,7 +30,7 @@ function markup(s) {
   out = out.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" style="color:#2DD4BF;text-decoration:none;">$1</a>');
   out = out.replace(/\*\*([^*]+)\*\*/g, '<strong style="color:#ffffff;">$1</strong>');
   out = out.replace(/\*([^*]+)\*/g, '<em>$1</em>');
-  out = out.replace(/(US\$[\d.,]+(?:[–-][\d.,]+)?(?:k)?(?:\/año|\/mes)?(?: \+ equity)?)/gi, '<span style="display:inline-block;padding:1px 8px;border-radius:999px;background-color:#143322;color:#4ADE80;font-size:12px;font-weight:600;">$1</span>');
+  out = out.replace(/((?:US\$)?\d[\d.,]*k?(?:[–-](?:US\$)?\d[\d.,]*k?)?\/(?:año|mes)(?: \+ equity)?)/gi, '<span style="display:inline-block;padding:1px 8px;border-radius:999px;background-color:#143322;color:#4ADE80;font-size:12px;font-weight:600;">$1</span>');
   return out;
 }
 function section(nombre) {
@@ -51,9 +51,14 @@ function bloquesCanal(texto) {
   }).join('\n');
 }
 
-const actividad = lista(section('Actividad de la comunidad')).map(markup).join('<br>\n                • ');
+const actividadItems = lista(section('Actividad de la comunidad'));
+const actividad = actividadItems.map(markup).join('<br>\n                • ');
 const pegas = section('Pegas');
 const introPegas = pegas.split(/^### /m)[0].trim();
+const mensajesPreheader = actividadItems[0]?.match(/\d[\d.,]* mensajes/)?.[0] ?? 'la actividad de la comunidad';
+const pegasPreheader = introPegas.match(/\d[\d.,]* pegas nuevas/)?.[0] ?? 'nuevas pegas';
+const diaPreheader = actividadItems[1]?.match(/\*\*([^*]+)\*\* fue el día/)?.[1]?.toLowerCase();
+const preheader = `${mensajesPreheader}, ${pegasPreheader}${diaPreheader ? ` y ${diaPreheader} como día más activo` : ''}`;
 const destacadas = lista(subsection(pegas, 'Destacadas con sueldo visible'))
   .map(x => `<li>${markup(x)}</li>`).join('\n                ');
 const links = section('Links de la semana');
@@ -62,7 +67,7 @@ const anunciosHtml = markup(anuncios).replace(/\n[ \t]*\n/g, '<br><br>');
 
 html = html
   .replaceAll('{{RANGO}}', rango)
-  .replaceAll('{{PREHEADER}}', '567 mensajes, 87 pegas nuevas y el jueves 6 como día más activo')
+  .replaceAll('{{PREHEADER}}', preheader)
   .replaceAll('{{ACTIVIDAD}}', `• ${actividad}`)
   .replaceAll('{{PEGAS}}', markup(introPegas))
   .replaceAll('{{PEGAS_DESTACADAS}}', destacadas)
