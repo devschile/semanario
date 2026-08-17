@@ -34,6 +34,10 @@ Durante la semana se publicaron **309 pegas nuevas** en [pegas.devschile.cl](htt
 - El sábado janogonzalez recomendó la guía de Anthropic para [aprovechar mejor las sesiones de Claude Code](https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions).
 - El domingo ivm dejó [Autoresearch](https://sankalp.bearblog.dev/autoresearch/), un experimento de investigación automatizada.
 
+### #comunidad
+
+- Se revivió el script de horóscopo de Huemul, con API nueva: `huemul horóscopo piscis` entrega el pronóstico normal y `huemul horóscopo piscis --dev` una versión para developers, supuestamente más realista.
+
 ### #desarrollo
 
 - El lunes se compartió cómo funcionan las [microVMs detrás de Docker Sandboxes](https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/).
