@@ -24,6 +24,7 @@
 import { neon } from '@neondatabase/serverless';
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
+import { filtrarDestinatarios } from './lib/recipient-filter.mjs';
 
 const RAÍZ = path.resolve(import.meta.dirname, '..');
 const MAX_DIAS_EDICION = 3;
@@ -167,7 +168,10 @@ async function enviarLista(suscriptores, htmlBase, textoBase, subject) {
 // ── Main ────────────────────────────────────────────────────────────────────
 
 const edicion = await ultimaEdicion();
-const lista = await suscriptoresConfirmados();
+const lista = filtrarDestinatarios(
+  await suscriptoresConfirmados(),
+  process.env.RECIPIENTS ?? '',
+);
 
 if (!lista.length) {
   console.log('Sin suscriptores confirmados — nada que enviar.');
