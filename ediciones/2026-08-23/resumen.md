@@ -68,7 +68,7 @@ Durante la semana se publicaron **151 pegas nuevas** en [pegas.devschile.cl](htt
 ### #lifehacks
 
 - Se discutió una silla ergonómica de precio alto y sus alternativas: [LiberNovo Omni](https://inprocl.com/libernovo-omni), [opciones en AliExpress](https://a.aliexpress.com/_mriIxv9) y [el listado de Alibaba](https://www.alibaba.com/product-detail/Original-LiberNovo-Omni-Smart-Dynamic-Ergonomic_1601614882887.html).
-- Para limpiar pantallas y lentes, aparecieron el [paño de pulido de Apple](https://www.apple.com/shop/product/mw693am/a/polishing-cloth) y los [paños Jeden Tag](https://www.jumbo.cl/pano-limpieza-lentes-jeden-tag-54-un/p).
+- Para limpiar pantallas y lentes, aparecieron el [iPaño](https://www.apple.com/shop/product/mw693am/a/polishing-cloth) y los [paños Jeden Tag](https://www.jumbo.cl/pano-limpieza-lentes-jeden-tag-54-un/p).
 
 ### #diy
 
