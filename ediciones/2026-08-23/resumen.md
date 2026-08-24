@@ -65,7 +65,7 @@ Durante la semana se publicaron **151 pegas nuevas** en [pegas.devschile.cl](htt
 
 - Se conversó sobre consolas portátiles y el form factor de la GBA: [KONKR Pocket ADVANCE](https://www.ayaneo.com/product/KONKR-Pocket-ADVANCE) y [Retroid Pocket Nova](https://www.goretroid.com/products/retroid-pocket-nova-handheld).
 - krobus mostró el juego experimental [Kaleidos](https://lotritsa.itch.io/kaleidos).
-- Krobus from Stardew Valley compartió el tráiler de la serie de **Golden Axe**. [Ver tráiler](https://youtu.be/sStbBtfGaLA?si=Cx7bo8H44K9kl4Z_).
+- krobus compartió el tráiler de la serie de **Golden Axe**. [Ver tráiler](https://youtu.be/sStbBtfGaLA?si=Cx7bo8H44K9kl4Z_).
 - Se compartieron códigos de agosto para **Dress to Impress**. [Ver códigos](https://www.ign.com/articles/dress-to-impress-codes).
 - La conversación de boomer shooters pasó por [Warhammer 40,000: Boltgun 2](https://store.steampowered.com/app/3115160/Warhammer_40000_Boltgun_2/) y el [Boltgun original](https://store.steampowered.com/app/2005010/Warhammer_40000_Boltgun/).
 - También se recomendó un gameplay de **Super Gore Nest** de Doom Eternal. [Ver video](https://youtu.be/SnCw9ESwnFk?t=21).
