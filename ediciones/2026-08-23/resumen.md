@@ -23,6 +23,11 @@ Durante la semana se publicaron **151 pegas nuevas** en [pegas.devschile.cl](htt
 - Jorge difundió una convocatoria de **académicos/as de Informática para la USM**. [Ver convocatoria](https://www.linkedin.com/posts/informaticausm_ingenieraedainformaertica-informaerticausm-activity-7495477123412000768-JtvL/).
 - El viernes apareció una búsqueda de **Desarrollador/a COBOL remoto**. [Ver aviso](https://www.getonbrd.com/jobs/programming/desarrollador-cobol-visual-studio-code-bc-tecnologia-remote).
 
+## #anuncios
+
+- devsChile invitó a probar la nueva [tienda-cli](https://www.npmjs.com/package/@devschile/tienda-cli), para comprar productos desde el terminal.
+- Se presentó un análisis sobre certificaciones relevantes para perfiles tech y se invitó a leer el [blog de la comunidad](https://log.devschile.cl/). En particular, se recomendó el artículo [“Di la CCAF y no era el examen que me esperaba”](https://log.devschile.cl/di-la-cca-f-y-no-era-el-examen-que-me-esperaba/).
+
 ## Links de la semana
 
 ### #ai
@@ -81,8 +86,3 @@ Durante la semana se publicaron **151 pegas nuevas** en [pegas.devschile.cl](htt
 ### #musiqueria
 
 - Se compartieron varias recomendaciones musicales, entre ellas un [video de YouTube](https://youtu.be/kD2MCtWosa8?si=6aOSXsFPNco7Gx2t), un [álbum de hardcore punk](https://open.spotify.com/album/0CVmP7d79oQJA96jXVPgDW?si=rtO_7rdOQS-Ide44hZVVLw), una selección en [Music YouTube](https://music.youtube.com/watch?v=qHGqvYVfpEU) y otra [recomendación musical](https://youtu.be/cSw3uh1c_84?si=adNeGJ1s9uFwxUVK).
-
-## #anuncios
-
-- devsChile invitó a probar la nueva [tienda-cli](https://www.npmjs.com/package/@devschile/tienda-cli), para comprar productos desde el terminal.
-- Se presentó un análisis sobre certificaciones relevantes para perfiles tech y se invitó a leer el [blog de la comunidad](https://log.devschile.cl/). En particular, se recomendó el artículo [“Di la CCAF y no era el examen que me esperaba”](https://log.devschile.cl/di-la-cca-f-y-no-era-el-examen-que-me-esperaba/).
