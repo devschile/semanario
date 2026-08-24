@@ -76,7 +76,7 @@ Durante la semana se publicaron **151 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #cultura
 
-- Héctor compartió un video documental que abrió una conversación sobre la experiencia de personas extranjeras en una protesta y el uso de equipamiento antidisturbios. [Ver video](https://youtu.be/8PAacUPhhJU).
+- Héctor compartió un video documental que abrió una conversación sobre la experiencia de personas extranjeras durante los disturbios de Tiananmen en 1989 y el uso de equipamiento antidisturbios. [Ver video](https://youtu.be/8PAacUPhhJU).
 
 ### #musiqueria
 
