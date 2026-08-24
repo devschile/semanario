@@ -26,7 +26,8 @@ Durante la semana se publicaron **151 pegas nuevas** en [pegas.devschile.cl](htt
 ## #anuncios
 
 - devsChile invitó a probar la nueva [tienda-cli](https://www.npmjs.com/package/@devschile/tienda-cli), para comprar productos desde el terminal.
-- Se presentó un análisis sobre certificaciones relevantes para perfiles tech y se invitó a leer el [blog de la comunidad](https://log.devschile.cl/). En particular, se recomendó el artículo [“Di la CCAF y no era el examen que me esperaba”](https://log.devschile.cl/di-la-cca-f-y-no-era-el-examen-que-me-esperaba/).
+- Se presentó un análisis sobre certificaciones relevantes para perfiles tech, en particular el artículo [“Di la CCAF y no era el examen que me esperaba”](https://log.devschile.cl/di-la-cca-f-y-no-era-el-examen-que-me-esperaba/).
+- ¿Tienes una experiencia, aprendizaje o idea que quieras compartir? ¡Anímate a escribir en el [blog de la comunidad](https://log.devschile.cl/)! Tu aporte puede inspirar a otros y ayudar a construir conocimiento entre todos.
 
 ## Links de la semana
 
