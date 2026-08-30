@@ -51,10 +51,16 @@ function bloquesCanal(texto) {
     return `              <p style="margin:18px 0 8px 0;"><span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">${escapar(canal)}</span></p>\n              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">\n                ${items}\n              </ul>`;
   }).join('\n');
 }
-function metadataVisuales() {
-  const bloque = md.match(/<!--\s*SEMANARIO_VISUALES\s*([\s\S]*?)-->/i)?.[1] ?? '';
+function metadataBloque(nombre) {
+  const bloque = md.match(new RegExp(`<!--\\s*${nombre}\\s*([\\s\\S]*?)-->`, 'i'))?.[1] ?? '';
   return Object.fromEntries([...bloque.matchAll(/^\s*([a-z_]+)\s*:\s*(.*?)\s*$/gim)]
     .map(([, clave, valor]) => [clave.toLowerCase(), valor.trim()]));
+}
+function metadataVisuales() {
+  return metadataBloque('SEMANARIO_VISUALES');
+}
+function metadataCierre() {
+  return metadataBloque('SEMANARIO_CIERRE');
 }
 function urlVisual(valor) {
   if (!valor) return '';
@@ -62,6 +68,9 @@ function urlVisual(valor) {
   const relativo = valor.replace(/^\.\//, '').replace(/^\//, '');
   if (!/^assets\//i.test(relativo)) return '';
   return `${siteUrl}/newsletter/${fecha}/${relativo}`;
+}
+function enlaceExterno(valor) {
+  return /^https?:\/\//i.test(valor ?? '') ? valor : '';
 }
 function visualAnuncio(visuales, hayAnuncios) {
   const src = hayAnuncios ? urlVisual(visuales.anuncio) : '';
@@ -78,6 +87,26 @@ function visualScreenshot(visuales) {
   const caption = markup(visuales.screenshot_caption || 'Un vistazo a la conversación de la comunidad');
   return `          <tr>\n            <td style="padding:16px 32px 6px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#141025;border:1px solid #2A2444;border-radius:6px;">\n                <tr>\n                  <td style="padding:14px 16px 16px 16px;">\n                    <p style="margin:0 0 10px 0;color:#9794A8;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">👀 Un vistazo a la conversación</p>\n                    <a href="${escapar(href)}" style="text-decoration:none;"><img src="${escapar(src)}" alt="${alt}" width="504" style="display:block;width:100%;max-width:504px;max-height:230px;object-fit:cover;border:1px solid #2A2444;border-radius:4px;"></a>\n                    <p style="margin:10px 0 0 0;color:#8B87A0;font-size:12px;line-height:1.5;">${caption}${link ? ` · <a href="${escapar(link)}" style="color:#2DD4BF;text-decoration:none;">Ver enlace</a>` : ''}</p>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
 }
+function tarjetaProyecto(cierre) {
+  const href = enlaceExterno(cierre.proyecto_link);
+  if (!href) return '';
+  const titulo = markup(cierre.proyecto_titulo || 'Proyecto destacado de la comunidad');
+  const descripcion = cierre.proyecto_descripcion
+    ? `<p style="margin:8px 0 0 0;color:#C9C6D8;font-size:13px;line-height:1.6;">${markup(cierre.proyecto_descripcion)}</p>`
+    : '';
+  return `          <tr>\n            <td style="padding:18px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#141025;border:1px solid #2A6B61;border-radius:6px;">\n                <tr>\n                  <td style="padding:16px 18px;border-left:3px solid #2DD4BF;">\n                    <p style="margin:0;color:#8B87A0;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">✨ Proyecto destacado de la comunidad</p>\n                    <h2 style="margin:8px 0 0 0;font-size:17px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;"><a href="${escapar(href)}" style="color:#2DD4BF;text-decoration:none;">${titulo}</a></h2>\n                    ${descripcion}\n                    <p style="margin:10px 0 0 0;"><a href="${escapar(href)}" style="color:#2DD4BF;text-decoration:none;font-size:12px;">Conocer el proyecto →</a></p>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
+}
+function bloqueDespedida(cierre) {
+  if (!cierre.despedida) return '';
+  return `          <tr>\n            <td align="center" style="padding:14px 40px 4px 40px;">\n              <p style="margin:0;color:#C9C6D8;font-size:14px;line-height:1.7;font-style:italic;">${markup(cierre.despedida)}</p>\n            </td>\n          </tr>`;
+}
+function bloqueFirma(cierre) {
+  const src = urlVisual(cierre.firma);
+  if (!src) return '';
+  const alt = escapar(cierre.firma_alt || 'Firmas caligráficas de la comunidad devsChile');
+  return `          <tr>\n            <td align="center" style="padding:4px 32px 20px 32px;">\n              <img src="${escapar(src)}" alt="${alt}" width="420" style="display:block;width:100%;max-width:420px;height:auto;border:0;">\n            </td>\n          </tr>`;
+}
+
 
 const actividadItems = lista(section('Actividad de la comunidad'));
 const actividad = actividadItems.map(markup).join('<br>\n                • ');
@@ -93,6 +122,7 @@ const links = section('Links de la semana');
 const anuncios = section('#anuncios').replace(/^\*\*Nota editorial:[\s\S]*$/m, '').trim();
 const anunciosHtml = markup(anuncios).replace(/\n[ \t]*\n/g, '<br><br>');
 const visuales = metadataVisuales();
+const cierreEditorial = metadataCierre();
 
 html = html
   .replaceAll('{{RANGO}}', rango)
@@ -102,7 +132,10 @@ html = html
   .replaceAll('{{PEGAS_DESTACADAS}}', destacadas)
   .replaceAll('{{CANALES}}', bloquesCanal(links))
   .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
-  .replaceAll('{{VISUAL_SCREENSHOT}}', visualScreenshot(visuales));
+  .replaceAll('{{VISUAL_SCREENSHOT}}', visualScreenshot(visuales))
+  .replaceAll('{{PROYECTO_DESTACADO}}', tarjetaProyecto(cierreEditorial))
+  .replaceAll('{{DESPEDIDA}}', bloqueDespedida(cierreEditorial))
+  .replaceAll('{{FIRMA_EDITORIAL}}', bloqueFirma(cierreEditorial));
 
 if (anuncios) {
   html = html
@@ -110,7 +143,7 @@ if (anuncios) {
     .replace('          <!--\n          <tr>', '          <tr>')
     .replace('          </tr>\n          -->\n\n          <!-- PEGAS', '          </tr>\n\n          <!-- PEGAS');
 } else {
-  html = html.replace('{{ANUNCIOS}}', '');
+  html = html.replaceAll('{{ANUNCIOS}}', '');
 }
 
 const marcadoresPendientes = [...html.matchAll(/{{[A-Z_]+}}/g)].map(m => m[0]);
