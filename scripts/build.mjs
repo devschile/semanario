@@ -186,6 +186,8 @@ for (const ed of ediciones) {
   const carpeta = path.join(dist, 'newsletter', ed.fecha);
   await mkdir(carpeta, { recursive: true });
   await writeFile(path.join(carpeta, 'index.html'), ed.html);
+  const assets = path.join(dirEdiciones, ed.fecha, 'assets');
+  if (existsSync(assets)) await cp(assets, path.join(carpeta, 'assets'), { recursive: true });
 }
 
 console.log(`✔ Build listo — ${ediciones.length} edición(es) en /newsletter/`);

@@ -7,7 +7,8 @@ const fecha = process.argv[2];
 if (!/^\d{4}-\d{2}-\d{2}$/.test(fecha ?? '')) {
   throw new Error('Uso: node scripts/generar_newsletter.mjs YYYY-MM-DD');
 }
-const raiz = path.resolve(import.meta.dirname, '..');
+const raiz = path.resolve(process.env.SEMANARIO_ROOT ?? path.resolve(import.meta.dirname, '..'));
+const siteUrl = (process.env.SITE_URL ?? 'https://semanario.devschile.cl').replace(/\/$/, '');
 const dir = path.join(raiz, 'ediciones', fecha);
 const md = await readFile(path.join(dir, 'resumen.md'), 'utf8');
 let html = await readFile(path.join(raiz, 'template.html'), 'utf8');
@@ -50,6 +51,33 @@ function bloquesCanal(texto) {
     return `              <p style="margin:18px 0 8px 0;"><span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">${escapar(canal)}</span></p>\n              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">\n                ${items}\n              </ul>`;
   }).join('\n');
 }
+function metadataVisuales() {
+  const bloque = md.match(/<!--\s*SEMANARIO_VISUALES\s*([\s\S]*?)-->/i)?.[1] ?? '';
+  return Object.fromEntries([...bloque.matchAll(/^\s*([a-z_]+)\s*:\s*(.*?)\s*$/gim)]
+    .map(([, clave, valor]) => [clave.toLowerCase(), valor.trim()]));
+}
+function urlVisual(valor) {
+  if (!valor) return '';
+  if (/^https?:\/\//i.test(valor)) return valor;
+  const relativo = valor.replace(/^\.\//, '').replace(/^\//, '');
+  if (!/^assets\//i.test(relativo)) return '';
+  return `${siteUrl}/newsletter/${fecha}/${relativo}`;
+}
+function visualAnuncio(visuales, hayAnuncios) {
+  const src = hayAnuncios ? urlVisual(visuales.anuncio) : '';
+  if (!src) return '';
+  const alt = escapar(visuales.anuncio_alt || 'Ilustración de un anuncio de la comunidad devsChile');
+  return `          <tr>\n            <td style="padding:16px 32px 2px 32px;">\n              <img src="${escapar(src)}" alt="${alt}" width="536" style="display:block;width:100%;max-width:536px;height:auto;border:0;border-radius:6px;">\n            </td>\n          </tr>`;
+}
+function visualScreenshot(visuales) {
+  const src = urlVisual(visuales.screenshot);
+  if (!src) return '';
+  const link = urlVisual(visuales.screenshot_link) || (visuales.screenshot_link?.startsWith('http') ? visuales.screenshot_link : '');
+  const href = link || src;
+  const alt = escapar(visuales.screenshot_alt || 'Captura de una conversación o proyecto compartido por la comunidad');
+  const caption = markup(visuales.screenshot_caption || 'Un vistazo a la conversación de la comunidad');
+  return `          <tr>\n            <td style="padding:16px 32px 6px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#141025;border:1px solid #2A2444;border-radius:6px;">\n                <tr>\n                  <td style="padding:14px 16px 16px 16px;">\n                    <p style="margin:0 0 10px 0;color:#9794A8;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">👀 Un vistazo a la conversación</p>\n                    <a href="${escapar(href)}" style="text-decoration:none;"><img src="${escapar(src)}" alt="${alt}" width="504" style="display:block;width:100%;max-width:504px;max-height:230px;object-fit:cover;border:1px solid #2A2444;border-radius:4px;"></a>\n                    <p style="margin:10px 0 0 0;color:#8B87A0;font-size:12px;line-height:1.5;">${caption}${link ? ` · <a href="${escapar(link)}" style="color:#2DD4BF;text-decoration:none;">Ver enlace</a>` : ''}</p>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
+}
 
 const actividadItems = lista(section('Actividad de la comunidad'));
 const actividad = actividadItems.map(markup).join('<br>\n                • ');
@@ -64,6 +92,7 @@ const destacadas = lista(subsection(pegas, 'Destacadas con sueldo visible'))
 const links = section('Links de la semana');
 const anuncios = section('#anuncios').replace(/^\*\*Nota editorial:[\s\S]*$/m, '').trim();
 const anunciosHtml = markup(anuncios).replace(/\n[ \t]*\n/g, '<br><br>');
+const visuales = metadataVisuales();
 
 html = html
   .replaceAll('{{RANGO}}', rango)
@@ -71,7 +100,9 @@ html = html
   .replaceAll('{{ACTIVIDAD}}', `• ${actividad}`)
   .replaceAll('{{PEGAS}}', markup(introPegas))
   .replaceAll('{{PEGAS_DESTACADAS}}', destacadas)
-  .replaceAll('{{CANALES}}', bloquesCanal(links));
+  .replaceAll('{{CANALES}}', bloquesCanal(links))
+  .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
+  .replaceAll('{{VISUAL_SCREENSHOT}}', visualScreenshot(visuales));
 
 if (anuncios) {
   html = html
