@@ -16,7 +16,7 @@ import { cp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 
-const raiz = path.resolve(import.meta.dirname, '..');
+const raiz = path.resolve(process.env.SEMANARIO_ROOT ?? path.resolve(import.meta.dirname, '..'));
 const dist = path.join(raiz, 'dist');
 const dirEdiciones = path.join(raiz, 'ediciones');
 
