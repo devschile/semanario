@@ -95,7 +95,7 @@ Durante la semana se publicaron **239 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #musiqueria
 
-- La comunidad cerró la semana con nuevas recomendaciones musicales: [recomendación 1](https://www.youtube.com/watch?v=fwgJgTL5JmE) · [recomendación 2](https://youtu.be/nPOwbBMjhUs?si=9mP_b3kd-0_tVeg8) · [recomendación 3](https://youtu.be/tSU9csON9WE).
+- La comunidad cerró la semana con nuevas recomendaciones musicales: [Dirty Laundry](https://www.youtube.com/watch?v=fwgJgTL5JmE) · [WHISPERED - BOOMER KUWANGER ( MEGAMAN X COVER)](https://youtu.be/nPOwbBMjhUs?si=9mP_b3kd-0_tVeg8) · [FEAR FACTORY - Roboticist (OFFICIAL MUSIC VIDEO)](https://youtu.be/tSU9csON9WE).
 
 <!-- SEMANARIO_VISUALES
 anuncio: assets/anuncio-comunidad.webp
