@@ -100,8 +100,8 @@ Durante la semana se publicaron **239 pegas nuevas** en [pegas.devschile.cl](htt
 - La comunidad cerró la semana con nuevas recomendaciones musicales: [recomendación 1](https://www.youtube.com/watch?v=fwgJgTL5JmE) · [recomendación 2](https://youtu.be/nPOwbBMjhUs?si=9mP_b3kd-0_tVeg8) · [recomendación 3](https://youtu.be/tSU9csON9WE).
 
 <!-- SEMANARIO_VISUALES
-anuncio: assets/anuncio-comunidad.png
-anuncio_alt: Ilustración editorial de la tabla de cortar de Objetos devsChile
+anuncio: assets/anuncio-comunidad.webp
+anuncio_alt: Fotografía hero de TABLA / 01 de Objetos devsChile, con la tabla servida y el grabado devsChile x VC Taller
 screenshot: assets/screenshot-comunidad.png
 screenshot_link: https://form.cl/products/escritorio-home-office-cosmo-electrico-blanco
 screenshot_alt: Captura del escritorio eléctrico compartido y discutido por la comunidad
