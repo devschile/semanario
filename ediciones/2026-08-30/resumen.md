@@ -116,6 +116,4 @@ proyecto_link: https://showcase.devschile.cl/
 proyecto_titulo: ShowCase( )
 proyecto_descripcion: Portafolio de proyectos personales y empredimientos de usuarios devsChile.
 despedida: Nos vemos en la siguiente edición, con más proyectos de la comunidad.
-firma: assets/firmas-fundadores.png
-firma_alt: Firma caligráfica de Guillermo @gmq
 -->

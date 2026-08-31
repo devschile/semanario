@@ -88,7 +88,7 @@ test('renderiza la imagen de anuncios y un screenshot comunitario desde metadata
   }
 });
 
-test('renderiza proyecto, despedida y firma antes del footer', async () => {
+test('renderiza proyecto y despedida antes del footer sin firma', async () => {
   const tmp = await mkdtemp(path.join('/tmp', 'semanario-cierre-'));
   const fechaCierre = '2099-01-09';
   const edicion = path.join(tmp, 'ediciones', fechaCierre);
@@ -96,7 +96,7 @@ test('renderiza proyecto, despedida y firma antes del footer', async () => {
   try {
     await mkdir(edicion, { recursive: true });
     await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
-    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **2 mensajes** publicados en los canales de contenido.\n- **Viernes 9** fue el día más activo, con **2 mensajes**.\n\n## Pegas\n\nDurante la semana se publicó **1 pega nueva**.\n\n## Links de la semana\n\n### #comunidad\n\n- Se compartió un proyecto. [Ver proyecto](https://example.com/proyecto).\n\n<!-- SEMANARIO_CIERRE\nproyecto_link: https://showcase.devschile.cl/\nproyecto_titulo: showcase.devschile.cl\nproyecto_descripcion: Portafolio de proyectos personales y emprendimientos de usuarios devsChile.\ndespedida: Nos leemos la próxima semana.\nfirma: assets/firmas-fundadores.png\nfirma_alt: Firma caligráfica de Guillermo @gmq\n-->\n`);
+    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **2 mensajes** publicados en los canales de contenido.\n- **Viernes 9** fue el día más activo, con **2 mensajes**.\n\n## Pegas\n\nDurante la semana se publicó **1 pega nueva**.\n\n## Links de la semana\n\n### #comunidad\n\n- Se compartió un proyecto. [Ver proyecto](https://example.com/proyecto).\n\n<!-- SEMANARIO_CIERRE\nproyecto_link: https://showcase.devschile.cl/\nproyecto_titulo: showcase.devschile.cl\nproyecto_descripcion: Portafolio de proyectos personales y emprendimientos de usuarios devsChile.\ndespedida: Nos leemos la próxima semana.\n-->\n`);
 
     execFileSync('node', ['scripts/generar_newsletter.mjs', fechaCierre], {
       cwd: raiz,
@@ -106,12 +106,11 @@ test('renderiza proyecto, despedida y firma antes del footer', async () => {
     const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
     const proyecto = html.indexOf('showcase.devschile.cl');
     const despedida = html.indexOf('Nos leemos la próxima semana.');
-    const firma = html.indexOf('Firma caligráfica de Guillermo @gmq');
     const footer = html.indexOf('FOOTER — no tocar');
 
     assert.ok(proyecto > -1 && proyecto < despedida, 'el proyecto debe preceder a la despedida');
-    assert.ok(despedida < firma && firma < footer, 'la firma debe quedar antes del footer');
-    assert.match(html, /https:\/\/preview\.example\/newsletter\/2099-01-09\/assets\/firmas-fundadores\.png/);
+    assert.ok(despedida < footer, 'la despedida debe quedar antes del footer');
+    assert.doesNotMatch(html, /Firma caligráfica|firmas-fundadores/);
     assert.doesNotMatch(html, /{{[A-Z_]+}}/);
   } finally {
     await rm(tmp, { recursive: true, force: true });

@@ -132,14 +132,6 @@ function bloqueDespedida(cierre) {
   if (!cierre.despedida) return '';
   return `          <tr>\n            <td align="center" style="padding:14px 40px 4px 40px;">\n              <p style="margin:0;color:#C9C6D8;font-size:14px;line-height:1.7;font-style:italic;">${markup(cierre.despedida)}</p>\n            </td>\n          </tr>`;
 }
-function bloqueFirma(cierre) {
-  const src = urlVisual(cierre.firma);
-  if (!src) return '';
-  const alt = escapar(cierre.firma_alt || 'Firmas caligráficas de la comunidad devsChile');
-  return `          <tr>\n            <td align="center" style="padding:4px 32px 20px 32px;">\n              <img src="${escapar(src)}" alt="${alt}" width="420" style="display:block;width:100%;max-width:420px;height:auto;border:0;">\n            </td>\n          </tr>`;
-}
-
-
 const actividadItems = lista(section('Actividad de la comunidad'));
 const actividad = actividadItems.map(markup).join('<br>\n                • ');
 const pegas = section('Pegas');
@@ -171,8 +163,7 @@ html = html
   .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
   .replaceAll('{{VISUAL_SCREENSHOT}}', screenshotEnCanal ? '' : visualScreenshot(visuales))
   .replaceAll('{{PROYECTO_DESTACADO}}', tarjetaProyecto(cierreEditorial))
-  .replaceAll('{{DESPEDIDA}}', bloqueDespedida(cierreEditorial))
-  .replaceAll('{{FIRMA_EDITORIAL}}', bloqueFirma(cierreEditorial));
+  .replaceAll('{{DESPEDIDA}}', bloqueDespedida(cierreEditorial));
 
 if (anuncios) {
   html = html
