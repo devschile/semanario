@@ -9,13 +9,55 @@ const raiz = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const fecha = '2026-08-16';
 
 test('genera preheader y badge de sueldo desde el resumen', async () => {
-  execFileSync('node', ['scripts/generar_newsletter.mjs', fecha], { cwd: raiz, stdio: 'pipe' });
-  const html = await readFile(path.join(raiz, 'ediciones', fecha, 'newsletter.html'), 'utf8');
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-generador-'));
+  const edicion = path.join(tmp, 'ediciones', fecha);
 
-  assert.match(html, /627 mensajes, 309 pegas nuevas y miércoles 12 como día más activo/);
-  assert.match(html, /background-color:#143322[^>]*>12,5k–16,5k\/mes<\/span>/);
-  assert.doesNotMatch(html, /{{[A-Z_]+}}/);
-  assert.doesNotMatch(html, /Un vistazo a la conversación/);
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), await readFile(path.join(raiz, 'ediciones', fecha, 'resumen.md')));
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fecha], {
+      cwd: raiz,
+      env: { ...process.env, SEMANARIO_ROOT: tmp },
+      stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+
+    assert.match(html, /627 mensajes, 309 pegas nuevas y miércoles 12 como día más activo/);
+    assert.match(html, /background-color:#143322[^>]*>12,5k–16,5k\/mes<\/span>/);
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+    assert.doesNotMatch(html, /Un vistazo a la conversación/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});
+
+test('renderiza destacados con cita textual y conserva el conteo', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-notables-'));
+  const fechaNotable = '2099-01-16';
+  const edicion = path.join(tmp, 'ediciones', fechaNotable);
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **468 mensajes** publicados en los canales de contenido.\n- **Viernes 16** fue el día más activo, con **10 mensajes**.\n\n## Pegas\n\nDurante la semana se publicaron **2 pegas nuevas**.\n\n## Más notables\n\n### Vuelven los límites de cinco horas para Codex\n\n> “Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex.”\n\n*Traducción editorial:* El límite vuelve para cuentas Plus.\n\n\`gmq\` compartió la noticia. [Leer el artículo](https://example.com/codex).\n\n## #anuncios\n\n- Novedades.\n\n## Links de la semana\n\n### #ai\n\n- Se compartió Codex. [Leer](https://example.com/codex).\n`);
+
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaNotable], {
+      cwd: raiz,
+      env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' },
+      stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+
+    assert.match(html, /468 mensajes, 2 pegas nuevas y viernes 16 como día más activo/);
+    assert.match(html, /★ Más notable/);
+    assert.match(html, /Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex/);
+    assert.match(html, /Traducción editorial/);
+    assert.match(html, /href="https:\/\/example\.com\/codex"/);
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
 });
 
 test('renderiza la imagen de anuncios y un screenshot comunitario desde metadata', async () => {

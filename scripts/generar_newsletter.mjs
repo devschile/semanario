@@ -51,6 +51,19 @@ function bloquesCanal(texto) {
     return `              <p style="margin:18px 0 8px 0;"><span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">${escapar(canal)}</span></p>\n              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">\n                ${items}\n              </ul>`;
   }).join('\n');
 }
+function bloquesNotables(texto) {
+  return [...texto.matchAll(/^### ([^\n]+)\n([\s\S]*?)(?=^### |\n---|(?![\s\S]))/gm)].map(([, titulo, cuerpo]) => {
+    const citas = [...cuerpo.matchAll(/^>\s?(.*)$/gm)].map(([, cita]) => cita.trim()).filter(Boolean);
+    const sinCitas = cuerpo.replace(/^>\s?.*(?:\n|$)/gm, '').trim();
+    const citaHtml = citas.length
+      ? `<blockquote style="margin:12px 0;padding:10px 14px;border-left:3px solid #2DD4BF;background-color:#100A1C;color:#ffffff;font-size:15px;line-height:1.6;font-style:italic;">${citas.map(markup).join('<br>')}</blockquote>`
+      : '';
+    const cuerpoHtml = sinCitas
+      ? sinCitas.split(/\n\s*\n/).map(parrafo => `<p style="margin:10px 0 0 0;color:#C9C6D8;font-size:13px;line-height:1.6;">${markup(parrafo).replace(/\n/g, '<br>')}</p>`).join('\n')
+      : '';
+    return `          <tr>\n            <td style="padding:14px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#1B1730;border:1px solid #2A6B61;border-radius:6px;">\n                <tr>\n                  <td style="padding:14px 18px;border-left:3px solid #2DD4BF;">\n                    <p style="margin:0;color:#2DD4BF;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">★ Más notable</p>\n                    <h3 style="margin:8px 0 0 0;font-size:17px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;">${markup(titulo)}</h3>\n                    ${citaHtml}\n                    ${cuerpoHtml}\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
+  }).join('\n');
+}
 function metadataBloque(nombre) {
   const bloque = md.match(new RegExp(`<!--\\s*${nombre}\\s*([\\s\\S]*?)-->`, 'i'))?.[1] ?? '';
   return Object.fromEntries([...bloque.matchAll(/^\s*([a-z_]+)\s*:\s*(.*?)\s*$/gim)]
@@ -119,6 +132,7 @@ const preheader = `${mensajesPreheader}, ${pegasPreheader}${diaPreheader ? ` y $
 const destacadas = lista(subsection(pegas, 'Destacadas con sueldo visible'))
   .map(x => `<li>${markup(x)}</li>`).join('\n                ');
 const links = section('Links de la semana');
+const notables = section('Más notables');
 const anuncios = section('#anuncios').replace(/^\*\*Nota editorial:[\s\S]*$/m, '').trim();
 const anunciosHtml = markup(anuncios).replace(/\n[ \t]*\n/g, '<br><br>');
 const visuales = metadataVisuales();
@@ -130,6 +144,7 @@ html = html
   .replaceAll('{{ACTIVIDAD}}', `• ${actividad}`)
   .replaceAll('{{PEGAS}}', markup(introPegas))
   .replaceAll('{{PEGAS_DESTACADAS}}', destacadas)
+  .replaceAll('{{NOTABLES}}', bloquesNotables(notables))
   .replaceAll('{{CANALES}}', bloquesCanal(links))
   .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
   .replaceAll('{{VISUAL_SCREENSHOT}}', visualScreenshot(visuales))

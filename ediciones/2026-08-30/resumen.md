@@ -21,6 +21,16 @@ Durante la semana se publicaron **239 pegas nuevas** en [pegas.devschile.cl](htt
 - También apareció una vacante de diseño. [Ver convocatoria](https://ninja.buk.cl/seleccions/102a50717f3cd87727a0b106040877776ebe27a789cb60434780e6972ed08675b8f4c33df57cd7203d022d51d4be7c18b9b55b31936fa8f672e45c59ccf40877/postular).
 - La vitrina de pegas recibió un filtro para encontrar oportunidades con sueldo. [Ver mejora en GitHub](https://github.com/devschile/pegas/pull/2).
 
+## Más notables
+
+### Vuelven los límites de cinco horas para Codex
+
+> “Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex.”
+
+*Traducción editorial:* OpenAI volverá a aplicar el límite de cinco horas para cuentas Plus en ChatGPT Work y Codex. Las cuentas Pro de US$100 y US$200 no quedarían afectadas por ahora.
+
+`gmq` compartió la noticia en `#ai`. [Leer el artículo en 9to5Mac](https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/).
+
 ## #anuncios
 
 - `gmq` anunció, en colaboración con VC Taller, **TABLA / 01**, el primer objeto de la nueva serie [Objetos devsChile](https://objetos.devschile.cl/): una tabla de cortar hecha a mano con madera nativa.
@@ -88,3 +98,21 @@ Durante la semana se publicaron **239 pegas nuevas** en [pegas.devschile.cl](htt
 ### #musiqueria
 
 - La comunidad cerró la semana con nuevas recomendaciones musicales: [recomendación 1](https://www.youtube.com/watch?v=fwgJgTL5JmE) · [recomendación 2](https://youtu.be/nPOwbBMjhUs?si=9mP_b3kd-0_tVeg8) · [recomendación 3](https://youtu.be/tSU9csON9WE).
+
+<!-- SEMANARIO_VISUALES
+anuncio: assets/anuncio-comunidad.png
+anuncio_alt: Ilustración editorial de la tabla de cortar de Objetos devsChile
+screenshot: assets/screenshot-comunidad.png
+screenshot_link: https://form.cl/products/escritorio-home-office-cosmo-electrico-blanco
+screenshot_alt: Captura del escritorio eléctrico compartido y discutido por la comunidad
+screenshot_caption: El link más discutido entre los seleccionados: 26 respuestas en #lifehacks
+-->
+
+<!-- SEMANARIO_CIERRE
+proyecto_link: https://showcase.devschile.cl/
+proyecto_titulo: ShowCase( )
+proyecto_descripcion: Portafolio de proyectos personales y empredimientos de usuarios devsChile.
+despedida: Nos vemos en la siguiente edición, con más proyectos de la comunidad.
+firma: assets/firmas-fundadores.png
+firma_alt: Firma caligráfica de Guillermo @gmq
+-->
