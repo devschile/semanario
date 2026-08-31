@@ -45,13 +45,30 @@ function subsection(texto, nombre) {
 function lista(texto) {
   return [...texto.matchAll(/^- (.+)$/gm)].map(m => m[1]);
 }
-function bloquesCanal(texto) {
+function bloqueScreenshotTabla(visuales) {
+  const src = urlVisual(visuales.screenshot);
+  if (!src) return '';
+  const link = urlVisual(visuales.screenshot_link) || (visuales.screenshot_link?.startsWith('http') ? visuales.screenshot_link : '');
+  const href = link || src;
+  const alt = escapar(visuales.screenshot_alt || 'Captura de una conversación o proyecto compartido por la comunidad');
+  const caption = markup(visuales.screenshot_caption || 'Un vistazo a la conversación de la comunidad');
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#141025;border:1px solid #2A2444;border-radius:6px;">\n                <tr>\n                  <td style="padding:14px 16px 16px 16px;">\n                    <p style="margin:0 0 10px 0;color:#9794A8;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">👀 Un vistazo a la conversación</p>\n                    <a href="${escapar(href)}" style="text-decoration:none;"><img src="${escapar(src)}" alt="${alt}" width="504" style="display:block;width:100%;max-width:504px;max-height:230px;object-fit:cover;border:1px solid #2A2444;border-radius:4px;"></a>\n                    <p style="margin:10px 0 0 0;color:#8B87A0;font-size:12px;line-height:1.5;">${caption}${link ? ` · <a href="${escapar(link)}" style="color:#2DD4BF;text-decoration:none;">Ver enlace</a>` : ''}</p>\n                  </td>\n                </tr>\n              </table>`;
+}
+function bloquesCanal(texto, { visuales = {}, notables = '', ubicacion = {} } = {}) {
   return [...texto.matchAll(/^### (#[^\n]+)\n([\s\S]*?)(?=^### |(?![\s\S]))/gm)].map(([, canal, cuerpo]) => {
+    const canalNormalizado = canal.trim().toLowerCase();
+    const screenshot = ubicacion.screenshot_canal?.toLowerCase() === canalNormalizado
+      ? bloqueScreenshotTabla(visuales)
+      : '';
+    const notable = ubicacion.notables_canal?.toLowerCase() === canalNormalizado
+      ? bloquesNotables(notables, true)
+      : '';
+    const destacados = [screenshot, notable].filter(Boolean).join('\n              ');
     const items = lista(cuerpo).map(x => `<li>${markup(x)}</li>`).join('\n                ');
-    return `              <p style="margin:18px 0 8px 0;"><span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">${escapar(canal)}</span></p>\n              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">\n                ${items}\n              </ul>`;
+    return `              <p style="margin:18px 0 8px 0;"><span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">${escapar(canal)}</span></p>${destacados ? `\n              ${destacados}` : ''}\n              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">\n                ${items}\n              </ul>`;
   }).join('\n');
 }
-function bloquesNotables(texto) {
+function bloquesNotables(texto, inline = false) {
   return [...texto.matchAll(/^### ([^\n]+)\n([\s\S]*?)(?=^### |\n---|(?![\s\S]))/gm)].map(([, titulo, cuerpo]) => {
     const citas = [...cuerpo.matchAll(/^>\s?(.*)$/gm)].map(([, cita]) => cita.trim()).filter(Boolean);
     const sinCitas = cuerpo.replace(/^>\s?.*(?:\n|$)/gm, '').trim();
@@ -61,7 +78,10 @@ function bloquesNotables(texto) {
     const cuerpoHtml = sinCitas
       ? sinCitas.split(/\n\s*\n/).map(parrafo => `<p style="margin:10px 0 0 0;color:#C9C6D8;font-size:13px;line-height:1.6;">${markup(parrafo).replace(/\n/g, '<br>')}</p>`).join('\n')
       : '';
-    return `          <tr>\n            <td style="padding:14px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#1B1730;border:1px solid #2A6B61;border-radius:6px;">\n                <tr>\n                  <td style="padding:14px 18px;border-left:3px solid #2DD4BF;">\n                    <p style="margin:0;color:#2DD4BF;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">★ Más notable</p>\n                    <h3 style="margin:8px 0 0 0;font-size:17px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;">${markup(titulo)}</h3>\n                    ${citaHtml}\n                    ${cuerpoHtml}\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
+    const tabla = `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#1B1730;border:1px solid #2A6B61;border-radius:6px;">\n                <tr>\n                  <td style="padding:14px 18px;border-left:3px solid #2DD4BF;">\n                    <p style="margin:0;color:#2DD4BF;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">★ Más notable</p>\n                    <h3 style="margin:8px 0 0 0;font-size:17px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;">${markup(titulo)}</h3>\n                    ${citaHtml}\n                    ${cuerpoHtml}\n                  </td>\n                </tr>\n              </table>`;
+    return inline
+      ? tabla
+      : `          <tr>\n            <td style="padding:14px 32px 8px 32px;">\n              ${tabla}\n            </td>\n          </tr>`;
   }).join('\n');
 }
 function metadataBloque(nombre) {
@@ -71,6 +91,9 @@ function metadataBloque(nombre) {
 }
 function metadataVisuales() {
   return metadataBloque('SEMANARIO_VISUALES');
+}
+function metadataUbicacion() {
+  return metadataBloque('SEMANARIO_PLACEMENT');
 }
 function metadataCierre() {
   return metadataBloque('SEMANARIO_CIERRE');
@@ -92,13 +115,9 @@ function visualAnuncio(visuales, hayAnuncios) {
   return `          <tr>\n            <td style="padding:16px 32px 2px 32px;">\n              <img src="${escapar(src)}" alt="${alt}" width="536" style="display:block;width:100%;max-width:536px;height:auto;border:0;border-radius:6px;">\n            </td>\n          </tr>`;
 }
 function visualScreenshot(visuales) {
-  const src = urlVisual(visuales.screenshot);
-  if (!src) return '';
-  const link = urlVisual(visuales.screenshot_link) || (visuales.screenshot_link?.startsWith('http') ? visuales.screenshot_link : '');
-  const href = link || src;
-  const alt = escapar(visuales.screenshot_alt || 'Captura de una conversación o proyecto compartido por la comunidad');
-  const caption = markup(visuales.screenshot_caption || 'Un vistazo a la conversación de la comunidad');
-  return `          <tr>\n            <td style="padding:16px 32px 6px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#141025;border:1px solid #2A2444;border-radius:6px;">\n                <tr>\n                  <td style="padding:14px 16px 16px 16px;">\n                    <p style="margin:0 0 10px 0;color:#9794A8;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">👀 Un vistazo a la conversación</p>\n                    <a href="${escapar(href)}" style="text-decoration:none;"><img src="${escapar(src)}" alt="${alt}" width="504" style="display:block;width:100%;max-width:504px;max-height:230px;object-fit:cover;border:1px solid #2A2444;border-radius:4px;"></a>\n                    <p style="margin:10px 0 0 0;color:#8B87A0;font-size:12px;line-height:1.5;">${caption}${link ? ` · <a href="${escapar(link)}" style="color:#2DD4BF;text-decoration:none;">Ver enlace</a>` : ''}</p>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
+  const tabla = bloqueScreenshotTabla(visuales);
+  if (!tabla) return '';
+  return `          <tr>\n            <td style="padding:16px 32px 6px 32px;">\n              ${tabla}\n            </td>\n          </tr>`;
 }
 function tarjetaProyecto(cierre) {
   const href = enlaceExterno(cierre.proyecto_link);
@@ -136,7 +155,10 @@ const notables = section('Más notables');
 const anuncios = section('#anuncios').replace(/^\*\*Nota editorial:[\s\S]*$/m, '').trim();
 const anunciosHtml = markup(anuncios).replace(/\n[ \t]*\n/g, '<br><br>');
 const visuales = metadataVisuales();
+const ubicacion = metadataUbicacion();
 const cierreEditorial = metadataCierre();
+const screenshotEnCanal = Boolean(ubicacion.screenshot_canal && urlVisual(visuales.screenshot));
+const notablesEnCanal = Boolean(ubicacion.notables_canal && notables.trim());
 
 html = html
   .replaceAll('{{RANGO}}', rango)
@@ -144,10 +166,10 @@ html = html
   .replaceAll('{{ACTIVIDAD}}', `• ${actividad}`)
   .replaceAll('{{PEGAS}}', markup(introPegas))
   .replaceAll('{{PEGAS_DESTACADAS}}', destacadas)
-  .replaceAll('{{NOTABLES}}', bloquesNotables(notables))
-  .replaceAll('{{CANALES}}', bloquesCanal(links))
+  .replaceAll('{{NOTABLES}}', notablesEnCanal ? '' : bloquesNotables(notables))
+  .replaceAll('{{CANALES}}', bloquesCanal(links, { visuales, notables, ubicacion }))
   .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
-  .replaceAll('{{VISUAL_SCREENSHOT}}', visualScreenshot(visuales))
+  .replaceAll('{{VISUAL_SCREENSHOT}}', screenshotEnCanal ? '' : visualScreenshot(visuales))
   .replaceAll('{{PROYECTO_DESTACADO}}', tarjetaProyecto(cierreEditorial))
   .replaceAll('{{DESPEDIDA}}', bloqueDespedida(cierreEditorial))
   .replaceAll('{{FIRMA_EDITORIAL}}', bloqueFirma(cierreEditorial));
@@ -160,6 +182,8 @@ if (anuncios) {
 } else {
   html = html.replaceAll('{{ANUNCIOS}}', '');
 }
+
+html = html.replace(/^[ \t]+$/gm, '');
 
 const marcadoresPendientes = [...html.matchAll(/{{[A-Z_]+}}/g)].map(m => m[0]);
 if (marcadoresPendientes.length) throw new Error(`Quedaron marcadores sin reemplazar: ${[...new Set(marcadoresPendientes)].join(', ')}`);

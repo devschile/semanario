@@ -117,3 +117,38 @@ test('renderiza proyecto, despedida y firma antes del footer', async () => {
     await rm(tmp, { recursive: true, force: true });
   }
 });
+
+test('ubica el screenshot y el notable bajo sus canales, sin duplicar items', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-placements-'));
+  const edicion = path.join(tmp, 'ediciones', '2026-08-30');
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), await readFile(path.join(raiz, 'ediciones', '2026-08-30', 'resumen.md')));
+    execFileSync('node', ['scripts/generar_newsletter.mjs', '2026-08-30'], {
+      cwd: raiz,
+      env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' },
+      stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+    const ai = html.indexOf('>#ai</span>');
+    const notable = html.indexOf('Vuelven los límites de cinco horas para Codex');
+    const lifehacks = html.indexOf('>#lifehacks</span>');
+    const screenshot = html.indexOf('👀 Un vistazo a la conversación');
+    const footer = html.indexOf('FOOTER — no tocar');
+
+    assert.ok(ai > -1 && ai < notable, 'el notable debe quedar bajo #ai');
+    assert.ok(lifehacks > -1 && lifehacks < screenshot, 'el screenshot debe quedar bajo #lifehacks');
+    assert.ok(screenshot < html.indexOf('Openlogi', screenshot), 'el screenshot debe preceder a los items restantes de #lifehacks');
+    assert.ok(notable < html.indexOf('DataCamp', notable), 'el notable debe preceder a los items restantes de #ai');
+    assert.equal([...html.matchAll(/👀 Un vistazo a la conversación/g)].length, 1);
+    assert.equal([...html.matchAll(/★ Más notable/g)].length, 1);
+    assert.doesNotMatch(html, /`gmq` compartió una nota sobre los límites de uso de Codex/);
+    assert.doesNotMatch(html, /`asilva` abrió una conversación sobre un escritorio eléctrico/);
+    assert.ok(screenshot < footer && notable < footer, 'ambos bloques deben quedar antes del footer');
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});

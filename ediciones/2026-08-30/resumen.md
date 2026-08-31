@@ -41,7 +41,6 @@ Durante la semana se publicaron **239 pegas nuevas** en [pegas.devschile.cl](htt
 
 - `carlo` compartió cursos gratuitos de [DataCamp](https://app.datacamp.com/learn/courses?free=true), incluyendo una recomendación para iniciarse en FastAPI.
 - `arveja` recomendó el newsletter [TLDR AI](https://tldr.tech/ai) y mostró un ejemplo de su [versión web](https://a.tldrnewsletter.com/web-version?ep=1&lc=).
-- `gmq` compartió una nota sobre los límites de uso de Codex. [Leer en 9to5Mac](https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/).
 - `ditt0` abrió una conversación sobre la eficiencia de [Impeccable](https://impeccable.style) para trabajar interfaces mediante instrucciones.
 
 ### #comunidad
@@ -77,7 +76,6 @@ Durante la semana se publicaron **239 pegas nuevas** en [pegas.devschile.cl](htt
 ### #lifehacks
 
 - `carlo` compartió el [mapa del plan regulador de La Serena](https://mapas.laserena.cl/mapas/plan-regulador/index.html#13/-29.8554/-71.2469).
-- `asilva` abrió una conversación sobre un [escritorio eléctrico con cubierta de vidrio templado](https://form.cl/products/escritorio-home-office-cosmo-electrico-blanco), que reunió 26 respuestas.
 - `iarodriguezch` recomendó [Openlogi](https://openlogi.org/) como herramienta para logística.
 - También apareció un [kit Starlink Mini](https://www.falabella.com/falabella-cl/product/17375896/Starlink-Mini-Kit-Internet-Satelital/17375896) entre las recomendaciones de la semana.
 
@@ -106,6 +104,11 @@ screenshot: assets/screenshot-comunidad.png
 screenshot_link: https://form.cl/products/escritorio-home-office-cosmo-electrico-blanco
 screenshot_alt: Captura del escritorio eléctrico compartido y discutido por la comunidad
 screenshot_caption: El link más discutido entre los seleccionados: 26 respuestas en #lifehacks
+-->
+
+<!-- SEMANARIO_PLACEMENT
+screenshot_canal: #lifehacks
+notables_canal: #ai
 -->
 
 <!-- SEMANARIO_CIERRE
