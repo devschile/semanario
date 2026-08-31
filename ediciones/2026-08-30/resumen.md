@@ -2,8 +2,8 @@
 
 ## Actividad de la comunidad
 
-- **466 mensajes** publicados en los canales de contenido.
-- **Viernes 28** fue el día más activo, con **140 mensajes**. En la semana también destacó un hilo de **37 respuestas** en `#remoto`, sobre boletas, salud y AFP para contractors.
+- **468 mensajes** publicados en los canales de contenido.
+- **Viernes 28** fue el día más activo, con **140 mensajes**. En `#ai`, la conversación sobre los nuevos límites de uso de Gemini Notebook reunió 4 respuestas; además, durante la semana un hilo de `#remoto` sobre boletas, salud y AFP para contractors llegó a 37 respuestas.
 
 ## Pegas
 
@@ -11,94 +11,80 @@ Durante la semana se publicaron **239 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### Destacadas con sueldo visible
 
-- Se compartió una oportunidad de **automatización de InDesign** por **US$6.000**. [Ver aviso](https://pegas.devschile.cl/pega/31282-indesign-automation-developer-latamcent).
+- Jorge compartió una oportunidad de **automatización de InDesign** por **US$6.000**. [Ver aviso](https://pegas.devschile.cl/pega/31282-indesign-automation-developer-latamcent).
 - También apareció una búsqueda de **Full Stack con sueldo**, con experiencia en Supabase. [Ver aviso](https://www.linkedin.com/jobs/view/4457603531/).
 
 ### Más avisos compartidos
 
-- Se difundió una búsqueda de **Desarrollador/a Full-Stack** en Linares. [Ver aviso](https://www.chiletrabajos.cl/trabajo/3887292).
-- Aparecieron oportunidades de **IA engineering**, **data engineering** y **staff engineering**. [IA engineer](https://lnkd.in/p/dtjB36Vx) · [data engineer](https://ripley.csod.com/ux/ats/careersite/4/home/requisition/22654?c=ripley) · [staff engineer](https://haulmer.buk.cl/seleccions/f8e2fd414dbecf086014877943db8731bd94f339318f10ad4fac02adeaf94d5c5189d14a857295888c2afa0ce932ddb50a030d6f7d3690843f8e3d9684e586db/postular).
-- La vitrina de la comunidad recibió un filtro para encontrar pegas con sueldo. [Ver mejora](https://github.com/devschile/pegas/pull/2).
+- Se difundieron oportunidades de **Data Engineering**, **Staff Engineering** e **IA Engineering**. [Data Engineer en Ripley](https://ripley.csod.com/ux/ats/careersite/4/home/requisition/22654?c=ripley) · [Staff Engineer](https://haulmer.buk.cl/seleccions/f8e2fd414dbecf086014877943db8731bd94f339318f10ad4fac02adeaf94d5c5189d14a857295888c2afa0ce932ddb50a030d6f7d3690843f8e3d9684e586db/postular) · [IA Engineer](https://lnkd.in/p/dtjB36Vx).
+- La comunidad compartió una búsqueda de **Desarrollador/a Full-Stack en Linares**. [Ver aviso](https://www.chiletrabajos.cl/trabajo/3887292).
+- También apareció una vacante de diseño. [Ver convocatoria](https://ninja.buk.cl/seleccions/102a50717f3cd87727a0b106040877776ebe27a789cb60434780e6972ed08675b8f4c33df57cd7203d022d51d4be7c18b9b55b31936fa8f672e45c59ccf40877/postular).
+- La vitrina de pegas recibió un filtro para encontrar oportunidades con sueldo. [Ver mejora en GitHub](https://github.com/devschile/pegas/pull/2).
 
 ## #anuncios
 
-- En colaboración con VC Taller, devsChile presentó **TABLA / 01**, el primer objeto de la nueva serie [Objetos devsChile](https://objetos.devschile.cl/): una tabla de cortar hecha a mano con madera nativa.
+- `gmq` anunció, en colaboración con VC Taller, **TABLA / 01**, el primer objeto de la nueva serie [Objetos devsChile](https://objetos.devschile.cl/): una tabla de cortar hecha a mano con madera nativa.
 
 ## Links de la semana
 
 ### #ai
 
-- Se preguntó por **Impeccable**, una herramienta para trabajar interfaces mediante instrucciones; la conversación quedó abierta sobre su eficiencia. [Probar Impeccable](https://impeccable.style).
-- Se comentó el cambio de límites de uso de **Gemini Notebook** y sus nuevas restricciones basadas en cómputo.
-- También se compartió una nota sobre los límites de uso de **Codex**. [Leer la nota](https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/).
-- También circularon newsletters sobre inteligencia artificial y tecnología. [TLDR AI](https://tldr.tech/ai) · [Newsletters de TLDR](https://tldr.tech/newsletters).
+- `carlo` compartió cursos gratuitos de [DataCamp](https://app.datacamp.com/learn/courses?free=true), incluyendo una recomendación para iniciarse en FastAPI.
+- `arveja` recomendó el newsletter [TLDR AI](https://tldr.tech/ai) y mostró un ejemplo de su [versión web](https://a.tldrnewsletter.com/web-version?ep=1&lc=).
+- `gmq` compartió una nota sobre los límites de uso de Codex. [Leer en 9to5Mac](https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/).
+- `ditt0` abrió una conversación sobre la eficiencia de [Impeccable](https://impeccable.style) para trabajar interfaces mediante instrucciones.
 
 ### #comunidad
 
-- **Agents for Humans Hackathon** invita a construir un agente de IA con Strands Agents SDK; el plazo informado es el 14 de septiembre y el premio, US$40.000. [Ver convocatoria](https://agentsforhumans.devpost.com/).
-- Se compartió formación para preparar la **certificación de Google Cloud**, disponible para clientes de Google Cloud con cuenta empresarial de Workspace. [Ver programa](https://developers.google.com/program/gear/getcertified?hl=es).
-- OpenAI abrió el **WebMCP Hackathon**. [Ver desafío](https://openai.com/webmcp-challenge/).
+- `imgroot` compartió el [WebMCP Hackathon](https://openai.com/webmcp-challenge/) de OpenAI.
+- También se difundió formación gratuita para preparar la [certificación de Google Cloud](https://developers.google.com/program/gear/getcertified?hl=es), dirigida a clientes con una cuenta empresarial de Workspace.
+- El [Agents for Humans Hackathon](https://agentsforhumans.devpost.com/) invita a construir agentes con Strands Agents SDK; el plazo informado es el 14 de septiembre y el premio, US$40.000.
 
 ### #desarrollo
 
-- Se discutió el artículo **Stop using Conventional Commits**, con argumentos a favor y en contra de esa convención. [Leer artículo](https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/).
-- También apareció información sobre nuevos **Mac mini con M6 y M5 Pro**. [Especificaciones](https://www.apple.com/us-edu/store/) · [Mac mini](https://apple.com/mac-mini).
+- `iarodriguezch` compartió cursos en [ADHD Decode](https://adhdecode.com/courses/).
+- `jorgeepunan` abrió una discusión sobre el artículo [Stop using Conventional Commits](https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/).
+- `gmq` compartió información sobre los nuevos Mac mini y sus precios educativos. [Tienda educativa de Apple](https://www.apple.com/us-edu/store/) · [Mac mini](https://apple.com/mac-mini).
+- `jorgeepunan` recomendó probar [ChocLift](https://choclift.com/), una alternativa para quienes buscan un switcher más accesible.
 
 ### #backend
 
-- DuckLabs anunció que se unirá a **AWS**. [Leer anuncio](https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws).
+- `carlo` compartió el anuncio de que DuckLabs se unirá a AWS. [Leer anuncio](https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws).
 
 ### #frontend
 
-- Se compartió **vgpu.sh**, una propuesta para trabajar con GPU virtualizada desde el navegador. [Visitar vgpu.sh](https://vgpu.sh/).
+- `jorgeepunan` compartió [vgpu.sh](https://vgpu.sh/), una propuesta para trabajar con GPU virtualizada desde el navegador.
 
 ### #juegos
 
-- Se mostró **MouseInjectorDolphinDuck**, una herramienta para usar mouse en juegos emulados. [Ver proyecto](https://github.com/garungorp/MouseInjectorDolphinDuck).
-- La comunidad comentó el tráiler de **GTA 6**. [Ver tráiler](https://www.youtube.com/watch?v=oQwzYdMEPvI).
-- El juego diario de la semana fue **Supermuseum**, una experiencia retro jugable desde el navegador. [Jugar Supermuseum](https://supermuseum.netlify.app/?play=nes:NES-DN-USA).
-- Se conversó sobre **Star Wars: Zero Company**. [Ver en Steam](https://store.steampowered.com/app/2075800/STAR_WARS_Zero_Company/).
-- Para quienes están preparando una consola portátil, quedó la guía de **3DS Hacks**. [Ver guía](https://3ds.hacks.guide/).
-- También se compartió el papelón del lanzamiento de **Heroes of Might and Magic 3** en Steam. [Leer en PC Gamer](https://www.pcgamer.com/games/strategy/ubisoft-forgot-to-make-sure-the-steam-release-of-heroes-of-might-and-magic-3-included-the-actual-game/).
+- `carlo` compartió la guía de [3DS Hacks](https://3ds.hacks.guide/).
+- `livercake` volvió a compartir [Supermuseum](https://supermuseum.netlify.app/?play=nes:NES-DN-USA), el juego diario de la semana.
+- La comunidad comentó el tráiler de [GTA 6](https://www.youtube.com/watch?v=oQwzYdMEPvI).
+- `livercake` conversó sobre usar mouse en juegos emulados y enlazó [MouseInjectorDolphinDuck](https://github.com/garungorp/MouseInjectorDolphinDuck).
+- `gmq` dejó la ficha de [Star Wars: Zero Company](https://store.steampowered.com/app/2075800/STAR_WARS_Zero_Company/) en Steam.
+- `krobus` compartió el papelón del lanzamiento de Heroes of Might and Magic 3 en Steam. [Leer en PC Gamer](https://www.pcgamer.com/games/strategy/ubisoft-forgot-to-make-sure-the-steam-release-of-heroes-of-might-and-magic-3-included-the-actual-game/).
 
 ### #lifehacks
 
-- El link más discutido entre los seleccionados fue un **escritorio eléctrico con cubierta de vidrio templado**; recibió **26 respuestas**. [Ver escritorio en Form](https://form.cl/products/escritorio-home-office-cosmo-electrico-blanco).
-- Se recomendó **Openlogi** como herramienta para logística. [Visitar Openlogi](https://openlogi.org/).
-- Quedaron disponibles cursos gratuitos de **DataCamp** durante la semana. [Ver cursos](https://app.datacamp.com/learn/courses?free=true).
-- También se compartió el mapa del plan regulador de La Serena. [Ver mapa](https://mapas.laserena.cl/mapas/plan-regulador/index.html#13/-29.8554/-71.2469).
+- `carlo` compartió el [mapa del plan regulador de La Serena](https://mapas.laserena.cl/mapas/plan-regulador/index.html#13/-29.8554/-71.2469).
+- `asilva` abrió una conversación sobre un [escritorio eléctrico con cubierta de vidrio templado](https://form.cl/products/escritorio-home-office-cosmo-electrico-blanco), que reunió 26 respuestas.
+- `iarodriguezch` recomendó [Openlogi](https://openlogi.org/) como herramienta para logística.
+- También apareció un [kit Starlink Mini](https://www.falabella.com/falabella-cl/product/17375896/Starlink-Mini-Kit-Internet-Satelital/17375896) entre las recomendaciones de la semana.
 
 ### #diy
 
-- Se recomendó **Osmo Pager**. [Visitar osmopager.com](https://www.osmopager.com/).
-- La comunidad compartió un video relacionado con proyectos DIY. [Ver en YouTube](https://www.youtube.com/watch?v=qZQAHO1YgkA).
+- `valfar` compartió un video relacionado con proyectos DIY. [Ver en YouTube](https://www.youtube.com/watch?v=qZQAHO1YgkA).
+- `iarodriguezch` recomendó [Osmo Pager](https://www.osmopager.com/).
 
 ### #cultura
 
-- Se recordó a **Peter Cullen**, voz histórica de Optimus Prime en inglés. [Leer en BioBioChile](https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/08/27/muere-actor-peter-cullen-historica-voz-en-ingles-de-optimus-prime-en-transformers.shtml).
+- `ecastillo` compartió la noticia sobre la muerte de Peter Cullen, voz histórica de Optimus Prime en inglés. [Leer en BioBioChile](https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/08/27/muere-actor-peter-cullen-historica-voz-en-ingles-de-optimus-prime-en-transformers.shtml).
 
 ### #moneas
 
-- Se compartió una invitación para conectar agentes con **Zesty Finance**. [Ver propuesta](https://www.zestyfinance.com/conecta-tu-agente).
+- `jorgeepunan` compartió una invitación para conectar agentes con [Zesty Finance](https://www.zestyfinance.com/conecta-tu-agente).
+- También se comentó una nota sobre las proyecciones de ingresos de Anthropic. [Leer en The Wall Street Journal](https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea).
 
 ### #musiqueria
 
-- La semana cerró con nuevas recomendaciones musicales y videos. [Escuchar recomendación 1](https://www.youtube.com/watch?v=ToPhA3HcpAA) · [recomendación 2](https://youtu.be/tSU9csON9WE) · [recomendación 3](https://youtu.be/nPOwbBMjhUs?si=9mP_b3kd-0_tVeg8).
-
-<!-- SEMANARIO_VISUALES
-anuncio: assets/anuncio-comunidad.png
-anuncio_alt: Ilustración editorial de la tabla de cortar de Objetos devsChile
-screenshot: assets/screenshot-comunidad.png
-screenshot_link: https://form.cl/products/escritorio-home-office-cosmo-electrico-blanco
-screenshot_alt: Captura del escritorio eléctrico compartido y discutido por la comunidad
-screenshot_caption: El link más discutido entre los seleccionados: 26 respuestas en #lifehacks
--->
-
-<!-- SEMANARIO_CIERRE
-proyecto_link: https://showcase.devschile.cl/
-proyecto_titulo: ShowCase( )
-proyecto_descripcion: Portafolio de proyectos personales y empredimientos de usuarios devsChile.
-despedida: Nos vemos en la siguiente edición, con más proyectos de la comunidad.
-firma: assets/firmas-fundadores.png
-firma_alt: Firma caligráfica de Guillermo @gmq
--->
+- La comunidad cerró la semana con nuevas recomendaciones musicales: [recomendación 1](https://www.youtube.com/watch?v=fwgJgTL5JmE) · [recomendación 2](https://youtu.be/nPOwbBMjhUs?si=9mP_b3kd-0_tVeg8) · [recomendación 3](https://youtu.be/tSU9csON9WE).
