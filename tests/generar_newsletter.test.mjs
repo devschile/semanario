@@ -54,6 +54,8 @@ test('renderiza destacados con cita textual y conserva el conteo', async () => {
     assert.match(html, /Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex/);
     assert.match(html, /Traducción editorial/);
     assert.match(html, /href="https:\/\/example\.com\/codex"/);
+    assert.match(html, /<code>gmq<\/code> compartió la noticia/);
+    assert.doesNotMatch(html, /`gmq`/);
     assert.doesNotMatch(html, /{{[A-Z_]+}}/);
   } finally {
     await rm(tmp, { recursive: true, force: true });

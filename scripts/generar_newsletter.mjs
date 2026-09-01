@@ -28,6 +28,7 @@ function escapar(s) {
 }
 function markup(s) {
   let out = escapar(s.trim());
+  out = out.replace(/`([^`\n]+)`/g, '<code>$1</code>');
   out = out.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" style="color:#2DD4BF;text-decoration:none;">$1</a>');
   out = out.replace(/\*\*([^*]+)\*\*/g, '<strong style="color:#ffffff;">$1</strong>');
   out = out.replace(/\*([^*]+)\*/g, '<em>$1</em>');
