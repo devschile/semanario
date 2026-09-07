@@ -80,7 +80,7 @@ Durante la semana se publicaron **165 pegas nuevas** en [pegas.devschile.cl](htt
 <!-- SEMANARIO_CIERRE
 proyecto_link: https://showcase.devschile.cl/
 proyecto_titulo: ShowCase( )
-proyecto_descripcion: Portafolio de proyectos personales y emprendimientos de usuarios devsChile.
+proyecto_descripcion: Portafolio de proyectos personales y emprendimientos de usuarios devsChile. ¿Tienes un proyecto? Agrégalo al Showcase y compártelo con la comunidad.
 despedida: Nos vemos en la siguiente edición, con más proyectos de la comunidad.
 -->
 
