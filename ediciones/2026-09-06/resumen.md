@@ -75,4 +75,24 @@ Durante la semana se publicaron **165 pegas nuevas** en [pegas.devschile.cl](htt
 - `lasagnaandroid` abrió una conversación musical con [su recomendación](https://www.youtube.com/watch?v=ykYMLQqD2kY), que reunió 9 respuestas.
 - `i.ewy12` compartió [otra recomendación](https://youtu.be/y3Hm8wJ55wQ), con 7 respuestas en el hilo.
 - `janogonzalez` dejó una [pista en Spotify](https://open.spotify.com/track/3Xktu1cwxZBFwXUHF54aiA?si=779fb9a2b88d4cfd).
-- `lasagnaandroid` recomendó un [cover musical](https://www.youtube.com/watch?v=AHeW8McMBS8).
+- `lasagnaandroid` recomendó un [cover musical](https://www.youtube.com/watch?v=AHeW8McMBS8)
+
+<!-- SEMANARIO_CIERRE
+proyecto_link: https://showcase.devschile.cl/
+proyecto_titulo: ShowCase( )
+proyecto_descripcion: Portafolio de proyectos personales y emprendimientos de usuarios devsChile.
+despedida: Nos vemos en la siguiente edición, con más proyectos de la comunidad.
+-->
+
+<!-- SEMANARIO_VISUALES
+anuncio: https://v3b.fal.media/files/b/0aa978f6/sYw9dWwDPHIjl3HSaZ2du_zkzVaBvM.png
+anuncio_alt: Ilustración editorial de proyectos y comunidad desarrolladora
+screenshot: https://image.thum.io/get/width/1200/crop/900/wait/3/noanimate/https://github.com/coldteadotai/pr-lens
+screenshot_link: https://github.com/coldteadotai/pr-lens
+screenshot_alt: Captura del repositorio público PR Lens en GitHub
+screenshot_caption: PR Lens, una herramienta compartida en #desarrollo para recorrer pull requests como diagramas y flujos de datos.
+-->
+
+<!-- SEMANARIO_PLACEMENT
+screenshot_canal: #desarrollo
+-->
