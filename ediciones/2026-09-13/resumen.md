@@ -34,7 +34,7 @@ Durante la semana se publicaron **161 pegas nuevas** en [pegas.devschile.cl](htt
 
 - `ecastillo` compartió el caso de las [LG smart TVs que registran audio con la pantalla apagada](https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html).
 - `davidlaym` compartió [Why Nothing Looks Cool Anymore](https://youtu.be/HgjXjPP_p3s), un ensayo audiovisual de Design Theory.
-- `catagranic` recomendó [Barbarians](https://www.imdb.com/title/tt0905688/), la miniserie documental de Terry Jones.
+- `catuga` recomendó [Barbarians](https://www.imdb.com/title/tt0905688/), la miniserie documental de Terry Jones.
 
 ### #desarrollo
 
@@ -71,3 +71,17 @@ Durante la semana se publicaron **161 pegas nuevas** en [pegas.devschile.cl](htt
 - `davidlaym` dejó [Tell Me When You've Had Enough](https://youtu.be/UezrC5nNQxE) de Evanescence y [The Ultimate Weapon](https://music.youtube.com/watch?v=uIO47jfJkIo) de HAVOK.
 - `mithrandir_el_maiar` compartió [Autumn's Grief](https://youtu.be/qOVhUHCnfp8) de Eternal Tears of Sorrow.
 - `janogonzalez` compartió [Onward](https://youtu.be/F8WQIxEwbUo), el nuevo disco de Lammoth.
+
+## Beneficios para la comunidad
+
+Los miembros de devsChile tienen descuentos exclusivos. ¡Gracias a `keldor` por las gestiones!
+
+- **15% de descuento** en [Pulentines](https://pulentines.cl/discount/devschile), calcetines con humor chileno, usando el código `devschile`.
+- **10% de descuento** en [bolsas de café de 250 g de Makeke](https://makeke.cl) usando el código `devschile`.
+
+<!-- SEMANARIO_CIERRE
+proyecto_link: https://supermuseum.netlify.app/
+proyecto_titulo: Supermuseum
+proyecto_descripcion: El museo de juegos retro de `livercake` para jugar directo en el navegador: NES, SNES, Genesis, PSX, arcades y MS-DOS, con un juego del día que ya es tradición en la comunidad. Esta semana `livercake` agregó un script para que `huemul` recomiende juegos desde el museo ([PR #774](https://github.com/devschile/huemul/pull/774)); prueben con `huemul supermuseum zelda`.
+despedida: Nos leemos la próxima semana; que los deploys pasen en verde.
+-->
