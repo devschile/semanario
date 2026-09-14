@@ -79,6 +79,13 @@ Los miembros de devsChile tienen descuentos exclusivos. ¡Gracias a `keldor` por
 - **15% de descuento** en [Pulentines](https://pulentines.cl/discount/devschile), calcetines con humor chileno, usando el código `devschile`.
 - **10% de descuento** en [bolsas de café de 250 g de Makeke](https://makeke.cl) usando el código `devschile`.
 
+<!-- SEMANARIO_VISUALES
+banner: https://ihblnqhioz.ufs.sh/f/ZkRB8SdTOr1pbOOhL06e637ElXHkKWUtMBRpNb41mTnixGhO
+banner_link: https://objetos.devschile.cl/?utm_source=semanario&utm_medium=banner&utm_campaign=tabla-01
+banner_alt: TABLA / 01 de Objetos devsChile: maderas nativas chilenas hechas a mano por VC Taller, primera partida de seis, $30.000
+banner_etiqueta: Objetos devsChile
+-->
+
 <!-- SEMANARIO_CIERRE
 proyecto_link: https://supermuseum.netlify.app/
 proyecto_titulo: Supermuseum
