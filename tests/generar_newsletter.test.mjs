@@ -119,6 +119,77 @@ test('renderiza proyecto y despedida antes del footer sin firma', async () => {
   }
 });
 
+test('numera la edición y escribe el rango largo en el encabezado', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-encabezado-'));
+
+  try {
+    // Tres ediciones previas: la que se genera es la #4.
+    for (const previa of ['2026-08-02', '2026-08-09', '2026-08-16']) {
+      await mkdir(path.join(tmp, 'ediciones', previa), { recursive: true });
+    }
+    const fechaCabecera = '2026-09-13';
+    const edicion = path.join(tmp, 'ediciones', fechaCabecera);
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **9 mensajes** publicados en los canales de contenido.\n- **Viernes 11** fue el día más activo, con **4 mensajes**.\n\n## Pegas\n\nDurante la semana se publicaron **3 pegas nuevas**.\n\n## Links de la semana\n\n### #comunidad\n\n- Se compartió un proyecto. [Ver proyecto](https://example.com/proyecto).\n`);
+
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaCabecera], {
+      cwd: raiz,
+      env: { ...process.env, SEMANARIO_ROOT: tmp },
+      stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+
+    assert.match(html, /Edición <span[^>]*>#4<\/span> de la semana/);
+    assert.match(html, /7 al 13 septiembre 2026/);
+    // build.mjs saca el rango del <title> con /edición del (.+)$/ — no romperlo.
+    assert.match(html, /<title>Semanario devsChile — edición del 7 al 13 septiembre 2026<\/title>/);
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});
+
+test('dibuja el banner una sola vez y solo si la edición lo declara', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-banner-'));
+  const fechaBanner = '2099-02-06';
+  const edicion = path.join(tmp, 'ediciones', fechaBanner);
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    const base = `# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **4 mensajes** publicados en los canales de contenido.\n- **Viernes 5** fue el día más activo, con **2 mensajes**.\n\n## Pegas\n\nDurante la semana se publicaron **2 pegas nuevas**.\n\n## Links de la semana\n\n### #comunidad\n\n- Se compartió un proyecto. [Ver proyecto](https://example.com/proyecto).\n`;
+
+    // Sin metadata de banner no debe dibujarse nada.
+    await writeFile(path.join(edicion, 'resumen.md'), base);
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaBanner], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp }, stdio: 'pipe',
+    });
+    assert.doesNotMatch(await readFile(path.join(edicion, 'newsletter.html'), 'utf8'), /Objetos devsChile/);
+
+    await writeFile(path.join(edicion, 'resumen.md'), `${base}\n<!-- SEMANARIO_VISUALES\nbanner: https://cdn.example/tabla-01.jpg\nbanner_link: https://objetos.devschile.cl/?utm_source=semanario\nbanner_alt: TABLA / 01 de Objetos devsChile\nbanner_etiqueta: Objetos devsChile\n-->\n`);
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaBanner], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp }, stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+
+    // Una sola vez: ningún comentario de la plantilla puede llevar el marcador
+    // entre llaves, o el generador inyecta el bloque ahí adentro también.
+    assert.equal([...html.matchAll(/cdn\.example\/tabla-01\.jpg/g)].length, 1);
+    assert.match(html, /Objetos devsChile/);
+    assert.match(html, /href="https:\/\/objetos\.devschile\.cl\/\?utm_source=semanario"/);
+
+    // El banner va después de Pegas y antes del proyecto destacado.
+    const pegas = html.indexOf('💼 Pegas');
+    const banner = html.indexOf('cdn.example/tabla-01.jpg');
+    const canales = html.indexOf('📌 Lo que se compartió esta semana');
+    assert.ok(pegas > -1 && pegas < banner && banner < canales, 'el banner va entre Pegas y los canales');
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});
+
 test('ubica el screenshot y el notable bajo sus canales, sin duplicar items', async () => {
   const tmp = await mkdtemp(path.join('/tmp', 'semanario-placements-'));
   const edicion = path.join(tmp, 'ediciones', '2026-08-30');

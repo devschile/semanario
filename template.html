@@ -4,10 +4,83 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Semanario devsChile — edición del {{RANGO}}</title>
+<!-- ============================================================================
+     PLANTILLA BASE DEL SEMANARIO — guía de diseño
+     ============================================================================
+
+     PALETA devsChile (la misma de pegas.devschile.cl — no inventar colores
+     nuevos, tomarlos de acá):
+
+       Fondos      #100A1C página · #150F24 tarjeta · #0B0713 barras
+                   #141025 / #1B1730 tarjetas internas · #2A2444 bordes neutros
+       Turquesa    #2DD4BF  (marca: header, footer, links del cuerpo)
+       Naranjo     #FB923C  (pills de canal · #FDBA74 claro)
+       Lavanda     #9B95C9  (proyecto destacado)
+       Ámbar       #FFC247  (beneficios)
+       Verde       #4ADE80  (badges de sueldo, sobre #143322)
+       Azul        #4AA8FF  · Coral #FF8B7B — libres, aún sin uso asignado
+       Texto       #ffffff títulos · #C9C6D8 cuerpo · #8B87A0 / #9794A8 apagado
+
+     UN COLOR POR BLOQUE. El correo se veía monótono cuando todo era turquesa:
+     cada tarjeta destacada lleva su propio acento — en el borde exterior, en el
+     borde-izquierdo de 3px y en su etiqueta. Los acentos los aplica
+     scripts/generar_newsletter.mjs; si se cambian acá, cambiarlos también allá.
+
+       Bloque                       acento    borde      fondo tarjeta
+       Más notable                  #2DD4BF   #2A6B61    #1B1730
+       Pills de canal               #FB923C   —          #3A2414
+       Proyecto destacado           #9B95C9   #4A4578    #241F3D
+       Beneficios                   #FFC247   #6B551F    #332711
+       Anuncio de la comunidad      #2DD4BF   #2DD4BF    #1B1730
+
+     ENCABEZADO. Dos líneas a la derecha del logo:
+
+       Edición #7 de la semana        ← NUMERO, en turquesa
+       7 al 13 septiembre 2026        ← RANGO, en gris claro
+
+     El número lo cuenta el generador con la misma regla que scripts/build.mjs
+     usa para el archivo del sitio: una carpeta por edición en ediciones/,
+     ordenadas por fecha, la más antigua es la #1. No se escribe a mano.
+
+     El <title> NO cambia de forma: build.mjs extrae el rango de ahí con
+     /edición del (.+)$/ para armar las tarjetas del archivo.
+
+     ORDEN DE LOS BLOQUES. Proyecto destacado y Beneficios NO van pegados uno
+     tras otro — se separan para que cada uno respire y se lea como un alto
+     distinto dentro de la edición:
+
+       1. La semana en números
+       2. Anuncios (solo si #anuncios tuvo actividad)
+       3. Pegas
+       4. BANNER              — banner de auspicio / Objetos devsChile
+       5. Screenshot + Notables
+       6. PROYECTO_DESTACADO  — bloque EN MEDIO del contenido
+       7. Lo que se compartió esta semana (pills de canal)
+       8. BENEFICIOS          — bloque AL FINAL, cerrando la edición
+       9. Despedida + footer
+
+     BANNER. Opcional: se dibuja solo si la edición lo declara en su resumen.md,
+     dentro del bloque de metadata SEMANARIO_VISUALES, con estas claves:
+
+       banner:          URL completa, o assets/archivo.jpg dentro de la edición
+       banner_link:     a dónde lleva el clic (con su utm_source=semanario)
+       banner_alt:      texto alternativo, obligatorio si hay banner
+       banner_etiqueta: rótulo chico sobre la imagen (ej. "Objetos devsChile")
+
+     Usar la versión APAISADA del banner (≈1940x320), no la cuadrada de móvil:
+     escalada a los 536px de la columna queda una franja de ~88px de alto, que
+     acompaña sin robarle el aire al contenido. La de 640x360 se comía media
+     pantalla del correo.
+
+     REGLAS DE CORREO. Todo estilo va inline, la maqueta es de tablas y el ancho
+     máximo son 600px. Nada de CSS externo, ni etiquetas style, ni flexbox, ni
+     grid. Y dentro de un comentario como este no puede ir un marcador entre
+     llaves dobles: el generador lo reemplazaría acá adentro también.
+     ============================================================================ -->
 </head>
 <body style="margin:0;padding:0;background-color:#100A1C;font-family:'Fira Sans','Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
 <center>
-  <!-- Preheader (oculto) — el job del martes reemplaza {{PREHEADER}} por el resumen de la edición -->
+  <!-- Preheader (oculto) — el job del martes reemplaza el marcador PREHEADER por el resumen de la edición -->
   <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
     📰 Semanario devsChile — {{PREHEADER}}
   </div>
@@ -36,9 +109,9 @@
                   <td style="color:#2DD4BF;font-family:'Inconsolata','Courier New',monospace;font-size:12px;letter-spacing:0.04em;">
                     &lt;devschile/&gt;
                   </td>
-                  <td align="right" style="color:#9794A8;font-size:12px;line-height:1.4;">
-                    Edición de esta semana<br>
-                    <span style="color:#2DD4BF;font-weight:600;">{{RANGO}}</span>
+                  <td align="right" style="color:#9794A8;font-size:12px;line-height:1.5;">
+                    Edición <span style="color:#2DD4BF;font-weight:700;">#{{NUMERO}}</span> de la semana<br>
+                    <span style="color:#C9C6D8;font-weight:600;">{{RANGO}}</span>
                   </td>
                 </tr>
                 <tr>
@@ -50,7 +123,7 @@
             </td>
           </tr>
 
-          <!-- RESUMEN DE LA SEMANA — {{ACTIVIDAD}}: párrafo con personas nuevas, mensajes, día más activo -->
+          <!-- RESUMEN DE LA SEMANA — ACTIVIDAD: párrafo con personas nuevas, mensajes, día más activo -->
           <tr>
             <td style="padding:28px 32px 6px 32px;">
               <h2 style="margin:0 0 14px 0;font-size:18px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;font-weight:700;">📊 La semana en números</h2>
@@ -62,7 +135,7 @@
 
           {{VISUAL_ANUNCIO}}
 
-          <!-- DESTACADO: #anuncios — {{ANUNCIOS}}. Si no hubo mensajes en la semana, dejar el bloque completo comentado. -->
+          <!-- DESTACADO: #anuncios — ANUNCIOS. Si no hubo mensajes en la semana, dejar el bloque completo comentado. -->
           <!--
           <tr>
             <td style="padding:14px 32px;">
@@ -77,7 +150,7 @@
           </tr>
           -->
 
-          <!-- PEGAS — {{PEGAS}}: párrafo con el total + lista de destacadas (sueldos como badges verdes #4ADE80) -->
+          <!-- PEGAS — PEGAS: párrafo con el total + lista de destacadas (sueldos como badges verdes #4ADE80) -->
           <tr>
             <td style="padding:22px 32px 6px 32px;">
               <h2 style="margin:0 0 14px 0;font-size:18px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;font-weight:700;">💼 Pegas</h2>
@@ -93,12 +166,21 @@
             </td>
           </tr>
 
+          <!-- BANNER — BANNER: se dibuja solo si la edición declara banner:
+               en su metadata SEMANARIO_VISUALES. Ver la guía del <head>. -->
+          {{BANNER}}
+
           {{VISUAL_SCREENSHOT}}
 
           <!-- MÁS NOTABLES — [NOTABLES]: tarjetas con citas verificadas del contenido enlazado. -->
           {{NOTABLES}}
 
-          <!-- LO MEJOR DE LA SEMANA — [CANALES]: un bloque pill + lista por canal -->
+          <!-- PROYECTO DESTACADO — acento lavanda #9B95C9. Va acá, en medio del
+               contenido: separado a propósito de BENEFICIOS, que cierra la edición. -->
+          {{PROYECTO_DESTACADO}}
+
+          <!-- LO MEJOR DE LA SEMANA — [CANALES]: un bloque pill + lista por canal.
+               Las pills llevan acento naranjo #FB923C sobre #3A2414. -->
           <tr>
             <td style="padding:22px 32px 8px 32px;">
               <h2 style="margin:0 0 14px 0;font-size:18px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;font-weight:700;">📌 Lo que se compartió esta semana</h2>
@@ -107,8 +189,10 @@
             </td>
           </tr>
 
-          {{PROYECTO_DESTACADO}}
+          <!-- BENEFICIOS — acento ámbar #FFC247. Cierra la edición, después de
+               todo el contenido y justo antes de la despedida. -->
           {{BENEFICIOS}}
+
           {{DESPEDIDA}}
 
           <!-- FOOTER — no tocar: dirección legal y marcador BAJA_LINK van fijos -->

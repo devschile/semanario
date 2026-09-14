@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /** Genera newsletter.html desde ediciones/YYYY-MM-DD/resumen.md. */
-import { readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const fecha = process.argv[2];
@@ -12,16 +12,50 @@ const siteUrl = (process.env.SITE_URL ?? 'https://semanario.devschile.cl').repla
 const dir = path.join(raiz, 'ediciones', fecha);
 const md = await readFile(path.join(dir, 'resumen.md'), 'utf8');
 let html = await readFile(path.join(raiz, 'template.html'), 'utf8');
+// La guía de diseño del <head> es para quien edita la plantilla, no para el
+// inbox: se descarta acá para no mandar 3 KB de notas internas en cada correo.
+// Solo ese bloque — el resto de los comentarios se queda (enviar.mjs todavía
+// necesita encontrar los marcadores VER_HTML y BAJA_LINK).
+html = html.replace(/<!-- =+\n\s+PLANTILLA BASE DEL SEMANARIO[\s\S]*?=+ -->\n/, '');
 
-const meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+/**
+ * Paleta devsChile — la misma de pegas.devschile.cl. Cada bloque destacado
+ * lleva su propio acento para que la edición no se lea monótona; la tabla
+ * completa y el orden de los bloques están documentados en template.html.
+ */
+const ACENTOS = {
+  turquesa: { texto: '#2DD4BF', borde: '#2A6B61', fondo: '#1B1730' },
+  naranjo:  { texto: '#FB923C', borde: '#7A4A1E', fondo: '#3A2414' },
+  lavanda:  { texto: '#9B95C9', borde: '#4A4578', fondo: '#241F3D' },
+  ambar:    { texto: '#FFC247', borde: '#6B551F', fondo: '#332711' },
+};
+
+const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio',
+  'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 const [anio, mes, dia] = fecha.match(/^(\d{4})-(\d{2})-(\d{2})$/).slice(1).map(Number);
 const cierre = new Date(Date.UTC(anio, mes - 1, dia));
 const inicio = new Date(cierre);
 inicio.setUTCDate(cierre.getUTCDate() - ((cierre.getUTCDay() + 6) % 7));
-const fechaCorta = d => `${d.getUTCDate()} ${meses[d.getUTCMonth()]}`;
-const rango = inicio.getUTCMonth() === cierre.getUTCMonth() && inicio.getUTCFullYear() === cierre.getUTCFullYear()
-  ? `${inicio.getUTCDate()} – ${fechaCorta(cierre)} ${cierre.getUTCFullYear()}`
-  : `${fechaCorta(inicio)} – ${fechaCorta(cierre)} ${cierre.getUTCFullYear()}`;
+const conMes = d => `${d.getUTCDate()} ${meses[d.getUTCMonth()]}`;
+const mismoMes = inicio.getUTCMonth() === cierre.getUTCMonth();
+const mismoAnio = inicio.getUTCFullYear() === cierre.getUTCFullYear();
+// "7 al 13 septiembre 2026" · "30 agosto al 5 septiembre 2026"
+// · "28 diciembre 2098 al 2 enero 2099"
+const rango = mismoMes && mismoAnio
+  ? `${inicio.getUTCDate()} al ${conMes(cierre)} ${cierre.getUTCFullYear()}`
+  : mismoAnio
+    ? `${conMes(inicio)} al ${conMes(cierre)} ${cierre.getUTCFullYear()}`
+    : `${conMes(inicio)} ${inicio.getUTCFullYear()} al ${conMes(cierre)} ${cierre.getUTCFullYear()}`;
+
+/**
+ * Número de edición: la más antigua es la #1. Se cuenta con la misma regla que
+ * usa scripts/build.mjs para numerar el archivo del sitio (una carpeta por
+ * edición, ordenadas por fecha), así el "#7" del correo y el "#07" de la
+ * tarjeta en semanario.devschile.cl no se contradicen.
+ */
+const numero = (await readdir(path.join(raiz, 'ediciones'), { withFileTypes: true }))
+  .filter(e => e.isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(e.name) && e.name <= fecha)
+  .length;
 
 function escapar(s) {
   return s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -66,7 +100,7 @@ function bloquesCanal(texto, { visuales = {}, notables = '', ubicacion = {} } = 
       : '';
     const destacados = [screenshot, notable].filter(Boolean).join('\n              ');
     const items = lista(cuerpo).map(x => `<li>${markup(x)}</li>`).join('\n                ');
-    return `              <p style="margin:18px 0 8px 0;"><span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:#143A33;color:#2DD4BF;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">${escapar(canal)}</span></p>${destacados ? `\n              ${destacados}` : ''}\n              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">\n                ${items}\n              </ul>`;
+    return `              <p style="margin:18px 0 8px 0;"><span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:${ACENTOS.naranjo.fondo};color:${ACENTOS.naranjo.texto};font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">${escapar(canal)}</span></p>${destacados ? `\n              ${destacados}` : ''}\n              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">\n                ${items}\n              </ul>`;
   }).join('\n');
 }
 function bloquesNotables(texto, inline = false) {
@@ -96,7 +130,7 @@ function bloqueBeneficios(texto) {
   const introHtml = intro
     ? `<p style="margin:8px 0 0 0;color:#C9C6D8;font-size:13px;line-height:1.6;">${markup(intro).replace(/\n[ \t]*\n/g, '<br><br>')}</p>`
     : '';
-  return `          <tr>\n            <td style="padding:18px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#1B1730;border:1px solid #2A6B61;border-radius:6px;">\n                <tr>\n                  <td style="padding:16px 18px;border-left:3px solid #2DD4BF;">\n                    <p style="margin:0;color:#8B87A0;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">🎁 Beneficios para la comunidad</p>\n                    ${introHtml}${itemsHtml}\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
+  return `          <tr>\n            <td style="padding:18px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:${ACENTOS.ambar.fondo};border:1px solid ${ACENTOS.ambar.borde};border-radius:6px;">\n                <tr>\n                  <td style="padding:16px 18px;border-left:3px solid ${ACENTOS.ambar.texto};">\n                    <p style="margin:0;color:${ACENTOS.ambar.texto};font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">🎁 Beneficios para la comunidad</p>\n                    ${introHtml}${itemsHtml}\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
 }
 function metadataBloque(nombre) {
   const bloque = md.match(new RegExp(`<!--\\s*${nombre}\\s*([\\s\\S]*?)-->`, 'i'))?.[1] ?? '';
@@ -128,6 +162,23 @@ function visualAnuncio(visuales, hayAnuncios) {
   const alt = escapar(visuales.anuncio_alt || 'Ilustración de un anuncio de la comunidad devsChile');
   return `          <tr>\n            <td style="padding:16px 32px 2px 32px;">\n              <img src="${escapar(src)}" alt="${alt}" width="536" style="display:block;width:100%;max-width:536px;height:auto;border:0;border-radius:6px;">\n            </td>\n          </tr>`;
 }
+/**
+ * Banner de auspicio (ej. Objetos devsChile). Opcional: se dibuja solo si la
+ * edición declara `banner:` en su metadata SEMANARIO_VISUALES. Usar la versión
+ * angosta de la imagen (≈640x360) — la columna del correo son 600px.
+ */
+function bloqueBanner(visuales) {
+  const src = urlVisual(visuales.banner);
+  if (!src) return '';
+  const alt = escapar(visuales.banner_alt || 'Banner de la comunidad devsChile');
+  const href = enlaceExterno(visuales.banner_link);
+  const img = `<img src="${escapar(src)}" alt="${alt}" width="536" style="display:block;width:100%;max-width:536px;height:auto;border:0;border-radius:6px;">`;
+  const etiqueta = visuales.banner_etiqueta
+    ? `<p style="margin:0 0 8px 0;color:${ACENTOS.naranjo.texto};font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">${markup(visuales.banner_etiqueta)}</p>`
+    : '';
+  const imagen = href ? `<a href="${escapar(href)}" style="text-decoration:none;">${img}</a>` : img;
+  return `          <tr>\n            <td style="padding:18px 32px 6px 32px;">\n              ${etiqueta}${imagen}\n            </td>\n          </tr>`;
+}
 function visualScreenshot(visuales) {
   const tabla = bloqueScreenshotTabla(visuales);
   if (!tabla) return '';
@@ -140,7 +191,7 @@ function tarjetaProyecto(cierre) {
   const descripcion = cierre.proyecto_descripcion
     ? `<p style="margin:8px 0 0 0;color:#C9C6D8;font-size:13px;line-height:1.6;">${markup(cierre.proyecto_descripcion)}</p>`
     : '';
-  return `          <tr>\n            <td style="padding:18px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#141025;border:1px solid #2A6B61;border-radius:6px;">\n                <tr>\n                  <td style="padding:16px 18px;border-left:3px solid #2DD4BF;">\n                    <p style="margin:0;color:#8B87A0;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">✨ Proyecto destacado de la comunidad</p>\n                    <h2 style="margin:8px 0 0 0;font-size:17px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;"><a href="${escapar(href)}" style="color:#2DD4BF;text-decoration:none;">${titulo}</a></h2>\n                    ${descripcion}\n                    <p style="margin:10px 0 0 0;"><a href="${escapar(href)}" style="color:#2DD4BF;text-decoration:none;font-size:12px;">Conocer el proyecto →</a></p>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
+  return `          <tr>\n            <td style="padding:18px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:${ACENTOS.lavanda.fondo};border:1px solid ${ACENTOS.lavanda.borde};border-radius:6px;">\n                <tr>\n                  <td style="padding:16px 18px;border-left:3px solid ${ACENTOS.lavanda.texto};">\n                    <p style="margin:0;color:${ACENTOS.lavanda.texto};font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">✨ Proyecto destacado de la comunidad</p>\n                    <h2 style="margin:8px 0 0 0;font-size:17px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;"><a href="${escapar(href)}" style="color:${ACENTOS.lavanda.texto};text-decoration:none;">${titulo}</a></h2>\n                    ${descripcion}\n                    <p style="margin:10px 0 0 0;"><a href="${escapar(href)}" style="color:${ACENTOS.lavanda.texto};text-decoration:none;font-size:12px;">Conocer el proyecto →</a></p>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
 }
 function bloqueDespedida(cierre) {
   if (!cierre.despedida) return '';
@@ -169,12 +220,14 @@ const notablesEnCanal = Boolean(ubicacion.notables_canal && notables.trim());
 
 html = html
   .replaceAll('{{RANGO}}', rango)
+  .replaceAll('{{NUMERO}}', String(numero))
   .replaceAll('{{PREHEADER}}', preheader)
   .replaceAll('{{ACTIVIDAD}}', `• ${actividad}`)
   .replaceAll('{{PEGAS}}', markup(introPegas))
   .replaceAll('{{PEGAS_DESTACADAS}}', destacadas)
   .replaceAll('{{NOTABLES}}', notablesEnCanal ? '' : bloquesNotables(notables))
   .replaceAll('{{CANALES}}', bloquesCanal(links, { visuales, notables, ubicacion }))
+  .replaceAll('{{BANNER}}', bloqueBanner(visuales))
   .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
   .replaceAll('{{VISUAL_SCREENSHOT}}', screenshotEnCanal ? '' : visualScreenshot(visuales))
   .replaceAll('{{PROYECTO_DESTACADO}}', tarjetaProyecto(cierreEditorial))
