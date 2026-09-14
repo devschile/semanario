@@ -85,6 +85,19 @@ function bloquesNotables(texto, inline = false) {
       : `          <tr>\n            <td style="padding:14px 32px 8px 32px;">\n              ${tabla}\n            </td>\n          </tr>`;
   }).join('\n');
 }
+function bloqueBeneficios(texto) {
+  const visible = texto.replace(/<!--[\s\S]*?-->/g, '').trim();
+  if (!visible) return '';
+  const items = lista(visible).map(x => `<li>${markup(x)}</li>`).join('\n                ');
+  const itemsHtml = items
+    ? `\n                    <ul style="margin:10px 0 0 0;padding-left:20px;font-size:13px;line-height:1.7;color:#C9C6D8;">\n                ${items}\n                    </ul>`
+    : '';
+  const intro = visible.split(/^- /m)[0].trim();
+  const introHtml = intro
+    ? `<p style="margin:8px 0 0 0;color:#C9C6D8;font-size:13px;line-height:1.6;">${markup(intro).replace(/\n[ \t]*\n/g, '<br><br>')}</p>`
+    : '';
+  return `          <tr>\n            <td style="padding:18px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#1B1730;border:1px solid #2A6B61;border-radius:6px;">\n                <tr>\n                  <td style="padding:16px 18px;border-left:3px solid #2DD4BF;">\n                    <p style="margin:0;color:#8B87A0;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">🎁 Beneficios para la comunidad</p>\n                    ${introHtml}${itemsHtml}\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
+}
 function metadataBloque(nombre) {
   const bloque = md.match(new RegExp(`<!--\\s*${nombre}\\s*([\\s\\S]*?)-->`, 'i'))?.[1] ?? '';
   return Object.fromEntries([...bloque.matchAll(/^\s*([a-z_]+)\s*:\s*(.*?)\s*$/gim)]
@@ -150,6 +163,7 @@ const anunciosHtml = markup(anuncios).replace(/\n[ \t]*\n/g, '<br><br>');
 const visuales = metadataVisuales();
 const ubicacion = metadataUbicacion();
 const cierreEditorial = metadataCierre();
+const beneficios = section('Beneficios para la comunidad');
 const screenshotEnCanal = Boolean(ubicacion.screenshot_canal && urlVisual(visuales.screenshot));
 const notablesEnCanal = Boolean(ubicacion.notables_canal && notables.trim());
 
@@ -164,6 +178,7 @@ html = html
   .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
   .replaceAll('{{VISUAL_SCREENSHOT}}', screenshotEnCanal ? '' : visualScreenshot(visuales))
   .replaceAll('{{PROYECTO_DESTACADO}}', tarjetaProyecto(cierreEditorial))
+  .replaceAll('{{BENEFICIOS}}', bloqueBeneficios(beneficios))
   .replaceAll('{{DESPEDIDA}}', bloqueDespedida(cierreEditorial));
 
 if (anuncios) {
