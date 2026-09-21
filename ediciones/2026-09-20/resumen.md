@@ -85,3 +85,21 @@ Durante la semana se publicaron **133 pegas nuevas** en [pegas.devschile.cl](htt
 ### #remoto
 
 - `oyarcecristian` preguntó cómo manejar los impuestos al trabajar remoto para una empresa de EE.UU. con sueldos altos; `nico` respondió con clase completa: declarar aunque los dólares no entren al país, boleta de servicios vs. empresa, y pasó [una guía para exportadores de servicios creativos](https://ec.cultura.gob.cl/wp-content/uploads/2020/10/0_9_Guiaparaelexportadordeservicioscreativos.pdf) y un [dato de contador](https://p.encuadrado.com/p/juan-castaneda).
+
+<!-- SEMANARIO_VISUALES
+screenshot: assets/screenshot-comunidad.png
+screenshot_link: https://supermuseum.netlify.app/
+screenshot_alt: Pantalla de inicio de Supermuseum, el museo de juegos retro de la comunidad
+screenshot_caption: El hilo de la semana: 57 respuestas en #juegos probando Supermuseum en consola portátil — shaders, juegos de PSP y sueños de Dreamcast.
+-->
+
+<!-- SEMANARIO_PLACEMENT
+screenshot_canal: #juegos
+-->
+
+<!-- SEMANARIO_CIERRE
+proyecto_link: https://www.generacv.cl/
+proyecto_titulo: GeneraCV
+proyecto_descripcion: El generador de CV estilo Harvard de Claudio Ulloa: sube tu PDF de LinkedIn y obtén un CV compatible con ATS en segundos — gratis, sin registro y todo en tu navegador. Ahora con Score ATS y exportación a Word (.docx).
+despedida: Hasta la próxima: menos tabs abiertos, más ideas compartidas.
+-->
