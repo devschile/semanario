@@ -89,6 +89,13 @@ Durante la semana se publicaron **71 pegas nuevas** en [pegas.devschile.cl](http
 
 - `jorgeepunan`: «ta la raja el diseño de [typesafe.ai](https://typesafe.ai/), por fin algo diferente y atrevido» — el sitio detrás de Jev. Y de ahí, `panconpalta` preguntó por IAs para mockups: `ditt0` contó que con Astra y un buen prompt «podí one shotear conceptos super rápido».
 
+## Beneficios para la comunidad
+
+Los miembros de devsChile tienen descuentos exclusivos.
+
+- **15% de descuento** en [Pulentines](https://pulentines.cl/discount/devschile), calcetines no aburridos, usando el código `devschile`.
+- **10% de descuento** en [bolsas de café de 250 g de Makeke](https://makeke.cl) usando el código `devschile`.
+
 <!-- SEMANARIO_VISUALES
 screenshot: assets/screenshot-comunidad.png
 screenshot_link: https://shebuilds.lovable.app/
