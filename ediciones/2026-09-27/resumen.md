@@ -3,7 +3,7 @@
 ## Actividad de la comunidad
 
 - **617 mensajes** publicados en los canales de contenido.
-- **Martes 22** fue el día más activo, con **192 mensajes**. En `#cultura` se armó el hilo de la noche: `lasagnaandroid` no entendía por qué se habla mal de que los mormones «bauticen a sus muertos» — `carlo` trajo [la razón doctrinal](https://temc.ca/sermon/baptizing-dead), `davidlaym` puso el dilema del consentimiento («el muerto no puede darlo») y `livercake` fue a revisar [la letra chica oficial](https://www.churchofjesuschrist.org/study/manual/gospel-topics/baptisms-for-the-dead). El hilo se llevó 7 respuestas.
+- **Martes 22** fue el día más activo, con **192 mensajes**.
 
 ## Pegas
 
@@ -44,7 +44,6 @@ Durante la semana se publicaron **71 pegas nuevas** en [pegas.devschile.cl](http
 ### #desarrollo
 
 - `arveja` invitó a armar equipos para la [SheBuilds](https://shebuilds.lovable.app/) de Lovable — evento virtual de 72 horas, del 15 al 17 de octubre: **el hilo de la semana con 48 respuestas**. `yixlo` sumó la [Women Game Jam](https://www.instagram.com/p/DctmqsdRjyJ/?hl=es) y los datos de la edición pasada («postularon 3.370 y quedaron 210»); `catuga`, `ditt0` e `i.ewy12` se anotaron entre tallas: «el premio son los amigos que hicimos en el camino».
-- Los Mac también tuvieron su hilo: `carlo` preguntó por Golden Gate vs Tahoe — `jorgeepunan`: «tahoe me dejó la cagá en uso de memoria y con los warnings de apps deprecadas, mejor ni toco ese botón»; `n.i.c.e.`: «¿Sequoia? Novatos, aquí andamos en Sonoma».
 - `jorgeepunan` compartió [el roadmap de Three.js](https://threejsroadmap.com/) y notó que [Daniel Greenheck se despide de su sombrero de Three.js](https://lnkd.in/p/drKA2G8Z): «uau, se va un grande».
 
 ### #diy
@@ -55,7 +54,7 @@ Durante la semana se publicaron **71 pegas nuevas** en [pegas.devschile.cl](http
 
 ### #eventos-juntas
 
-- `jorgeepunan` contó que se metió a aprender «IA agéntica y generativa para aplicarlo al huemul» (agradeció el desayuno de BCI, AWS y Anthropic) y compartió el [KIRO Academy: Aprende a Dirigir Agentes](https://events.zoom.us/ev/AiqSy_9sQfxJJNIO1tU9xaSBe1G_IB88VgxCecXqQ16gb-09KIRH~ArU0dHqj2TaC_FPhLtitlRXv7lCp9rkIeZZMQrqxXlY_p5-gWmmQl7uxnmz4-a5uztziRk5IBKbt92-7pI8LAr1Ajw): «por si alguien se anima a participar».
+- `jorgeepunan` contó que se metió a aprender «IA agéntica y generativa para aplicarlo al huemul» y compartió el [KIRO Academy: Aprende a Dirigir Agentes](https://events.zoom.us/ev/AiqSy_9sQfxJJNIO1tU9xaSBe1G_IB88VgxCecXqQ16gb-09KIRH~ArU0dHqj2TaC_FPhLtitlRXv7lCp9rkIeZZMQrqxXlY_p5-gWmmQl7uxnmz4-a5uztziRk5IBKbt92-7pI8LAr1Ajw): «por si alguien se anima a participar».
 
 ### #frontend
 
@@ -74,10 +73,6 @@ Durante la semana se publicaron **71 pegas nuevas** en [pegas.devschile.cl](http
 - El gran debate de la semana: **portaminas**. `davidlaym` se declaró «full Pentel fanboy», `iarodriguezch` defiende [el suyo de AliExpress](https://es.aliexpress.com/item/1005008481581888.html) («no se quiebran tan fácil las minas»), `hector` [compra «de a mil»](https://es.aliexpress.com/item/1005003626917636.html) y `ivan` recomienda los [Sharpie S-Gel](https://listado.mercadolibre.cl/sharpie-s-gel).
 - `gmq` pidió dato de impresora (100–200 páginas al mes, color y B/N): `davidlaym` — inkjet por volumen bajo y las Brother «son bakanes».
 - `ivan` dejó [zuckoff.app](https://zuckoff.app) y [su versión open source](https://github.com/yjeanrenaud/yj_nearbyglasses): detectores de gafas inteligentes cercanas.
-
-### #mascotas
-
-- `panconpalta` preguntó qué hacer con el carnet de vacunación de su gata (trae el nombre viejo): `davidlaym` propuso un post-it «corcheteado pa que no se salga» y `lasagnaandroid` fue directo: «te deberían dar otro cuando le cambiaste el nombre».
 
 ### #musiqueria
 

@@ -243,6 +243,7 @@ test('permite etiqueta y CTA propios en el destacado y mantiene los defaults', a
     let html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
     assert.match(html, /✨ Mini-estudio de la comunidad/);
     assert.match(html, />Responder la encuesta →<\/a>/);
+    assert.match(html, /color:#2DD4BF;text-decoration:none;font-size:12px;">Responder la encuesta →<\/a>/);
     assert.match(html, /Tus aportes son valorados\./);
     assert.doesNotMatch(html, /Conocer el proyecto/);
     assert.doesNotMatch(html, /Proyecto destacado de la comunidad/);
@@ -255,6 +256,7 @@ test('permite etiqueta y CTA propios en el destacado y mantiene los defaults', a
     html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
     assert.match(html, /✨ Proyecto destacado de la comunidad/);
     assert.match(html, /Conocer el proyecto →/);
+    assert.match(html, /color:#2DD4BF;text-decoration:none;font-size:12px;">Conocer el proyecto →<\/a>/);
   } finally {
     await rm(tmp, { recursive: true, force: true });
   }
