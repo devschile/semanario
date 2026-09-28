@@ -32,7 +32,6 @@ Durante la semana se publicaron **71 pegas nuevas** en [pegas.devschile.cl](http
 
 ### #comunidad
 
-- `nico` está haciendo un mini-estudio sobre qué cosas siguen siendo importantes al momento de crear software y pide ayuda con [una encuesta corta](https://forms.gle/zdtDtXg6RpVM1Va98) — mientras más respuestas, mejor.
 - `camilorivera86` quiere ir a la [hackatón de Puerto Montt del 20 de octubre](https://www.instagram.com/p/DdpVub1o4g8/) y anda buscando equipo (mínimo 3): «¿a alguien le interesa?».
 - `yixlo` compartió [Hacktoberfest](https://hacktoberfest.com/) y recordó: «antes daban polera, nunca llegué a la polera».
 
@@ -102,5 +101,8 @@ screenshot_canal: #desarrollo
 -->
 
 <!-- SEMANARIO_CIERRE
+proyecto_link: https://forms.gle/zdtDtXg6RpVM1Va98
+proyecto_titulo: Encuesta de nico: qué importa al crear software
+proyecto_descripcion: `nico` está haciendo un mini-estudio sobre qué cosas siguen siendo importantes al momento de crear software y pide ayuda con una encuesta corta — mientras más respuestas, mejor.
 despedida: Que el próximo commit venga con contexto y sin sorpresas.
 -->
