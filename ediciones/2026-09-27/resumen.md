@@ -89,3 +89,18 @@ Durante la semana se publicaron **71 pegas nuevas** en [pegas.devschile.cl](http
 ### #ux
 
 - `jorgeepunan`: «ta la raja el diseño de [typesafe.ai](https://typesafe.ai/), por fin algo diferente y atrevido» — el sitio detrás de Jev. Y de ahí, `panconpalta` preguntó por IAs para mockups: `ditt0` contó que con Astra y un buen prompt «podí one shotear conceptos super rápido».
+
+<!-- SEMANARIO_VISUALES
+screenshot: assets/screenshot-comunidad.png
+screenshot_link: https://shebuilds.lovable.app/
+screenshot_alt: Captura de la página de SheBuilds, la hackatón virtual de 72 horas de Lovable para mujeres que construyen con IA
+screenshot_caption: El hilo de la semana: 48 respuestas en #desarrollo armando equipos para la SheBuilds de Lovable — evento virtual de 72 horas, del 15 al 17 de octubre.
+-->
+
+<!-- SEMANARIO_PLACEMENT
+screenshot_canal: #desarrollo
+-->
+
+<!-- SEMANARIO_CIERRE
+despedida: Que el próximo commit venga con contexto y sin sorpresas.
+-->
