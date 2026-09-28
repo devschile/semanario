@@ -224,3 +224,38 @@ test('ubica el screenshot y el notable bajo sus canales, sin duplicar items', as
     await rm(tmp, { recursive: true, force: true });
   }
 });
+
+test('permite etiqueta y CTA propios en el destacado y mantiene los defaults', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-destacado-texto-'));
+  const fechaCard = '2099-03-06';
+  const edicion = path.join(tmp, 'ediciones', fechaCard);
+  const base = `# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **2 mensajes** publicados en los canales de contenido.\n- **Viernes 6** fue el día más activo, con **2 mensajes**.\n\n## Pegas\n\nDurante la semana se publicó **1 pega nueva**.\n\n## Links de la semana\n\n### #comunidad\n\n- Se compartió un proyecto. [Ver proyecto](https://example.com/proyecto).\n`;
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+
+    // Con etiqueta y CTA propios: se usan tal cual y no queda rastro del marco de "proyecto".
+    await writeFile(path.join(edicion, 'resumen.md'), `${base}\n<!-- SEMANARIO_CIERRE\nproyecto_link: https://example.com/encuesta\nproyecto_etiqueta: ✨ Mini-estudio de la comunidad\nproyecto_titulo: Encuesta de prueba\nproyecto_descripcion: Tus aportes son valorados.\nproyecto_cta: Responder la encuesta →\ndespedida: Nos leemos la próxima semana.\n-->\n`);
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaCard], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' }, stdio: 'pipe',
+    });
+    let html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+    assert.match(html, /✨ Mini-estudio de la comunidad/);
+    assert.match(html, />Responder la encuesta →<\/a>/);
+    assert.match(html, /Tus aportes son valorados\./);
+    assert.doesNotMatch(html, /Conocer el proyecto/);
+    assert.doesNotMatch(html, /Proyecto destacado de la comunidad/);
+
+    // Sin etiqueta ni CTA: vuelven los textos por defecto.
+    await writeFile(path.join(edicion, 'resumen.md'), `${base}\n<!-- SEMANARIO_CIERRE\nproyecto_link: https://example.com/proyecto\nproyecto_titulo: Proyecto de prueba\ndespedida: Nos leemos la próxima semana.\n-->\n`);
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaCard], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' }, stdio: 'pipe',
+    });
+    html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+    assert.match(html, /✨ Proyecto destacado de la comunidad/);
+    assert.match(html, /Conocer el proyecto →/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});
