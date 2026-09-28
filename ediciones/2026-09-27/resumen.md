@@ -102,7 +102,9 @@ screenshot_canal: #desarrollo
 
 <!-- SEMANARIO_CIERRE
 proyecto_link: https://forms.gle/zdtDtXg6RpVM1Va98
+proyecto_etiqueta: ✨ Mini-estudio de la comunidad
 proyecto_titulo: Encuesta de nico: qué importa al crear software
-proyecto_descripcion: `nico` está haciendo un mini-estudio sobre qué cosas siguen siendo importantes al momento de crear software y pide ayuda con una encuesta corta — mientras más respuestas, mejor.
+proyecto_descripcion: `nico` está haciendo un mini-estudio sobre qué cosas siguen siendo importantes al momento de crear software. Tus aportes son valorados: ayudan a entender la visión a futuro de quienes trabajan en tecnología en Chile — mientras más respuestas, mejor.
+proyecto_cta: Responder la encuesta →
 despedida: Que el próximo commit venga con contexto y sin sorpresas.
 -->
