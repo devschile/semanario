@@ -3,7 +3,7 @@
 ## Actividad de la comunidad
 
 - **767 mensajes** publicados en los canales de contenido.
-- **Martes 29** fue el día más activo, con **244 mensajes**. La conversación sobre cómo reducir la verbosidad de Claude reunió **23 respuestas** en `#ai`.
+- **Martes 29** fue el día más activo, con **244 mensajes**. En `#ai` compartieron estrategias para bajar la verbosidad de Claude: pedir opciones breves con un límite de tiempo y abordar tareas grandes desde una especificación bien armada.
 
 ## Pegas
 
@@ -23,9 +23,9 @@ Durante la semana se publicaron **316 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #ai
 
-- El martes `gmq` compartió [GPT-6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol/); la conversación sumó 6 respuestas.
+- El martes `gmq` compartió [GPT-6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol/).
 - El miércoles `javieratapiabobadilla` y `jorgeepunan` compararon terminales para agentes: [Conductor](https://www.conductor.build/) y [Ghostex](https://ghostex.dev/).
-- El jueves `nicoavila` recomendó [Langfuse](https://langfuse.com/) para observabilidad y evaluación de agentes; el hilo tuvo 4 respuestas.
+- El jueves `nicoavila` recomendó [Langfuse](https://langfuse.com/) para observabilidad y evaluación de agentes.
 - El viernes `janogonzalez` pasó [Clef Decision Models de Cloudflare](https://blog.cloudflare.com/clef-decision-models/), sobre modelos para decisiones.
 
 ### #comunidad
@@ -34,7 +34,7 @@ Durante la semana se publicaron **316 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #desarrollo
 
-- El miércoles `leslie` compartió la encuesta [State of Devs 2026](https://2026.stateofdevs.com/es-ES/), que abrió una conversación de 3 respuestas.
+- El miércoles `leslie` compartió la encuesta [State of Devs 2026](https://2026.stateofdevs.com/es-ES/).
 - El jueves `jorgeepunan` abrió la conversación sobre [OpenObserve](https://openobserve.ai/), una alternativa open source para observabilidad de logs, métricas y trazas.
 - El martes `jorgeepunan` pasó [Kaikai](https://kaikai-lang.org/), un lenguaje chileno para explorar.
 
@@ -49,8 +49,8 @@ Durante la semana se publicaron **316 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #juegos
 
-- El jueves `gmq` dejó [IsThereAnyDeal](https://isthereanydeal.com/deals/#filter:N4IgZgNghg5iBcIASIA0IDOALA9gBwwQG0A2ARgF0BfIA), para encontrar juegos en su menor precio histórico; el hilo tuvo 3 respuestas.
-- El viernes `livercake` puso en vitrina [Star Wars: Episode I Racer](https://supermuseum.netlify.app/?play=n64:NUS-NEPE-USA) en Supermuseum; el hilo sumó 13 respuestas y conversaciones sobre emulación y multijugador.
+- El jueves `gmq` dejó [IsThereAnyDeal](https://isthereanydeal.com/deals/#filter:N4IgZgNghg5iBcIASIA0IDOALA9gBwwQG0A2ARgF0BfIA), para encontrar juegos en su menor precio histórico, importar la wishlist de Steam y recibir alertas cuando bajan.
+- El viernes `livercake` puso en vitrina [Star Wars: Episode I Racer](https://supermuseum.netlify.app/?play=n64:NUS-NEPE-USA) en Supermuseum; el hilo pasó por emulación y multijugador.
 
 ### #lifehacks
 
