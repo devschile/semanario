@@ -60,6 +60,28 @@ const numero = (await readdir(path.join(raiz, 'ediciones'), { withFileTypes: tru
 function escapar(s) {
   return s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 }
+
+const UTM_SOURCE = 'semanario_devschile';
+
+function agregarUtmFuente(href) {
+  const indiceFragmento = href.indexOf('#');
+  const sinFragmento = indiceFragmento === -1 ? href : href.slice(0, indiceFragmento);
+  const fragmento = indiceFragmento === -1 ? '' : href.slice(indiceFragmento);
+  const indiceQuery = sinFragmento.indexOf('?');
+  const base = indiceQuery === -1 ? sinFragmento : sinFragmento.slice(0, indiceQuery);
+  const query = indiceQuery === -1 ? '' : sinFragmento.slice(indiceQuery + 1);
+  const parametros = query
+    ? query.replaceAll('&amp;', '&').split('&').filter(parametro => !/^utm_source=/i.test(parametro))
+    : [];
+
+  parametros.push(`utm_source=${UTM_SOURCE}`);
+  return `${base}?${parametros.join('&amp;')}${fragmento}`;
+}
+
+function agregarUtmALinks(html) {
+  return html.replace(/href="(https?:\/\/[^\"]+)"/g, (_, href) => `href="${agregarUtmFuente(href)}"`);
+}
+
 function markup(s) {
   let out = escapar(s.trim());
   out = out.replace(/`([^`\n]+)`/g, '<code>$1</code>');
@@ -245,6 +267,7 @@ if (anuncios) {
   html = html.replaceAll('{{ANUNCIOS}}', '');
 }
 
+html = agregarUtmALinks(html);
 html = html.replace(/^[ \t]+$/gm, '');
 
 const marcadoresPendientes = [...html.matchAll(/{{[A-Z_]+}}/g)].map(m => m[0]);

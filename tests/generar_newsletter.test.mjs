@@ -54,7 +54,7 @@ test('renderiza destacados con cita textual y conserva el conteo', async () => {
     assert.match(html, /★ Más notable/);
     assert.match(html, /Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex/);
     assert.match(html, /Traducción editorial/);
-    assert.match(html, /href="https:\/\/example\.com\/codex"/);
+    assert.match(html, /href="https:\/\/example\.com\/codex\?utm_source=semanario_devschile"/);
     assert.match(html, /<code>gmq<\/code> compartió la noticia/);
     assert.doesNotMatch(html, /`gmq`/);
     assert.doesNotMatch(html, /{{[A-Z_]+}}/);
@@ -82,7 +82,7 @@ test('renderiza la imagen de anuncios y un screenshot comunitario desde metadata
 
     assert.match(html, /https:\/\/preview\.example\/newsletter\/2099-01-02\/assets\/anuncio-comunidad\.png/);
     assert.match(html, /https:\/\/preview\.example\/newsletter\/2099-01-02\/assets\/screenshot-comunidad\.png/);
-    assert.match(html, /href="https:\/\/example\.com\/proyecto"/);
+    assert.match(html, /href="https:\/\/example\.com\/proyecto\?utm_source=semanario_devschile"/);
     assert.match(html, /Ilustración del anuncio/);
     assert.match(html, /El hilo más comentado de la semana/);
     assert.doesNotMatch(html, /{{[A-Z_]+}}/);
@@ -179,7 +179,7 @@ test('dibuja el banner una sola vez y solo si la edición lo declara', async () 
     // entre llaves, o el generador inyecta el bloque ahí adentro también.
     assert.equal([...html.matchAll(/cdn\.example\/tabla-01\.jpg/g)].length, 1);
     assert.match(html, /Objetos devsChile/);
-    assert.match(html, /href="https:\/\/objetos\.devschile\.cl\/\?utm_source=semanario"/);
+    assert.match(html, /href="https:\/\/objetos\.devschile\.cl\/\?utm_source=semanario_devschile"/);
 
     // El banner va después de Pegas y antes del proyecto destacado.
     const pegas = html.indexOf('💼 Pegas');
@@ -259,6 +259,32 @@ test('permite etiqueta y CTA propios en el destacado y mantiene los defaults', a
     assert.match(html, /✨ Proyecto destacado de la comunidad/);
     assert.match(html, /Conocer el proyecto →/);
     assert.match(html, /color:#2DD4BF;text-decoration:none;font-size:12px;">Conocer el proyecto →<\/a>/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});
+
+test('agrega utm_source a todos los links HTTP y conserva query y fragment', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-utm-'));
+  const fechaUtm = '2099-04-06';
+  const edicion = path.join(tmp, 'ediciones', fechaUtm);
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **2 mensajes** publicados en los canales de contenido.\n- **Lunes 6** fue el día más activo, con **2 mensajes**.\n\n## Pegas\n\nDurante la semana se publicó **1 pega nueva**.\n\n## Links de la semana\n\n### #comunidad\n\n- [Link simple](https://example.com/recurso).\n- [Link con query](http://example.net/ruta?foo=bar&baz=qux#detalle).\n`);
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaUtm], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp }, stdio: 'pipe',
+    });
+
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+    const urls = [...html.matchAll(/href="([^"]+)"/g)].map(([, href]) => new URL(href.replaceAll('&amp;', '&')));
+    assert.ok(urls.length > 0, 'la edición debe contener links HTTP');
+    assert.ok(urls.every(url => url.searchParams.get('utm_source') === 'semanario_devschile'));
+    const conQuery = urls.find(url => url.hostname === 'example.net');
+    assert.equal(conQuery?.searchParams.get('foo'), 'bar');
+    assert.equal(conQuery?.searchParams.get('baz'), 'qux');
+    assert.equal(conQuery?.hash, '#detalle');
   } finally {
     await rm(tmp, { recursive: true, force: true });
   }
