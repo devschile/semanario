@@ -238,7 +238,7 @@ html = html
 
 if (anuncios) {
   html = html
-    .replaceAll('{{ANUNCIOS}}', anunciosHtml)
+    .replaceAll('{{ANUNCIOS}}', ` ${anunciosHtml}`)
     .replace('          <!--\n          <tr>', '          <tr>')
     .replace('          </tr>\n          -->\n\n          <!-- PEGAS', '          </tr>\n\n          <!-- PEGAS');
 } else {

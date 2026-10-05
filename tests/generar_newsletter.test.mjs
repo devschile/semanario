@@ -27,6 +27,7 @@ test('genera preheader y badge de sueldo desde el resumen', async () => {
     assert.match(html, /background-color:#143322[^>]*>12,5k–16,5k\/mes<\/span>/);
     assert.doesNotMatch(html, /{{[A-Z_]+}}/);
     assert.doesNotMatch(html, /Un vistazo a la conversación/);
+    assert.doesNotMatch(html, /Anuncio de la comunidad:<\/strong>[ \t]+\n/);
   } finally {
     await rm(tmp, { recursive: true, force: true });
   }
@@ -145,6 +146,7 @@ test('numera la edición y escribe el rango largo en el encabezado', async () =>
     // build.mjs saca el rango del <title> con /edición del (.+)$/ — no romperlo.
     assert.match(html, /<title>Semanario devsChile — edición del 7 al 13 septiembre 2026<\/title>/);
     assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+    assert.doesNotMatch(html, /Anuncio de la comunidad:<\/strong>[ \t]+\n/);
   } finally {
     await rm(tmp, { recursive: true, force: true });
   }
