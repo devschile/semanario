@@ -30,8 +30,7 @@ Durante la semana se publicaron **316 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #comunidad
 
-- El martes `jorgeepunan` abrió la beta privada de [MarkitoBar](https://www.markitobar.cc/es), una app de notas para la barra de menú de macOS; el llamado reunió 22 respuestas y busca feedback de personas que usen Mac a diario.
-- El domingo `cvallejosmenares` compartió la nueva disponibilidad de [Objetos devsChile](https://objetos.devschile.cl/).
+- El domingo `cvallejos` compartió que la tabla #01 sigue disponible en [Objetos devsChile](https://objetos.devschile.cl/).
 
 ### #desarrollo
 
@@ -46,7 +45,7 @@ Durante la semana se publicaron **316 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #frontend
 
-- El miércoles `hector` compartió [ng-native](https://ng-native.com/) para explorar desde `#frontend`.
+- El miércoles `hector` compartió [ng-native](https://ng-native.com/), una herramienta para crear aplicaciones móviles nativas con Angular: como React Native, pero pensada para el ecosistema Angular.
 
 ### #juegos
 
@@ -65,3 +64,10 @@ Durante la semana se publicaron **316 pegas nuevas** en [pegas.devschile.cl](htt
 ### #musiqueria
 
 - El viernes `livercake` compartió [MD Synth DAW](https://meguminbot.github.io/md-synth-daw/), una estación de trabajo musical en el navegador para hacer chiptune.
+
+<!-- SEMANARIO_CIERRE
+proyecto_link: https://www.markitobar.cc/es
+proyecto_titulo: MarkitoBar
+proyecto_descripcion: Una app de notas para la barra de menú de macOS, actualmente en beta privada y buscando feedback de personas que usan Mac a diario.
+despedida: Nos leemos la próxima semana; que los deploys pasen en verde.
+-->
