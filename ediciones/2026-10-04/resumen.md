@@ -71,3 +71,14 @@ proyecto_titulo: MarkitoBar
 proyecto_descripcion: Una app de notas para la barra de menú de macOS, actualmente en beta privada y buscando feedback de personas que usan Mac a diario.
 despedida: Nos leemos la próxima semana; que los deploys pasen en verde.
 -->
+
+<!-- SEMANARIO_VISUALES
+screenshot: assets/ng-native-preview.png
+screenshot_link: https://ng-native.com/
+screenshot_alt: Vista previa oficial de Angular Native con interfaces móviles nativas para iOS y Android
+screenshot_caption: `hector` compartió ng-native en #frontend: componentes Angular que renderizan vistas nativas para iOS y Android con Expo.
+-->
+
+<!-- SEMANARIO_PLACEMENT
+screenshot_canal: #frontend
+-->
