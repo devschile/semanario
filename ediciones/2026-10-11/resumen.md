@@ -80,3 +80,18 @@ Durante la semana se publicaron **199 pegas nuevas** en [pegas.devschile.cl](htt
 
 - El miércoles en #ux: Affinity quedó gratis tras la compra de Canva; `jorgeepunan` preguntó por [ArtCraft](https://getartcraft.com/) («IA controlable para artistas») y contó que para cosas chicas usa [Compositor](https://robbietilton.com/compositor) en Mac.
 - El martes `jorgeepunan` mostró el [portafolio interactivo de Eric Birnbaum](https://ericbirnbaum.com/) y su [design system completo](https://ericbirnbaum.com/design/).
+
+<!-- SEMANARIO_CIERRE
+despedida: Hasta la próxima: menos tabs abiertos, más ideas compartidas.
+-->
+
+<!-- SEMANARIO_VISUALES
+screenshot: assets/screenshot-comunidad.png
+screenshot_link: https://github.com/storytold/photocraft
+screenshot_alt: Interfaz de PhotoCraft, el editor de fotos open source escrito en Rust, editando La gran ola de Kanagawa de Hokusai
+screenshot_caption: `dukuo` compartió PhotoCraft en #ai: un clon open source de Photoshop escrito en Rust, bien liviano.
+-->
+
+<!-- SEMANARIO_PLACEMENT
+screenshot_canal: #ai
+-->
