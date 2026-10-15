@@ -1,0 +1,424 @@
+{
+  "edicion": "2026-08-30",
+  "links": [
+    {
+      "url": "https://pegas.devschile.cl/pega/31282-indesign-automation-developer-latamcent",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "Jorge compartió una oportunidad de automatización de InDesign por US$6.000. Ver aviso.",
+      "tags": [
+        "pegas",
+        "agentes"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4457603531/",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "También apareció una búsqueda de Full Stack con sueldo, con experiencia en Supabase. Ver aviso.",
+      "tags": [
+        "pegas",
+        "frontend",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://ripley.csod.com/ux/ats/careersite/4/home/requisition/22654?c=ripley",
+      "titulo": "Data Engineer en Ripley",
+      "canal": "#trabajos",
+      "contexto": "Se difundieron oportunidades de Data Engineering, Staff Engineering e IA Engineering. Data Engineer en Ripley · Staff Engineer · IA Engineer.",
+      "tags": [
+        "pegas",
+        "datos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://haulmer.buk.cl/seleccions/f8e2fd414dbecf086014877943db8731bd94f339318f10ad4fac02adeaf94d5c5189d14a857295888c2afa0ce932ddb50a030d6f7d3690843f8e3d9684e586db/postular",
+      "titulo": "Staff Engineer",
+      "canal": "#trabajos",
+      "contexto": "Se difundieron oportunidades de Data Engineering, Staff Engineering e IA Engineering. Data Engineer en Ripley · Staff Engineer · IA Engineer.",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://lnkd.in/p/dtjB36Vx",
+      "titulo": "IA Engineer",
+      "canal": "#trabajos",
+      "contexto": "Se difundieron oportunidades de Data Engineering, Staff Engineering e IA Engineering. Data Engineer en Ripley · Staff Engineer · IA Engineer.",
+      "tags": [
+        "pegas",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://www.chiletrabajos.cl/trabajo/3887292",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "La comunidad compartió una búsqueda de Desarrollador/a Full-Stack en Linares. Ver aviso.",
+      "tags": [
+        "pegas",
+        "frontend",
+        "backend",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://ninja.buk.cl/seleccions/102a50717f3cd87727a0b106040877776ebe27a789cb60434780e6972ed08675b8f4c33df57cd7203d022d51d4be7c18b9b55b31936fa8f672e45c59ccf40877/postular",
+      "titulo": "Ver convocatoria",
+      "canal": "#trabajos",
+      "contexto": "También apareció una vacante de diseño. Ver convocatoria.",
+      "tags": [
+        "pegas",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://github.com/devschile/pegas/pull/2",
+      "titulo": "Ver mejora en GitHub",
+      "canal": "#trabajos",
+      "contexto": "La vitrina de pegas recibió un filtro para encontrar oportunidades con sueldo. Ver mejora en GitHub.",
+      "tags": [
+        "devschile",
+        "pegas",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/",
+      "titulo": "Leer el artículo en 9to5Mac",
+      "canal": "Más notables",
+      "contexto": "gmq compartió la noticia en #ai. Leer el artículo en 9to5Mac.",
+      "tags": [
+        "ia",
+        "agentes",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://objetos.devschile.cl/",
+      "titulo": "Objetos devsChile",
+      "canal": "#anuncios",
+      "contexto": "gmq anunció, en colaboración con VC Taller, TABLA / 01, el primer objeto de la nueva serie Objetos devsChile: una tabla de cortar hecha a mano con madera nativa.",
+      "tags": [
+        "devschile",
+        "hogar",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://app.datacamp.com/learn/courses?free=true",
+      "titulo": "DataCamp",
+      "canal": "#ai",
+      "contexto": "carlo compartió cursos gratuitos de DataCamp, incluyendo una recomendación para iniciarse en FastAPI.",
+      "tags": [
+        "aprendizaje",
+        "datos",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://tldr.tech/ai",
+      "titulo": "TLDR AI",
+      "canal": "#ai",
+      "contexto": "arveja recomendó el newsletter TLDR AI y mostró un ejemplo de su versión web.",
+      "tags": [
+        "ia",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://a.tldrnewsletter.com/web-version?ep=1&lc=",
+      "titulo": "versión web",
+      "canal": "#ai",
+      "contexto": "arveja recomendó el newsletter TLDR AI y mostró un ejemplo de su versión web.",
+      "tags": [
+        "ia",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://impeccable.style/",
+      "titulo": "Impeccable",
+      "canal": "#ai",
+      "contexto": "ditt0 abrió una conversación sobre la eficiencia de Impeccable para trabajar interfaces mediante instrucciones.",
+      "tags": [
+        "frontend",
+        "diseno",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://openai.com/webmcp-challenge/",
+      "titulo": "WebMCP Hackathon",
+      "canal": "#comunidad",
+      "contexto": "imgroot compartió el WebMCP Hackathon de OpenAI.",
+      "tags": [
+        "eventos",
+        "agentes",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/program/gear/getcertified?hl=es",
+      "titulo": "certificación de Google Cloud",
+      "canal": "#comunidad",
+      "contexto": "También se difundió formación gratuita para preparar la certificación de Google Cloud, dirigida a clientes con una cuenta empresarial de Workspace.",
+      "tags": [
+        "aprendizaje",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://agentsforhumans.devpost.com/",
+      "titulo": "Agents for Humans Hackathon",
+      "canal": "#comunidad",
+      "contexto": "El Agents for Humans Hackathon invita a construir agentes con Strands Agents SDK; el plazo informado es el 14 de septiembre y el premio, US$40.000.",
+      "tags": [
+        "eventos",
+        "agentes",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://adhdecode.com/courses/",
+      "titulo": "ADHD Decode",
+      "canal": "#desarrollo",
+      "contexto": "iarodriguezch compartió cursos en ADHD Decode.",
+      "tags": [
+        "aprendizaje",
+        "salud"
+      ]
+    },
+    {
+      "url": "https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/",
+      "titulo": "Stop using Conventional Commits",
+      "canal": "#desarrollo",
+      "contexto": "jorgeepunan abrió una discusión sobre el artículo Stop using Conventional Commits.",
+      "tags": [
+        "lectura",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://www.apple.com/us-edu/store/",
+      "titulo": "Tienda educativa de Apple",
+      "canal": "#desarrollo",
+      "contexto": "gmq compartió información sobre los nuevos Mac mini y sus precios educativos. Tienda educativa de Apple · Mac mini.",
+      "tags": [
+        "hardware",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://apple.com/mac-mini",
+      "titulo": "Mac mini",
+      "canal": "#desarrollo",
+      "contexto": "gmq compartió información sobre los nuevos Mac mini y sus precios educativos. Tienda educativa de Apple · Mac mini.",
+      "tags": [
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://choclift.com/",
+      "titulo": "ChocLift",
+      "canal": "#desarrollo",
+      "contexto": "jorgeepunan recomendó probar ChocLift, una alternativa para quienes buscan un switcher más accesible.",
+      "tags": [
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws",
+      "titulo": "Leer anuncio",
+      "canal": "#backend",
+      "contexto": "carlo compartió el anuncio de que DuckLabs se unirá a AWS. Leer anuncio.",
+      "tags": [
+        "datos",
+        "infra",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://vgpu.sh/",
+      "titulo": "vgpu.sh",
+      "canal": "#frontend",
+      "contexto": "jorgeepunan compartió vgpu.sh, una propuesta para trabajar con GPU virtualizada desde el navegador.",
+      "tags": [
+        "frontend",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://3ds.hacks.guide/",
+      "titulo": "3DS Hacks",
+      "canal": "#juegos",
+      "contexto": "carlo compartió la guía de 3DS Hacks.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://supermuseum.netlify.app/?play=nes:NES-DN-USA",
+      "titulo": "Supermuseum",
+      "canal": "#juegos",
+      "contexto": "livercake volvió a compartir Supermuseum, el juego diario de la semana.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oQwzYdMEPvI",
+      "titulo": "GTA 6",
+      "canal": "#juegos",
+      "contexto": "La comunidad comentó el tráiler de GTA 6.",
+      "tags": [
+        "juegos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://github.com/garungorp/MouseInjectorDolphinDuck",
+      "titulo": "MouseInjectorDolphinDuck",
+      "canal": "#juegos",
+      "contexto": "livercake conversó sobre usar mouse en juegos emulados y enlazó MouseInjectorDolphinDuck.",
+      "tags": [
+        "juegos",
+        "retro",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/2075800/STAR_WARS_Zero_Company/",
+      "titulo": "Star Wars: Zero Company",
+      "canal": "#juegos",
+      "contexto": "gmq dejó la ficha de Star Wars: Zero Company en Steam.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://www.pcgamer.com/games/strategy/ubisoft-forgot-to-make-sure-the-steam-release-of-heroes-of-might-and-magic-3-included-the-actual-game/",
+      "titulo": "Leer en PC Gamer",
+      "canal": "#juegos",
+      "contexto": "krobus compartió el papelón del lanzamiento de Heroes of Might and Magic 3 en Steam. Leer en PC Gamer.",
+      "tags": [
+        "juegos",
+        "retro",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://mapas.laserena.cl/mapas/plan-regulador/index.html#13/-29.8554/-71.2469",
+      "titulo": "mapa del plan regulador de La Serena",
+      "canal": "#lifehacks",
+      "contexto": "carlo compartió el mapa del plan regulador de La Serena.",
+      "tags": [
+        "chile",
+        "hogar"
+      ]
+    },
+    {
+      "url": "https://openlogi.org/",
+      "titulo": "Openlogi",
+      "canal": "#lifehacks",
+      "contexto": "iarodriguezch recomendó Openlogi como herramienta para logística.",
+      "tags": [
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://www.falabella.com/falabella-cl/product/17375896/Starlink-Mini-Kit-Internet-Satelital/17375896",
+      "titulo": "kit Starlink Mini",
+      "canal": "#lifehacks",
+      "contexto": "También apareció un kit Starlink Mini entre las recomendaciones de la semana.",
+      "tags": [
+        "hardware",
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qZQAHO1YgkA",
+      "titulo": "Ver en YouTube",
+      "canal": "#diy",
+      "contexto": "valfar compartió un video relacionado con proyectos DIY. Ver en YouTube.",
+      "tags": [
+        "hogar",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.osmopager.com/",
+      "titulo": "Osmo Pager",
+      "canal": "#diy",
+      "contexto": "iarodriguezch recomendó Osmo Pager.",
+      "tags": [
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/08/27/muere-actor-peter-cullen-historica-voz-en-ingles-de-optimus-prime-en-transformers.shtml",
+      "titulo": "Leer en BioBioChile",
+      "canal": "#cultura",
+      "contexto": "ecastillo compartió la noticia sobre la muerte de Peter Cullen, voz histórica de Optimus Prime en inglés. Leer en BioBioChile.",
+      "tags": [
+        "noticias",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.zestyfinance.com/conecta-tu-agente",
+      "titulo": "Zesty Finance",
+      "canal": "#moneas",
+      "contexto": "jorgeepunan compartió una invitación para conectar agentes con Zesty Finance.",
+      "tags": [
+        "finanzas",
+        "agentes"
+      ]
+    },
+    {
+      "url": "https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea",
+      "titulo": "Leer en The Wall Street Journal",
+      "canal": "#moneas",
+      "contexto": "También se comentó una nota sobre las proyecciones de ingresos de Anthropic. Leer en The Wall Street Journal.",
+      "tags": [
+        "ia",
+        "finanzas",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fwgJgTL5JmE",
+      "titulo": "Dirty Laundry",
+      "canal": "#musiqueria",
+      "contexto": "La comunidad cerró la semana con nuevas recomendaciones musicales: Dirty Laundry · WHISPERED - BOOMER KUWANGER ( MEGAMAN X COVER) · FEAR FACTORY - Roboticist (OFFICIAL MUSIC VIDEO).",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://youtu.be/nPOwbBMjhUs?si=9mP_b3kd-0_tVeg8",
+      "titulo": "WHISPERED - BOOMER KUWANGER ( MEGAMAN X COVER)",
+      "canal": "#musiqueria",
+      "contexto": "La comunidad cerró la semana con nuevas recomendaciones musicales: Dirty Laundry · WHISPERED - BOOMER KUWANGER ( MEGAMAN X COVER) · FEAR FACTORY - Roboticist (OFFICIAL MUSIC VIDEO).",
+      "tags": [
+        "musica",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://youtu.be/tSU9csON9WE",
+      "titulo": "FEAR FACTORY - Roboticist (OFFICIAL MUSIC VIDEO)",
+      "canal": "#musiqueria",
+      "contexto": "La comunidad cerró la semana con nuevas recomendaciones musicales: Dirty Laundry · WHISPERED - BOOMER KUWANGER ( MEGAMAN X COVER) · FEAR FACTORY - Roboticist (OFFICIAL MUSIC VIDEO).",
+      "tags": [
+        "musica"
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@
  *
  *   dist/
  *   ├── index.html                    landing, con la lista de ediciones inyectada
+ *   ├── buscar.json                   índice de links para "Buscar en ediciones anteriores"
  *   ├── css/, js/, assets/            estáticos de la landing
  *   └── newsletter/
  *       ├── index.html                archivo con todas las ediciones
@@ -15,6 +16,7 @@
 import { cp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
+import { aplicarTags, extraerLinks } from './lib/indice-links.mjs';
 
 const raiz = path.resolve(process.env.SEMANARIO_ROOT ?? path.resolve(import.meta.dirname, '..'));
 const dist = path.join(raiz, 'dist');
@@ -155,6 +157,42 @@ ${ediciones.map(tarjeta).join('\n')}
 `;
 }
 
+/**
+ * Índice del buscador: los links salen de cada resumen.md y los tags de su
+ * links.json (ver scripts/lib/indice-links.mjs). Una edición sin resumen.md
+ * simplemente no aporta links; una sin links.json aporta links sin tags.
+ */
+async function indiceBusqueda(ediciones) {
+  const vocabulario = JSON.parse(await readFile(path.join(import.meta.dirname, 'tags.json'), 'utf8'));
+  const links = [];
+
+  for (const ed of ediciones) {
+    const dir = path.join(dirEdiciones, ed.fecha);
+    const resumen = path.join(dir, 'resumen.md');
+    if (!existsSync(resumen)) continue;
+
+    const archivoTags = path.join(dir, 'links.json');
+    let linksJson = null;
+    if (existsSync(archivoTags)) {
+      try {
+        linksJson = JSON.parse(await readFile(archivoTags, 'utf8'));
+      } catch (error) {
+        console.warn(`⚠ ${ed.fecha}: links.json inválido (${error.message}), se indexa sin tags.`);
+      }
+    }
+
+    const resultado = aplicarTags(extraerLinks(await readFile(resumen, 'utf8')), linksJson, vocabulario);
+    for (const aviso of resultado.avisos) console.warn(`⚠ ${ed.fecha}: ${aviso}`);
+    for (const link of resultado.links) links.push({ ...link, edicion: ed.fecha });
+  }
+
+  return {
+    tags: vocabulario,
+    ediciones: ediciones.map(({ fecha, numero, rango }) => ({ fecha, numero, rango, legible: fechaLegible(fecha) })),
+    links,
+  };
+}
+
 // ── Build ──────────────────────────────────────────────────────────────────
 
 await rm(dist, { recursive: true, force: true });
@@ -190,5 +228,8 @@ for (const ed of ediciones) {
   if (existsSync(assets)) await cp(assets, path.join(carpeta, 'assets'), { recursive: true });
 }
 
-console.log(`✔ Build listo — ${ediciones.length} edición(es) en /newsletter/`);
+const indice = await indiceBusqueda(ediciones);
+await writeFile(path.join(dist, 'buscar.json'), JSON.stringify(indice));
+
+console.log(`✔ Build listo — ${ediciones.length} edición(es) en /newsletter/, ${indice.links.length} links en buscar.json`);
 for (const ed of ediciones) console.log(`  · #${ed.numero} ${ed.fecha} — ${ed.rango}`);

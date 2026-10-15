@@ -1,0 +1,403 @@
+{
+  "edicion": "2026-10-11",
+  "links": [
+    {
+      "url": "https://zen-browser.app/",
+      "titulo": "Zen",
+      "canal": "Actividad",
+      "contexto": "Miércoles 7 fue el día más activo, con 179 mensajes. En #ai la jornada fue de navegadores: Zen (basado en Firefox) y Helium como las alternativas favoritas para reemplazar a Arc.",
+      "tags": [
+        "herramientas",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://helium.computer/",
+      "titulo": "Helium",
+      "canal": "Actividad",
+      "contexto": "Miércoles 7 fue el día más activo, con 179 mensajes. En #ai la jornada fue de navegadores: Zen (basado en Firefox) y Helium como las alternativas favoritas para reemplazar a Arc.",
+      "tags": [
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://www.getonbrd.com/jobs/backend-software-engineer-zaelot-remote-fbc2",
+      "titulo": "Back-end Software Engineer en Zaelot",
+      "canal": "#trabajos",
+      "contexto": "Back-end Software Engineer en Zaelot — remoto, USD 4.000–6.500/mes.",
+      "tags": [
+        "pegas",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://www.takealuk.com/job_offers/ai-consultant-product-owner-centro-nacional-de-inteligencia-artificial",
+      "titulo": "AI Consultant | Product Owner en el Centro Nacional de Inteligencia Artificial",
+      "canal": "#trabajos",
+      "contexto": "AI Consultant | Product Owner en el Centro Nacional de Inteligencia Artificial — Santiago, CLP 2.500.000.",
+      "tags": [
+        "pegas",
+        "ia",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://carreras.latam.com/",
+      "titulo": "posiciones abiertas de LATAM Airlines",
+      "canal": "#trabajos",
+      "contexto": "leslie compartió las posiciones abiertas de LATAM Airlines.",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://github.com/storytold/photocraft",
+      "titulo": "PhotoCraft",
+      "canal": "#ai",
+      "contexto": "El martes dukuo compartió PhotoCraft, un clon open source de Photoshop escrito en Rust y bien liviano; el domingo carlo sumó WordCraft, su equivalente de Word.",
+      "tags": [
+        "open-source",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://github.com/storytold/wordcraft",
+      "titulo": "WordCraft",
+      "canal": "#ai",
+      "contexto": "El martes dukuo compartió PhotoCraft, un clon open source de Photoshop escrito en Rust y bien liviano; el domingo carlo sumó WordCraft, su equivalente de Word.",
+      "tags": [
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://github.com/morluto/rea",
+      "titulo": "REA",
+      "canal": "#ai",
+      "contexto": "El miércoles carlo trajo REA, «reverse engineer anything»: del comportamiento de una app hasta binarios nativos, con agentes.",
+      "tags": [
+        "agentes",
+        "seguridad"
+      ]
+    },
+    {
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "titulo": "i-have-adhd",
+      "canal": "#ai",
+      "contexto": "El miércoles pinceleart recomendó i-have-adhd, una skill para que tu agente de código no entierre las respuestas.",
+      "tags": [
+        "agentes"
+      ]
+    },
+    {
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "titulo": "OmniRoute",
+      "canal": "#ai",
+      "contexto": "El jueves n.i.c.e. dejó OmniRoute: un gateway que cambia de proveedor de modelos cuando se acaban los tokens gratuitos (compatible con Claude Code, Codex, Cursor y compañía).",
+      "tags": [
+        "ia",
+        "agentes",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://x.com/claudeai/status/2107894039626277339",
+      "titulo": "Claude Haiku 5.5",
+      "canal": "#ai",
+      "contexto": "El miércoles hector avisó del lanzamiento de Claude Haiku 5.5: el modelo chico de Anthropic corre ~75% más barato que la generación anterior.",
+      "tags": [
+        "ia",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "titulo": "Mistral Large 4",
+      "canal": "#ai",
+      "contexto": "El martes janogonzalez celebró Mistral Large 4: «el meme de Le Chaton Fat cada día más cerca de ser realidad».",
+      "tags": [
+        "ia",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://deno.com/blog/cloudflare",
+      "titulo": "Cloudflare adquirió Deno",
+      "canal": "#ai",
+      "contexto": "El viernes rherera trajo desde Hacker News la noticia de infra de la semana: Cloudflare adquirió Deno.",
+      "tags": [
+        "infra",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://2026.stateofdevs.com/en-US/",
+      "titulo": "State of Devs 2026",
+      "canal": "#comunidad",
+      "contexto": "El jueves jorgeepunan pidió un resumen en simple del State of Devs 2026: 5.463 respuestas, 62% ha tenido burnout y casi la mitad siente que su pega no está segura.",
+      "tags": [
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://objetos.devschile.cl/",
+      "titulo": "tabla #01 de Objetos devsChile",
+      "canal": "#comunidad",
+      "contexto": "La tabla #01 de Objetos devsChile llegó a su comprador: «quedó muy bonita».",
+      "tags": [
+        "devschile",
+        "hogar"
+      ]
+    },
+    {
+      "url": "https://www.sciencedaily.com/releases/2026/08/260829035228.htm",
+      "titulo": "el uso prolongado aparece asociado a un 90% más de riesgo de insuficiencia cardíaca",
+      "canal": "#cultura",
+      "contexto": "El lunes hector pasó un dato para quienes usan melatonina para dormir: el uso prolongado aparece asociado a un 90% más de riesgo de insuficiencia cardíaca.",
+      "tags": [
+        "salud"
+      ]
+    },
+    {
+      "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+      "titulo": "Anthropic y su test impact analysis a escala",
+      "canal": "#desarrollo",
+      "contexto": "El miércoles dariomac juntó dos lecturas sobre el mismo aprieto — cuando los agentes escriben código, crecen los merge requests y los pipelines, y la verificación no sigue el ritmo: Anthropic y su test impact analysis a escala y Spotify con su retrospectiva de calidad a mayor velocidad.",
+      "tags": [
+        "agentes",
+        "infra",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity",
+      "titulo": "Spotify con su retrospectiva de calidad a mayor velocidad",
+      "canal": "#desarrollo",
+      "contexto": "El miércoles dariomac juntó dos lecturas sobre el mismo aprieto — cuando los agentes escriben código, crecen los merge requests y los pipelines, y la verificación no sigue el ritmo: Anthropic y su test impact analysis a escala y Spotify con su retrospectiva de calidad a mayor velocidad.",
+      "tags": [
+        "agentes",
+        "infra",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://github.com/zenhosta/9drive",
+      "titulo": "9Drive",
+      "canal": "#desarrollo",
+      "contexto": "El viernes n.i.c.e. pasó 9Drive: conecta varias cuentas de Google Drive y las usa como un solo espacio de almacenamiento.",
+      "tags": [
+        "open-source",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://tinyjs.app/",
+      "titulo": "tinyjs",
+      "canal": "#desarrollo",
+      "contexto": "El domingo krobus compartió tinyjs: apps de escritorio para macOS, Windows y Linux en ~6 MB.",
+      "tags": [
+        "frontend",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://www.sodimac.cl/sodimac-cl/articulo/126865288/taladro-sierra-circular-sierra-caladora-lijadora-bolso/126865289",
+      "titulo": "taladro, sierra circular, caladora y lijadora",
+      "canal": "#diy",
+      "contexto": "El miércoles cvallejos pasó un «starter pack» de herramientas: taladro, sierra circular, caladora y lijadora.",
+      "tags": [
+        "hogar",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://www.gss-lang.dev/",
+      "titulo": "GSS — GPU Style Sheets",
+      "canal": "#frontend",
+      "contexto": "El martes camilorivera86 encontró GSS — GPU Style Sheets, hojas de estilo para la GPU.",
+      "tags": [
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://ascii.rest/",
+      "titulo": "ascii.rest",
+      "canal": "#frontend",
+      "contexto": "El jueves camilorivera86 sumó ascii.rest: arte ASCII animado para páginas web.",
+      "tags": [
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://shaders.com/",
+      "titulo": "Shaders",
+      "canal": "#frontend",
+      "contexto": "El miércoles dukuo pasó Shaders: componentes WebGPU open source con editor de diseño gratuito.",
+      "tags": [
+        "frontend",
+        "open-source",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://github.com/Droid-Deck/DroidDeck",
+      "titulo": "DroidDeck",
+      "canal": "#juegos",
+      "contexto": "El miércoles davidlaym compartió DroidDeck: Steam Deck, pero en Android (apk y sideload incluidos) — «es loquísimo lo que hicieron», aunque por ahora solo ciertos Snapdragon están soportados.",
+      "tags": [
+        "juegos",
+        "mobile"
+      ]
+    },
+    {
+      "url": "https://github.com/segovia-no/SuperMuseum-Deck-Launcher",
+      "titulo": "script para instalar Supermuseum en el Steam Deck",
+      "canal": "#juegos",
+      "contexto": "El jueves dsegoviaolivares publicó un script para instalar Supermuseum en el Steam Deck — mientras livercake seguía ampliando el museo con Katamari, Parasite Eve y Racing Lagoon.",
+      "tags": [
+        "juegos",
+        "retro",
+        "devschile"
+      ]
+    },
+    {
+      "url": "https://afterplay.io/",
+      "titulo": "Afterplay.io",
+      "canal": "#juegos",
+      "contexto": "El jueves livercake también encontró Afterplay.io, una tienda para jugar juegos retro en cualquier dispositivo.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/3115160/Warhammer_40000_Boltgun_2/",
+      "titulo": "Warhammer 40.000: Boltgun 2",
+      "canal": "#juegos",
+      "contexto": "El lunes krobus avisó que ya se viene Warhammer 40.000: Boltgun 2: «praise the omnissiah».",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=82Gh8xrLUzI",
+      "titulo": "SEGA Saturn: The Price of Victory",
+      "canal": "#juegos",
+      "contexto": "El miércoles se puso modo documental: SEGA Saturn: The Price of Victory y un lore completo de Bionicle para dejar de fondo.",
+      "tags": [
+        "juegos",
+        "retro",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=j4YgQPX8SK8",
+      "titulo": "lore completo de Bionicle",
+      "canal": "#juegos",
+      "contexto": "El miércoles se puso modo documental: SEGA Saturn: The Price of Victory y un lore completo de Bionicle para dejar de fondo.",
+      "tags": [
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.mercadolibre.cl/kit-de-destornilladores-de-precision-de-64-piezas-ifixit-mako/p/MLC29614614",
+      "titulo": "kit de precisión iFixit Mako de 64 puntas",
+      "canal": "#lifehacks",
+      "contexto": "El miércoles carlo confirmó la compra del mes: kit de precisión iFixit Mako de 64 puntas — «255/10, plata mejor gastada».",
+      "tags": [
+        "hogar",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://www.easy.cl/hidrolavadora-portatil-1200w-300lh-1492126/p",
+      "titulo": "hidrolavadora portátil",
+      "canal": "#lifehacks",
+      "contexto": "El martes cvallejos dejó un dato de hidrolavadora portátil para el patio y el auto.",
+      "tags": [
+        "hogar",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://www.mercadolibre.cl/audifonos-bluetooth-soundcore-liberty-4-pro-cancelacion-de-ruido-in-ear-adaptive-anc-30-certificacion-hi-res-ldac-40-horas-de-calidad-de-sonido-sin-perdida-soporte-de-carga-rapida-bluetooth-53/p/MLC42439896",
+      "titulo": "Soundcore Liberty 4 Pro",
+      "canal": "#lifehacks",
+      "contexto": "El martes raul buscaba audífonos con cable y ANC: conclusión del hilo, es difícil (el ANC necesita energía); quedó la alternativa de unos Soundcore Liberty 4 Pro.",
+      "tags": [
+        "hardware",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://youtu.be/rbpZPrT4Jqw",
+      "titulo": "Hunter",
+      "canal": "#musiqueria",
+      "contexto": "El viernes janogonzalez avisó del nuevo EP de Deafheaven: Hunter.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://youtube.com/playlist?list=PLbZ3jL_n_AcUklwvCaT55L3aESI3yblZR",
+      "titulo": "«tvn ovni soundtrack discos 1y2»",
+      "canal": "#musiqueria",
+      "contexto": "El jueves panconpalta trajo la playlist «tvn ovni soundtrack discos 1y2» — nostalgia asegurada.",
+      "tags": [
+        "musica",
+        "chile",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://www.chincolarecords.cl/",
+      "titulo": "Chincola Records",
+      "canal": "#musiqueria",
+      "contexto": "El lunes davidlaym recomendó Chincola Records: «excelente servicio y buena selección».",
+      "tags": [
+        "musica",
+        "chile",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://getartcraft.com/",
+      "titulo": "ArtCraft",
+      "canal": "#ux",
+      "contexto": "El miércoles en #ux: Affinity quedó gratis tras la compra de Canva; jorgeepunan preguntó por ArtCraft («IA controlable para artistas») y contó que para cosas chicas usa Compositor en Mac.",
+      "tags": [
+        "diseno",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://robbietilton.com/compositor",
+      "titulo": "Compositor",
+      "canal": "#ux",
+      "contexto": "El miércoles en #ux: Affinity quedó gratis tras la compra de Canva; jorgeepunan preguntó por ArtCraft («IA controlable para artistas») y contó que para cosas chicas usa Compositor en Mac.",
+      "tags": [
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://ericbirnbaum.com/",
+      "titulo": "portafolio interactivo de Eric Birnbaum",
+      "canal": "#ux",
+      "contexto": "El martes jorgeepunan mostró el portafolio interactivo de Eric Birnbaum y su design system completo.",
+      "tags": [
+        "diseno",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://ericbirnbaum.com/design/",
+      "titulo": "design system completo",
+      "canal": "#ux",
+      "contexto": "El martes jorgeepunan mostró el portafolio interactivo de Eric Birnbaum y su design system completo.",
+      "tags": [
+        "diseno",
+        "frontend"
+      ]
+    }
+  ]
+}

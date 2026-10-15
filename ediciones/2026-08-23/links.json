@@ -1,0 +1,467 @@
+{
+  "edicion": "2026-08-23",
+  "links": [
+    {
+      "url": "https://www.getonbrd.com/jobs/data-science-analytics/cientifico-de-datos-atentus-santiago",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "Científico/a de Datos — Atentus: US$800–1.100 brutos al mes, según el aviso publicado en Get on Board. Ver aviso.",
+      "tags": [
+        "pegas",
+        "datos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://ccs.trabajando.cl/trabajo/6105547-consultor-de-ventas-b2b-de-ti",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "El lunes se compartió un puesto remoto de Consultor/a de Ventas B2B de TI. Ver aviso.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://globalconexus.zohorecruit.com/jobs/Careers/646038000008248001/Ingeniero-Full-Stack-y-o-Ingeniero-de-Datos?source=LinkedIn-Basic",
+      "titulo": "Postular",
+      "canal": "#trabajos",
+      "contexto": "El lunes Jorge recomendó una búsqueda de Ingeniero/a Full Stack y/o Ingeniero/a de Datos en modalidad remota. Postular.",
+      "tags": [
+        "pegas",
+        "backend",
+        "datos"
+      ]
+    },
+    {
+      "url": "https://adereso.buk.cl/seleccions/6b55f249a8968715a12d89ee1d7fb93e296615964a924a3a65e84ee3a26044dd0083fbacc78da676eabebd8c36f43c0b48750ada4d334e81e5d4369fb506ca22/postular",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "El lunes se difundió una vacante de Diseñador/a Web y Desarrollador/a Frontend. Ver aviso.",
+      "tags": [
+        "pegas",
+        "frontend",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://gofeels.com/jobs/",
+      "titulo": "GoFeels",
+      "canal": "#trabajos",
+      "contexto": "El lunes también se recomendó revisar las oportunidades de GoFeels, con búsquedas para perfiles full stack.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://mlavinc-portfolio.vercel.app/",
+      "titulo": "portafolio",
+      "canal": "#trabajos",
+      "contexto": "Martín compartió su portafolio en busca de práctica profesional en software, backend o cloud.",
+      "tags": [
+        "pegas",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/informaticausm_ingenieraedainformaertica-informaerticausm-activity-7495477123412000768-JtvL/",
+      "titulo": "Ver convocatoria",
+      "canal": "#trabajos",
+      "contexto": "Jorge difundió una convocatoria de académicos/as de Informática para la USM. Ver convocatoria.",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.getonbrd.com/jobs/programming/desarrollador-cobol-visual-studio-code-bc-tecnologia-remote",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "El viernes apareció una búsqueda de Desarrollador/a COBOL remoto. Ver aviso.",
+      "tags": [
+        "pegas",
+        "lenguajes",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@devschile/tienda-cli",
+      "titulo": "tienda-cli",
+      "canal": "#anuncios",
+      "contexto": "devsChile invitó a probar la nueva tienda-cli, para comprar productos desde el terminal.",
+      "tags": [
+        "devschile",
+        "herramientas",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://log.devschile.cl/di-la-cca-f-y-no-era-el-examen-que-me-esperaba/",
+      "titulo": "“Di la CCAF y no era el examen que me esperaba”",
+      "canal": "#anuncios",
+      "contexto": "Se presentó un análisis sobre certificaciones relevantes para perfiles tech, en particular el artículo “Di la CCAF y no era el examen que me esperaba”.",
+      "tags": [
+        "devschile",
+        "carrera",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://log.devschile.cl/",
+      "titulo": "blog de la comunidad",
+      "canal": "#anuncios",
+      "contexto": "¿Tienes una experiencia, aprendizaje o idea que quieras compartir? ¡Anímate a escribir en el blog de la comunidad! Tu aporte puede inspirar a otros y ayudar a construir conocimiento entre todos.",
+      "tags": [
+        "devschile",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://finance.yahoo.com/technology/ai/articles/stripe-acquires-openrouter-7b-turning-091812340.html",
+      "titulo": "Leer en Yahoo Finance",
+      "canal": "#ai",
+      "contexto": "El lunes Jorge compartió la noticia de que Stripe adquirió OpenRouter. Leer en Yahoo Finance.",
+      "tags": [
+        "ia",
+        "finanzas",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://agentnativedev.medium.com/deepseek-harness-hit-100k-stars-in-2-days-real-frontier-is-agent-infrastructure-ab263905b137",
+      "titulo": "Leer en Medium",
+      "canal": "#ai",
+      "contexto": "El martes se recomendó una explicación sobre DeepSeek Harness y la infraestructura de agentes. Leer en Medium.",
+      "tags": [
+        "agentes",
+        "infra",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://storage.googleapis.com/bwg-track3-demo-guide/index_es.html",
+      "titulo": "Ver guía",
+      "canal": "#ai",
+      "contexto": "El jueves Héctor dejó una guía paso a paso del track técnico de Build with Gemini, con Antigravity CLI y Agent Platform. Ver guía · materiales en GitHub.",
+      "tags": [
+        "ia",
+        "agentes",
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://github.com/miohana/build-with-gemini/tree/main/track-3",
+      "titulo": "materiales en GitHub",
+      "canal": "#ai",
+      "contexto": "El jueves Héctor dejó una guía paso a paso del track técnico de Build with Gemini, con Antigravity CLI y Agent Platform. Ver guía · materiales en GitHub.",
+      "tags": [
+        "ia",
+        "agentes",
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://futurism.com/artificial-intelligence/young-people-ai-ceos-executives-poll",
+      "titulo": "Leer en Futurism",
+      "canal": "#ai",
+      "contexto": "El martes se comentó una encuesta sobre jóvenes que aspiran a ser ejecutivos de IA. Leer en Futurism.",
+      "tags": [
+        "ia",
+        "carrera",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://antigravity.google/blog/antigravity-ide-extensions",
+      "titulo": "Ver anuncio",
+      "canal": "#ai",
+      "contexto": "Héctor compartió las novedades de Antigravity para extensiones de IDE. Ver anuncio.",
+      "tags": [
+        "ia",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/constanza-contreras-h_abrimos-convocatoria-a-los-talleres-introductorios-ugcPost-7494164625161158657-dhbk/",
+      "titulo": "Ver publicación",
+      "canal": "#comunidad",
+      "contexto": "Se compartió una convocatoria a talleres introductorios. Ver publicación.",
+      "tags": [
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://goo.gle/studentdeal",
+      "titulo": "Revisar beneficios",
+      "canal": "#comunidad",
+      "contexto": "Volvió el plan de Google Gemini para estudiantes, con un año de acceso sin costo y más capacidad de uso. Revisar beneficios.",
+      "tags": [
+        "ia",
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/live/z7mR5xqNxcA",
+      "titulo": "Ver en YouTube",
+      "canal": "#desarrollo",
+      "contexto": "Se recomendó la transmisión del Congreso Internacional de Ciberseguridad. Ver en YouTube.",
+      "tags": [
+        "seguridad",
+        "eventos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://university.kurz.fyi/ruby-concepts/reflection-and-object-space",
+      "titulo": "Leer la guía",
+      "canal": "#backend",
+      "contexto": "Para quienes trabajan con Ruby, se compartió una introducción a reflection y object space. Leer la guía.",
+      "tags": [
+        "lenguajes",
+        "backend",
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://santiago.devopsdayschile.cl/",
+      "titulo": "Ver evento",
+      "canal": "#eventos-juntas",
+      "contexto": "En septiembre llega DevOpsDays Santiago, en el Centro de Extensión UC. Ver evento.",
+      "tags": [
+        "eventos",
+        "infra",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com/es/events/cloud-days/santiago/",
+      "titulo": "Revisar información",
+      "canal": "#eventos-juntas",
+      "contexto": "También se anunció el AWS Cloud and AI Day Santiago, el 24 de septiembre. Revisar información.",
+      "tags": [
+        "eventos",
+        "infra",
+        "ia",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://blobatar.dev/",
+      "titulo": "Visitar Blobatar",
+      "canal": "#frontend",
+      "contexto": "Camilo recomendó Blobatar, una colección de avatares animados. Visitar Blobatar.",
+      "tags": [
+        "frontend",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://www.ayaneo.com/product/KONKR-Pocket-ADVANCE",
+      "titulo": "KONKR Pocket ADVANCE",
+      "canal": "#juegos",
+      "contexto": "Se conversó sobre consolas portátiles y el form factor de la GBA: KONKR Pocket ADVANCE y Retroid Pocket Nova.",
+      "tags": [
+        "hardware",
+        "retro",
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://www.goretroid.com/products/retroid-pocket-nova-handheld",
+      "titulo": "Retroid Pocket Nova",
+      "canal": "#juegos",
+      "contexto": "Se conversó sobre consolas portátiles y el form factor de la GBA: KONKR Pocket ADVANCE y Retroid Pocket Nova.",
+      "tags": [
+        "hardware",
+        "retro",
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://lotritsa.itch.io/kaleidos",
+      "titulo": "Kaleidos",
+      "canal": "#juegos",
+      "contexto": "krobus mostró el juego experimental Kaleidos.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://youtu.be/sStbBtfGaLA?si=Cx7bo8H44K9kl4Z_",
+      "titulo": "Ver tráiler",
+      "canal": "#juegos",
+      "contexto": "krobus compartió el tráiler de la serie de Golden Axe. Ver tráiler.",
+      "tags": [
+        "juegos",
+        "video",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://www.ign.com/articles/dress-to-impress-codes",
+      "titulo": "Ver códigos",
+      "canal": "#juegos",
+      "contexto": "Se compartieron códigos de agosto para Dress to Impress. Ver códigos.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/3115160/Warhammer_40000_Boltgun_2/",
+      "titulo": "Warhammer 40,000: Boltgun 2",
+      "canal": "#juegos",
+      "contexto": "La conversación de boomer shooters pasó por Warhammer 40,000: Boltgun 2 y el Boltgun original.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/2005010/Warhammer_40000_Boltgun/",
+      "titulo": "Boltgun original",
+      "canal": "#juegos",
+      "contexto": "La conversación de boomer shooters pasó por Warhammer 40,000: Boltgun 2 y el Boltgun original.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://youtu.be/SnCw9ESwnFk?t=21",
+      "titulo": "Ver video",
+      "canal": "#juegos",
+      "contexto": "También se recomendó un gameplay de Super Gore Nest de Doom Eternal. Ver video.",
+      "tags": [
+        "juegos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://mmxregenesis.itch.io/mega-man-x-regenesis",
+      "titulo": "Mega Man X: Regenesis",
+      "canal": "#juegos",
+      "contexto": "La comunidad celebró la llegada de Mega Man X: Regenesis, un proyecto fanmade convertido en juego completo.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://supermuseum.netlify.app/?play=genesis&fps=1",
+      "titulo": "Jugar y reportar FPS",
+      "canal": "#juegos",
+      "contexto": "livercake pidió probar su emulador web de Sega Genesis, Supermuseum. Jugar y reportar FPS.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://inprocl.com/libernovo-omni",
+      "titulo": "LiberNovo Omni",
+      "canal": "#lifehacks",
+      "contexto": "Se discutió una silla ergonómica de precio alto y sus alternativas: LiberNovo Omni, opciones en AliExpress y el listado de Alibaba.",
+      "tags": [
+        "hogar",
+        "salud",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://a.aliexpress.com/_mriIxv9",
+      "titulo": "opciones en AliExpress",
+      "canal": "#lifehacks",
+      "contexto": "Se discutió una silla ergonómica de precio alto y sus alternativas: LiberNovo Omni, opciones en AliExpress y el listado de Alibaba.",
+      "tags": [
+        "hogar",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://www.alibaba.com/product-detail/Original-LiberNovo-Omni-Smart-Dynamic-Ergonomic_1601614882887.html",
+      "titulo": "el listado de Alibaba",
+      "canal": "#lifehacks",
+      "contexto": "Se discutió una silla ergonómica de precio alto y sus alternativas: LiberNovo Omni, opciones en AliExpress y el listado de Alibaba.",
+      "tags": [
+        "hogar",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://www.apple.com/shop/product/mw693am/a/polishing-cloth",
+      "titulo": "iPaño",
+      "canal": "#lifehacks",
+      "contexto": "Para limpiar pantallas y lentes, aparecieron el iPaño y los paños Jeden Tag.",
+      "tags": [
+        "compras",
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://www.jumbo.cl/pano-limpieza-lentes-jeden-tag-54-un/p",
+      "titulo": "paños Jeden Tag",
+      "canal": "#lifehacks",
+      "contexto": "Para limpiar pantallas y lentes, aparecieron el iPaño y los paños Jeden Tag.",
+      "tags": [
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://arauco.com/chile/marcas/vesto/",
+      "titulo": "Ver catálogo",
+      "canal": "#diy",
+      "contexto": "Se recomendó el catálogo de tableros de melamina Vesto, útil para buscar repuestos y cortes. Ver catálogo.",
+      "tags": [
+        "hogar",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://youtu.be/8PAacUPhhJU",
+      "titulo": "Ver video",
+      "canal": "#cultura",
+      "contexto": "Héctor compartió un video documental que abrió una conversación sobre la experiencia de personas extranjeras durante los disturbios de Tiananmen en 1989 y el uso de equipamiento antidisturbios. Ver video.",
+      "tags": [
+        "video"
+      ]
+    },
+    {
+      "url": "https://youtu.be/kD2MCtWosa8?si=6aOSXsFPNco7Gx2t",
+      "titulo": "video de YouTube",
+      "canal": "#musiqueria",
+      "contexto": "Se compartieron varias recomendaciones musicales, entre ellas un video de YouTube, un álbum de hardcore punk, una selección en Music YouTube y otra recomendación musical.",
+      "tags": [
+        "musica",
+        "video"
+      ]
+    },
+    {
+      "url": "https://open.spotify.com/album/0CVmP7d79oQJA96jXVPgDW?si=rtO_7rdOQS-Ide44hZVVLw",
+      "titulo": "álbum de hardcore punk",
+      "canal": "#musiqueria",
+      "contexto": "Se compartieron varias recomendaciones musicales, entre ellas un video de YouTube, un álbum de hardcore punk, una selección en Music YouTube y otra recomendación musical.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://music.youtube.com/watch?v=qHGqvYVfpEU",
+      "titulo": "Music YouTube",
+      "canal": "#musiqueria",
+      "contexto": "Se compartieron varias recomendaciones musicales, entre ellas un video de YouTube, un álbum de hardcore punk, una selección en Music YouTube y otra recomendación musical.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://youtu.be/cSw3uh1c_84?si=adNeGJ1s9uFwxUVK",
+      "titulo": "recomendación musical",
+      "canal": "#musiqueria",
+      "contexto": "Se compartieron varias recomendaciones musicales, entre ellas un video de YouTube, un álbum de hardcore punk, una selección en Music YouTube y otra recomendación musical.",
+      "tags": [
+        "musica",
+        "video"
+      ]
+    }
+  ]
+}

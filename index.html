@@ -108,6 +108,32 @@
         <p class="section-sub">Todo el archivo es público. Léelo antes de suscribirte.</p>
       </div>
 
+      <!-- Buscador: js/buscar.js lo muestra y lo llena desde /buscar.json -->
+      <div class="buscador" id="buscador" role="search" hidden>
+        <label class="buscador-label" for="buscar-q">Buscar en ediciones anteriores</label>
+        <div class="buscador-fila">
+          <input
+            type="search"
+            id="buscar-q"
+            placeholder="Ej: rust, steam deck, agentes…"
+            autocomplete="off"
+            spellcheck="false"
+            maxlength="100"
+            aria-controls="buscar-resultados"
+            aria-describedby="buscar-estado">
+          <label class="sr-only" for="buscar-canal">Filtrar por canal</label>
+          <select id="buscar-canal">
+            <option value="">Todos los canales</option>
+          </select>
+        </div>
+        <div class="buscador-tags" id="buscar-tags" role="group" aria-label="Filtrar por tema" hidden></div>
+        <p class="buscador-estado" id="buscar-estado" role="status" aria-live="polite"></p>
+        <ol class="resultados" id="buscar-resultados" hidden></ol>
+        <p class="editions-more">
+          <button class="btn-link" id="buscar-mas" type="button" hidden>Ver más resultados</button>
+        </p>
+      </div>
+
       <ol class="editions">
         <!-- build:ediciones -->
         <!-- /build:ediciones -->
@@ -144,5 +170,6 @@
   </script>
   <script src="/js/posthog.js"></script>
   <script src="/js/main.js"></script>
+  <script type="module" src="/js/buscar.js"></script>
 </body>
 </html>

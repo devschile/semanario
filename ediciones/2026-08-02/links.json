@@ -1,0 +1,429 @@
+{
+  "edicion": "2026-08-02",
+  "links": [
+    {
+      "url": "https://www.getonbrd.com/jobs/tech-lead-engineer-checkr-santiago",
+      "titulo": "Postular",
+      "canal": "#trabajos",
+      "contexto": "Tech Lead Engineer — Checkr: USD 4.700–5.700/mes. Postular.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://www.getonbrd.com/jobs/ingeniero-a-devops-senior-direccion-chilecompra-santiago",
+      "titulo": "Postular",
+      "canal": "#trabajos",
+      "contexto": "Ing. DevOps Senior — ChileCompra: USD 3.700/mes. Postular.",
+      "tags": [
+        "pegas",
+        "infra",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://pegas.devschile.cl/",
+      "titulo": "pegas.devschile.cl",
+      "canal": "#trabajos",
+      "contexto": "Full-Stack — ComunidadFeliz: USD 1.300–1.800/mes, vía pegas.devschile.cl.",
+      "tags": [
+        "pegas",
+        "devschile",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://buffer.com/journey/1ee8b707-48a0-40cc-a319-3fb7c665a1e8",
+      "titulo": "Postular",
+      "canal": "#trabajos",
+      "contexto": "Senior Infra Engineer — Buffer: USD 164k+/año; remoto, semana de 4 días. Postular.",
+      "tags": [
+        "pegas",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/tonyteshara_looking-for-a-really-strong-ml-engineer-in-share-7487576653850669056-I8iL/",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "ML Engineer: USD 8.000–11.000/mes. Ver aviso.",
+      "tags": [
+        "pegas",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://global66.teamtailor.com/jobs/8151374-frontend-developer-vue-js",
+      "titulo": "Frontend Vue.js en Global66",
+      "canal": "#trabajos",
+      "contexto": "El viernes Jorge compartió una vacante de Frontend Vue.js en Global66.",
+      "tags": [
+        "pegas",
+        "frontend",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.getonbrd.com/empleos/programacion/ux-engineer-senior-admoai-santiago-4b10",
+      "titulo": "UX Engineer Senior en Admoai",
+      "canal": "#trabajos",
+      "contexto": "El jueves Jorge dejó un aviso de UX Engineer Senior en Admoai.",
+      "tags": [
+        "pegas",
+        "diseno",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://www.howdylatam.com/careers",
+      "titulo": "Howdy",
+      "canal": "#trabajos",
+      "contexto": "El martes Darío Macchi pasó las posiciones abiertas de Howdy: AI Engineer, Architect Identity Trust, Backend .NET y Solutions Engineer.",
+      "tags": [
+        "pegas",
+        "ia",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://trueup.io/job-trend",
+      "titulo": "TrueUp",
+      "canal": "#trabajos",
+      "contexto": "El martes Nicolás Gómez compartió TrueUp para seguir las tendencias de pegas.",
+      "tags": [
+        "pegas",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/what-does-it-take-to-run-kimi-k3-locally-share-7488709349154955264-FIuX/",
+      "titulo": "correr Kimi K3 localmente",
+      "canal": "#ai",
+      "contexto": "El jueves Héctor compartió un post sobre correr Kimi K3 localmente — y cuánta RAM necesitas.",
+      "tags": [
+        "ia",
+        "self-hosting",
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-flash",
+      "titulo": "deepseek-v4-flash",
+      "canal": "#ai",
+      "contexto": "El viernes Guillermo Moreno avisó que deepseek-v4-flash lidera los benchmarks de Artificial Analysis.",
+      "tags": [
+        "ia"
+      ]
+    },
+    {
+      "url": "https://buzz.xyz/",
+      "titulo": "buzz.xyz",
+      "canal": "#ai",
+      "contexto": "El jueves Héctor presentó buzz.xyz, «un Slack para personas y agentes».",
+      "tags": [
+        "agentes",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://leaddev.com/event/effective-verification-for-humans-and-agents",
+      "titulo": "Effective verification for humans and agents",
+      "canal": "#ai",
+      "contexto": "El martes Darío Macchi pasó el panel de LeadDev Effective verification for humans and agents.",
+      "tags": [
+        "agentes",
+        "carrera",
+        "video"
+      ]
+    },
+    {
+      "url": "https://github.com/vercel-labs/scriptc",
+      "titulo": "scriptc",
+      "canal": "#desarrollo",
+      "contexto": "El lunes David Lay compartió scriptc, el compilador TypeScript→C de Vercel Labs.",
+      "tags": [
+        "lenguajes",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://github.com/GoogleContainerTools/distroless",
+      "titulo": "distroless",
+      "canal": "#desarrollo",
+      "contexto": "El lunes Glacius pasó distroless, las imágenes Docker minimalistas de Google.",
+      "tags": [
+        "infra",
+        "seguridad",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://po-ru.com/2026/07/29/it-doesnt-matter-whether-matz-is-nice",
+      "titulo": "la polémica entre DHH y el CEO de Shopify",
+      "canal": "#desarrollo",
+      "contexto": "El jueves arveja destapó la polémica entre DHH y el CEO de Shopify.",
+      "tags": [
+        "lenguajes",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://fintual.cl/apv",
+      "titulo": "simulador de APV de Fintual",
+      "canal": "#lifehacks",
+      "contexto": "El jueves Nicolás Gómez pasó el simulador de APV de Fintual, que coronó el hilo de inversiones del miércoles.",
+      "tags": [
+        "finanzas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.mercadolibre.cl/apple-2026-macbook-neo-de-13-pulgadas-chip-a18-pro-de-apple-con-cpu-de-6-nucleos-y-gpu-de-5-nucleos-8gb-memoria-unificada-256gb-amarillo-citrico-distribuidor-autorizado/p/MLC1066172677",
+      "titulo": "MacBook Neo más barato en MercadoLibre",
+      "canal": "#lifehacks",
+      "contexto": "El jueves Iván M encontró el MacBook Neo más barato en MercadoLibre que en la web de Apple.",
+      "tags": [
+        "compras",
+        "hardware",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/ChileInversiones/comments/1v4n28y/alerta_vector_capital_tiene_la_cagada/",
+      "titulo": "Vector Capital en r/ChileInversiones",
+      "canal": "#lifehacks",
+      "contexto": "El lunes Iván M alertó sobre Vector Capital en r/ChileInversiones.",
+      "tags": [
+        "finanzas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://github.com/tsaridas/stremio-docker",
+      "titulo": "stremio-docker",
+      "canal": "#diy",
+      "contexto": "El miércoles Glacius armó stremio-docker, Stremio en Docker.",
+      "tags": [
+        "self-hosting",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.mercadolibre.cl/p/MLC23202196",
+      "titulo": "modelos y precios",
+      "canal": "#diy",
+      "contexto": "El jueves hubo debate de ingleteadoras: Carlos Vallejos, Keldor y valfar compararon modelos y precios.",
+      "tags": [
+        "hogar",
+        "compras"
+      ]
+    },
+    {
+      "url": "http://supermuseum.netlify.app/?play=dos",
+      "titulo": "supermuseum",
+      "canal": "#juegos",
+      "contexto": "El viernes coyote bongwater presentó supermuseum: juegos de DOS jugables en el navegador («testers wanted»).",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/4570720/DragonSword__Awakening/",
+      "titulo": "DragonSword: Awakening",
+      "canal": "#juegos",
+      "contexto": "El lunes Krobus recomendó DragonSword: Awakening en Steam, gacha sin gastar plata.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://youtu.be/h-j-SpRxhHo",
+      "titulo": "gameplay de Warhammer",
+      "canal": "#juegos",
+      "contexto": "El jueves David Lay compartió gameplay de Warhammer.",
+      "tags": [
+        "juegos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://pagesix.com/2026/07/29/celebrity-news/dj-kavinsky-found-dead-in-his-paris-home/",
+      "titulo": "la muerte del DJ Kavinsky",
+      "canal": "#musiqueria",
+      "contexto": "El miércoles Krobus informó la muerte del DJ Kavinsky.",
+      "tags": [
+        "musica",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vvIWvh_l4XA",
+      "titulo": "folk chileno",
+      "canal": "#musiqueria",
+      "contexto": "El miércoles murky pasó folk chileno, «con todos los estilos posibles».",
+      "tags": [
+        "musica",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://open.spotify.com/playlist/5QxdNDYitMFo7SgpglVPQD",
+      "titulo": "su playlist de Spotify",
+      "canal": "#musiqueria",
+      "contexto": "El sábado blmnk compartió su playlist de Spotify.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://anatolyzenkov.com/stolen-buttons",
+      "titulo": "stolen-buttons",
+      "canal": "#ux",
+      "contexto": "El viernes Jorge destacó stolen-buttons, «qué buen proyecto».",
+      "tags": [
+        "diseno",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://www.logo.dev/",
+      "titulo": "logo.dev",
+      "canal": "#ux",
+      "contexto": "El martes Jorge pasó logo.dev, generador de logos con IA.",
+      "tags": [
+        "diseno",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://www.planetadelibros.cl/libro-no-logo/255211",
+      "titulo": "No Logo de Naomi Klein",
+      "canal": "#ux",
+      "contexto": "El lunes hubo hilo de libros de logo y branding: No Logo de Naomi Klein, Logos of Hell y Monogram Logo 2.",
+      "tags": [
+        "diseno",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/-/es/Logos-Hell-Mark-Riddick/dp/0615245013",
+      "titulo": "Logos of Hell",
+      "canal": "#ux",
+      "contexto": "El lunes hubo hilo de libros de logo y branding: No Logo de Naomi Klein, Logos of Hell y Monogram Logo 2.",
+      "tags": [
+        "diseno",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://www.amazon.com/Monogram-Logo-2-Monograms-Ciphers/dp/0957081626",
+      "titulo": "Monogram Logo 2",
+      "canal": "#ux",
+      "contexto": "El lunes hubo hilo de libros de logo y branding: No Logo de Naomi Klein, Logos of Hell y Monogram Logo 2.",
+      "tags": [
+        "diseno",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://gitracers.v4rgas.com/race/devschile/devschile.cl",
+      "titulo": "carreras de commits en gitracers",
+      "canal": "#comunidad",
+      "contexto": "El martes Héctor y Jorge corrieron carreras de commits en gitracers (dependabot casi gana).",
+      "tags": [
+        "devschile",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://danielatik.com/laia/",
+      "titulo": "«La IA I y II»",
+      "canal": "#comunidad",
+      "contexto": "El lunes Jorge compartió los libros «La IA I y II» gratis, con PDFs.",
+      "tags": [
+        "ia",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://kodingvibes.github.io/gamejam-2026/",
+      "titulo": "Game Jam 2026 de Koding Vibes",
+      "canal": "#eventos-juntas",
+      "contexto": "El viernes Jorge anunció la Game Jam 2026 de Koding Vibes.",
+      "tags": [
+        "eventos",
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://builderia.lat/",
+      "titulo": "builderia.lat",
+      "canal": "#eventos-juntas",
+      "contexto": "El miércoles Jorge pasó builderia.lat, «para los viñamarinos».",
+      "tags": [
+        "eventos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/sinsin08051",
+      "titulo": "ilustrador con vibes Evangelion",
+      "canal": "#cultura",
+      "contexto": "El jueves Krobus descubrió un ilustrador con vibes Evangelion mezcladas con yokais y folclor japonés.",
+      "tags": [
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/world/china/china-starts-production-home-grown-immersion-duv-chipmaking-tools-source-2026-07-28/",
+      "titulo": "la litografía DUV por inmersión producida en China",
+      "canal": "#cultura",
+      "contexto": "El miércoles Héctor compartió la noticia de la litografía DUV por inmersión producida en China.",
+      "tags": [
+        "hardware",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@hectorpalmatellez/toki",
+      "titulo": "toki",
+      "canal": "#frontend",
+      "contexto": "El lunes Héctor publicó toki, su proyecto de finde en npm.",
+      "tags": [
+        "devschile",
+        "frontend",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://github.com/devschile/remoto-desde-chile#comisiones-por-recibir-tu-dinero",
+      "titulo": "comisiones del repo remoto-desde-chile",
+      "canal": "#remoto",
+      "contexto": "El miércoles arveja preguntó si las comisiones del repo remoto-desde-chile siguen vigentes.",
+      "tags": [
+        "devschile",
+        "finanzas",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://es.investing.com/etfs/vanguard-s-p-500-technical",
+      "titulo": "análisis técnico del ETF Vanguard S&P 500",
+      "canal": "#moneas",
+      "contexto": "El domingo Jero Dude compartió el análisis técnico del ETF Vanguard S&P 500.",
+      "tags": [
+        "finanzas"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/4-uA2BegJIs",
+      "titulo": "un short de mascotas",
+      "canal": "#mascotas",
+      "contexto": "El lunes Iván M compartió un short de mascotas.",
+      "tags": [
+        "video"
+      ]
+    }
+  ]
+}

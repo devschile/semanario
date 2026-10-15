@@ -12,11 +12,14 @@ semanario/
 ├── ediciones/
 │   └── YYYY-MM-DD/
 │       ├── newsletter.html    # Edición de la semana lista para enviar
-│       └── resumen.md         # Fuente de datos: links y contexto por canal
+│       ├── resumen.md         # Fuente de datos: links y contexto por canal
+│       └── links.json         # Tags de cada link, para el buscador
 │
-├── index.html                 # Landing de suscripción
+├── index.html                 # Landing de suscripción + buscador de links
 ├── css/, js/, assets/         # Estáticos de la landing
-├── scripts/build.mjs          # Arma dist/ para Netlify
+├── scripts/build.mjs          # Arma dist/ para Netlify (incluye buscar.json)
+├── scripts/tags.json          # Vocabulario de tags permitido
+├── scripts/prompt-links.md    # Prompt del bot para etiquetar links
 ├── netlify/functions/         # Endpoints de alta, confirmación y baja
 └── db/                        # Esquema de suscriptores (Neon/Postgres)
 ```
@@ -41,7 +44,9 @@ Un cron del bot (Hermes/Pudú) revisa el historial de Slack de la semana
    600px) y escribe el resultado ya renderizado —sin placeholders— en
    `ediciones/YYYY-MM-DD/newsletter.html` + `resumen.md` (la fuente de datos en
    texto plano, para la versión texto del correo).
-7. Pushea a `main`.
+7. Corre `node scripts/indexar_links.mjs YYYY-MM-DD` y etiqueta los links de
+   `links.json` siguiendo [`scripts/prompt-links.md`](scripts/prompt-links.md).
+8. Pushea a `main`.
 
 ### 2. Publicación — automática, al pushear
 
@@ -56,9 +61,12 @@ directorio `dist/` que se publica en
   inyecta las últimas 4 en la portada y el archivo completo en `/newsletter/`.
   Nadie edita ese listado a mano.
 
+- genera `dist/buscar.json`, el índice del buscador (ver más abajo).
+
 | Ruta | Qué es |
 |---|---|
-| `/` | Landing con el formulario de suscripción |
+| `/` | Landing con el formulario de suscripción y el buscador |
+| `/buscar.json` | Índice de links de todas las ediciones |
 | `/newsletter/` | Archivo con todas las ediciones |
 | `/newsletter/YYYY-MM-DD/` | Una edición, en su versión web |
 | `/ediciones/*` | Redirige (301) a `/newsletter/*` |
@@ -82,6 +90,27 @@ Mailgun a los suscriptores `confirmed` de Neon:
 
 Si la edición más reciente tiene más de 3 días, el script aborta (para no
 reenviar una edición vieja). Un fallo de envío individual no corta la lista.
+
+## Buscador de links
+
+"Buscar en ediciones anteriores", en la portada, busca entre los links de
+todas las ediciones por texto (sin importar tildes ni mayúsculas), canal y
+tag. Funciona entero en el navegador (`js/buscar.js` + `js/buscar-core.js`)
+contra `/buscar.json`, que se descarga recién cuando el buscador entra en
+pantalla. Acepta links directos: `/?q=rust&canal=%23ai&tag=lenguajes`.
+
+De dónde sale cada dato:
+
+- **URL, título, canal y contexto**: del `resumen.md` de cada edición, que el
+  build vuelve a leer en cada deploy (`scripts/lib/indice-links.mjs`). Se
+  indexa cada link markdown de las viñetas; el párrafo de conteo de pegas y la
+  metadata en comentarios `<!-- SEMANARIO_* -->` se omiten.
+- **Tags**: de `links.json`, que genera `scripts/indexar_links.mjs` y completa
+  el bot. El build solo toma los tags de ese archivo, solo si existen en
+  `scripts/tags.json` y como máximo 4 por link; el resto lo descarta con un
+  aviso. Una edición sin `links.json` igual aparece en el buscador, sin tags.
+
+Para agregar un tag nuevo, súmalo a `scripts/tags.json` (slug → nombre visible).
 
 ## Suscripciones
 

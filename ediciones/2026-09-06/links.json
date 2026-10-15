@@ -1,0 +1,404 @@
+{
+  "edicion": "2026-09-06",
+  "links": [
+    {
+      "url": "https://www.linkedin.com/jobs/view/4459523935/",
+      "titulo": "una vacante",
+      "canal": "#trabajos",
+      "contexto": "La comunidad difundió dos búsquedas relacionadas con arquitectura: una vacante y otra oportunidad del área.",
+      "tags": [
+        "pegas",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4461769872/",
+      "titulo": "otra oportunidad del área",
+      "canal": "#trabajos",
+      "contexto": "La comunidad difundió dos búsquedas relacionadas con arquitectura: una vacante y otra oportunidad del área.",
+      "tags": [
+        "pegas",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4462048693/",
+      "titulo": "Ver convocatoria",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan compartió una búsqueda de AI Designer en retail. Ver convocatoria",
+      "tags": [
+        "pegas",
+        "ia",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://cashea.na.teamtailor.com/jobs/649385-full-stack-engineer",
+      "titulo": "Ver convocatoria",
+      "canal": "#trabajos",
+      "contexto": "También apareció una oportunidad de Full Stack Engineer en Cashea. Ver convocatoria",
+      "tags": [
+        "pegas",
+        "frontend",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://log.devschile.cl/construir-rapido-vender-nunca/",
+      "titulo": "Leer en el Log",
+      "canal": "#anuncios",
+      "contexto": "hector compartió la reflexión de alvaroveliz sobre validar ideas de negocio y usar IA para construir productos digitales. Leer en el Log",
+      "tags": [
+        "devschile",
+        "ia",
+        "carrera",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://log.devschile.cl/parece-que-estas-perdiendo-todo-pero-no-es-asi/",
+      "titulo": "Leer en el Log",
+      "canal": "#anuncios",
+      "contexto": "También difundió las ideas de lucioadons sobre cómo la IA está cambiando las definiciones de perfiles profesionales. Leer en el Log",
+      "tags": [
+        "devschile",
+        "ia",
+        "carrera",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://objetos.devschile.cl/",
+      "titulo": "Objetos devsChile",
+      "canal": "#anuncios",
+      "contexto": "hector recordó la preventa de la Tabla devsChile, disponible en Objetos devsChile, y el descuento asociado a la suscripción Gold.",
+      "tags": [
+        "devschile",
+        "hogar",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://soy.devschile.cl/gold",
+      "titulo": "Gold",
+      "canal": "#anuncios",
+      "contexto": "hector recordó la preventa de la Tabla devsChile, disponible en Objetos devsChile, y el descuento asociado a la suscripción Gold.",
+      "tags": [
+        "devschile"
+      ]
+    },
+    {
+      "url": "https://claude.com/blog/cowork-built-in-browser?_bhlid=bee6c54ab49a4f7b63124e1066d07999dd8458a9",
+      "titulo": "Leer sobre Claude built-in browser",
+      "canal": "#ai",
+      "contexto": "dariomac probó el navegador integrado de Claude y compartió sus observaciones sobre skills, autenticación y persistencia de credenciales. Leer sobre Claude built-in browser",
+      "tags": [
+        "ia",
+        "agentes",
+        "seguridad"
+      ]
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "titulo": "GPT-6 Astra",
+      "canal": "#ai",
+      "contexto": "janogonzalez compartió el anuncio de GPT-6 Astra, mientras ramirezmario enlazó una guía para crear juegos con Astra.",
+      "tags": [
+        "ia",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://learn.chatgpt.com/blog/how-to-build-games-with-astra",
+      "titulo": "crear juegos con Astra",
+      "canal": "#ai",
+      "contexto": "janogonzalez compartió el anuncio de GPT-6 Astra, mientras ramirezmario enlazó una guía para crear juegos con Astra.",
+      "tags": [
+        "ia",
+        "juegos",
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://status.claude.com/",
+      "titulo": "estado de los servicios de Claude",
+      "canal": "#ai",
+      "contexto": "n.i.c.e. dejó el estado de los servicios de Claude.",
+      "tags": [
+        "ia",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://about.gitlab.com/blog/when-code-is-abundant/?ck_subscriber_id=926496696",
+      "titulo": "When code is abundant",
+      "canal": "#ai",
+      "contexto": "codeagainst compartió la reflexión de GitLab sobre qué ocurre cuando el código se vuelve abundante. When code is abundant",
+      "tags": [
+        "ia",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "titulo": "Fable and Mythos",
+      "canal": "#ai",
+      "contexto": "janogonzalez recomendó la historia de Fable and Mythos de Anthropic.",
+      "tags": [
+        "ia",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://tt-a1i.github.io/archify/",
+      "titulo": "Archify",
+      "canal": "#ai",
+      "contexto": "raul mostró Archify, una herramienta visual compartida en el canal.",
+      "tags": [
+        "herramientas",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://www.theguardian.com/environment/2026/sep/02/global-heating-warming-1-8c-best-case-scenario-un-united-nations-environment-programme-report",
+      "titulo": "Leer en The Guardian",
+      "canal": "#cultura",
+      "contexto": "gmq compartió el reporte sobre el escenario de 1,8 °C de calentamiento global como mejor caso. Leer en The Guardian",
+      "tags": [
+        "salud",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.sapiens.org/culture/is-romantic-kissing-a-human-universal/",
+      "titulo": "Leer en Sapiens",
+      "canal": "#cultura",
+      "contexto": "catagranic enlazó un análisis sobre si el beso romántico es un universal humano. Leer en Sapiens",
+      "tags": [
+        "salud",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://www.gpuworld.org/",
+      "titulo": "GPU World",
+      "canal": "#cultura",
+      "contexto": "livercake invitó a participar en GPU World.",
+      "tags": [
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://github.com/coldteadotai/pr-lens",
+      "titulo": "PR Lens",
+      "canal": "#desarrollo",
+      "contexto": "eseceve compartió PR Lens, una herramienta para revisar pull requests.",
+      "tags": [
+        "herramientas",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://health.aws.amazon.com/health/status",
+      "titulo": "panel de estado de AWS Health",
+      "canal": "#desarrollo",
+      "contexto": "davidlaym dejó el panel de estado de AWS Health.",
+      "tags": [
+        "infra"
+      ]
+    },
+    {
+      "url": "https://valkachile.com/products/barra-4x-pro%C2%AE-barra-4-posiciones",
+      "titulo": "Valka 4X Pro",
+      "canal": "#diy",
+      "contexto": "raul mostró la barra de dominadas Valka 4X Pro y su cabezal móvil.",
+      "tags": [
+        "hogar",
+        "salud",
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://valkachile.com/products/cabezal-movil-valka-extension-multifuncional-para-escala-sueca",
+      "titulo": "cabezal móvil",
+      "canal": "#diy",
+      "contexto": "raul mostró la barra de dominadas Valka 4X Pro y su cabezal móvil.",
+      "tags": [
+        "hogar",
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.printables.com/model/551828-unoriginal-prusa-drybox",
+      "titulo": "caja seca para filamento",
+      "canal": "#diy",
+      "contexto": "mithrandir_el_maiar compartió un modelo para una caja seca para filamento.",
+      "tags": [
+        "hogar",
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://feralui.dev/gradients",
+      "titulo": "gradientes de Feral UI",
+      "canal": "#frontend",
+      "contexto": "camilorivera86 recomendó la colección de gradientes de Feral UI y Drawably.",
+      "tags": [
+        "frontend",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://www.drawably.dev/",
+      "titulo": "Drawably",
+      "canal": "#frontend",
+      "contexto": "camilorivera86 recomendó la colección de gradientes de Feral UI y Drawably.",
+      "tags": [
+        "frontend",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://eldesconcierto.cl/actualidad/cliente-discapacidad-visual-denuncio-que-no-podia-usar-la-app-su-banco-ayuda-corte-ordeno-adaptarla-30-dias-n5460558",
+      "titulo": "Leer la noticia",
+      "canal": "#frontend",
+      "contexto": "raul recordó el costo de ignorar la accesibilidad a propósito de una denuncia por una app bancaria. Leer la noticia",
+      "tags": [
+        "frontend",
+        "diseno",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.timeextension.com/news/2026/08/play-donkey-kong-64-like-never-before-in-this-promising-native-pc-port-made-without-the-use-of-genai",
+      "titulo": "Leer en Time Extension",
+      "canal": "#juegos",
+      "contexto": "lasagnaandroid compartió la noticia sobre un port nativo de Donkey Kong 64 para PC, realizado sin IA generativa. Leer en Time Extension",
+      "tags": [
+        "juegos",
+        "retro",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://supermuseum.netlify.app/?play=genesis:T-81076",
+      "titulo": "Supermuseum",
+      "canal": "#juegos",
+      "contexto": "livercake siguió con el juego diario de Supermuseum y mostró Foxol como referencia.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://play.foxol.app/",
+      "titulo": "Foxol",
+      "canal": "#juegos",
+      "contexto": "livercake siguió con el juego diario de Supermuseum y mostró Foxol como referencia.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://captown.capcom.com/ja/classic_games/23",
+      "titulo": "Capcom Classic Games",
+      "canal": "#juegos",
+      "contexto": "livercake enlazó Capcom Classic Games.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://github.com/bquenin/interpreter",
+      "titulo": "bquenin/interpreter",
+      "canal": "#juegos",
+      "contexto": "También recomendó el intérprete de bquenin/interpreter para cargar juegos con imports en emuladores.",
+      "tags": [
+        "juegos",
+        "retro",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://www.allbrightlaw.com/CN/10475/1d1bda93f0485327.aspx",
+      "titulo": "AllBright Law",
+      "canal": "#juegos",
+      "contexto": "Un caso legal sobre objetos virtuales en un MMORPG llegó desde AllBright Law.",
+      "tags": [
+        "juegos",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://old.reddit.com/r/videogames/comments/1w66xpl/link_the_faces_of_evil_for_phillips_cdi_running/?ref=share&ref_source=link",
+      "titulo": "Faces of Evil para Philips CD-i",
+      "canal": "#juegos",
+      "contexto": "jorgemedinaleigh rescató la historia de Faces of Evil para Philips CD-i.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://github.com/nikitabobko/AeroSpace",
+      "titulo": "AeroSpace",
+      "canal": "#lifehacks",
+      "contexto": "dsegoviaolivares recomendó AeroSpace, un gestor de ventanas para macOS inspirado en i3.",
+      "tags": [
+        "herramientas",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://www.df.cl/mercados/bolsa-monedas/remezon-en-industria-cripto-orionx-cierra-operaciones-y-acusa-a-dos",
+      "titulo": "Leer en Diario Financiero",
+      "canal": "#moneas",
+      "contexto": "n.i.c.e. compartió la noticia sobre el cierre de operaciones de Orionx y sus acusaciones en la industria cripto. Leer en Diario Financiero",
+      "tags": [
+        "finanzas",
+        "chile",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ykYMLQqD2kY",
+      "titulo": "su recomendación",
+      "canal": "#musiqueria",
+      "contexto": "lasagnaandroid abrió una conversación musical con su recomendación, que reunió 9 respuestas.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://youtu.be/y3Hm8wJ55wQ",
+      "titulo": "otra recomendación",
+      "canal": "#musiqueria",
+      "contexto": "i.ewy12 compartió otra recomendación, con 7 respuestas en el hilo.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://open.spotify.com/track/3Xktu1cwxZBFwXUHF54aiA?si=779fb9a2b88d4cfd",
+      "titulo": "pista en Spotify",
+      "canal": "#musiqueria",
+      "contexto": "janogonzalez dejó una pista en Spotify.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AHeW8McMBS8",
+      "titulo": "cover musical",
+      "canal": "#musiqueria",
+      "contexto": "lasagnaandroid recomendó un cover musical",
+      "tags": [
+        "musica"
+      ]
+    }
+  ]
+}
