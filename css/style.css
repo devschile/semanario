@@ -593,6 +593,12 @@ code {
   .buscador { padding: 1.25rem; }
   .buscador-icono { display: none; }
   .buscador-fila { flex-direction: column; }
+
+  /* En móvil los 30 tags ocupan media pantalla y confunden: basta con texto
+     y canal (el texto igual calza con el nombre de los tags). Los chips solo
+     aparecen si un link compartido trae un tag activo, para poder quitarlo. */
+  .buscador-tags:not(:has([aria-pressed='true'])),
+  .resultado .resultado-tags { display: none; }
   .buscador select { flex-basis: auto; }
 
   .hero-stats { gap: 1rem 1.5rem; }
