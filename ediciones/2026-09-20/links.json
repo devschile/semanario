@@ -1,0 +1,387 @@
+{
+  "edicion": "2026-09-20",
+  "links": [
+    {
+      "url": "https://supermuseum.netlify.app/",
+      "titulo": "Supermuseum",
+      "canal": "Actividad",
+      "contexto": "Miércoles 16 fue el día más activo, con 129 mensajes. En #juegos fue la sesión de RetroAchievements: livercake contó que va camino al 100% de cobertura de logros para Supermuseum y con lasagnaandroid exploraron cómo mostrarlos — calcomanías desbloqueables, no rankings —, mientras un hilo de n.i.c.e. sobre Borderlands…",
+      "tags": [
+        "juegos",
+        "retro",
+        "devschile"
+      ]
+    },
+    {
+      "url": "https://inacap.buk.cl/seleccions/5aeedc67b8288edbb0a73df1fc7d07e88b910a0b8732643d98843f93e993cccc6518faac568245b577bc26a8db4be52dc48de7fbb5d0d6bc3602a73cde657f71/postular",
+      "titulo": "selección en INACAP",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan compartió un proceso de selección en INACAP y tres avisos en LinkedIn: un mobile tech lead, un puesto de jefatura para una viña y otra vacante más.",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4455759999/",
+      "titulo": "mobile tech lead",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan compartió un proceso de selección en INACAP y tres avisos en LinkedIn: un mobile tech lead, un puesto de jefatura para una viña y otra vacante más.",
+      "tags": [
+        "pegas",
+        "mobile"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4463497361/",
+      "titulo": "puesto de jefatura para una viña",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan compartió un proceso de selección en INACAP y tres avisos en LinkedIn: un mobile tech lead, un puesto de jefatura para una viña y otra vacante más.",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4465544762/",
+      "titulo": "otra vacante más",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan compartió un proceso de selección en INACAP y tres avisos en LinkedIn: un mobile tech lead, un puesto de jefatura para una viña y otra vacante más.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/valeriaavalos_haypegafintech-share-7505912443399831552-C-79/",
+      "titulo": "búsqueda fintech",
+      "canal": "#trabajos",
+      "contexto": "hector difundió una búsqueda fintech y, para quien quiera entrarle a QA, un certificado de Microsoft Junior QA Software Tester en Coursera.",
+      "tags": [
+        "pegas",
+        "finanzas"
+      ]
+    },
+    {
+      "url": "https://www.coursera.org/professional-certificates/microsoft-junior-qa-software-tester",
+      "titulo": "certificado de Microsoft Junior QA Software Tester en Coursera",
+      "canal": "#trabajos",
+      "contexto": "hector difundió una búsqueda fintech y, para quien quiera entrarle a QA, un certificado de Microsoft Junior QA Software Tester en Coursera.",
+      "tags": [
+        "aprendizaje",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/sabrinareiris_hiring-softwareengineering-python-share-7506007427755139073-Au8D/",
+      "titulo": "búsqueda de software engineering con foco en Python",
+      "canal": "#trabajos",
+      "contexto": "yixlo compartió una búsqueda de software engineering con foco en Python.",
+      "tags": [
+        "pegas",
+        "backend",
+        "lenguajes"
+      ]
+    },
+    {
+      "url": "https://www.df.cl/economia-y-politica/laboral-personas/el-titulo-ya-no-basta-empresas-cambian-sus-criterios-de-contratacion-y",
+      "titulo": "artículo del DF sobre los nuevos criterios de contratación",
+      "canal": "#trabajos",
+      "contexto": "En #trabajos se comentó el artículo del DF sobre los nuevos criterios de contratación: el título ya no basta — las empresas hoy privilegian habilidades blandas y manejo de IA.",
+      "tags": [
+        "carrera",
+        "ia",
+        "chile",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://github.com/dariomac/agentic-pbr",
+      "titulo": "Agentic PBR",
+      "canal": "#ai",
+      "contexto": "dariomac compartió Agentic PBR, un plugin de Claude que reflota una técnica de revisión de specs de los 90s — la presentará en el TDC de San Pablo y busca feedback de la comunidad.",
+      "tags": [
+        "agentes",
+        "ia",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://www.latercera.com/nacional/noticia/las-advertencias-que-asoman-con-el-giro-del-gobierno-en-la-ley-de-ia/",
+      "titulo": "artículo de La Tercera sobre el giro del gobierno en la Ley de IA",
+      "canal": "#ai",
+      "contexto": "jorgeepunan trajo el artículo de La Tercera sobre el giro del gobierno en la Ley de IA: se pasa de un modelo preventivo europeo a uno de habilitación con sandboxes regulatorios.",
+      "tags": [
+        "ia",
+        "chile",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
+      "titulo": "el mapa completo del cerebro de la mosca de la fruta",
+      "canal": "#ai",
+      "contexto": "yixlo compartió el hito de conectómica de Google: el mapa completo del cerebro de la mosca de la fruta, con su explorador interactivo FlyWire.",
+      "tags": [
+        "salud",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://ngl.flywire.ai/",
+      "titulo": "explorador interactivo FlyWire",
+      "canal": "#ai",
+      "contexto": "yixlo compartió el hito de conectómica de Google: el mapa completo del cerebro de la mosca de la fruta, con su explorador interactivo FlyWire.",
+      "tags": [
+        "salud",
+        "datos"
+      ]
+    },
+    {
+      "url": "https://objetos.devschile.cl/",
+      "titulo": "tablas de Objetos devschile",
+      "canal": "#comunidad",
+      "contexto": "Llegaron las tablas de Objetos devschile: raul recibió la suya y destacó el packaging — «no era estafa» — y gmq aportó: «su chapita holo foil ultra especial de colección».",
+      "tags": [
+        "devschile",
+        "hogar"
+      ]
+    },
+    {
+      "url": "https://storymaps.arcgis.com/stories/9147a4af90da481b845e890abc78ecc8",
+      "titulo": "las mejores fondas de Chile",
+      "canal": "#comunidad",
+      "contexto": "jorgeepunan compartió las mejores fondas de Chile para el fin de fiestas patrias.",
+      "tags": [
+        "chile",
+        "eventos"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cHwbkOwdYfk",
+      "titulo": "The Kirkiversary",
+      "canal": "#cultura",
+      "contexto": "lasagnaandroid compartió The Kirkiversary, lo nuevo de Channel 5 con Andrew Callaghan.",
+      "tags": [
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2VMiVJrU8Fw",
+      "titulo": "análisis sobre OpenAI",
+      "canal": "#cultura",
+      "contexto": "hector dejó un análisis sobre OpenAI: «OpenAI se vuelve más peligrosa a medida que su negocio falla», de Wall Street Millennial.",
+      "tags": [
+        "ia",
+        "finanzas",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.lemonsqueezy.com/",
+      "titulo": "Lemon Squeezy",
+      "canal": "#desarrollo",
+      "contexto": "dsegoviaolivares consultó qué plataforma de pagos usar para vender SaaS desde una empresa chilena; flakolefluk recomendó Lemon Squeezy, que acepta empresa chilena — Stripe no.",
+      "tags": [
+        "finanzas",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/",
+      "titulo": "The Senior Engineer Death Spiral",
+      "canal": "#desarrollo",
+      "contexto": "gmq compartió The Senior Engineer Death Spiral; la frase que quedó flotando: «software is downstream of reputation».",
+      "tags": [
+        "carrera",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://cults3d.com/es/modelo-3d/arte/primal-fang-kronolita",
+      "titulo": "modelo 3D de Fang",
+      "canal": "#diy",
+      "contexto": "ivm está obsesionado con Primal de Genndy Tartakovsky y, ya que no hay figuras, encontró el modelo 3D de Fang para imprimir.",
+      "tags": [
+        "hogar",
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://youtu.be/vPfoNLJc9ZU",
+      "titulo": "un ajuste de slicer que casi nadie usa",
+      "canal": "#diy",
+      "contexto": "davidlaym compartió un ajuste de slicer que casi nadie usa y que deja las paredes mucho más limpias.",
+      "tags": [
+        "hogar",
+        "hardware",
+        "video"
+      ]
+    },
+    {
+      "url": "https://youtu.be/VJNyR5g-N-o",
+      "titulo": "un boombox de los 80 convertido en cyberdeck",
+      "canal": "#diy",
+      "contexto": "davidlaym también encontró un boombox de los 80 convertido en cyberdeck.",
+      "tags": [
+        "hardware",
+        "retro",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/yangshun_fundamental-concepts-every-frontend-engineer-share-7506970946155548673-dWLL/",
+      "titulo": "los conceptos fundamentales que todo frontend engineer debería conocer",
+      "canal": "#frontend",
+      "contexto": "yixlo compartió los conceptos fundamentales que todo frontend engineer debería conocer de Yangshun: «me gustó cómo ordenó la info».",
+      "tags": [
+        "frontend",
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://retroachievements.org/",
+      "titulo": "RetroAchievements",
+      "canal": "#juegos",
+      "contexto": "livercake está en la pasta con los logros de RetroAchievements en Supermuseum: 80%+ de cobertura y varias horas hasheando; las ideas para mostrarlos incluyen calcomanías y achievements custom.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://github.com/nasomers/flycast-wasm/releases/tag/v1.0",
+      "titulo": "Flycast en WebAssembly",
+      "canal": "#juegos",
+      "contexto": "livercake también se fue de madrugada con Flycast en WebAssembly: Dreamcast corriendo en el navegador — «i can't stop now».",
+      "tags": [
+        "juegos",
+        "retro",
+        "open-source",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://www.bcn.cl/leychile/navegar?idNorma=1209272",
+      "titulo": "Ley 21.719 de protección de datos personales",
+      "canal": "#liderazgo",
+      "contexto": "jorgeepunan abrió el debate sobre cómo están aplicando las empresas la Ley 21.719 de protección de datos personales: entre abogados y comerciales que no saben cómo va a funcionar. cvallejos contó que en su empresa ya están implementándola.",
+      "tags": [
+        "seguridad",
+        "datos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://pesaschile.cl/",
+      "titulo": "Pesas Chile",
+      "canal": "#lifehacks",
+      "contexto": "arveja recomendó Pesas Chile para equipar el home gym, incluido el banco regulable que usa.",
+      "tags": [
+        "salud",
+        "hogar",
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://pesaschile.cl/categorias/1117-banco-regulable-plegable-01-forza.html",
+      "titulo": "el banco regulable que usa",
+      "canal": "#lifehacks",
+      "contexto": "arveja recomendó Pesas Chile para equipar el home gym, incluido el banco regulable que usa.",
+      "tags": [
+        "salud",
+        "hogar",
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://masbeneficios.cajalosandes.cl/tiempo-libre-convenio?beneficio=bip!-desc-2000-de-regalo&idc=m3A&idb=8wj",
+      "titulo": "2 lucas de regalo en la BIP",
+      "canal": "#lifehacks",
+      "contexto": "pinceleart avisó de 2 lucas de regalo en la BIP para clientes de Caja Los Andes — y jorgeepunan alcanzó a ir por sus terremotos y volver.",
+      "tags": [
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://youtu.be/Tk9TM7-eTmw",
+      "titulo": "«Joseph» de Falling In Reverse",
+      "canal": "#musiqueria",
+      "contexto": "davidlaym dejó «Joseph» de Falling In Reverse, con Corey Taylor y Serj Tankian de invitados.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://youtu.be/wPGt6vXjujM",
+      "titulo": "«Anthropic Rites of Sublimation» de CH'AHOM",
+      "canal": "#musiqueria",
+      "contexto": "janogonzalez compartió «Anthropic Rites of Sublimation» de CH'AHOM — death metal con nombre de actualidad.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7NQP7n2A5Pk",
+      "titulo": "a Castle Rat en vivo",
+      "canal": "#musiqueria",
+      "contexto": "panconpalta trajo a Castle Rat en vivo y, más tarde, «Blackmurmur» de An Abstract Illusion.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://youtu.be/INbjWsQEdb8",
+      "titulo": "«Blackmurmur» de An Abstract Illusion",
+      "canal": "#musiqueria",
+      "contexto": "panconpalta trajo a Castle Rat en vivo y, más tarde, «Blackmurmur» de An Abstract Illusion.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=k2C5TjS2sh4",
+      "titulo": "«It Must Have Been Love» de Roxette",
+      "canal": "#musiqueria",
+      "contexto": "livercake tiró un clásico: «It Must Have Been Love» de Roxette.",
+      "tags": [
+        "musica",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://vantek.cl/products/xiaomi-scooter-el-ctrico-5-pro",
+      "titulo": "scooter Xiaomi 5 Pro en $300.000",
+      "canal": "#persa",
+      "contexto": "keldor puso en venta un scooter Xiaomi 5 Pro en $300.000 — 8 meses de uso —, y el hilo derivó en cómo desbloquear el límite de 25 km/h.",
+      "tags": [
+        "hardware",
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://ec.cultura.gob.cl/wp-content/uploads/2020/10/0_9_Guiaparaelexportadordeservicioscreativos.pdf",
+      "titulo": "una guía para exportadores de servicios creativos",
+      "canal": "#remoto",
+      "contexto": "oyarcecristian preguntó cómo manejar los impuestos al trabajar remoto para una empresa de EE.UU. con sueldos altos; nico respondió con clase completa: declarar aunque los dólares no entren al país, boleta de servicios vs. empresa, y pasó una guía para exportadores de servicios creativos y un dato de contador.",
+      "tags": [
+        "finanzas",
+        "carrera",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://p.encuadrado.com/p/juan-castaneda",
+      "titulo": "dato de contador",
+      "canal": "#remoto",
+      "contexto": "oyarcecristian preguntó cómo manejar los impuestos al trabajar remoto para una empresa de EE.UU. con sueldos altos; nico respondió con clase completa: declarar aunque los dólares no entren al país, boleta de servicios vs. empresa, y pasó una guía para exportadores de servicios creativos y un dato de contador.",
+      "tags": [
+        "finanzas",
+        "chile"
+      ]
+    }
+  ]
+}

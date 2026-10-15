@@ -1,0 +1,321 @@
+{
+  "edicion": "2026-08-16",
+  "links": [
+    {
+      "url": "https://www.getonbrd.com/jobs/programming/blockchain-engineer-twenty-four-7-remote-f2cb",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "Blockchain Engineer — Twenty Four 7: 12,5k–16,5k/mes; posición remota con posible reubicación. Ver aviso.",
+      "tags": [
+        "pegas",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://vra.usm.cl/ofertas-laborales/academico-a-inf-2/",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "El lunes Jorge compartió una convocatoria para Académico/a de Informática en la USM. Ver aviso.",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfY3A_kfHgS_1pEtXI_y3HuB9mjs9oh2jiAZgauVRWBhcILFQ/viewform",
+      "titulo": "Postular",
+      "canal": "#trabajos",
+      "contexto": "El miércoles Jorge difundió vacantes freelance para AI Engineer, Cloud Engineer y QA Gen AI, disponibles para toda Latinoamérica. Postular.",
+      "tags": [
+        "pegas",
+        "ia",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://datamart.bamboohr.com/careers/105",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "El miércoles se compartió una vacante de Senior Product Designer (UX/UI) para Santiago en modalidad remota. Ver aviso.",
+      "tags": [
+        "pegas",
+        "diseno",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.workingnomads.com/jobs/face-deduplication-collection-telus-digital",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "El jueves Jorge dejó una oportunidad freelance de Face Deduplication Collection en TELUS Digital. Ver aviso.",
+      "tags": [
+        "pegas",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://tenpo.teamtailor.com/jobs?split_view=true&query=&department=Tecnolog%C3%ADa+(IT",
+      "titulo": "Tenpo",
+      "canal": "#trabajos",
+      "contexto": "El sábado Jorge recomendó revisar las vacantes de tecnología de Tenpo).",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "titulo": "Muse Glimmer de Meta",
+      "canal": "#ai",
+      "contexto": "El lunes sego compartió Muse Glimmer de Meta, un modelo agéntico que puede correr localmente.",
+      "tags": [
+        "ia",
+        "agentes",
+        "self-hosting"
+      ]
+    },
+    {
+      "url": "https://uchile.cl/noticias/243241/u-de-chile-presento-dashai-plataforma-chilena-de-ia",
+      "titulo": "dashAI",
+      "canal": "#ai",
+      "contexto": "El lunes Jorge dejó dashAI, la plataforma chilena de IA presentada por la Universidad de Chile.",
+      "tags": [
+        "ia",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.wired.com/story/this-chatbot-is-just-a-random-guy-lol/",
+      "titulo": "ChatTJB",
+      "canal": "#ai",
+      "contexto": "El martes se comentó ChatTJB, una interfaz que se presenta como IA pero conecta a una persona real.",
+      "tags": [
+        "ia",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://state-of-ai-in-design-systems.netlify.app/",
+      "titulo": "State of AI in Design Systems",
+      "canal": "#ai",
+      "contexto": "El miércoles Héctor compartió State of AI in Design Systems, una mirada al uso de IA en sistemas de diseño.",
+      "tags": [
+        "ia",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://deepseek.com/harness/en/",
+      "titulo": "DeepSeek Harness",
+      "canal": "#ai",
+      "contexto": "El jueves janogonzalez dejó DeepSeek Harness, la propuesta de DeepSeek para un entorno de agentes.",
+      "tags": [
+        "agentes",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://www.reuters.com/world/china/us-tell-partners-they-must-pick-sides-ai-race-with-china-2026-08-14/",
+      "titulo": "Reuters sobre la competencia de IA entre EE.UU. y China",
+      "canal": "#ai",
+      "contexto": "El viernes gmq compartió el reporte de Reuters sobre la competencia de IA entre EE.UU. y China.",
+      "tags": [
+        "ia",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+      "titulo": "aprovechar mejor las sesiones de Claude Code",
+      "canal": "#ai",
+      "contexto": "El sábado janogonzalez recomendó la guía de Anthropic para aprovechar mejor las sesiones de Claude Code.",
+      "tags": [
+        "agentes",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://sankalp.bearblog.dev/autoresearch/",
+      "titulo": "Autoresearch",
+      "canal": "#ai",
+      "contexto": "El domingo ivm dejó Autoresearch, un experimento de investigación automatizada.",
+      "tags": [
+        "agentes",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://www.docker.com/blog/why-microvms-the-architecture-behind-docker-sandboxes/",
+      "titulo": "microVMs detrás de Docker Sandboxes",
+      "canal": "#desarrollo",
+      "contexto": "El lunes se compartió cómo funcionan las microVMs detrás de Docker Sandboxes.",
+      "tags": [
+        "infra",
+        "seguridad",
+        "agentes"
+      ]
+    },
+    {
+      "url": "https://danluu.com/pl-tokens/",
+      "titulo": "Programming Languages in the Era of LLMs",
+      "canal": "#desarrollo",
+      "contexto": "El miércoles Jorge pidió resumir Programming Languages in the Era of LLMs, un análisis sobre tokens, lenguajes y agentes de programación.",
+      "tags": [
+        "lenguajes",
+        "ia",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/xlsx",
+      "titulo": "SheetJS",
+      "canal": "#desarrollo",
+      "contexto": "El jueves Jorge recomendó SheetJS para trabajar con planillas Excel desde JavaScript.",
+      "tags": [
+        "frontend",
+        "datos",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://www.printables.com/model/1466527-replacement-tray-holder-kinderkraft-enock",
+      "titulo": "repuesto de bandeja para silla Kinderkraft Enock",
+      "canal": "#diy",
+      "contexto": "El miércoles alvaroveliz compartió el modelo 3D para un repuesto de bandeja para silla Kinderkraft Enock.",
+      "tags": [
+        "hogar"
+      ]
+    },
+    {
+      "url": "https://www.todotoner.cl/impresoras/impresoras-3d/impresoras/kobra-s1-anycubic",
+      "titulo": "impresora 3D Anycubic Kobra S1",
+      "canal": "#diy",
+      "contexto": "El miércoles Pablo Jabase recomendó la impresora 3D Anycubic Kobra S1.",
+      "tags": [
+        "hardware",
+        "hogar",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://luma.com/cafe-cursor-valdivia",
+      "titulo": "Café Cursor Valdivia",
+      "canal": "#eventos-juntas",
+      "contexto": "El viernes ivm compartió la invitación a Café Cursor Valdivia.",
+      "tags": [
+        "eventos",
+        "ia",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.vengenceui.com/",
+      "titulo": "Vengence UI",
+      "canal": "#frontend",
+      "contexto": "El viernes Jorge mostró Vengence UI, un sitio de UI que encontró especialmente bien logrado.",
+      "tags": [
+        "frontend",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/3950130/Database_Detective_Minor_Crimes_Division/",
+      "titulo": "Database Detective: Minor Crimes Division",
+      "canal": "#juegos",
+      "contexto": "El lunes ernesto recomendó Database Detective: Minor Crimes Division, un juego de investigación con bases de datos.",
+      "tags": [
+        "juegos",
+        "datos"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/4246860/Security_51/",
+      "titulo": "Security 51",
+      "canal": "#juegos",
+      "contexto": "El miércoles krobus presentó Security 51, un juego de inspección inspirado en Papers, Please.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/4910780/Europe_Heatwave_Simulator",
+      "titulo": "Europe Heatwave Simulator",
+      "canal": "#juegos",
+      "contexto": "El viernes livercake compartió Europe Heatwave Simulator, una curiosidad de Steam.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/3167020/Escape_from_Duckov/",
+      "titulo": "Escape from Duckov",
+      "canal": "#juegos",
+      "contexto": "El sábado carlos encontró Escape from Duckov, el juego de patos que buscaban en el canal.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://calculadora-cmr.vercel.app/",
+      "titulo": "calculadora de beneficios CMR",
+      "canal": "#lifehacks",
+      "contexto": "El viernes cvallejos compartió la calculadora de beneficios CMR para revisar si conviene el nuevo esquema de puntos.",
+      "tags": [
+        "finanzas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RYyi8yATdoQ",
+      "titulo": "análisis de las nuevas condiciones CMR",
+      "canal": "#lifehacks",
+      "contexto": "El viernes asilva dejó un análisis de las nuevas condiciones CMR, con los montos para mantener el beneficio x5.",
+      "tags": [
+        "finanzas",
+        "chile",
+        "video"
+      ]
+    },
+    {
+      "url": "https://gloom.sh/",
+      "titulo": "Gloom",
+      "canal": "#moneas",
+      "contexto": "El jueves Alvaro compartió Gloom, un terminal financiero open source, rápido y extensible para escritorio o TUI.",
+      "tags": [
+        "finanzas",
+        "open-source",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/quiltro/",
+      "titulo": "r/quiltro",
+      "canal": "#mascotas",
+      "contexto": "El viernes ivm invitó a conocer r/quiltro, una comunidad para compartir fotos de quiltros.",
+      "tags": [
+        "chile"
+      ]
+    },
+    {
+      "url": "https://youtube.com/playlist?list=OLAK5uy_l5NkjBkBOBMwuz5ls1bVG-nWB2bD-dKD4&si=m7Fz22AkVLayhwpK",
+      "titulo": "Misery Is a Butterfly de Blonde Redhead",
+      "canal": "#musiqueria",
+      "contexto": "El miércoles nympha compartió el álbum Misery Is a Butterfly de Blonde Redhead.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://log.devschile.cl/chucao-para-dejar-de-reinventar-la-rueda-en-proyectos-devschile/",
+      "titulo": "Chucao para dejar de reinventar la rueda en proyectos devsChile",
+      "canal": "#anuncios",
+      "contexto": "Guillermo publicó Chucao para dejar de reinventar la rueda en proyectos devsChile: explica cómo el design system entrega un contrato determinístico a los agentes para evitar interfaces inconsistentes.",
+      "tags": [
+        "devschile",
+        "diseno",
+        "agentes",
+        "lectura"
+      ]
+    }
+  ]
+}

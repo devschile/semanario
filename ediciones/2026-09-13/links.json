@@ -1,0 +1,405 @@
+{
+  "edicion": "2026-09-13",
+  "links": [
+    {
+      "url": "https://cenia.fiona.cl/jobs?company=CENIA",
+      "titulo": "búsqueda de IA del gobierno en CENIA",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan destacó una búsqueda de IA del gobierno en CENIA, con sueldo acorde al mercado.",
+      "tags": [
+        "pegas",
+        "ia",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.dprime.io/empleos/",
+      "titulo": "tech lead .NET",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan también compartió un tech lead .NET y un puesto de ingeniería en el Santander, este último sin rango de renta.",
+      "tags": [
+        "pegas",
+        "backend",
+        "lenguajes"
+      ]
+    },
+    {
+      "url": "https://santander.wd3.myworkdayjobs.com/SantanderCareers/job/SANTIAGO/Ingeniero-en-Desarrollo-de-Experiencias-Digitales---Santiago_Req1608022?Source=pega",
+      "titulo": "puesto de ingeniería en el Santander",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan también compartió un tech lead .NET y un puesto de ingeniería en el Santander, este último sin rango de renta.",
+      "tags": [
+        "pegas",
+        "frontend",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4465325542/",
+      "titulo": "una vacante",
+      "canal": "#trabajos",
+      "contexto": "nicoavila difundió una vacante en la que trabajó y quedó disponible para responder dudas.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://www.empleospublicos.cl/pub/convocatorias/convpostularavisoTrabajo.aspx?i=142822&c=0&j=0&tipo=convpostularavisoTrabajo",
+      "titulo": "convocatoria pública para monitorear volcanes",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan también encontró una curiosa convocatoria pública para monitorear volcanes.",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.astralcodexten.com/p/god-help-us-lets-try-to-learn-about",
+      "titulo": "análisis de interpretabilidad mecanística",
+      "canal": "#ai",
+      "contexto": "dariomac compartió un análisis de interpretabilidad mecanística en Astral Codex Ten.",
+      "tags": [
+        "ia",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://www.elmostrador.cl/noticias/mundo/2026/09/09/investigador-de-anthropic-renuncio-porque-asegura-que-la-ia-puede-matarnos-antes-de-2030/",
+      "titulo": "renuncia de un investigador de Anthropic",
+      "canal": "#ai",
+      "contexto": "codeagainst compartió la renuncia de un investigador de Anthropic que asegura que la IA podría «matarnos» antes de 2030, uno de los temas que encendió el debate del canal.",
+      "tags": [
+        "ia",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://mimo-ai.xiaomimimo.com/desktop/invite/",
+      "titulo": "Xiaomi MiMo Desktop",
+      "canal": "#ai",
+      "contexto": "hector mostró Xiaomi MiMo Desktop: «come memoria» pero funciona, y gmq quedó en probarlo.",
+      "tags": [
+        "ia",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://rootia.skillnest.com/",
+      "titulo": "Root IA",
+      "canal": "#ai",
+      "contexto": "jorgemedinaleigh compartió Root IA, un programa de formación en IA que la comunidad encontró completo pero intenso (4 horas diarias de lunes a viernes).",
+      "tags": [
+        "ia",
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://openvisualizationacademy.org/",
+      "titulo": "Open Visualization Academy",
+      "canal": "#comunidad",
+      "contexto": "jorgeepunan compartió Open Visualization Academy, un curso gratuito de visualización de datos que ditt0 destacó por su foco en accesibilidad.",
+      "tags": [
+        "datos",
+        "diseno",
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/live/VMpwzQiDXiM",
+      "titulo": "DragonJAR Security Conference 2026",
+      "canal": "#comunidad",
+      "contexto": "iarodriguezch avisó del primer día de la DragonJAR Security Conference 2026, con stream en vivo.",
+      "tags": [
+        "seguridad",
+        "eventos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
+      "titulo": "LG smart TVs que registran audio con la pantalla apagada",
+      "canal": "#cultura",
+      "contexto": "ecastillo compartió el caso de las LG smart TVs que registran audio con la pantalla apagada.",
+      "tags": [
+        "seguridad",
+        "hardware",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://youtu.be/HgjXjPP_p3s",
+      "titulo": "Why Nothing Looks Cool Anymore",
+      "canal": "#cultura",
+      "contexto": "davidlaym compartió Why Nothing Looks Cool Anymore, un ensayo audiovisual de Design Theory.",
+      "tags": [
+        "diseno",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.imdb.com/title/tt0905688/",
+      "titulo": "Barbarians",
+      "canal": "#cultura",
+      "contexto": "catuga recomendó Barbarians, la miniserie documental de Terry Jones.",
+      "tags": [
+        "video"
+      ]
+    },
+    {
+      "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+      "titulo": "Tailwind CSS se une a Shopify",
+      "canal": "#desarrollo",
+      "contexto": "janogonzalez compartió que Tailwind CSS se une a Shopify.",
+      "tags": [
+        "frontend",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://omarchy.org/",
+      "titulo": "Omarchy",
+      "canal": "#desarrollo",
+      "contexto": "La comunidad discutió Omarchy, el Linux «agentic» de DHH: a pedro le pareció «medio cursed» y ya circula un dominio parodia.",
+      "tags": [
+        "agentes",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://creative3dp.com/products/extrudex-diy-filament-recycling-machine",
+      "titulo": "máquina DIY para reciclar filamento",
+      "canal": "#diy",
+      "contexto": "mithrandir_el_maiar mostró una máquina DIY para reciclar filamento y sondeó una vaquita para comprarla entre varios.",
+      "tags": [
+        "hardware",
+        "hogar"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7xyBJV-FtKY",
+      "titulo": "PIXEL",
+      "canal": "#diy",
+      "contexto": "iarodriguezch compartió PIXEL, un case modular de PC impreso en 3D.",
+      "tags": [
+        "hardware",
+        "hogar",
+        "video"
+      ]
+    },
+    {
+      "url": "https://kayin.moe/retroachievements",
+      "titulo": "artículo sobre el tema",
+      "canal": "#juegos",
+      "contexto": "gmq tiró la idea de sumar RetroAchievements a Supermuseum (artículo sobre el tema) y livercake la ejecutó: logros propios para NES, SNES, GB, GBA, Genesis y N64.",
+      "tags": [
+        "juegos",
+        "retro",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://supermuseum.netlify.app/?play=psx:SLUS-00001",
+      "titulo": "Ace Combat",
+      "canal": "#juegos",
+      "contexto": "livercake sumó Ace Combat al juego diario — el primer disco del catálogo de la PSX en América — y iarodriguezch compartió el tráiler de Ace Combat 8.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2wMvuUMZxyQ",
+      "titulo": "tráiler de Ace Combat 8",
+      "canal": "#juegos",
+      "contexto": "livercake sumó Ace Combat al juego diario — el primer disco del catálogo de la PSX en América — y iarodriguezch compartió el tráiler de Ace Combat 8.",
+      "tags": [
+        "juegos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://youtu.be/9eQUtOQXYgQ",
+      "titulo": "anuncio cinemático de StarCraft",
+      "canal": "#juegos",
+      "contexto": "davidlaym reaccionó al anuncio cinemático de StarCraft («con fecha 2030») y rherera al anuncio de Diablo 5.",
+      "tags": [
+        "juegos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=laVAS_S9PBk",
+      "titulo": "Zelda 40th Anniversary Direct",
+      "canal": "#juegos",
+      "contexto": "Sobre el Zelda 40th Anniversary Direct, jorgemedinaleigh resumió: «Ocarina of Time versión Unreal 5 y la peli live action para abril 2027».",
+      "tags": [
+        "juegos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.nomanssky.com/cosmos-update/",
+      "titulo": "Cosmos Update de No Man's Sky",
+      "canal": "#juegos",
+      "contexto": "janogonzalez avisó de la Cosmos Update de No Man's Sky y sus 25 GB de descarga.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@DonPocho",
+      "titulo": "Don Pocho",
+      "canal": "#juegos",
+      "contexto": "rherera recomendó canales argentinos de retro, Don Pocho e Itachi Bostero; iarodriguezch respondió con Low Definition, hecho en Chile.",
+      "tags": [
+        "juegos",
+        "retro",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@itachibostero/videos",
+      "titulo": "Itachi Bostero",
+      "canal": "#juegos",
+      "contexto": "rherera recomendó canales argentinos de retro, Don Pocho e Itachi Bostero; iarodriguezch respondió con Low Definition, hecho en Chile.",
+      "tags": [
+        "juegos",
+        "retro",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/@LowDefinitionLD",
+      "titulo": "Low Definition",
+      "canal": "#juegos",
+      "contexto": "rherera recomendó canales argentinos de retro, Don Pocho e Itachi Bostero; iarodriguezch respondió con Low Definition, hecho en Chile.",
+      "tags": [
+        "juegos",
+        "retro",
+        "video",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://worksinprogress.co/issue/virtual-worlds/",
+      "titulo": "Virtual worlds",
+      "canal": "#juegos",
+      "contexto": "livercake compartió Virtual worlds, un repaso a la historia de los mundos virtuales que parte en el C64.",
+      "tags": [
+        "juegos",
+        "retro",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://coffeechronicler.com/gear/espresso-machines/best-portable/",
+      "titulo": "guía de Coffee Chronicler",
+      "canal": "#lifehacks",
+      "contexto": "raul pidió recomendaciones de espresso portátil para sus salidas y, tras un hilo con guía de Coffee Chronicler incluida, compró la Wacaco Minipresso GR2.",
+      "tags": [
+        "hogar",
+        "compras",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://www.mercadolibre.cl/wacaco-minipresso-gr2-molido-color-verde-musgo/p/MLC48784428",
+      "titulo": "Wacaco Minipresso GR2",
+      "canal": "#lifehacks",
+      "contexto": "raul pidió recomendaciones de espresso portátil para sus salidas y, tras un hilo con guía de Coffee Chronicler incluida, compró la Wacaco Minipresso GR2.",
+      "tags": [
+        "hogar",
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iZODN0QUgjI",
+      "titulo": "KALLAX STORAGEBORN de IKEA",
+      "canal": "#lifehacks",
+      "contexto": "iarodriguezch compartió el crossover KALLAX STORAGEBORN de IKEA — Skyrim —, que reabrió la eterna disputa Billy vs. Kallax.",
+      "tags": [
+        "hogar",
+        "juegos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://github.com/ElixirCL/trolebus/",
+      "titulo": "Trolebús",
+      "canal": "#moneas",
+      "contexto": "camilo compartió Trolebús, su proyecto para seguir tus finanzas parseando correos de bancos (Gmail + Gleam) hacia Google Sheets, y pidió más ejemplos de correos para ampliar los parsers.",
+      "tags": [
+        "finanzas",
+        "devschile",
+        "open-source",
+        "lenguajes"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=s1s2E6hXU_M",
+      "titulo": "Arsenal",
+      "canal": "#musiqueria",
+      "contexto": "jorgeepunan compartió Arsenal, lo nuevo de Slipknot, y preguntó qué opina la comunidad.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://youtu.be/UezrC5nNQxE",
+      "titulo": "Tell Me When You've Had Enough",
+      "canal": "#musiqueria",
+      "contexto": "davidlaym dejó Tell Me When You've Had Enough de Evanescence y The Ultimate Weapon de HAVOK.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://music.youtube.com/watch?v=uIO47jfJkIo",
+      "titulo": "The Ultimate Weapon",
+      "canal": "#musiqueria",
+      "contexto": "davidlaym dejó Tell Me When You've Had Enough de Evanescence y The Ultimate Weapon de HAVOK.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://youtu.be/qOVhUHCnfp8",
+      "titulo": "Autumn's Grief",
+      "canal": "#musiqueria",
+      "contexto": "mithrandir_el_maiar compartió Autumn's Grief de Eternal Tears of Sorrow.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://youtu.be/F8WQIxEwbUo",
+      "titulo": "Onward",
+      "canal": "#musiqueria",
+      "contexto": "janogonzalez compartió Onward, el nuevo disco de Lammoth.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://pulentines.cl/discount/devschile",
+      "titulo": "Pulentines",
+      "canal": "Beneficios",
+      "contexto": "15% de descuento en Pulentines, calcetines con humor chileno, usando el código devschile.",
+      "tags": [
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://makeke.cl/",
+      "titulo": "bolsas de café de 250 g de Makeke",
+      "canal": "Beneficios",
+      "contexto": "10% de descuento en bolsas de café de 250 g de Makeke usando el código devschile.",
+      "tags": [
+        "compras",
+        "chile"
+      ]
+    }
+  ]
+}

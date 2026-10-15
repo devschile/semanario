@@ -1,0 +1,482 @@
+{
+  "edicion": "2026-08-09",
+  "links": [
+    {
+      "url": "https://supermuseum.netlify.app/",
+      "titulo": "Super Museum",
+      "canal": "Actividad",
+      "contexto": "Jueves 6 fue el día más activo, con 240 mensajes. El hilo que más prendió fue en #juegos: la conversación sobre cómo se renderizan los juegos del Super Museum reunió 52 respuestas.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://job-boards.greenhouse.io/circleso/jobs/5112809008",
+      "titulo": "Postular",
+      "canal": "#trabajos",
+      "contexto": "Senior Full-Stack SWE, Applied AI — Circle: US$130–140k/año + equity; Ruby on Rails, React, LLMs/RAG/agentes. Postular.",
+      "tags": [
+        "pegas",
+        "ia",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://sparkloop.app/job-postings/mid-level-full-stack-rails-engineer",
+      "titulo": "Postular",
+      "canal": "#trabajos",
+      "contexto": "Full-Stack Rails Engineer — SparkLoop: US$107–130k/año; Rails, Postgres, ElasticSearch, Sidekiq y Hotwire. Postular.",
+      "tags": [
+        "pegas",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/tonyteshara_looking-for-an-engineer-in-latam-with-experience-share-7490780619740741632-ySUT/",
+      "titulo": "Ver aviso",
+      "canal": "#trabajos",
+      "contexto": "Engineer, Computer-Use Agents — startup de IA: US$8.000–10.000/mes como contractor; Python, Playwright, Browser Use, LangGraph y MCP. Ver aviso.",
+      "tags": [
+        "pegas",
+        "agentes",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://www.getonbrd.com/jobs/programming/ai-automation-engineer-manukora-remote",
+      "titulo": "Postular",
+      "canal": "#trabajos",
+      "contexto": "AI Automation Engineer — Manukora: US$4.000–4.850/mes; n8n, Make, Zapier, APIs y SQL. Postular.",
+      "tags": [
+        "pegas",
+        "agentes"
+      ]
+    },
+    {
+      "url": "https://jobs.workable.com/view/3hVpzEsBB7eUvktz3Bmr4z/remote-ai-product-engineer-in-chile-at-koin-limited",
+      "titulo": "Postular",
+      "canal": "#trabajos",
+      "contexto": "AI Product Engineer — Koin: US$4.000/mes; Claude Code, Next.js, Vercel y Supabase. Postular.",
+      "tags": [
+        "pegas",
+        "ia",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://jobs.lever.co/bluelightconsulting/7f4af1bf-414e-456e-88bd-7eeda499ca6d",
+      "titulo": "Software Engineer Elixir/Phoenix en Bluelight Consulting",
+      "canal": "#trabajos",
+      "contexto": "El lunes Jorge compartió una vacante remota de Software Engineer Elixir/Phoenix en Bluelight Consulting.",
+      "tags": [
+        "pegas",
+        "backend",
+        "lenguajes"
+      ]
+    },
+    {
+      "url": "https://mercadolibre.eightfold.ai/careers?domain=mercadolibre.com&triggerGoButton=false&query=123112&start=0&pid=43124651&sort_by=relevance&source=poringa",
+      "titulo": "Software Engineer Back End en Mercado Libre",
+      "canal": "#trabajos",
+      "contexto": "El miércoles Jorge dejó un aviso de Software Engineer Back End en Mercado Libre.",
+      "tags": [
+        "pegas",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://blancocl.dev/",
+      "titulo": "portafolio full-stack",
+      "canal": "#trabajos",
+      "contexto": "El viernes Pablo Blanco presentó sus servicios freelance y portafolio full-stack.",
+      "tags": [
+        "pegas",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4446679159/",
+      "titulo": "Data & AI Engineer en Grenergy",
+      "canal": "#trabajos",
+      "contexto": "El domingo se conversó sobre el rango de sueldo de Data & AI Engineer en Grenergy.",
+      "tags": [
+        "pegas",
+        "datos",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/in/ignacioaranedag/",
+      "titulo": "perfil y contacto",
+      "canal": "#trabajos",
+      "contexto": "Ignacio Araneda ofreció auditorías manuales de QA para MVPs y equipos pequeños; perfil y contacto.",
+      "tags": [
+        "pegas",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://context7.com/",
+      "titulo": "Context7",
+      "canal": "#ai",
+      "contexto": "El lunes Jorge abrió una conversación sobre documentación disponible por MCP y mencionó Context7.",
+      "tags": [
+        "agentes",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://github.com/Hainrixz/skill-vault",
+      "titulo": "Skill Vault",
+      "canal": "#ai",
+      "contexto": "El martes n.i.c.e compartió Skill Vault, su base para un repositorio privado de skills de Claude Code.",
+      "tags": [
+        "agentes",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://fish.audio/",
+      "titulo": "Fish Audio",
+      "canal": "#ai",
+      "contexto": "El martes arveja recomendó Fish Audio como alternativa de voz.",
+      "tags": [
+        "ia"
+      ]
+    },
+    {
+      "url": "https://scanalesespinoza.github.io/adev/",
+      "titulo": "A-Dev Framework",
+      "canal": "#ai",
+      "contexto": "El miércoles se revisó A-Dev Framework, enfoque para gobernar asistentes de IA con reglas vivas, ciclos cortos y trazabilidad; su repositorio quedó enlazado en el hilo.",
+      "tags": [
+        "agentes",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://github.com/scanalesespinoza/adev",
+      "titulo": "repositorio",
+      "canal": "#ai",
+      "contexto": "El miércoles se revisó A-Dev Framework, enfoque para gobernar asistentes de IA con reglas vivas, ciclos cortos y trazabilidad; su repositorio quedó enlazado en el hilo.",
+      "tags": [
+        "agentes",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://os.cloudflare.app/",
+      "titulo": "Cloudflare OS",
+      "canal": "#ai",
+      "contexto": "El jueves se compartió Cloudflare OS, propuesta de Cloudflare para un entorno operativo de agentes.",
+      "tags": [
+        "agentes",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://agentfield.ai/",
+      "titulo": "AgentField",
+      "canal": "#ai",
+      "contexto": "El jueves Jorge contó que probaría AgentField como backend para agentes en un proyecto.",
+      "tags": [
+        "agentes",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://developer.meta.com/ai/lp/muse-code/",
+      "titulo": "Muse Code de Meta",
+      "canal": "#ai",
+      "contexto": "El viernes potato dejó Muse Code de Meta, orientado a desarrolladores de IA.",
+      "tags": [
+        "ia",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://addyo.substack.com/p/agentic-code-quality",
+      "titulo": "Agentic Code Quality",
+      "canal": "#ai",
+      "contexto": "El sábado Héctor compartió Agentic Code Quality y ivm complementó con su agentic-quality-loop.",
+      "tags": [
+        "agentes",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://github.com/ivmirx/agentic-quality-loop",
+      "titulo": "agentic-quality-loop",
+      "canal": "#ai",
+      "contexto": "El sábado Héctor compartió Agentic Code Quality y ivm complementó con su agentic-quality-loop.",
+      "tags": [
+        "agentes",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://myotto.ai/presale",
+      "titulo": "Otto",
+      "canal": "#ai",
+      "contexto": "El sábado se pidió opinión sobre Otto, una plataforma de agentes persistentes.",
+      "tags": [
+        "agentes"
+      ]
+    },
+    {
+      "url": "https://siemprelisto.cl/",
+      "titulo": "Siempre Listo",
+      "canal": "#desarrollo",
+      "contexto": "El jueves se recomendó Siempre Listo, sitio de tutoriales de tecnologías.",
+      "tags": [
+        "aprendizaje",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://l.howdylatam.com/l/jose-valim-tech-talk?utm_campaign=jose_valim_tech_talk&utm_medium=community&utm_source=devschile",
+      "titulo": "Elixir, Unraveled",
+      "canal": "#desarrollo",
+      "contexto": "El viernes Darío Macchi compartió Elixir, Unraveled, entrevista de Howdy con José Valim sobre el origen de Elixir.",
+      "tags": [
+        "lenguajes",
+        "video"
+      ]
+    },
+    {
+      "url": "https://tanstack.com/charts/v0",
+      "titulo": "TanStack Charts",
+      "canal": "#frontend",
+      "contexto": "El viernes kayakista infiltrado compartió la beta de TanStack Charts.",
+      "tags": [
+        "frontend",
+        "datos",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/1478500/Big_Walk/",
+      "titulo": "Big Walk",
+      "canal": "#juegos",
+      "contexto": "El lunes gmq compartió Big Walk.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "http://cakehonolulu.github.io/linux-on-32x/",
+      "titulo": "Linux on the Sega 32X",
+      "canal": "#juegos",
+      "contexto": "El lunes livercake dejó Linux on the Sega 32X: Doom y Linux corriendo en la consola.",
+      "tags": [
+        "retro",
+        "juegos",
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://www.bbc.com/news/articles/cjejyl34345o",
+      "titulo": "compra de EA por US$55 mil millones",
+      "canal": "#juegos",
+      "contexto": "El miércoles carlos compartió la noticia de la compra de EA por US$55 mil millones.",
+      "tags": [
+        "juegos",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://supermuseum.netlify.app/?play=arcade:samsho",
+      "titulo": "Super Museum",
+      "canal": "#juegos",
+      "contexto": "El jueves el Super Museum fue protagonista de la conversación, con juegos arcade y DOS accesibles desde el navegador.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/3799620/Super_Cauldron/",
+      "titulo": "Super Cauldron",
+      "canal": "#juegos",
+      "contexto": "El jueves krobus compartió Super Cauldron en Steam.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2Uf4PcgE8gA",
+      "titulo": "Quake: Dawn of the Machine",
+      "canal": "#juegos",
+      "contexto": "El jueves sego dejó el tráiler de Quake: Dawn of the Machine.",
+      "tags": [
+        "juegos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://youtu.be/mDDopnysHFY?si=rW_dBS5zlmtTAd7W",
+      "titulo": "Jazz Jackrabbit 2 Plus",
+      "canal": "#juegos",
+      "contexto": "El viernes janogonzalez compartió el tráiler de Jazz Jackrabbit 2 Plus.",
+      "tags": [
+        "juegos",
+        "retro",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=M-ihXsFy_FQ",
+      "titulo": "Jodorowsky’s Dune",
+      "canal": "#cultura",
+      "contexto": "El martes lasagna compartió el tráiler de Jodorowsky’s Dune.",
+      "tags": [
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.ecb.europa.eu/euro/banknotes/future_banknotes/html/index.en.html",
+      "titulo": "los futuros billetes de euro",
+      "canal": "#cultura",
+      "contexto": "El jueves blmnk dejó la votación del BCE para el diseño de los futuros billetes de euro.",
+      "tags": [
+        "diseno",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/playlist?list=PLmvMm6hsJgCc9VPDgq8SQEFMln_azyKSG",
+      "titulo": "The Peterman Pod",
+      "canal": "#cultura",
+      "contexto": "El jueves Jorge recomendó The Peterman Pod por sus entrevistas.",
+      "tags": [
+        "video",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://youtu.be/QqVVINYZ2Ps?si=vjcFffY9vd2sZXSD",
+      "titulo": "controlar Home Assistant desde un llavero",
+      "canal": "#diy",
+      "contexto": "El jueves se compartió un tutorial para controlar Home Assistant desde un llavero.",
+      "tags": [
+        "hogar",
+        "self-hosting",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.meetup.com/sysarmy-chile/events/315909300/",
+      "titulo": "AdminChelas + SysAdmin Day",
+      "canal": "#eventos-juntas",
+      "contexto": "El martes pottersys invitó a AdminChelas + SysAdmin Day, encuentro realizado el jueves 6 en el Cali.",
+      "tags": [
+        "eventos",
+        "infra",
+        "chile"
+      ]
+    },
+    {
+      "url": "http://thedevhouse.dev/",
+      "titulo": "TheDevHouse",
+      "canal": "#comunidad",
+      "contexto": "El miércoles Matías presentó TheDevHouse, una red social para devs que desarrolla en su tiempo libre, y se ofreció a colaborar en open source.",
+      "tags": [
+        "devschile",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://es.investing.com/news/stock-market-news/ambarella-en-negociaciones-para-ser-adquirida-por-nxp-semiconductors-3772760",
+      "titulo": "Ambarella y sus negociaciones de adquisición por NXP",
+      "canal": "#moneas",
+      "contexto": "El lunes jaime compartió la noticia sobre Ambarella y sus negociaciones de adquisición por NXP.",
+      "tags": [
+        "finanzas",
+        "hardware",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://youtu.be/RrVx7JSLAWs?si=BfQJKNFImQDVZji_",
+      "titulo": "Heavy Metal Yodeling",
+      "canal": "#musiqueria",
+      "contexto": "El lunes Taladro Percutor Kawaii Eléctrico 10 Mm 600 W Bauker compartió Heavy Metal Yodeling.",
+      "tags": [
+        "musica",
+        "video"
+      ]
+    },
+    {
+      "url": "https://youtu.be/NGu2YqUJKTY",
+      "titulo": "Maniac por Electric Callboy",
+      "canal": "#musiqueria",
+      "contexto": "El miércoles davidlaym dejó un cover de Maniac por Electric Callboy.",
+      "tags": [
+        "musica",
+        "video"
+      ]
+    },
+    {
+      "url": "https://youtu.be/EuX1ZOy7vY8",
+      "titulo": "Disintegration Anxiety en vivo por Explosions In The Sky",
+      "canal": "#musiqueria",
+      "contexto": "El jueves Ale compartió Disintegration Anxiety en vivo por Explosions In The Sky.",
+      "tags": [
+        "musica",
+        "video"
+      ]
+    },
+    {
+      "url": "https://music.youtube.com/watch?v=ere3YVgkcaw&si=10XEbak5ngr0lH_g",
+      "titulo": "Obsidian de GOTHBOY",
+      "canal": "#musiqueria",
+      "contexto": "El jueves valfar dejó Obsidian de GOTHBOY.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://semanario.devschile.cl/",
+      "titulo": "Inscripción en semanario.devschile.cl",
+      "canal": "#anuncios",
+      "contexto": "Héctor anunció el lanzamiento del Semanario: una invitación a suscribirse para recibir semanalmente pegas, links con contexto y anuncios, sin ruido. Inscripción en semanario.devschile.cl.",
+      "tags": [
+        "devschile",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@devschile/chucao",
+      "titulo": "NPM como @devschile/chucao",
+      "canal": "#anuncios",
+      "contexto": "También lanzamos la primera versión de Chucao, el design system de devsChile. Está disponible en NPM como @devschile/chucao y su documentación vive en devschile.github.io/chucao. Seguiremos desarrollándolo para los productos de la comunidad: los aportes son bienvenidos. Gracias a irmirx por la ilustración que inspira…",
+      "tags": [
+        "devschile",
+        "diseno",
+        "frontend",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://devschile.github.io/chucao/",
+      "titulo": "devschile.github.io/chucao",
+      "canal": "#anuncios",
+      "contexto": "También lanzamos la primera versión de Chucao, el design system de devsChile. Está disponible en NPM como @devschile/chucao y su documentación vive en devschile.github.io/chucao. Seguiremos desarrollándolo para los productos de la comunidad: los aportes son bienvenidos. Gracias a irmirx por la ilustración que inspira…",
+      "tags": [
+        "devschile",
+        "diseno",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/irmirx/",
+      "titulo": "irmirx",
+      "canal": "#anuncios",
+      "contexto": "También lanzamos la primera versión de Chucao, el design system de devsChile. Está disponible en NPM como @devschile/chucao y su documentación vive en devschile.github.io/chucao. Seguiremos desarrollándolo para los productos de la comunidad: los aportes son bienvenidos. Gracias a irmirx por la ilustración que inspira…",
+      "tags": [
+        "diseno"
+      ]
+    }
+  ]
+}

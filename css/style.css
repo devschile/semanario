@@ -335,7 +335,7 @@ code {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 .grid h3 { font-size: 1.05rem; }
@@ -394,6 +394,163 @@ code {
   font-size: 0.95rem;
 }
 
+/* ── Buscador de links ───────────────────────────────────────────────── */
+
+/* Los bloques con display propio (flex/grid) también tienen que respetar hidden. */
+[hidden] { display: none !important; }
+
+/* Panel propio, con borde y brillo teal, para que no se confunda con el
+   listado de ediciones de abajo. */
+.buscador {
+  padding: 2rem;
+  border: 1px solid var(--border-hover);
+  border-radius: calc(var(--radius) * 2);
+  background:
+    radial-gradient(80% 120% at 0% 0%, rgba(45, 212, 191, 0.12) 0%, rgba(0, 0, 0, 0) 60%),
+    var(--surface);
+  box-shadow: 0 8px 40px rgba(45, 212, 191, 0.08);
+  backdrop-filter: blur(10px);
+}
+#buscar { scroll-margin-top: 1rem; }
+
+.buscador-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.buscador-head h2 { font-size: clamp(1.35rem, 3.5vw, 1.75rem); }
+.buscador-icono {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  background: rgba(45, 212, 191, 0.15);
+  color: var(--accent);
+}
+
+.nav-buscar {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-buscar:hover { border-color: var(--border-hover); }
+
+.buscador-fila {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.buscador input[type='search'],
+.buscador select {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.buscador input[type='search'] { flex: 1 1 auto; min-width: 0; }
+.buscador select { flex: 0 1 14rem; min-width: 0; }
+.buscador select option { background: var(--bg); }
+.buscador input::placeholder { color: rgba(255, 255, 255, 0.35); }
+.buscador input:focus,
+.buscador select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.12);
+  outline: none;
+}
+
+.buscador-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+}
+
+.chip {
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+}
+.chip:hover { border-color: var(--border-hover); color: var(--text); }
+.chip[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: rgba(45, 212, 191, 0.15);
+  color: var(--accent);
+}
+
+.buscador-estado {
+  margin: 0.85rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.buscador-estado:empty { margin: 0; }
+
+.resultados {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resultado { padding: 1rem 1.25rem; }
+.resultado h3 {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 1.02rem;
+  overflow-wrap: anywhere;
+}
+.resultado-dominio {
+  margin-left: 0.5rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+.resultado p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.resultado-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+}
+.resultado .resultado-tags {
+  margin-top: 0.4rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+}
+
+.btn-link {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+}
+.btn-link:hover { color: var(--accent-hover); }
+
 /* ── CTA final ───────────────────────────────────────────────────────── */
 
 .cta-final {
@@ -430,6 +587,19 @@ code {
 
   .signup-row { flex-direction: column; }
   .signup .btn-primary { width: 100%; }
+
+  .grid { grid-template-columns: 1fr; }
+
+  .buscador { padding: 1.25rem; }
+  .buscador-icono { display: none; }
+  .buscador-fila { flex-direction: column; }
+
+  /* En móvil los 30 tags ocupan media pantalla y confunden: basta con texto
+     y canal (el texto igual calza con el nombre de los tags). Los chips solo
+     aparecen si un link compartido trae un tag activo, para poder quitarlo. */
+  .buscador-tags:not(:has([aria-pressed='true'])),
+  .resultado .resultado-tags { display: none; }
+  .buscador select { flex-basis: auto; }
 
   .hero-stats { gap: 1rem 1.5rem; }
 }

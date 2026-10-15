@@ -26,6 +26,12 @@
       <span class="brand-name">&lt;devschile/&gt;</span>
     </a>
     <nav class="site-nav">
+      <a class="nav-buscar" id="nav-buscar" href="#buscar" aria-label="Buscar en ediciones anteriores" title="Buscar en ediciones anteriores" hidden>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+          <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 20l-4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </a>
       <a href="#ediciones">Ediciones</a>
       <a class="btn-primary btn-sm" href="#suscribirse">Suscribirme</a>
     </nav>
@@ -101,6 +107,48 @@
       </div>
     </section>
 
+    <!-- ── Buscador de links ────────────────────────────────────────── -->
+    <!-- js/buscar.js muestra la sección (sin JS no funciona) y la llena desde /buscar.json -->
+    <section class="section" id="buscar" hidden>
+      <div class="buscador" role="search">
+        <div class="buscador-head">
+          <span class="buscador-icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+              <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M20 20l-4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <div>
+            <h2 id="buscar-titulo">Buscar en ediciones anteriores</h2>
+            <p class="section-sub">¿Viste un link en el Semanario y no recuerdas cuándo? Búscalo por palabra, canal o tema.</p>
+          </div>
+        </div>
+
+        <div class="buscador-fila">
+          <input
+            type="search"
+            id="buscar-q"
+            placeholder="Ej: rust, steam deck, agentes…"
+            autocomplete="off"
+            spellcheck="false"
+            maxlength="100"
+            aria-labelledby="buscar-titulo"
+            aria-controls="buscar-resultados"
+            aria-describedby="buscar-estado">
+          <label class="sr-only" for="buscar-canal">Filtrar por canal</label>
+          <select id="buscar-canal">
+            <option value="">Todos los canales</option>
+          </select>
+        </div>
+        <div class="buscador-tags" id="buscar-tags" role="group" aria-label="Filtrar por tema" hidden></div>
+        <p class="buscador-estado" id="buscar-estado" role="status" aria-live="polite"></p>
+        <ol class="resultados" id="buscar-resultados" hidden></ol>
+        <p class="editions-more">
+          <button class="btn-link" id="buscar-mas" type="button" hidden>Ver más resultados</button>
+        </p>
+      </div>
+    </section>
+
     <!-- ── Historial de ediciones ───────────────────────────────────── -->
     <section class="section" id="ediciones">
       <div class="section-head">
@@ -144,5 +192,6 @@
   </script>
   <script src="/js/posthog.js"></script>
   <script src="/js/main.js"></script>
+  <script type="module" src="/js/buscar.js"></script>
 </body>
 </html>
