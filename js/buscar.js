@@ -13,7 +13,8 @@ import { buscar, contar, prepararIndice } from './buscar-core.js';
 
 const POR_PAGINA = 20;
 
-const raiz = document.getElementById('buscador');
+const raiz = document.getElementById('buscar');
+const navBuscar = document.getElementById('nav-buscar');
 const input = document.getElementById('buscar-q');
 const selectCanal = document.getElementById('buscar-canal');
 const contTags = document.getElementById('buscar-tags');
@@ -28,8 +29,10 @@ let resultados = [];
 let mostrados = 0;
 let usoRegistrado = false;
 
-// Sin JS no hay buscador: el bloque viene oculto en el HTML y se muestra acá.
+// Sin JS no hay buscador: la sección y el ícono del header vienen ocultos en
+// el HTML y se muestran acá.
 raiz.hidden = false;
+navBuscar.hidden = false;
 
 function el(tag, props = {}, hijos = []) {
   const nodo = Object.assign(document.createElement(tag), props);
@@ -167,6 +170,13 @@ contTags.addEventListener('click', (event) => {
 
 botonMas.addEventListener('click', pintarPagina);
 
+// El ícono del header es un ancla a #buscar; además deja el cursor en el input.
+// preventScroll evita que el foco corte el scroll suave del ancla.
+navBuscar.addEventListener('click', () => {
+  cargarIndice();
+  input.focus({ preventScroll: true });
+});
+
 lista.addEventListener('click', (event) => {
   const enlace = event.target.closest('a[target="_blank"]');
   if (!enlace) return;
@@ -176,7 +186,7 @@ lista.addEventListener('click', (event) => {
   });
 });
 
-// Un link tipo /?q=rust&tag=lenguajes#buscador abre con la búsqueda hecha.
+// Un link tipo /?q=rust&tag=lenguajes#buscar abre con la búsqueda hecha.
 const params = new URLSearchParams(window.location.search);
 if (params.get('q') || params.get('canal') || params.get('tag')) {
   input.value = params.get('q') ?? '';

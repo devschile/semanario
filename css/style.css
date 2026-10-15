@@ -335,7 +335,7 @@ code {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 .grid h3 { font-size: 1.05rem; }
@@ -399,15 +399,48 @@ code {
 /* Los bloques con display propio (flex/grid) también tienen que respetar hidden. */
 [hidden] { display: none !important; }
 
-.buscador { margin-bottom: 2.25rem; }
-
-.buscador-label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 700;
+/* Panel propio, con borde y brillo teal, para que no se confunda con el
+   listado de ediciones de abajo. */
+.buscador {
+  padding: 2rem;
+  border: 1px solid var(--border-hover);
+  border-radius: calc(var(--radius) * 2);
+  background:
+    radial-gradient(80% 120% at 0% 0%, rgba(45, 212, 191, 0.12) 0%, rgba(0, 0, 0, 0) 60%),
+    var(--surface);
+  box-shadow: 0 8px 40px rgba(45, 212, 191, 0.08);
+  backdrop-filter: blur(10px);
 }
+#buscar { scroll-margin-top: 1rem; }
+
+.buscador-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.buscador-head h2 { font-size: clamp(1.35rem, 3.5vw, 1.75rem); }
+.buscador-icono {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  background: rgba(45, 212, 191, 0.15);
+  color: var(--accent);
+}
+
+.nav-buscar {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-buscar:hover { border-color: var(--border-hover); }
 
 .buscador-fila {
   display: flex;
@@ -555,6 +588,10 @@ code {
   .signup-row { flex-direction: column; }
   .signup .btn-primary { width: 100%; }
 
+  .grid { grid-template-columns: 1fr; }
+
+  .buscador { padding: 1.25rem; }
+  .buscador-icono { display: none; }
   .buscador-fila { flex-direction: column; }
   .buscador select { flex-basis: auto; }
 
