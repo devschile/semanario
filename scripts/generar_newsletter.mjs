@@ -108,19 +108,45 @@ function bloqueScreenshotTabla(visuales) {
   const link = urlVisual(visuales.screenshot_link) || (visuales.screenshot_link?.startsWith('http') ? visuales.screenshot_link : '');
   const href = link || src;
   const alt = escapar(visuales.screenshot_alt || 'Captura de una conversación o proyecto compartido por la comunidad');
+  const etiqueta = markup(visuales.screenshot_etiqueta || '👀 Un vistazo a la conversación');
   const caption = markup(visuales.screenshot_caption || 'Un vistazo a la conversación de la comunidad');
-  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#141025;border:1px solid #2A2444;border-radius:6px;">\n                <tr>\n                  <td style="padding:14px 16px 16px 16px;">\n                    <p style="margin:0 0 10px 0;color:#9794A8;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">👀 Un vistazo a la conversación</p>\n                    <a href="${escapar(href)}" style="text-decoration:none;"><img src="${escapar(src)}" alt="${alt}" width="504" style="display:block;width:100%;max-width:504px;max-height:230px;object-fit:cover;border:1px solid #2A2444;border-radius:4px;"></a>\n                    <p style="margin:10px 0 0 0;color:#8B87A0;font-size:12px;line-height:1.5;">${caption}${link ? ` · <a href="${escapar(link)}" style="color:#2DD4BF;text-decoration:none;">Ver enlace</a>` : ''}</p>\n                  </td>\n                </tr>\n              </table>`;
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#141025;border:1px solid #2A2444;border-radius:6px;">\n                <tr>\n                  <td style="padding:14px 16px 16px 16px;">\n                    <p style="margin:0 0 10px 0;color:#9794A8;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">${etiqueta}</p>\n                    <a href="${escapar(href)}" style="text-decoration:none;"><img src="${escapar(src)}" alt="${alt}" width="504" style="display:block;width:100%;max-width:504px;max-height:230px;object-fit:cover;border:1px solid #2A2444;border-radius:4px;"></a>\n                    <p style="margin:10px 0 0 0;color:#8B87A0;font-size:12px;line-height:1.5;">${caption}${link ? ` · <a href="${escapar(link)}" style="color:#2DD4BF;text-decoration:none;">Ver enlace</a>` : ''}</p>\n                  </td>\n                </tr>\n              </table>`;
 }
-function bloquesCanal(texto, { visuales = {}, notables = '', ubicacion = {} } = {}) {
+/**
+ * Cada vistazo es un grupo `screenshot`, `screenshot_2`, `screenshot_3`… con sus
+ * claves `_link/_alt/_caption/_canal/_etiqueta`. El `_canal` ubica el bloque
+ * dentro de esa sección; sin canal, se dibuja en el slot general de la edición.
+ * El `screenshot_canal` de SEMANARIO_PLACEMENT se mantiene como fallback del
+ * grupo base para no romper ediciones anteriores.
+ */
+function previewsScreenshot(visuales, ubicacion = {}) {
+  const numero = clave => (clave === 'screenshot' ? 1 : Number(clave.slice('screenshot_'.length)));
+  return Object.keys(visuales)
+    .filter(clave => /^screenshot(_\d+)?$/.test(clave))
+    .sort((a, b) => numero(a) - numero(b))
+    .map(clave => {
+      const sufijo = clave === 'screenshot' ? '' : clave.slice('screenshot'.length);
+      const grupo = { screenshot: visuales[clave] };
+      for (const campo of ['link', 'alt', 'caption', 'canal', 'etiqueta']) {
+        const valor = visuales[`screenshot${sufijo}_${campo}`];
+        if (valor) grupo[`screenshot_${campo}`] = valor;
+      }
+      if (!grupo.screenshot_canal && !sufijo) grupo.screenshot_canal = ubicacion.screenshot_canal;
+      return grupo;
+    })
+    .filter(grupo => urlVisual(grupo.screenshot));
+}
+function bloquesCanal(texto, { previews = [], notables = '', ubicacion = {} } = {}) {
   return [...texto.matchAll(/^### (#[^\n]+)\n([\s\S]*?)(?=^### |(?![\s\S]))/gm)].map(([, canal, cuerpo]) => {
     const canalNormalizado = canal.trim().toLowerCase();
-    const screenshot = ubicacion.screenshot_canal?.toLowerCase() === canalNormalizado
-      ? bloqueScreenshotTabla(visuales)
-      : '';
+    const screenshots = previews
+      .filter(preview => preview.screenshot_canal?.toLowerCase() === canalNormalizado)
+      .map(bloqueScreenshotTabla)
+      .filter(Boolean);
     const notable = ubicacion.notables_canal?.toLowerCase() === canalNormalizado
       ? bloquesNotables(notables, true)
       : '';
-    const destacados = [screenshot, notable].filter(Boolean).join('\n              ');
+    const destacados = [...screenshots, notable].filter(Boolean).join('\n              ');
     const items = lista(cuerpo).map(x => `<li>${markup(x)}</li>`).join('\n                ');
     return `              <p style="margin:18px 0 8px 0;"><span style="display:inline-block;padding:3px 12px;border-radius:999px;background-color:${ACENTOS.naranjo.fondo};color:${ACENTOS.naranjo.texto};font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;">${escapar(canal)}</span></p>${destacados ? `\n              ${destacados}` : ''}\n              <ul style="margin:0;padding-left:20px;font-size:14px;line-height:1.7;color:#C9C6D8;">\n                ${items}\n              </ul>`;
   }).join('\n');
@@ -156,7 +182,7 @@ function bloqueBeneficios(texto) {
 }
 function metadataBloque(nombre) {
   const bloque = md.match(new RegExp(`<!--\\s*${nombre}\\s*([\\s\\S]*?)-->`, 'i'))?.[1] ?? '';
-  return Object.fromEntries([...bloque.matchAll(/^\s*([a-z_]+)\s*:\s*(.*?)\s*$/gim)]
+  return Object.fromEntries([...bloque.matchAll(/^\s*([a-z0-9_]+)\s*:\s*(.*?)\s*$/gim)]
     .map(([, clave, valor]) => [clave.toLowerCase(), valor.trim()]));
 }
 function metadataVisuales() {
@@ -212,10 +238,14 @@ function tarjetaProyecto(cierre) {
   const etiqueta = markup(cierre.proyecto_etiqueta || '✨ Proyecto destacado de la comunidad');
   const titulo = markup(cierre.proyecto_titulo || 'Proyecto destacado de la comunidad');
   const cta = markup(cierre.proyecto_cta || 'Conocer el proyecto →');
+  const imagen = urlVisual(cierre.proyecto_imagen);
+  const imagenHtml = imagen
+    ? `<a href="${escapar(href)}" style="text-decoration:none;"><img src="${escapar(imagen)}" alt="${escapar(cierre.proyecto_imagen_alt || 'Captura del proyecto destacado de la comunidad')}" width="500" style="display:block;width:100%;max-width:500px;height:auto;border:1px solid #2A2444;border-radius:4px;margin:0 0 12px 0;"></a>\n                    `
+    : '';
   const descripcion = cierre.proyecto_descripcion
     ? `<p style="margin:8px 0 0 0;color:#C9C6D8;font-size:13px;line-height:1.6;">${markup(cierre.proyecto_descripcion)}</p>`
     : '';
-  return `          <tr>\n            <td style="padding:18px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:${ACENTOS.lavanda.fondo};border:1px solid ${ACENTOS.lavanda.borde};border-radius:6px;">\n                <tr>\n                  <td style="padding:16px 18px;border-left:3px solid ${ACENTOS.lavanda.texto};">\n                    <p style="margin:0;color:${ACENTOS.lavanda.texto};font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">${etiqueta}</p>\n                    <h2 style="margin:8px 0 0 0;font-size:17px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;"><a href="${escapar(href)}" style="color:${ACENTOS.lavanda.texto};text-decoration:none;">${titulo}</a></h2>\n                    ${descripcion}\n                    <p style="margin:10px 0 0 0;"><a href="${escapar(href)}" style="color:#2DD4BF;text-decoration:none;font-size:12px;">${cta}</a></p>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
+  return `          <tr>\n            <td style="padding:18px 32px 8px 32px;">\n              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:${ACENTOS.lavanda.fondo};border:1px solid ${ACENTOS.lavanda.borde};border-radius:6px;">\n                <tr>\n                  <td style="padding:16px 18px;border-left:3px solid ${ACENTOS.lavanda.texto};">\n                    ${imagenHtml}<p style="margin:0;color:${ACENTOS.lavanda.texto};font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">${etiqueta}</p>\n                    <h2 style="margin:8px 0 0 0;font-size:17px;color:#ffffff;font-family:'Inconsolata','Courier New',monospace;"><a href="${escapar(href)}" style="color:${ACENTOS.lavanda.texto};text-decoration:none;">${titulo}</a></h2>\n                    ${descripcion}\n                    <p style="margin:10px 0 0 0;"><a href="${escapar(href)}" style="color:#2DD4BF;text-decoration:none;font-size:12px;">${cta}</a></p>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>`;
 }
 function bloqueDespedida(cierre) {
   if (!cierre.despedida) return '';
@@ -239,7 +269,8 @@ const visuales = metadataVisuales();
 const ubicacion = metadataUbicacion();
 const cierreEditorial = metadataCierre();
 const beneficios = section('Beneficios para la comunidad');
-const screenshotEnCanal = Boolean(ubicacion.screenshot_canal && urlVisual(visuales.screenshot));
+const previews = previewsScreenshot(visuales, ubicacion);
+const previewsFueraDeCanal = previews.filter(preview => !preview.screenshot_canal);
 const notablesEnCanal = Boolean(ubicacion.notables_canal && notables.trim());
 
 html = html
@@ -250,10 +281,10 @@ html = html
   .replaceAll('{{PEGAS}}', markup(introPegas))
   .replaceAll('{{PEGAS_DESTACADAS}}', destacadas)
   .replaceAll('{{NOTABLES}}', notablesEnCanal ? '' : bloquesNotables(notables))
-  .replaceAll('{{CANALES}}', bloquesCanal(links, { visuales, notables, ubicacion }))
+  .replaceAll('{{CANALES}}', bloquesCanal(links, { previews, notables, ubicacion }))
   .replaceAll('{{BANNER}}', bloqueBanner(visuales))
   .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
-  .replaceAll('{{VISUAL_SCREENSHOT}}', screenshotEnCanal ? '' : visualScreenshot(visuales))
+  .replaceAll('{{VISUAL_SCREENSHOT}}', previewsFueraDeCanal.map(visualScreenshot).join('\n'))
   .replaceAll('{{PROYECTO_DESTACADO}}', tarjetaProyecto(cierreEditorial))
   .replaceAll('{{BENEFICIOS}}', bloqueBeneficios(beneficios))
   .replaceAll('{{DESPEDIDA}}', bloqueDespedida(cierreEditorial));

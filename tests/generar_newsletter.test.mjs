@@ -289,3 +289,120 @@ test('agrega utm_source a todos los links HTTP y conserva query y fragment', asy
     await rm(tmp, { recursive: true, force: true });
   }
 });
+
+test('ubica varios screenshots bajo sus canales con screenshot_2', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-visuales-multi-'));
+  const fechaMulti = '2099-05-08';
+  const edicion = path.join(tmp, 'ediciones', fechaMulti);
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba
+
+## Actividad de la comunidad
+
+- **2 mensajes** publicados en los canales de contenido.
+- **Viernes 8** fue el día más activo, con **2 mensajes**.
+
+## Pegas
+
+Durante la semana se publicó **1 pega nueva**.
+
+## Links de la semana
+
+### #ai
+
+- Se compartió una herramienta. [Ver herramienta](https://example.com/ai).
+
+### #desarrollo
+
+- Se compartió un dataset. [Ver dataset](https://example.com/datos).
+
+<!-- SEMANARIO_VISUALES
+screenshot: assets/vistazo-ai.jpg
+screenshot_link: https://example.com/ai
+screenshot_alt: Captura de la herramienta
+screenshot_caption: La conversación de #ai.
+screenshot_2: assets/vistazo-desarrollo.jpg
+screenshot_2_link: https://example.com/datos
+screenshot_2_alt: Captura del dataset
+screenshot_2_caption: El link de #desarrollo.
+screenshot_2_canal: #desarrollo
+screenshot_2_etiqueta: 👀 Un vistazo al dataset
+-->
+
+<!-- SEMANARIO_PLACEMENT
+screenshot_canal: #ai
+-->
+`);
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaMulti], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' }, stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+    const ai = html.indexOf('>#ai</span>');
+    const desarrollo = html.indexOf('>#desarrollo</span>');
+    const vistazoAi = html.indexOf('vistazo-ai.jpg');
+    const vistazoDesarrollo = html.indexOf('vistazo-desarrollo.jpg');
+    const itemDesarrollo = html.indexOf('Ver dataset', desarrollo);
+
+    assert.ok(ai > -1 && ai < vistazoAi, 'el primer screenshot va bajo #ai');
+    assert.ok(desarrollo > -1 && desarrollo < vistazoDesarrollo, 'screenshot_2 va bajo #desarrollo');
+    assert.ok(vistazoDesarrollo < itemDesarrollo, 'el screenshot va antes de los items restantes de su canal');
+    assert.match(html, /👀 Un vistazo al dataset/);
+    assert.equal([...html.matchAll(/👀 Un vistazo a la conversación/g)].length, 1);
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});
+
+test('renderiza la captura del proyecto destacado cuando se declara proyecto_imagen', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-destacado-imagen-'));
+  const fechaImagen = '2099-06-12';
+  const edicion = path.join(tmp, 'ediciones', fechaImagen);
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba
+
+## Actividad de la comunidad
+
+- **2 mensajes** publicados en los canales de contenido.
+- **Viernes 12** fue el día más activo, con **2 mensajes**.
+
+## Pegas
+
+Durante la semana se publicó **1 pega nueva**.
+
+## Links de la semana
+
+### #comunidad
+
+- Se compartió un proyecto. [Ver proyecto](https://example.com/proyecto).
+
+<!-- SEMANARIO_CIERRE
+proyecto_link: https://showcase.example/proyecto
+proyecto_titulo: Proyecto con captura
+proyecto_descripcion: Una descripción breve.
+proyecto_imagen: assets/proyecto.jpg
+proyecto_imagen_alt: Captura del proyecto con indicadores
+despedida: Nos leemos la próxima semana.
+-->
+`);
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaImagen], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' }, stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+    const imagen = html.indexOf('https://preview.example/newsletter/2099-06-12/assets/proyecto.jpg');
+    const titulo = html.indexOf('Proyecto con captura');
+
+    assert.ok(imagen > -1, 'la imagen del proyecto debe usar la URL pública del asset');
+    assert.ok(imagen < titulo, 'la captura debe preceder al título dentro de la tarjeta');
+    assert.match(html, /alt="Captura del proyecto con indicadores"/);
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});

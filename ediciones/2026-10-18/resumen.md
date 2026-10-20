@@ -61,6 +61,11 @@ Durante la semana se publicaron **167 pegas nuevas** en [pegas.devschile.cl](htt
 - El viernes `lasagnaandroid` pasó [un buscapersonas convertido en nodo Meshtastic](https://hackaday.com/2026/10/14/pager-converted-to-meshtastic-node/).
 
 <!-- SEMANARIO_CIERRE
+proyecto_link: https://showcase.devschile.cl/proyectos/raycast-extension-chilean-indicators/
+proyecto_titulo: CL Indicators — indicadores chilenos en Raycast
+proyecto_descripcion: Extensión de Raycast para consultar UF, UTM, dólar y euro sin abrir el navegador. Publicada en ShowCase() por Rodrigo Herrera.
+proyecto_imagen: assets/raycast-cl-indicators.jpg
+proyecto_imagen_alt: Extensión CL Indicators en Raycast con los valores de dólar, UF, euro y UTM
 despedida: Que el próximo commit venga con contexto y sin sorpresas.
 -->
 
@@ -69,6 +74,12 @@ screenshot: assets/screenshot-comunidad.png
 screenshot_link: https://www.coderabbit.ai/oss
 screenshot_alt: Página de CodeRabbit para proyectos open source, con revisiones de código con IA gratis para OSS
 screenshot_caption: `arveja` abrió el tema de la semana en #ai: cómo montar code review con agentes y evaluar el riesgo de cada cambio. CodeRabbit para proyectos open source fue una de las opciones que aparecieron en la conversación.
+screenshot_2: assets/chile-hub-preview.jpg
+screenshot_2_link: https://tooltician.com/chile-hub/
+screenshot_2_alt: Chile Hub, capas de datos públicos de Chile normalizados y listos para cruzar
+screenshot_2_caption: `jorgeepunan` pasó chile-hub en #desarrollo: datos públicos de Chile normalizados, con archivos Parquet y SQL en el navegador.
+screenshot_2_canal: #desarrollo
+screenshot_2_etiqueta: 👀 Un vistazo a chile-hub
 -->
 
 <!-- SEMANARIO_PLACEMENT
