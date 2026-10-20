@@ -1,0 +1,290 @@
+{
+  "edicion": "2026-10-18",
+  "links": [
+    {
+      "url": "https://www.getonbrd.com/jobs/senior-software-engineer-siteguard-remote",
+      "titulo": "Senior Software Engineer en Siteguard",
+      "canal": "#trabajos",
+      "contexto": "Senior Software Engineer en Siteguard — remoto, USD 3.500–5.000/mes.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://www.getonbrd.com/jobs/especialista-integracion-pleno-bci-santiago-f68d",
+      "titulo": "Especialista Integración Pleno en Bci",
+      "canal": "#trabajos",
+      "contexto": "Especialista Integración Pleno en Bci — Chile, USD 3.500–4.000/mes.",
+      "tags": [
+        "pegas",
+        "backend",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.getonbrd.com/jobs/data-engineer-gcp-senior-tcit-santiago",
+      "titulo": "Data Engineer GCP Senior en TCIT",
+      "canal": "#trabajos",
+      "contexto": "Data Engineer GCP Senior en TCIT — Chile, USD 2.000–2.600/mes.",
+      "tags": [
+        "pegas",
+        "datos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/tldr.tech/7aefaa32-da0f-4b36-9853-738d30fcb69d",
+      "titulo": "Senior Software Engineer, Applied AI en TLDR",
+      "canal": "#trabajos",
+      "contexto": "rherera compartió una vacante de Senior Software Engineer, Applied AI en TLDR, con un rango de USD 250.000–300.000.",
+      "tags": [
+        "pegas",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://castao.pandape.computrabajo.com/Detail/13898029?ov=19",
+      "titulo": "Programador Full Stack en Castaño Panaderías",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan encontró la pega más honesta de la semana: Programador Full Stack en Castaño Panaderías, presencial en Providencia — el «panadero programador».",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.getonbrd.com/jobs/senior-front-end-developer-tcit-santiago-ccfa",
+      "titulo": "Senior Front-end Developer en TCIT",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan también pasó la búsqueda de Senior Front-end Developer en TCIT, con rango de sueldo.",
+      "tags": [
+        "pegas",
+        "frontend",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.coderabbit.ai/oss",
+      "titulo": "CodeRabbit para proyectos open source",
+      "canal": "#ai",
+      "contexto": "El martes arveja abrió el tema de la semana: cómo montar un sistema de code review con agentes y evaluación de riesgo para decidir cuándo un cambio necesita revisión humana. En la conversación aparecieron CodeRabbit para proyectos open source, n8n como orquestador y el artículo de Anthropic sobre cómo rediseñaron el c…",
+      "tags": [
+        "ia",
+        "agentes",
+        "open-source",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "titulo": "cómo rediseñaron el control de versiones",
+      "canal": "#ai",
+      "contexto": "El martes arveja abrió el tema de la semana: cómo montar un sistema de code review con agentes y evaluación de riesgo para decidir cuándo un cambio necesita revisión humana. En la conversación aparecieron CodeRabbit para proyectos open source, n8n como orquestador y el artículo de Anthropic sobre cómo rediseñaron el c…",
+      "tags": [
+        "ia",
+        "herramientas",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://www.onorca.dev/",
+      "titulo": "Orca",
+      "canal": "#ai",
+      "contexto": "El viernes arveja recomendó Orca, su entorno para desarrollar con agentes: «superior a Conductor, la versión free está weníssima».",
+      "tags": [
+        "agentes",
+        "herramientas",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://paseo.sh/",
+      "titulo": "Paseo",
+      "canal": "#ai",
+      "contexto": "El viernes nico contó que usa Paseo para manejar Claude Code, Codex, Copilot y OpenCode desde cualquier lado; la app del celular «funciona muy bien».",
+      "tags": [
+        "agentes",
+        "herramientas",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://agenticengineering101.ai/",
+      "titulo": "Agentic Engineering 101",
+      "canal": "#ai",
+      "contexto": "El sábado pietrogalvani presentó Agentic Engineering 101, un curso gratuito de 11 módulos (en inglés y español) para pasar de usar el chatbot a coordinar varios agentes de código en paralelo sin perder calidad.",
+      "tags": [
+        "aprendizaje",
+        "agentes",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://www.404media.co/accenture-tells-employees-they-can-now-spend-only-29-on-claude-per-month/",
+      "titulo": "404 Media sobre Accenture",
+      "canal": "#ai",
+      "contexto": "El jueves nicoavila trajo la nota de 404 Media sobre Accenture: la consultora limitó a sus empleados a US$29 mensuales de Claude.",
+      "tags": [
+        "ia",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-deletes-tv-shows-entire-edit-weeks-before-release-backup-failure-means-production-team-needs-to-re-edit",
+      "titulo": "un agente de IA que borró meses de edición de un programa de TV",
+      "canal": "#ai",
+      "contexto": "El jueves ecastillo compartió el caso de un agente de IA que borró meses de edición de un programa de TV semanas antes del estreno; hubo que rehacer la temporada completa desde el material en bruto.",
+      "tags": [
+        "ia",
+        "agentes",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://ads.openai.com/",
+      "titulo": "un programa de publicidad",
+      "canal": "#ai",
+      "contexto": "El sábado davidlaym avisó que OpenAI abrió un programa de publicidad que buscaría influir en las respuestas hacia ciertos productos.",
+      "tags": [
+        "ia",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://semanario.devschile.cl/#buscar",
+      "titulo": "buscador de ediciones anteriores del Semanario",
+      "canal": "#comunidad",
+      "contexto": "El jueves jorgeepunan presentó el nuevo buscador de ediciones anteriores del Semanario: «encontré el link con el mismo buscador».",
+      "tags": [
+        "devschile",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://betterthangood.xyz/blog/chaos-or-death/",
+      "titulo": "Chaos or death",
+      "canal": "#comunidad",
+      "contexto": "El jueves también recomendó Chaos or death, un ensayo sobre por qué la IA abarata el desorden y no la coordinación.",
+      "tags": [
+        "lectura",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://viteconf.org/live",
+      "titulo": "ViteConf 2026",
+      "canal": "#comunidad",
+      "contexto": "El jueves leslie avisó que ViteConf 2026 está en vivo.",
+      "tags": [
+        "eventos",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://readrare.com/",
+      "titulo": "Read Rare",
+      "canal": "#desarrollo",
+      "contexto": "El lunes camilo compartió Read Rare, un archivo de memos internos, manuales filtrados y libros olvidados de Apple, Intel, Google, Netflix y Facebook.",
+      "tags": [
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://tooltician.com/chile-hub/",
+      "titulo": "chile-hub",
+      "canal": "#desarrollo",
+      "contexto": "El jueves jorgeepunan pasó chile-hub: datos públicos de Chile normalizados y listos para cruzar, con archivos Parquet y SQL en el navegador.",
+      "tags": [
+        "datos",
+        "chile",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://github.com/segovia-no/MotoRacerRecomp",
+      "titulo": "MotoRacerRecomp",
+      "canal": "#juegos",
+      "contexto": "El martes sego mostró MotoRacerRecomp, una recompilación estática del Moto Racer de 1997 para macOS Apple Silicon: render por software y por hardware (D3D → Metal), resoluciones custom, widescreen y soporte de controles.",
+      "tags": [
+        "juegos",
+        "retro",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://github.com/AsherJN/recall",
+      "titulo": "recall",
+      "canal": "#juegos",
+      "contexto": "El miércoles nicoavila pasó recall, un port open source de Overwatch para Mac; leslie lo probó y confirmó que «funciona realmente joya».",
+      "tags": [
+        "juegos",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://github.com/snuri00/ps2-web-recomp",
+      "titulo": "ps2-web-recomp",
+      "canal": "#juegos",
+      "contexto": "El lunes lasagnaandroid compartió ps2-web-recomp: juegos de PS2 en el navegador mediante recompilación estática a WebAssembly.",
+      "tags": [
+        "juegos",
+        "retro",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://github.com/pablocpas/OpenCMR2",
+      "titulo": "OpenCMR2",
+      "canal": "#juegos",
+      "contexto": "El miércoles raul sumó OpenCMR2, un port nativo SDL3 de Colin McRae Rally 2.0, y el jueves carlo recuperó SpeedBreaker, el recompilado de Need for Speed: Most Wanted 2005.",
+      "tags": [
+        "juegos",
+        "retro",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://github.com/SpeedBreakerProject/speedbreaker/releases/latest",
+      "titulo": "SpeedBreaker",
+      "canal": "#juegos",
+      "contexto": "El miércoles raul sumó OpenCMR2, un port nativo SDL3 de Colin McRae Rally 2.0, y el jueves carlo recuperó SpeedBreaker, el recompilado de Need for Speed: Most Wanted 2005.",
+      "tags": [
+        "juegos",
+        "retro",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/videojuegos/2026/10/14/gigantes-de-videojuegos-piden-sancionar-a-anbernic-principal-fabricante-de-consolas-retro.shtml",
+      "titulo": "BioBioChile sobre la ofensiva de las grandes de los videojuegos contra Anbernic",
+      "canal": "#juegos",
+      "contexto": "El miércoles pinceleart trajo la noticia de BioBioChile sobre la ofensiva de las grandes de los videojuegos contra Anbernic: piden sancionar al fabricante de consolas retro.",
+      "tags": [
+        "juegos",
+        "chile",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.mi.com/cl/product/xiaomi-body-composition-scale-s400/",
+      "titulo": "balanza Xiaomi Body Composition Scale S400",
+      "canal": "#lifehacks",
+      "contexto": "El sábado rherera recomendó la balanza Xiaomi Body Composition Scale S400; pinceleart la comparó con un InBody y le calculó un margen de error cercano al 15%.",
+      "tags": [
+        "hardware",
+        "salud",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://hackaday.com/2026/10/14/pager-converted-to-meshtastic-node/",
+      "titulo": "un buscapersonas convertido en nodo Meshtastic",
+      "canal": "#diy",
+      "contexto": "El viernes lasagnaandroid pasó un buscapersonas convertido en nodo Meshtastic.",
+      "tags": [
+        "hardware",
+        "hogar"
+      ]
+    }
+  ]
+}

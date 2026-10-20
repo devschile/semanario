@@ -59,3 +59,18 @@ Durante la semana se publicaron **167 pegas nuevas** en [pegas.devschile.cl](htt
 ### #diy
 
 - El viernes `lasagnaandroid` pasó [un buscapersonas convertido en nodo Meshtastic](https://hackaday.com/2026/10/14/pager-converted-to-meshtastic-node/).
+
+<!-- SEMANARIO_CIERRE
+despedida: Que el próximo commit venga con contexto y sin sorpresas.
+-->
+
+<!-- SEMANARIO_VISUALES
+screenshot: assets/screenshot-comunidad.png
+screenshot_link: https://www.coderabbit.ai/oss
+screenshot_alt: Página de CodeRabbit para proyectos open source, con revisiones de código con IA gratis para OSS
+screenshot_caption: `arveja` abrió el tema de la semana en #ai: cómo montar code review con agentes y evaluar el riesgo de cada cambio. CodeRabbit para proyectos open source fue una de las opciones que aparecieron en la conversación.
+-->
+
+<!-- SEMANARIO_PLACEMENT
+screenshot_canal: #ai
+-->
