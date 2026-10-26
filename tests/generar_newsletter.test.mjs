@@ -91,6 +91,37 @@ test('renderiza la imagen de anuncios y un screenshot comunitario desde metadata
   }
 });
 
+test('ubica el link destacado al inicio, antes de la semana en números', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-inicio-'));
+  const fechaInicio = '2099-01-23';
+  const edicion = path.join(tmp, 'ediciones', fechaInicio);
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **5 mensajes** publicados en los canales de contenido.\n- **Viernes 23** fue el día más activo, con **3 mensajes**.\n\n## Pegas\n\nDurante la semana se publicaron **1 pega nueva**.\n\n## Links de la semana\n\n### #comunidad\n\n- Se compartió un directorio. [Ver directorio](https://example.com/trabajos).\n\n<!-- SEMANARIO_VISUALES\nscreenshot: assets/directorio-preview.jpg\nscreenshot_link: https://example.com/trabajos\nscreenshot_alt: Directorio de trabajos remotos con sueldos en USD\nscreenshot_etiqueta: 🔗 Link destacado\nscreenshot_caption: Ofertas remotas con el sueldo a la vista.\nscreenshot_canal: inicio\n-->\n`);
+
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaInicio], {
+      cwd: raiz,
+      env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' },
+      stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+    const destacado = html.indexOf('Ofertas remotas con el sueldo a la vista.');
+    const numeros = html.indexOf('La semana en números</h2>');
+
+    assert.ok(destacado > -1, 'el link destacado debe estar en el HTML');
+    assert.ok(destacado < numeros, 'el link destacado debe ir antes de la semana en números');
+    assert.equal(html.split('Ofertas remotas con el sueldo a la vista.').length - 1, 1, 'no debe duplicarse en el slot general');
+    assert.match(html, /href="https:\/\/example\.com\/trabajos\?utm_source=semanario_devschile"/);
+    assert.match(html, /https:\/\/preview\.example\/newsletter\/2099-01-23\/assets\/directorio-preview\.jpg/);
+    assert.match(html, /Link destacado/);
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});
+
 test('renderiza proyecto y despedida antes del footer sin firma', async () => {
   const tmp = await mkdtemp(path.join('/tmp', 'semanario-cierre-'));
   const fechaCierre = '2099-01-09';

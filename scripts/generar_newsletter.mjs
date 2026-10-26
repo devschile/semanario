@@ -279,6 +279,8 @@ const cierreEditorial = metadataCierre();
 const beneficios = section('Beneficios para la comunidad');
 const previews = previewsScreenshot(visuales, ubicacion);
 const previewsFueraDeCanal = previews.filter(preview => !preview.screenshot_canal);
+// `screenshot_canal: inicio` = link destacado arriba de todo, antes de los números.
+const previewsInicio = previews.filter(preview => preview.screenshot_canal?.toLowerCase() === 'inicio');
 const notablesEnCanal = Boolean(ubicacion.notables_canal && notables.trim());
 
 html = html
@@ -293,6 +295,7 @@ html = html
   .replaceAll('{{CANALES}}', bloquesCanal(links, { previews, notables, ubicacion }))
   .replaceAll('{{BANNER}}', bloqueBanner(visuales))
   .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
+  .replaceAll('{{VISUAL_INICIO}}', previewsInicio.map(visualScreenshot).join('\n'))
   .replaceAll('{{VISUAL_SCREENSHOT}}', previewsFueraDeCanal.map(visualScreenshot).join('\n'))
   .replaceAll('{{PROYECTO_DESTACADO}}', tarjetaProyecto(cierreEditorial))
   .replaceAll('{{BENEFICIOS}}', bloqueBeneficios(beneficios))

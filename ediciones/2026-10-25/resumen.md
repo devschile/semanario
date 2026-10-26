@@ -81,6 +81,15 @@ El martes `nicolasgomezespejo` sumó las pegas de [trabajoremoto.cl](https://tra
 - El martes `livercake` dejó [SUNLIGHT de Otis McDonald](https://www.youtube.com/watch?v=gC3kPpOqFhQ), copyright free para editar.
 - El lunes `pedro` puso tres temas de librería: [Giorgio Gaslini](https://www.youtube.com/watch?v=dL0PrrIk4Yk), [Roger Webb](https://www.youtube.com/watch?v=E2PS-zyugTE) y [Lost in A Lonely World](https://www.youtube.com/watch?v=WYLpb0gqYeA).
 
+<!-- SEMANARIO_VISUALES
+screenshot: assets/trabajoremoto-preview.jpg
+screenshot_link: https://trabajoremoto.cl/trabajos/
+screenshot_alt: Directorio de trabajos remotos de trabajoremoto.cl, con sueldos en USD por oferta
+screenshot_etiqueta: 🔗 Link destacado
+screenshot_caption: `nicolasgomezespejo` lo sumó al canal esta semana: trabajos remotos en tech abiertos a Chile, de empresas que publican cuánto pagan antes de postular. Las ofertas se filtran por sueldo, rol, nivel y stack.
+screenshot_canal: inicio
+-->
+
 <!-- SEMANARIO_CIERRE
 despedida: Que el próximo commit venga con contexto y sin sorpresas.
 -->
