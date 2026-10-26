@@ -406,3 +406,29 @@ despedida: Nos leemos la próxima semana.
     await rm(tmp, { recursive: true, force: true });
   }
 });
+
+test('publica la subsección Más avisos compartidos en el bloque de pegas', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-avisos-'));
+  const fechaAvisos = '2099-03-07';
+  const edicion = path.join(tmp, 'ediciones', fechaAvisos);
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), '# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **300 mensajes** publicados en los canales de contenido.\n- **Jueves 5** fue el día más activo, con **40 mensajes**.\n\n## Pegas\n\nDurante la semana se publicaron **9 pegas nuevas**.\n\n### Destacadas con sueldo visible\n\n- [Senior en Kit](https://example.com/kit) — remoto, USD 190.000 al año.\n\n### Más avisos compartidos\n\n- `jorgeepunan` pasó dos [Tech Lead en Bci](https://example.com/bci) y [Tech Lead en Diesel](https://example.com/diesel).\n\n## Links de la semana\n\n### #comunidad\n\n- Se compartió un proyecto. [Ver proyecto](https://example.com/proyecto).\n');
+
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaAvisos], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' }, stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+
+    assert.match(html, /Más avisos compartidos/);
+    assert.match(html, /href="https:\/\/example\.com\/bci\?utm_source=semanario_devschile"/);
+    assert.match(html, /href="https:\/\/example\.com\/diesel\?utm_source=semanario_devschile"/);
+    assert.ok(html.indexOf('example.com/kit') < html.indexOf('example.com/bci'), 'los avisos van después de las destacadas');
+    assert.doesNotMatch(html, /`jorgeepunan`/);
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});

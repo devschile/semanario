@@ -261,6 +261,14 @@ const diaPreheader = actividadItems[1]?.match(/\*\*([^*]+)\*\* fue el día/)?.[1
 const preheader = `${mensajesPreheader}, ${pegasPreheader}${diaPreheader ? ` y ${diaPreheader} como día más activo` : ''}`;
 const destacadas = lista(subsection(pegas, 'Destacadas con sueldo visible'))
   .map(x => `<li>${markup(x)}</li>`).join('\n                ');
+const avisosCompartidos = lista(subsection(pegas, 'Más avisos compartidos'))
+  .map(x => `<li>${markup(x)}</li>`).join('\n                  ');
+const avisosHtml = avisosCompartidos
+  ? `<p style="margin:16px 0 8px 0;color:#9794A8;font-family:'Inconsolata','Courier New',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;">Más avisos compartidos</p>
+              <ul style="margin:0 0 6px 0;padding-left:20px;font-size:14px;line-height:1.9;color:#C9C6D8;">
+                ${avisosCompartidos}
+              </ul>`
+  : '';
 const links = section('Links de la semana');
 const notables = section('Más notables');
 const anuncios = section('#anuncios').replace(/^\*\*Nota editorial:[\s\S]*$/m, '').trim();
@@ -280,6 +288,7 @@ html = html
   .replaceAll('{{ACTIVIDAD}}', `• ${actividad}`)
   .replaceAll('{{PEGAS}}', markup(introPegas))
   .replaceAll('{{PEGAS_DESTACADAS}}', destacadas)
+  .replaceAll('{{PEGAS_AVISOS}}', avisosHtml)
   .replaceAll('{{NOTABLES}}', notablesEnCanal ? '' : bloquesNotables(notables))
   .replaceAll('{{CANALES}}', bloquesCanal(links, { previews, notables, ubicacion }))
   .replaceAll('{{BANNER}}', bloqueBanner(visuales))
