@@ -19,9 +19,7 @@ El martes `nicolasgomezespejo` sumó las pegas de [trabajoremoto.cl](https://tra
 
 ### Más avisos compartidos
 
-- `jorgeepunan` compartió un [Tech Lead en Bci](https://trabajaenbci.cl/offers/proceso/39071) y otro [Tech Lead en Diesel](https://www.linkedin.com/jobs/view/4477316168/).
-- `jorgeepunan` también pasó dos vacantes de Resend: [Platform Engineer](https://resend.com/careers/a9fc1d02-cace-4be9-8d3d-16f4fb137b39) y [Backend Engineer](https://resend.com/careers/df2fe05d-87ca-4e87-a66d-50bb2c9c4859) — remoto para América, USD 140.000–180.000 al año en el caso de backend.
-- `jorgeepunan` dejó además [un llamado a Devs Founders](https://lnkd.in/p/dinncHJA), [un puesto de TL/scrum master](https://www.linkedin.com/jobs/view/4482126642/) y [un remoto con sueldo en Kapso](https://kapso.com/careers/3b31350e-4c1b-46bc-94fd-e2d40cb63a16).
+- `jorgeepunan` fue quien más avisos manuales dejó: un [Tech Lead en Bci](https://trabajaenbci.cl/offers/proceso/39071), otro [Tech Lead en Diesel](https://www.linkedin.com/jobs/view/4477316168/) y dos vacantes de Resend ([Platform Engineer](https://resend.com/careers/a9fc1d02-cace-4be9-8d3d-16f4fb137b39) y [Backend Engineer](https://resend.com/careers/df2fe05d-87ca-4e87-a66d-50bb2c9c4859), remoto para América con USD 140.000–180.000 al año). A ellos sumó [un llamado a Devs Founders](https://lnkd.in/p/dinncHJA), [un puesto de TL/scrum master](https://www.linkedin.com/jobs/view/4482126642/) y [un remoto con sueldo en Kapso](https://kapso.com/careers/3b31350e-4c1b-46bc-94fd-e2d40cb63a16).
 
 ## Links de la semana
 
