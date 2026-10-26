@@ -1,0 +1,503 @@
+{
+  "edicion": "2026-10-25",
+  "links": [
+    {
+      "url": "https://jobs.ashbyhq.com/kit/e3d846ce-ec5c-49bb-baab-6fc3bb069fdb",
+      "titulo": "Senior Infrastructure Engineer II en Kit",
+      "canal": "#trabajos",
+      "contexto": "Senior Infrastructure Engineer II en Kit — remoto, USD 197.000 al año.",
+      "tags": [
+        "pegas",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/nango/aa8125b8-1b0e-42dc-8c8e-2d69eabe0524",
+      "titulo": "Senior+ Full-Stack Engineer en Nango",
+      "canal": "#trabajos",
+      "contexto": "Senior+ Full-Stack Engineer en Nango — Chile, USD 140.000–220.000 al año.",
+      "tags": [
+        "pegas",
+        "frontend",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://www.getonbrd.com/jobs/programming/ingeniero-full-stack-laravel-vue-poderjudicialvirtual-com-remote",
+      "titulo": "Ingeniero Full-Stack Laravel/Vue en PoderJudicialVirtual.com",
+      "canal": "#trabajos",
+      "contexto": "Ingeniero Full-Stack Laravel/Vue en PoderJudicialVirtual.com — remoto, USD 3.000–4.400/mes.",
+      "tags": [
+        "pegas",
+        "backend",
+        "frontend",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://trabajaenbci.cl/offers/proceso/39071",
+      "titulo": "Tech Lead en Bci",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un Tech Lead en Bci, otro Tech Lead en Diesel y dos vacantes de Resend (Platform Engineer y Backend Engineer, remoto para América con USD 140.000–180.000 al año). A ellos sumó un llamado a Devs Founders, un puesto de TL/scrum master y un remoto con sueldo en Kapso.",
+      "tags": [
+        "pegas",
+        "carrera",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4477316168/",
+      "titulo": "Tech Lead en Diesel",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un Tech Lead en Bci, otro Tech Lead en Diesel y dos vacantes de Resend (Platform Engineer y Backend Engineer, remoto para América con USD 140.000–180.000 al año). A ellos sumó un llamado a Devs Founders, un puesto de TL/scrum master y un remoto con sueldo en Kapso.",
+      "tags": [
+        "pegas",
+        "carrera",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://resend.com/careers/a9fc1d02-cace-4be9-8d3d-16f4fb137b39",
+      "titulo": "Platform Engineer",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un Tech Lead en Bci, otro Tech Lead en Diesel y dos vacantes de Resend (Platform Engineer y Backend Engineer, remoto para América con USD 140.000–180.000 al año). A ellos sumó un llamado a Devs Founders, un puesto de TL/scrum master y un remoto con sueldo en Kapso.",
+      "tags": [
+        "pegas",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://resend.com/careers/df2fe05d-87ca-4e87-a66d-50bb2c9c4859",
+      "titulo": "Backend Engineer",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un Tech Lead en Bci, otro Tech Lead en Diesel y dos vacantes de Resend (Platform Engineer y Backend Engineer, remoto para América con USD 140.000–180.000 al año). A ellos sumó un llamado a Devs Founders, un puesto de TL/scrum master y un remoto con sueldo en Kapso.",
+      "tags": [
+        "pegas",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://lnkd.in/p/dinncHJA",
+      "titulo": "un llamado a Devs Founders",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un Tech Lead en Bci, otro Tech Lead en Diesel y dos vacantes de Resend (Platform Engineer y Backend Engineer, remoto para América con USD 140.000–180.000 al año). A ellos sumó un llamado a Devs Founders, un puesto de TL/scrum master y un remoto con sueldo en Kapso.",
+      "tags": [
+        "pegas",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4482126642/",
+      "titulo": "un puesto de TL/scrum master",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un Tech Lead en Bci, otro Tech Lead en Diesel y dos vacantes de Resend (Platform Engineer y Backend Engineer, remoto para América con USD 140.000–180.000 al año). A ellos sumó un llamado a Devs Founders, un puesto de TL/scrum master y un remoto con sueldo en Kapso.",
+      "tags": [
+        "pegas",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://kapso.com/careers/3b31350e-4c1b-46bc-94fd-e2d40cb63a16",
+      "titulo": "un remoto con sueldo en Kapso",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un Tech Lead en Bci, otro Tech Lead en Diesel y dos vacantes de Resend (Platform Engineer y Backend Engineer, remoto para América con USD 140.000–180.000 al año). A ellos sumó un llamado a Devs Founders, un puesto de TL/scrum master y un remoto con sueldo en Kapso.",
+      "tags": [
+        "pegas",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+      "titulo": "cómo el equipo de Claude Code hace code review",
+      "canal": "#ai",
+      "contexto": "El lunes arveja compartió cómo el equipo de Claude Code hace code review, el artículo que volvió a citar el viernes como «la biblia» del tema. La conversación de la semana giró en torno a lo mismo: un sistema que cruza métricas de Datadog —endpoints con más tráfico, error rates, p99— para decidir si un cambio necesita…",
+      "tags": [
+        "ia",
+        "agentes",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://youtu.be/VPU9CjD9g88?si=qKaExHuCHBLHWGG8&t=9415",
+      "titulo": "AI-Driven Expertise Loss",
+      "canal": "#ai",
+      "contexto": "El lunes davidlaym dejó AI-Driven Expertise Loss, con timestamp, sobre qué pasa con el conocimiento de desarrollo cuando todo se automatiza.",
+      "tags": [
+        "ia",
+        "carrera",
+        "video"
+      ]
+    },
+    {
+      "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+      "titulo": "Publish stats, get cited",
+      "canal": "#ai",
+      "contexto": "El martes lasagnaandroid pasó Publish stats, get cited, la táctica para que los modelos citen tus datos.",
+      "tags": [
+        "ia",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://9to5mac.com/2026/10/20/perplexitys-computer-can-now-run-entirely-on-your-mac-even-offline/",
+      "titulo": "Perplexity Computer corriendo entero en un Mac, incluso offline",
+      "canal": "#ai",
+      "contexto": "El martes rherera trajo Perplexity Computer corriendo entero en un Mac, incluso offline, y el miércoles avisó de la caída de Railway.",
+      "tags": [
+        "ia",
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://status.railway.com/incident/QH8L8B3E",
+      "titulo": "caída de Railway",
+      "canal": "#ai",
+      "contexto": "El martes rherera trajo Perplexity Computer corriendo entero en un Mac, incluso offline, y el miércoles avisó de la caída de Railway.",
+      "tags": [
+        "infra",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://github.com/tonylook/managents",
+      "titulo": "managents",
+      "canal": "#ai",
+      "contexto": "El domingo jorgeepunan encontró managents: una pantalla USB de escritorio que muestra qué están haciendo tus agentes de código, con firmware ESP32 y carcasa imprimible en 3D.",
+      "tags": [
+        "agentes",
+        "hardware",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://x.com/cyb3rops/status/2112616479061667936",
+      "titulo": "bugs críticos de PHP",
+      "canal": "#backend",
+      "contexto": "El martes pottersys avisó de los dos bugs críticos de PHP que permiten ejecutar código sin autenticarse, y carlo dejó el detalle de CVE-2026-109618 y CVE-2026-109619: los detalles se filtraron antes de que existiera el parche y entre los afectados están WordPress, Drupal, MediaWiki y Laravel.",
+      "tags": [
+        "seguridad",
+        "lenguajes",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://www.cyberkendra.com/2026/10/php-cve-2026-109618-cve-2026-109619-rce.html",
+      "titulo": "CVE-2026-109618 y CVE-2026-109619",
+      "canal": "#backend",
+      "contexto": "El martes pottersys avisó de los dos bugs críticos de PHP que permiten ejecutar código sin autenticarse, y carlo dejó el detalle de CVE-2026-109618 y CVE-2026-109619: los detalles se filtraron antes de que existiera el parche y entre los afectados están WordPress, Drupal, MediaWiki y Laravel.",
+      "tags": [
+        "seguridad",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://tienda.devschile.cl/",
+      "titulo": "tienda de la comunidad",
+      "canal": "#comunidad",
+      "contexto": "El viernes die.pablogi se presentó como analista programador recién titulado y preguntó por juntas y merchandising: cvallejos respondió con la tienda de la comunidad y quedó la foto de cómo funciona el grupo — 90% online, con juntas de vez en cuando.",
+      "tags": [
+        "devschile",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://insights.getonbrd.com/",
+      "titulo": "Get on Board Insights",
+      "canal": "#comunidad",
+      "contexto": "La semana dejó una conversación larga sobre buscar la primera pega sin título de ingeniería: la conclusión práctica fue fundamentos y networking antes que stack, con Get on Board Insights como fuente de datos del mercado tech latinoamericano.",
+      "tags": [
+        "carrera",
+        "datos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://thedevcards.com/",
+      "titulo": "TheDevCards",
+      "canal": "#comunidad",
+      "contexto": "El lunes jorgeepunan pasó TheDevCards: naipes para gente tech, cada carta con un snippet ejecutable.",
+      "tags": [
+        "aprendizaje",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://keepandroidopen.org/",
+      "titulo": "Keep Android Open",
+      "canal": "#comunidad",
+      "contexto": "El viernes iarodriguezch preguntó por Keep Android Open: en 2027 Google bloqueará toda app Android cuyo desarrollador no se registre con ellos.",
+      "tags": [
+        "mobile",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://skift.com/2026/10/21/airbnbs-new-policy-for-hosts-dont-ask-guests-to-wash-dishes-or-strip-beds/",
+      "titulo": "nueva política de Airbnb para anfitriones",
+      "canal": "#cultura",
+      "contexto": "El miércoles ecastillo pasó la nueva política de Airbnb para anfitriones: se acabó pedir a los huéspedes lavar platos o deshacer camas.",
+      "tags": [
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xftezI7chyI",
+      "titulo": "Una historia de vasconia — El honor de los vascos",
+      "canal": "#cultura",
+      "contexto": "El lunes catuga recomendó Una historia de vasconia — El honor de los vascos.",
+      "tags": [
+        "video"
+      ]
+    },
+    {
+      "url": "https://ismaelcelis.com/posts/2026-10-welcome-to-the-machine/",
+      "titulo": "Welcome to the Machine",
+      "canal": "#desarrollo",
+      "contexto": "El martes jorgeepunan pidió un resumen de Welcome to the Machine, sobre cómo el software se construyó mirando el inventario de datos cuando al negocio le importa el proceso; su conclusión: «CRUD is dead, larga vida al SPEC».",
+      "tags": [
+        "lectura",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://github.com/laravel/framework/security/advisories/GHSA-f9x3-7vq9-cph6",
+      "titulo": "aviso de seguridad de Laravel",
+      "canal": "#desarrollo",
+      "contexto": "El jueves el incidente de PHP siguió en este canal: cvallejos dejó el aviso de seguridad de Laravel, iarodriguezch el análisis de AWS sobre PHP2Shell — lo sabían cuatro días antes del anuncio — y carlo recomendó pwn.watch para seguir incidentes de seguridad en vivo.",
+      "tags": [
+        "seguridad",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+      "titulo": "análisis de AWS sobre PHP2Shell",
+      "canal": "#desarrollo",
+      "contexto": "El jueves el incidente de PHP siguió en este canal: cvallejos dejó el aviso de seguridad de Laravel, iarodriguezch el análisis de AWS sobre PHP2Shell — lo sabían cuatro días antes del anuncio — y carlo recomendó pwn.watch para seguir incidentes de seguridad en vivo.",
+      "tags": [
+        "seguridad",
+        "infra",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://pwn.watch/",
+      "titulo": "pwn.watch",
+      "canal": "#desarrollo",
+      "contexto": "El jueves el incidente de PHP siguió en este canal: cvallejos dejó el aviso de seguridad de Laravel, iarodriguezch el análisis de AWS sobre PHP2Shell — lo sabían cuatro días antes del anuncio — y carlo recomendó pwn.watch para seguir incidentes de seguridad en vivo.",
+      "tags": [
+        "seguridad",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://github.com/jss8649/quiet-tizen",
+      "titulo": "quiet-tizen",
+      "canal": "#diy",
+      "contexto": "El viernes gmq pasó quiet-tizen «pa hackear la tele»: sacarle el bloatware a un smart TV.",
+      "tags": [
+        "self-hosting",
+        "hardware",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/okin.spa/",
+      "titulo": "Okin",
+      "canal": "#diy",
+      "contexto": "El jueves cvallejos resolvió dónde comprar pernos por caja: Okin y Mamut Store.",
+      "tags": [
+        "compras",
+        "hogar",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.mamutstore.com/pernos-maquina/",
+      "titulo": "Mamut Store",
+      "canal": "#diy",
+      "contexto": "El jueves cvallejos resolvió dónde comprar pernos por caja: Okin y Mamut Store.",
+      "tags": [
+        "compras",
+        "hogar",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://anci.hackrocks.com/info/about",
+      "titulo": "ANCi",
+      "canal": "#eventos-juntas",
+      "contexto": "El jueves jorgeepunan pasó ANCi, un desafío de ciberseguridad abierto.",
+      "tags": [
+        "eventos",
+        "seguridad"
+      ]
+    },
+    {
+      "url": "https://www.theclinic.cl/2026/10/22/del-pes-6-a-los-need-for-speed-y-gta-vice-city-los-clasicos-de-playstation-2-que-revivieron-tras-ser-lanzados-por-usuarios-en-version-web/",
+      "titulo": "los clásicos de PS2 que revivieron en versión web",
+      "canal": "#juegos",
+      "contexto": "El viernes jorgeepunan encontró en The Clinic los clásicos de PS2 que revivieron en versión web, entre ports y decomps hechos por usuarios.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://github.com/peiikai/LASRecomp",
+      "titulo": "LASRecomp",
+      "canal": "#juegos",
+      "contexto": "El jueves lasagnaandroid compartió LASRecomp, una recompilación estática de Link's Awakening (Switch) para macOS, Windows y Linux.",
+      "tags": [
+        "juegos",
+        "open-source",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+      "titulo": "jailbreak de Switch 2",
+      "canal": "#juegos",
+      "contexto": "El jueves rherera y gmq pasaron el jailbreak de Switch 2, y iarodriguezch avisó que Easy Anti-Cheat llega a Linux.",
+      "tags": [
+        "juegos",
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://onlineservices.epicgames.com/news/introducing-easy-anti-cheat-linux-v2",
+      "titulo": "Easy Anti-Cheat llega a Linux",
+      "canal": "#juegos",
+      "contexto": "El jueves rherera y gmq pasaron el jailbreak de Switch 2, y iarodriguezch avisó que Easy Anti-Cheat llega a Linux.",
+      "tags": [
+        "juegos",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=v_x66USzRHc",
+      "titulo": "Doom con ragdolls 2D",
+      "canal": "#juegos",
+      "contexto": "El jueves livercake mostró Doom con ragdolls 2D y el sábado recomendó la colección de action-RPGs del SuperMuseum para quien busca algo «no Zelda pero parecido».",
+      "tags": [
+        "juegos",
+        "video"
+      ]
+    },
+    {
+      "url": "https://supermuseum.netlify.app/?collection=action-rpgs",
+      "titulo": "action-RPGs del SuperMuseum",
+      "canal": "#juegos",
+      "contexto": "El jueves livercake mostró Doom con ragdolls 2D y el sábado recomendó la colección de action-RPGs del SuperMuseum para quien busca algo «no Zelda pero parecido».",
+      "tags": [
+        "juegos",
+        "devschile"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/2121510/Tenebris_Somnia/",
+      "titulo": "Tenebris Somnia",
+      "canal": "#juegos",
+      "contexto": "krobus avisó de Tenebris Somnia y de la demo de Dreadmoor; iarodriguezch dejó DeadPoly gratis hasta el domingo.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/5219790/DREADMOOR_Demo/",
+      "titulo": "demo de Dreadmoor",
+      "canal": "#juegos",
+      "contexto": "krobus avisó de Tenebris Somnia y de la demo de Dreadmoor; iarodriguezch dejó DeadPoly gratis hasta el domingo.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/app/1621070",
+      "titulo": "DeadPoly",
+      "canal": "#juegos",
+      "contexto": "krobus avisó de Tenebris Somnia y de la demo de Dreadmoor; iarodriguezch dejó DeadPoly gratis hasta el domingo.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://www.hobbyconsolas.com/videojuegos/capcom-sufre-un-ataque-hacker-se-filtran-los-datos-mas-11-millones-cuentas-id-compania-japonesa-trabaja-para-solventar-problema-pone-aviso-los-jugadores_7052180_0.html",
+      "titulo": "ataque a Capcom con 11 millones de cuentas filtradas",
+      "canal": "#juegos",
+      "contexto": "El sábado rcarmonad trajo el ataque a Capcom con 11 millones de cuentas filtradas.",
+      "tags": [
+        "juegos",
+        "seguridad",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://arc.net/",
+      "titulo": "Arc deja de desarrollarse",
+      "canal": "#lifehacks",
+      "contexto": "El jueves se supo que Arc deja de desarrollarse: carlo pasó la despedida y la conversación terminó en alternativas — Zen, Firefox con uBlock Origin y Orion.",
+      "tags": [
+        "herramientas",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://github.com/danielthejoker18/FreeMyTvWebOS",
+      "titulo": "FreeMyTvWebOS",
+      "canal": "#lifehacks",
+      "contexto": "El jueves jorgeepunan preguntó por FreeMyTvWebOS para sacarle el software de fábrica a las TV LG.",
+      "tags": [
+        "hardware",
+        "self-hosting",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://youtu.be/e4UI-d6amzg",
+      "titulo": "Tigran Hamasyan en vivo en Kino Šiška",
+      "canal": "#musiqueria",
+      "contexto": "El viernes janogonzalez trajo Tigran Hamasyan en vivo en Kino Šiška.",
+      "tags": [
+        "musica",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gC3kPpOqFhQ",
+      "titulo": "SUNLIGHT de Otis McDonald",
+      "canal": "#musiqueria",
+      "contexto": "El martes livercake dejó SUNLIGHT de Otis McDonald, copyright free para editar.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dL0PrrIk4Yk",
+      "titulo": "Giorgio Gaslini",
+      "canal": "#musiqueria",
+      "contexto": "El lunes pedro puso tres temas de librería: Giorgio Gaslini, Roger Webb y Lost in A Lonely World.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=E2PS-zyugTE",
+      "titulo": "Roger Webb",
+      "canal": "#musiqueria",
+      "contexto": "El lunes pedro puso tres temas de librería: Giorgio Gaslini, Roger Webb y Lost in A Lonely World.",
+      "tags": [
+        "musica"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WYLpb0gqYeA",
+      "titulo": "Lost in A Lonely World",
+      "canal": "#musiqueria",
+      "contexto": "El lunes pedro puso tres temas de librería: Giorgio Gaslini, Roger Webb y Lost in A Lonely World.",
+      "tags": [
+        "musica"
+      ]
+    }
+  ]
+}
