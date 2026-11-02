@@ -83,7 +83,8 @@ screenshot: assets/project-zomboid-comunidad.jpg
 screenshot_link: https://store.steampowered.com/app/108600/Project_Zomboid/
 screenshot_alt: Arte de Project Zomboid con un mapache superviviente rodeado de zombis bajo la lluvia
 screenshot_etiqueta: 🎮 Servidor de la comunidad
-screenshot_caption: La comunidad montó un servidor de Project Zomboid y el canal se llenó de coordenadas, libros de habilidades y muertes propias: el viernes fue el día más activo de la semana, con 222 mensajes.
+screenshot_canal: #juegos
+screenshot_caption: El servidor de la comunidad que arrancó el viernes: Project Zomboid, coordenadas y muertes propias.
 -->
 
 <!-- SEMANARIO_CIERRE
