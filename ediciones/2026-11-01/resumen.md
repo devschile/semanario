@@ -2,7 +2,7 @@
 
 ## Actividad de la comunidad
 
-- **666 mensajes** publicados en los canales de contenido.
+- **666 mensajes** 🐐 publicados en los canales de contenido.
 - **Viernes 30** fue el día más activo, con **222 mensajes**: arrancó el servidor de Project Zomboid de la comunidad y, entre mordida y mordida, se discutió qué framework JS conviene cuando el código lo escribe una IA.
 
 ## Pegas
@@ -18,10 +18,6 @@ Durante la semana se publicaron **168 pegas nuevas** en [pegas.devschile.cl](htt
 ### Más avisos compartidos
 
 - `jorgeepunan` fue quien más avisos manuales dejó: un [Engineering Manager en Toku](https://jobs.ashbyhq.com/Toku/d78a57fb-d2cd-4b23-8567-1db350f00068), la [convocatoria de talentos freelance de UXDigital](https://docs.google.com/forms/d/e/1FAIpQLScDMum4kUed4Dhd-e5tSBc44wNf8c5pLTZR-VPGmDymN8q1DQ/viewform), un bloque de fintechs chilenas con [Fintual](https://lnkd.in/dU-CmezB), [Haulmer](https://lnkd.in/dAH7-cWi), [Fintoc](https://lnkd.in/dY5rVGNK) y [Xepelin](https://lnkd.in/dfWxzRc8) —Sheriff iba por correo—, un [full stack «vibecoding» con rango de sueldo](https://www.linkedin.com/jobs/view/4476937012/) y un [DevOps & AI Infrastructure Engineer en Crost AI](https://www.getonbrd.com/jobs/sysadmin-devops-qa/devops-ai-infrastructure-engineer-crost-ai-remote).
-
-## #anuncios
-
-El viernes llegó la primera app oficial de devsChile para Android: [Soy devsChile](https://play.google.com/store/apps/details?id=cl.devschile.soy) muestra la credencial de miembro —identidad, estado gold y un QR verificable— y se apoya en [soy.devschile.cl](https://soy.devschile.cl/), el sistema de identidades de la comunidad. Está publicada solo para cuentas de Google Play de Chile: si no aparece para instalar, hay que revisar la región de la cuenta.
 
 ## Links de la semana
 
@@ -92,6 +88,7 @@ screenshot_caption: La comunidad montó un servidor de Project Zomboid y el cana
 
 <!-- SEMANARIO_CIERRE
 proyecto_link: https://play.google.com/store/apps/details?id=cl.devschile.soy
+proyecto_ubicacion: inicio
 proyecto_titulo: Soy devsChile: la primera app de la comunidad
 proyecto_descripcion: La primera app oficial de devsChile ya está en Google Play: credencial de miembro, estado gold y un QR verificable, todo desde el teléfono. Desde el lanzamiento ya van dos actualizaciones, con mejoras de rendimiento y una instalación más liviana. Y esto recién empieza: la plataforma Soy y la cuenta de devsChile en Google Play quedan disponibles para publicar los próximos proyectos colaborativos de la comunidad. ¿Qué app construimos entre todos? Pronto lo sabrás.
 proyecto_imagen: assets/soy-devschile-android.jpg

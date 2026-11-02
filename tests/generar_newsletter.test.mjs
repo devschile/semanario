@@ -463,3 +463,52 @@ test('publica la subsección Más avisos compartidos en el bloque de pegas', asy
     await rm(tmp, { recursive: true, force: true });
   }
 });
+
+test('ubica el proyecto destacado al inicio cuando la edición lo declara', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-destacado-inicio-'));
+  const fechaInicio = '2099-06-19';
+  const edicion = path.join(tmp, 'ediciones', fechaInicio);
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba
+
+## Actividad de la comunidad
+
+- **2 mensajes** publicados en los canales de contenido.
+
+## Pegas
+
+Durante la semana se publicó **1 pega nueva**.
+
+## Links de la semana
+
+### #comunidad
+
+- Se compartió un proyecto. [Ver proyecto](https://example.com/proyecto).
+
+<!-- SEMANARIO_CIERRE
+proyecto_link: https://showcase.example/proyecto
+proyecto_ubicacion: inicio
+proyecto_titulo: Proyecto al inicio
+proyecto_descripcion: Una descripción breve.
+despedida: Nos leemos la próxima semana.
+-->
+`);
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaInicio], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' }, stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+    const numeros = html.indexOf('La semana en números');
+    const proyecto = html.indexOf('Proyecto al inicio');
+    const pegas = html.indexOf('💼 Pegas');
+
+    assert.ok(proyecto > numeros, 'el proyecto va después de La semana en números');
+    assert.ok(proyecto < pegas, 'el proyecto ocupa el lugar del bloque de anuncios, antes de Pegas');
+    assert.equal(html.split('Proyecto al inicio').length - 1, 1, 'la tarjeta no se duplica al final');
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});

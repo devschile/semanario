@@ -297,7 +297,8 @@ html = html
   .replaceAll('{{VISUAL_ANUNCIO}}', visualAnuncio(visuales, Boolean(anuncios)))
   .replaceAll('{{VISUAL_INICIO}}', previewsInicio.map(visualScreenshot).join('\n'))
   .replaceAll('{{VISUAL_SCREENSHOT}}', previewsFueraDeCanal.map(visualScreenshot).join('\n'))
-  .replaceAll('{{PROYECTO_DESTACADO}}', tarjetaProyecto(cierreEditorial))
+  .replaceAll('{{PROYECTO_INICIO}}', /^inicio$/i.test(cierreEditorial.proyecto_ubicacion || '') ? tarjetaProyecto(cierreEditorial) : '')
+  .replaceAll('{{PROYECTO_DESTACADO}}', /^inicio$/i.test(cierreEditorial.proyecto_ubicacion || '') ? '' : tarjetaProyecto(cierreEditorial))
   .replaceAll('{{BENEFICIOS}}', bloqueBeneficios(beneficios))
   .replaceAll('{{DESPEDIDA}}', bloqueDespedida(cierreEditorial));
 
