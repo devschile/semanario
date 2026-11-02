@@ -30,7 +30,7 @@ El viernes llegó la primera app oficial de devsChile para Android: [Soy devsChi
 - El lunes `dariomac` trajo a [Kimi K3.1 Pro](https://www.yodev.dev/t/el-modelo-barato-que-sale-caro-como-comprobarlo-con-tus-propios-datos/5796/1): pesos abiertos, USD 2/10 por millón de tokens y casi empatado con Opus 5.5 en Terminal Bench, con el recordatorio de que el modelo barato puede salir caro si no se comprueba con tus propios datos.
 - La semana fue de lanzamientos: `janogonzalez` pasó [GPT-6.1 Terra](https://openai.com/index/introducing-gpt-6-1-terra/), con computer use a escala, y `hector` [Gemini 4 Carbon](https://x.com/sundarpichai/status/2115489219804352921), el nuevo modelo frontera de Google dos semanas después de Argon.
 - `jorgeepunan` mandó a resumir dos lecturas: [AI Promised Less Work. I Have Never Worked More.](https://oioannou.com/blog/ai-promised-less-work/), la paradoja de los agentes que multiplican el trabajo, y [The AI cost of JavaScript frameworks](https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/), que mide cuánto cuesta que una IA construya la misma app con 12 frameworks: elegir framework importa y se paga en tokens.
-- `javieratapiabobadilla` dejó el [reportaje de 404 Media sobre el ajuste de cuentas con la IA en Proton](https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/) —ingenieros empujados a usar IA contra sus dudas de seguridad— y el [skill asd-ste100](https://github.com/danyuchn/asd-ste100-skill) para pedirle al modelo inglés simplificado y no leer más papiros.
+- `arveja` dejó el [reportaje de 404 Media sobre el ajuste de cuentas con la IA en Proton](https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/) —ingenieros empujados a usar IA contra sus dudas de seguridad— y el [skill asd-ste100](https://github.com/danyuchn/asd-ste100-skill) para pedirle al modelo inglés simplificado y no leer más papiros.
 - `n.i.c.e.` recomendó los [skills de Matt Pocock](https://github.com/mattpocock/skills), en particular `grill-me`: agrupa las preguntas de una decisión y ahorra el loop interminable de ida y vuelta antes de escribir código.
 - `eseceve` mostró su sidebar de Tmux con agentes, PRs y cuotas de IA, inspirado en [workmux](https://workmux.raine.dev/), y siguió el anuncio de la [nueva versión de herdr](https://x.com/herdrdev/status/2115841099575222765) con app de escritorio open source.
 - `dukuo` advirtió que la extensión de Claude Code para VS Code 2.1.313 salió [comprometida con un backdoor SSH](https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html) —hay que actualizar a 2.1.314— y compartió [legal exploits](https://www.felixringe.com/legal-exploits/), vulnerabilidades encontradas en la ley usando LLMs.
@@ -39,7 +39,7 @@ El viernes llegó la primera app oficial de devsChile para Android: [Soy devsChi
 
 ### #comunidad
 
-- El miércoles `javieratapiabobadilla` pasó [Hunger beats tenure](https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers), la columna de un ingeniero de Anthropic sobre por qué la entrevista de código ya no da señal y qué mirar en cambio en un junior.
+- El miércoles `arveja` pasó [Hunger beats tenure](https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers), la columna de un ingeniero de Anthropic sobre por qué la entrevista de código ya no da señal y qué mirar en cambio en un junior.
 
 ### #desarrollo
 
@@ -81,3 +81,21 @@ El viernes llegó la primera app oficial de devsChile para Android: [Soy devsChi
 - El lunes `pedro` trajo [Cocu - Universal Friends](https://www.youtube.com/watch?v=UTsbJF3FDV8) y `jorgeepunan` quedó pegado con [The Barbarians of California](https://www.youtube.com/watch?v=jWt9f1oPsgQ).
 - `janogonzalez` dejó a [Mike Patton en el Cervantino](https://youtu.be/TsvXrEqyG1A), a [Knats en Green Man](https://youtu.be/aVLTNkwzjGM) y el [«Hysteric» de Yves](https://youtu.be/5jvmNm73q5U).
 - `davidlaym` pasó [Nanowar of Steel con video de LEGO](https://youtu.be/RpNVsfnmrQs) e `i.ewy12` el [«Pusher» de Justice para GTA VI](https://youtu.be/Ip_Kc3EQiOI).
+
+<!-- SEMANARIO_VISUALES
+screenshot: assets/project-zomboid-comunidad.jpg
+screenshot_link: https://store.steampowered.com/app/108600/Project_Zomboid/
+screenshot_alt: Arte de Project Zomboid con un mapache superviviente rodeado de zombis bajo la lluvia
+screenshot_etiqueta: 🎮 Servidor de la comunidad
+screenshot_caption: La comunidad montó un servidor de Project Zomboid y el canal se llenó de coordenadas, libros de habilidades y muertes propias: el viernes fue el día más activo de la semana, con 222 mensajes.
+-->
+
+<!-- SEMANARIO_CIERRE
+proyecto_link: https://play.google.com/store/apps/details?id=cl.devschile.soy
+proyecto_titulo: Soy devsChile: la primera app de la comunidad
+proyecto_descripcion: La primera app oficial de devsChile ya está en Google Play: credencial de miembro, estado gold y un QR verificable, todo desde el teléfono. Desde el lanzamiento ya van dos actualizaciones, con mejoras de rendimiento y una instalación más liviana. Y esto recién empieza: la plataforma Soy y la cuenta de devsChile en Google Play quedan disponibles para publicar los próximos proyectos colaborativos de la comunidad. ¿Qué app construimos entre todos? Pronto lo sabrás.
+proyecto_imagen: assets/soy-devschile-android.jpg
+proyecto_imagen_alt: Gráfica de Soy devsChile con el huemul mostrando la credencial de miembro en un teléfono
+proyecto_cta: Instalar la app →
+despedida: Nos vemos en la siguiente edición, con más proyectos de la comunidad.
+-->
