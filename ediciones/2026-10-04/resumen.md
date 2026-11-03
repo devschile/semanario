@@ -54,8 +54,8 @@ Durante la semana se publicaron **316 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #lifehacks
 
-- El miércoles `ivan` compartió [noTunes](https://github.com/tombonez/noTunes), un proyecto open source para macOS.
-- El viernes `ivan` recomendó los [Soundcore AeroFit 2](https://www.mercadolibre.cl/audifonos-bluetooth-soundcore-aerofit2-open-ear-traduccion-en-tiempo-real-42-horas-de-reproduccion-resistencia-al-agua-ip55-carga-inalambrica-llamadas-ai-claras-y-bajos-x2-mas-profundos-negro/p/MLC42428784), audífonos open-ear que lleva cuatro meses usando.
+- El miércoles `ivm` compartió [noTunes](https://github.com/tombonez/noTunes), un proyecto open source para macOS.
+- El viernes `ivm` recomendó los [Soundcore AeroFit 2](https://www.mercadolibre.cl/audifonos-bluetooth-soundcore-aerofit2-open-ear-traduccion-en-tiempo-real-42-horas-de-reproduccion-resistencia-al-agua-ip55-carga-inalambrica-llamadas-ai-claras-y-bajos-x2-mas-profundos-negro/p/MLC42428784), audífonos open-ear que lleva cuatro meses usando.
 
 ### #mascotas
 

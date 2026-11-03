@@ -70,9 +70,9 @@ Durante la semana se publicaron **71 pegas nuevas** en [pegas.devschile.cl](http
 
 ### #lifehacks
 
-- El gran debate de la semana: **portaminas**. `davidlaym` se declaró «full Pentel fanboy», `iarodriguezch` defiende [el suyo de AliExpress](https://es.aliexpress.com/item/1005008481581888.html) («no se quiebran tan fácil las minas»), `hector` [compra «de a mil»](https://es.aliexpress.com/item/1005003626917636.html) y `ivan` recomienda los [Sharpie S-Gel](https://listado.mercadolibre.cl/sharpie-s-gel).
+- El gran debate de la semana: **portaminas**. `davidlaym` se declaró «full Pentel fanboy», `iarodriguezch` defiende [el suyo de AliExpress](https://es.aliexpress.com/item/1005008481581888.html) («no se quiebran tan fácil las minas»), `hector` [compra «de a mil»](https://es.aliexpress.com/item/1005003626917636.html) y `ivm` recomienda los [Sharpie S-Gel](https://listado.mercadolibre.cl/sharpie-s-gel).
 - `gmq` pidió dato de impresora (100–200 páginas al mes, color y B/N): `davidlaym` — inkjet por volumen bajo y las Brother «son bakanes».
-- `ivan` dejó [zuckoff.app](https://zuckoff.app) y [su versión open source](https://github.com/yjeanrenaud/yj_nearbyglasses): detectores de gafas inteligentes cercanas.
+- `ivm` dejó [zuckoff.app](https://zuckoff.app) y [su versión open source](https://github.com/yjeanrenaud/yj_nearbyglasses): detectores de gafas inteligentes cercanas.
 
 ### #musiqueria
 
