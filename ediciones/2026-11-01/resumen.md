@@ -66,7 +66,7 @@ Durante la semana se publicaron **168 pegas nuevas** en [pegas.devschile.cl](htt
 ### #lifehacks
 
 - `jorgeepunan` y `carlo` abrieron la veta de los remates de vehículos: los de la [CGR](https://www.cgrchile.com/100502/remate-vehiculos-santiagoyregiones/) y el [calendario de la DICREP](https://www.dicrep.gob.cl/calendario-remates/), con uno al día siguiente.
-- `ivan` buscaba un café que no le cayera mal al estómago y terminó con dos recomendaciones para empezar con AeroPress: [Kilig Coffee](https://www.kiligcoffee.cl/product/colombia-caturra-natural-especial/) y el [Kiltro Africano](https://cafekiltro.com/products/kiltro-africano), de tueste ligero.
+- `ivm` buscaba un café que no le cayera mal al estómago y terminó con dos recomendaciones para empezar con AeroPress: [Kilig Coffee](https://www.kiligcoffee.cl/product/colombia-caturra-natural-especial/) y el [Kiltro Africano](https://cafekiltro.com/products/kiltro-africano), de tueste ligero.
 
 ### #moneas
 
