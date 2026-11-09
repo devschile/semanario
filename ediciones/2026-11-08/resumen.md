@@ -3,7 +3,7 @@
 ## Actividad de la comunidad
 
 - **841 mensajes** 🐐 publicados en los canales de contenido.
-- **Jueves 5** fue el día más activo, con **271 mensajes**: la conversación se concentró en #diy, donde un control de NVIDIA Shield que se come dos pilas AAA en un día terminó en diagnóstico colectivo —multímetro, BLE, pilas recargables de 1,5 V y hasta un interruptor casero con plástico de botella— y la tarde siguió con impresoras 3D e impresión en ABS.
+- **Jueves 5** fue el día más activo, con **271 mensajes**: la conversación se concentró en #diy, donde un control de NVIDIA Shield que se come dos pilas AAA en un día terminó en diagnóstico colectivo —multímetro, BLE, pilas recargables de 1,5 V y hasta un interruptor casero con plástico de botella— y la tarde siguió entre soldadoras, flippers y antenas wifi.
 
 ## Pegas
 
@@ -28,11 +28,10 @@ Durante la semana se publicaron **176 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #ai
 
-- `dukuo` presentó [bag.dev](https://bag.dev), mensajería instantánea y gratuita para agentes —cross-platform, cross-agents y con relays gratuitos en París y Ámsterdam—; el código está en [GitHub](https://github.com/usebag/bag) y hay [guía para levantar un relay propio](https://bag.dev/docs/run-a-relay).
+- `dukuo` presentó [bag.dev](https://bag.dev), mensajería instantánea y gratuita para agentes —cross-platform, cross-agents y con relays gratuitos en París y Ámsterdam—, con el código en [GitHub](https://github.com/usebag/bag) y [guía para levantar un relay propio](https://bag.dev/docs/run-a-relay). También dejó [media-stack](https://github.com/navilg/media-stack) para levantar un servidor de medios completo y [BLA](https://github.com/qybaihe/bla), un escudo que envenena binarios y bundles para que los agentes de ingeniería inversa alucinen.
 - `davidlaym` advirtió que [Postman Desktop instaló sus propios plugins en Claude Code, Codex y Cursor](https://sysnote.net/news/postman-desktop-auto-installed-its-plugins-into-claude-code-codex-and-cursor-and): otra razón para mirar qué se cuela en el entorno de desarrollo.
 - `janogonzalez` compartió [GPT-2 implementado entero en CSS](https://shubhampatil.dev/blog/gpt2-css), sin una línea de JavaScript: el modelo corre dentro de una hoja de estilos.
 - `arveja` trajo los [skills de Matt Pocock](https://github.com/mattpocock/skills) y la conversación terminó recomendando `grill-me` para ordenar las preguntas antes de escribir código.
-- `dukuo` también dejó [media-stack](https://github.com/navilg/media-stack) para levantar un servidor de medios completo y [BLA](https://github.com/qybaihe/bla), un escudo que envenena binarios y bundles para que los agentes de ingeniería inversa alucinen.
 - `eseceve` preguntó por [elephant-goldfish-model](https://github.com/google/elephant-goldfish-model), el plugin de Google para diseñar y revisar software con agentes.
 - `iarodriguezch` abrió el debate de la semana con [un video sobre ODD](https://www.youtube.com/watch?v=eGJoDxuILK0): si el spec-driven development es waterfall con otro nombre. La conclusión que quedó dando vueltas: acelera solo cuando el alcance está bien acotado.
 
@@ -41,7 +40,7 @@ Durante la semana se publicaron **176 pegas nuevas** en [pegas.devschile.cl](htt
 - `jorgemedinaleigh` presentó [Tourin](https://play.google.com/store/apps/details?id=com.dolmen.tourinapp), la app de turismo gamificado que creó con su señora: pasaporte de sellos para sitios turísticos y patrimoniales, inspirada en los pasaportes del Día del Patrimonio y en Pokémon GO. Ya está aprobada en Google Play y en trámite para la App Store.
 - `leslie` compartió la [residencia de Anthropic para investigación en alineación](https://alignment.anthropic.com/2026/anthropic-residency/) y el [Immerse Santiago 2026 de Cloudflare](https://fieldmarketing.www.cloudflare.com/Immerse-Santiago-2026), el 11 de noviembre en el Hotel Le Méridien, con desayuno y almuerzo incluidos.
 - `dukuo` dejó [Zero-Breach-Toolkit](https://github.com/interplains/Zero-Breach-Toolkit), un chequeo gratuito de rastros de spyware mercenario (Pegasus, Predator, Graphite) en computadores, Android y respaldos de iPhone, y [zero-wire](https://blog.cloudflare.com/zero-wire), el nuevo hub de Cloudflare para investigar vulnerabilidades críticas.
-- `nicolasaraya` publicó su primer post en LinkedIn sobre la incertidumbre de la industria y pidió opiniones: [¿les hace sentido?](https://lnkd.in/p/dwqpBVk4)
+- `nicolasaraya` publicó su primer post en LinkedIn sobre la incertidumbre de la industria y pidió opiniones: [¿les hace sentido?](https://lnkd.in/p/dwqpBVk4).
 
 ### #desarrollo
 
@@ -68,7 +67,7 @@ Durante la semana se publicaron **176 pegas nuevas** en [pegas.devschile.cl](htt
 - `livercake` soltó [la decompilación de Symphony of the Night jugable en el navegador](https://supermuseum.netlify.app/play/psx/SOTN-ULT), con museo y todo.
 - `carlo` pasó [Need for Speed: Underground 2 revivido](https://nfsu2.xyz/) con WebGPU, hasta 120 fps y carreras online, y [PokéBonk](https://pokebonk.com/), el survivor de Pokémon gratis en el navegador.
 - `n.i.c.e.` encontró el [mod de Project Zomboid que convierte cualquier lugar real del mapa en una ciudad del juego](https://steamcommunity.com/sharedfiles/filedetails/?id=3806764280).
-- `rcarmonad` compartió a [Humita Games](https://www.instagram.com/humitagames/), un estudio de videojuegos que anda mostrando sus avances.
+- `rcarmonad` compartió a [Humita Games](https://www.instagram.com/humitagames/), un estudio de videojuegos que está mostrando sus avances.
 
 ### #lifehacks
 
