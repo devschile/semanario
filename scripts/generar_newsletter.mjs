@@ -251,6 +251,19 @@ function bloqueDespedida(cierre) {
   if (!cierre.despedida) return '';
   return `          <tr>\n            <td align="center" style="padding:14px 40px 4px 40px;">\n              <p style="margin:0;color:#C9C6D8;font-size:14px;line-height:1.7;font-style:italic;">${markup(cierre.despedida)}</p>\n            </td>\n          </tr>`;
 }
+/**
+ * Descomenta el bloque de #anuncios de la plantilla: quita el `<!--` que lo
+ * abre y su `-->` de cierre. Se ancla al comentario «DESTACADO: #anuncios» y
+ * busca el primer cierre suelto, sin depender de qué venga después en la
+ * plantilla (antes se anclaba al comentario de PEGAS y, al agregarse el bloque
+ * PROYECTO_INICIO en medio, quedaba un `-->` a la vista en el correo).
+ */
+function descomentarAnuncios(html) {
+  return html.replace(
+    /(<!-- DESTACADO: #anuncios[^\n]*-->\n)[ \t]*<!--\n([\s\S]*?)\n[ \t]*-->\n/,
+    (_, cabecera, cuerpo) => `${cabecera}${cuerpo}\n`,
+  );
+}
 const actividadItems = lista(section('Actividad de la comunidad'));
 const actividad = actividadItems.map(markup).join('<br>\n                • ');
 const pegas = section('Pegas');
@@ -303,10 +316,7 @@ html = html
   .replaceAll('{{DESPEDIDA}}', bloqueDespedida(cierreEditorial));
 
 if (anuncios) {
-  html = html
-    .replaceAll('{{ANUNCIOS}}', ` ${anunciosHtml}`)
-    .replace('          <!--\n          <tr>', '          <tr>')
-    .replace('          </tr>\n          -->\n\n          <!-- PEGAS', '          </tr>\n\n          <!-- PEGAS');
+  html = descomentarAnuncios(html.replaceAll('{{ANUNCIOS}}', ` ${anunciosHtml}`));
 } else {
   html = html.replaceAll('{{ANUNCIOS}}', '');
 }

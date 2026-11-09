@@ -512,3 +512,31 @@ despedida: Nos leemos la próxima semana.
     await rm(tmp, { recursive: true, force: true });
   }
 });
+
+test('descomenta el bloque de anuncios sin dejar restos de comentario', async () => {
+  const tmp = await mkdtemp(path.join('/tmp', 'semanario-anuncios-'));
+  const fechaAnuncio = '2099-07-03';
+  const edicion = path.join(tmp, 'ediciones', fechaAnuncio);
+
+  try {
+    await mkdir(edicion, { recursive: true });
+    await writeFile(path.join(tmp, 'template.html'), await readFile(path.join(raiz, 'template.html')));
+    await writeFile(path.join(edicion, 'resumen.md'), `# Semanario de prueba\n\n## Actividad de la comunidad\n\n- **2 mensajes** publicados en los canales de contenido.\n- **Viernes 3** fue el día más activo, con **2 mensajes**.\n\n## Pegas\n\nDurante la semana se publicó **1 pega nueva**.\n\n## #anuncios\n\nHay novedades de la comunidad.\n\n## Links de la semana\n\n### #comunidad\n\n- Se compartió un proyecto. [Ver proyecto](https://example.com/proyecto).\n`);
+
+    execFileSync('node', ['scripts/generar_newsletter.mjs', fechaAnuncio], {
+      cwd: raiz, env: { ...process.env, SEMANARIO_ROOT: tmp, SITE_URL: 'https://preview.example' }, stdio: 'pipe',
+    });
+    const html = await readFile(path.join(edicion, 'newsletter.html'), 'utf8');
+    const anuncio = html.indexOf('📢 Anuncio de la comunidad:');
+    const pegas = html.indexOf('💼 Pegas');
+
+    assert.ok(anuncio > -1, 'el bloque de anuncios debe quedar visible');
+    assert.ok(anuncio < pegas, 'el bloque de anuncios va antes de Pegas');
+    assert.match(html, /📢 Anuncio de la comunidad:<\/strong> Hay novedades de la comunidad\./);
+    // El cierre del comentario no debe quedar como texto suelto en el correo.
+    assert.doesNotMatch(html, /<\/tr>\s*-->/);
+    assert.doesNotMatch(html, /{{[A-Z_]+}}/);
+  } finally {
+    await rm(tmp, { recursive: true, force: true });
+  }
+});
