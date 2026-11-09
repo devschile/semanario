@@ -1,0 +1,548 @@
+{
+  "edicion": "2026-11-08",
+  "links": [
+    {
+      "url": "https://www.getonbrd.com/jobs/ai-engineering-lead-niuro-remote",
+      "titulo": "AI Engineering Lead en Niuro",
+      "canal": "#trabajos",
+      "contexto": "AI Engineering Lead en Niuro — remoto, USD 5.500–6.000/mes.",
+      "tags": [
+        "pegas",
+        "ia",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://jobs.ashbyhq.com/optery/8eee31bc-e5d9-4ba4-be81-b28d19e4bcbe",
+      "titulo": "Senior Backend Engineer (LATAM) en Optery",
+      "canal": "#trabajos",
+      "contexto": "Senior Backend Engineer (LATAM) en Optery — Chile, USD 78.000–114.000/año.",
+      "tags": [
+        "pegas",
+        "backend",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://www.takealuk.com/job_offers/full-stack-developer-senior-datascope-chile",
+      "titulo": "Full Stack Developer Senior en DataScope",
+      "canal": "#trabajos",
+      "contexto": "Full Stack Developer Senior en DataScope — Las Condes, CLP 2.800.000–4.000.000/mes.",
+      "tags": [
+        "pegas",
+        "frontend",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://acidlabs.com/en/jobs/cms1099-backend-developer-nest-js-aws-5138",
+      "titulo": "backend NestJS con AWS en Acid Labs",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un backend NestJS con AWS en Acid Labs, un arquitecto con 200 certificaciones, un perfil de enfermera y programadora, un Design Lead en SMU, las vacantes de Howdy en Chile, un frontend con HTMX, Alpine.js y React legacy, un ingeniero para usar AI en MercadoLibre, los job…",
+      "tags": [
+        "pegas",
+        "backend",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4484389739/",
+      "titulo": "arquitecto con 200 certificaciones",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un backend NestJS con AWS en Acid Labs, un arquitecto con 200 certificaciones, un perfil de enfermera y programadora, un Design Lead en SMU, las vacantes de Howdy en Chile, un frontend con HTMX, Alpine.js y React legacy, un ingeniero para usar AI en MercadoLibre, los job…",
+      "tags": [
+        "pegas",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://lnkd.in/p/dmbbq-FU",
+      "titulo": "enfermera y programadora",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un backend NestJS con AWS en Acid Labs, un arquitecto con 200 certificaciones, un perfil de enfermera y programadora, un Design Lead en SMU, las vacantes de Howdy en Chile, un frontend con HTMX, Alpine.js y React legacy, un ingeniero para usar AI en MercadoLibre, los job…",
+      "tags": [
+        "pegas",
+        "carrera",
+        "salud"
+      ]
+    },
+    {
+      "url": "https://smu.trabajando.cl/trabajo/6134622-lider-diseno-ux-ui",
+      "titulo": "Design Lead en SMU",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un backend NestJS con AWS en Acid Labs, un arquitecto con 200 certificaciones, un perfil de enfermera y programadora, un Design Lead en SMU, las vacantes de Howdy en Chile, un frontend con HTMX, Alpine.js y React legacy, un ingeniero para usar AI en MercadoLibre, los job…",
+      "tags": [
+        "pegas",
+        "diseno",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.howdylatam.com/careers?country=Chile",
+      "titulo": "vacantes de Howdy en Chile",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un backend NestJS con AWS en Acid Labs, un arquitecto con 200 certificaciones, un perfil de enfermera y programadora, un Design Lead en SMU, las vacantes de Howdy en Chile, un frontend con HTMX, Alpine.js y React legacy, un ingeniero para usar AI en MercadoLibre, los job…",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://lnkd.in/p/diTf6Anb",
+      "titulo": "frontend con HTMX, Alpine.js y React legacy",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un backend NestJS con AWS en Acid Labs, un arquitecto con 200 certificaciones, un perfil de enfermera y programadora, un Design Lead en SMU, las vacantes de Howdy en Chile, un frontend con HTMX, Alpine.js y React legacy, un ingeniero para usar AI en MercadoLibre, los job…",
+      "tags": [
+        "pegas",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://mercadolibre.eightfold.ai/careers?domain=mercadolibre.com&profile_type=candidate&start=0&pid=45372255&sort_by=hot",
+      "titulo": "ingeniero para usar AI en MercadoLibre",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un backend NestJS con AWS en Acid Labs, un arquitecto con 200 certificaciones, un perfil de enfermera y programadora, un Design Lead en SMU, las vacantes de Howdy en Chile, un frontend con HTMX, Alpine.js y React legacy, un ingeniero para usar AI en MercadoLibre, los job…",
+      "tags": [
+        "pegas",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://tenpo.teamtailor.com/jobs",
+      "titulo": "jobs de Tenpo",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un backend NestJS con AWS en Acid Labs, un arquitecto con 200 certificaciones, un perfil de enfermera y programadora, un Design Lead en SMU, las vacantes de Howdy en Chile, un frontend con HTMX, Alpine.js y React legacy, un ingeniero para usar AI en MercadoLibre, los job…",
+      "tags": [
+        "pegas",
+        "finanzas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://unoafp.buk.cl/seleccions/866b470528d061f24a45eeb24524a1f9e464c782e34caa81359f0b754d6f623f63e32afcb76a4b791dfd3b50e1d431b817e04de31b50829468c61513ee9eca88/postular",
+      "titulo": "diseñador para UnoAFP",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan fue quien más avisos manuales dejó: un backend NestJS con AWS en Acid Labs, un arquitecto con 200 certificaciones, un perfil de enfermera y programadora, un Design Lead en SMU, las vacantes de Howdy en Chile, un frontend con HTMX, Alpine.js y React legacy, un ingeniero para usar AI en MercadoLibre, los job…",
+      "tags": [
+        "pegas",
+        "diseno",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://lnkd.in/p/ePK6gDgK",
+      "titulo": "un aviso más",
+      "canal": "#trabajos",
+      "contexto": "yixlo sumó un aviso más.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://log.devschile.cl/de-un-sitio-web-personal-a-la-app-store-como-publique-mi-primera-app-de-ios-en-un-fin-de-semana/",
+      "titulo": "«De un sitio web personal a la App Store»",
+      "canal": "#anuncios",
+      "contexto": "hector compartió un nuevo post del Log de devsChile: en «De un sitio web personal a la App Store», lucioadons cuenta paso a paso cómo publicó su primera app de iOS en un fin de semana —qué implica, los bloqueos, los costos y todo lo necesario— y recordó que el Log está abierto a contribuciones de la comunidad, con una…",
+      "tags": [
+        "devschile",
+        "mobile",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://log.devschile.cl/",
+      "titulo": "Log",
+      "canal": "#anuncios",
+      "contexto": "hector compartió un nuevo post del Log de devsChile: en «De un sitio web personal a la App Store», lucioadons cuenta paso a paso cómo publicó su primera app de iOS en un fin de semana —qué implica, los bloqueos, los costos y todo lo necesario— y recordó que el Log está abierto a contribuciones de la comunidad, con una…",
+      "tags": [
+        "devschile",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://bag.dev/",
+      "titulo": "bag.dev",
+      "canal": "#ai",
+      "contexto": "electricmonk presentó bag.dev, mensajería instantánea y gratuita para agentes —cross-platform, cross-agents y con relays gratuitos en París y Ámsterdam—, con el código en GitHub y guía para levantar un relay propio. También dejó media-stack para levantar un servidor de medios completo y BLA, un escudo que envenena bin…",
+      "tags": [
+        "ia",
+        "agentes",
+        "herramientas",
+        "self-hosting"
+      ]
+    },
+    {
+      "url": "https://github.com/usebag/bag",
+      "titulo": "GitHub",
+      "canal": "#ai",
+      "contexto": "electricmonk presentó bag.dev, mensajería instantánea y gratuita para agentes —cross-platform, cross-agents y con relays gratuitos en París y Ámsterdam—, con el código en GitHub y guía para levantar un relay propio. También dejó media-stack para levantar un servidor de medios completo y BLA, un escudo que envenena bin…",
+      "tags": [
+        "ia",
+        "agentes",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://bag.dev/docs/run-a-relay",
+      "titulo": "guía para levantar un relay propio",
+      "canal": "#ai",
+      "contexto": "electricmonk presentó bag.dev, mensajería instantánea y gratuita para agentes —cross-platform, cross-agents y con relays gratuitos en París y Ámsterdam—, con el código en GitHub y guía para levantar un relay propio. También dejó media-stack para levantar un servidor de medios completo y BLA, un escudo que envenena bin…",
+      "tags": [
+        "ia",
+        "agentes",
+        "self-hosting"
+      ]
+    },
+    {
+      "url": "https://github.com/navilg/media-stack",
+      "titulo": "media-stack",
+      "canal": "#ai",
+      "contexto": "electricmonk presentó bag.dev, mensajería instantánea y gratuita para agentes —cross-platform, cross-agents y con relays gratuitos en París y Ámsterdam—, con el código en GitHub y guía para levantar un relay propio. También dejó media-stack para levantar un servidor de medios completo y BLA, un escudo que envenena bin…",
+      "tags": [
+        "self-hosting",
+        "herramientas",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://github.com/qybaihe/bla",
+      "titulo": "BLA",
+      "canal": "#ai",
+      "contexto": "electricmonk presentó bag.dev, mensajería instantánea y gratuita para agentes —cross-platform, cross-agents y con relays gratuitos en París y Ámsterdam—, con el código en GitHub y guía para levantar un relay propio. También dejó media-stack para levantar un servidor de medios completo y BLA, un escudo que envenena bin…",
+      "tags": [
+        "ia",
+        "seguridad",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://sysnote.net/news/postman-desktop-auto-installed-its-plugins-into-claude-code-codex-and-cursor-and",
+      "titulo": "Postman Desktop instaló sus propios plugins en Claude Code, Codex y Cursor",
+      "canal": "#ai",
+      "contexto": "davidlaym advirtió que Postman Desktop instaló sus propios plugins en Claude Code, Codex y Cursor: otra razón para mirar qué se cuela en el entorno de desarrollo.",
+      "tags": [
+        "ia",
+        "seguridad",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://shubhampatil.dev/blog/gpt2-css",
+      "titulo": "GPT-2 implementado entero en CSS",
+      "canal": "#ai",
+      "contexto": "janogonzalez compartió GPT-2 implementado entero en CSS, sin una línea de JavaScript: el modelo corre dentro de una hoja de estilos.",
+      "tags": [
+        "ia",
+        "frontend",
+        "lenguajes"
+      ]
+    },
+    {
+      "url": "https://github.com/mattpocock/skills",
+      "titulo": "skills de Matt Pocock",
+      "canal": "#ai",
+      "contexto": "arveja trajo los skills de Matt Pocock y la conversación terminó recomendando grill-me para ordenar las preguntas antes de escribir código.",
+      "tags": [
+        "ia",
+        "agentes",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "titulo": "elephant-goldfish-model",
+      "canal": "#ai",
+      "contexto": "eseceve preguntó por elephant-goldfish-model, el plugin de Google para diseñar y revisar software con agentes.",
+      "tags": [
+        "ia",
+        "agentes",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eGJoDxuILK0",
+      "titulo": "un video sobre ODD",
+      "canal": "#ai",
+      "contexto": "iarodriguezch abrió el debate de la semana con un video sobre ODD: si el spec-driven development es waterfall con otro nombre. La conclusión que quedó dando vueltas: acelera solo cuando el alcance está bien acotado.",
+      "tags": [
+        "ia",
+        "video",
+        "aprendizaje"
+      ]
+    },
+    {
+      "url": "https://alignment.anthropic.com/2026/anthropic-residency/",
+      "titulo": "residencia de Anthropic para investigación en alineación",
+      "canal": "#comunidad",
+      "contexto": "yixlo compartió la residencia de Anthropic para investigación en alineación y el Immerse Santiago 2026 de Cloudflare, el 11 de noviembre en el Hotel Le Méridien, con desayuno y almuerzo incluidos.",
+      "tags": [
+        "ia",
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://fieldmarketing.www.cloudflare.com/Immerse-Santiago-2026",
+      "titulo": "Immerse Santiago 2026 de Cloudflare",
+      "canal": "#comunidad",
+      "contexto": "yixlo compartió la residencia de Anthropic para investigación en alineación y el Immerse Santiago 2026 de Cloudflare, el 11 de noviembre en el Hotel Le Méridien, con desayuno y almuerzo incluidos.",
+      "tags": [
+        "eventos",
+        "chile",
+        "infra"
+      ]
+    },
+    {
+      "url": "https://github.com/interplains/Zero-Breach-Toolkit",
+      "titulo": "Zero-Breach-Toolkit",
+      "canal": "#comunidad",
+      "contexto": "electricmonk dejó Zero-Breach-Toolkit, un chequeo gratuito de rastros de spyware mercenario (Pegasus, Predator, Graphite) en computadores, Android y respaldos de iPhone, y zero-wire, el nuevo hub de Cloudflare para investigar vulnerabilidades críticas.",
+      "tags": [
+        "seguridad",
+        "herramientas",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://blog.cloudflare.com/zero-wire",
+      "titulo": "zero-wire",
+      "canal": "#comunidad",
+      "contexto": "electricmonk dejó Zero-Breach-Toolkit, un chequeo gratuito de rastros de spyware mercenario (Pegasus, Predator, Graphite) en computadores, Android y respaldos de iPhone, y zero-wire, el nuevo hub de Cloudflare para investigar vulnerabilidades críticas.",
+      "tags": [
+        "seguridad",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://lnkd.in/p/dwqpBVk4",
+      "titulo": "¿les hace sentido?",
+      "canal": "#comunidad",
+      "contexto": "nicolasaraya publicó su primer post en LinkedIn sobre la incertidumbre de la industria y pidió opiniones: ¿les hace sentido?.",
+      "tags": [
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://openchoreo.dev/",
+      "titulo": "OpenChoreo",
+      "canal": "#desarrollo",
+      "contexto": "janogonzalez presentó OpenChoreo, el proyecto open source para armar una plataforma interna de desarrollo sobre Kubernetes, y sshhole.com, la investigación del bug de OpenSSH sobre musl que desde 2016 deja pasar cualquier contraseña de más de 256 caracteres en cuentas que deberían ser solo con llave.",
+      "tags": [
+        "infra",
+        "open-source",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://sshhole.com/",
+      "titulo": "sshhole.com",
+      "canal": "#desarrollo",
+      "contexto": "janogonzalez presentó OpenChoreo, el proyecto open source para armar una plataforma interna de desarrollo sobre Kubernetes, y sshhole.com, la investigación del bug de OpenSSH sobre musl que desde 2016 deja pasar cualquier contraseña de más de 256 caracteres en cuentas que deberían ser solo con llave.",
+      "tags": [
+        "seguridad",
+        "lenguajes",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://www.arcify.io/",
+      "titulo": "Arcify",
+      "canal": "#desarrollo",
+      "contexto": "electricmonk recomendó Arcify, un par de extensiones que llevan la sidebar vertical y el spotlight de Arc a cualquier navegador.",
+      "tags": [
+        "herramientas",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://flipper.net/products/flipper-one-preorder",
+      "titulo": "Flipper One está en preventa a USD 379",
+      "canal": "#diy",
+      "contexto": "electricmonk avisó que el Flipper One está en preventa a USD 379.",
+      "tags": [
+        "hardware",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://shop.m5stack.com/pages/m5-cardputerzero",
+      "titulo": "M5 Cardputer Zero",
+      "canal": "#diy",
+      "contexto": "iarodriguezch mostró el M5 Cardputer Zero, que promete review contra el Flipper Zero cuando llegue.",
+      "tags": [
+        "hardware",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=reLXvBtyxRQ",
+      "titulo": "un video de una Bambu Lab",
+      "canal": "#diy",
+      "contexto": "La impresión 3D se llevó la semana: un video de una Bambu Lab disparó la comparación de las multicolor (Snapmaker U1, Flashforge), la advertencia de que Bambu viene con trampa y el dato de comprar en Todotoner y no en PC Factory.",
+      "tags": [
+        "hardware",
+        "compras",
+        "video"
+      ]
+    },
+    {
+      "url": "https://techweek.cl/events",
+      "titulo": "programa de Chile Tech Week 2026",
+      "canal": "#eventos-juntas",
+      "contexto": "jorgeepunan dejó el programa de Chile Tech Week 2026: los eventos tech de la semana del 16 al 22 de noviembre, en todo Chile.",
+      "tags": [
+        "eventos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://iconmcp.com/",
+      "titulo": "IconMCP",
+      "canal": "#frontend",
+      "contexto": "electricmonk compartió IconMCP, 6.248 íconos con un servidor MCP para que el agente los busque por significado.",
+      "tags": [
+        "ia",
+        "herramientas",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+      "titulo": "Safari 27.3 beta ya trae adaptive dark mode",
+      "canal": "#frontend",
+      "contexto": "yixlo celebró que Safari 27.3 beta ya trae adaptive dark mode.",
+      "tags": [
+        "frontend",
+        "noticias",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://supermuseum.netlify.app/play/psx/SOTN-ULT",
+      "titulo": "la decompilación de Symphony of the Night jugable en el navegador",
+      "canal": "#juegos",
+      "contexto": "livercake soltó la decompilación de Symphony of the Night jugable en el navegador, con museo y todo.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://nfsu2.xyz/",
+      "titulo": "Need for Speed: Underground 2 revivido",
+      "canal": "#juegos",
+      "contexto": "carlo pasó Need for Speed: Underground 2 revivido con WebGPU, hasta 120 fps y carreras online, y PokéBonk, el survivor de Pokémon gratis en el navegador.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://pokebonk.com/",
+      "titulo": "PokéBonk",
+      "canal": "#juegos",
+      "contexto": "carlo pasó Need for Speed: Underground 2 revivido con WebGPU, hasta 120 fps y carreras online, y PokéBonk, el survivor de Pokémon gratis en el navegador.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3806764280",
+      "titulo": "mod de Project Zomboid que convierte cualquier lugar real del mapa en una ciudad del juego",
+      "canal": "#juegos",
+      "contexto": "n.i.c.e. encontró el mod de Project Zomboid que convierte cualquier lugar real del mapa en una ciudad del juego.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/humitagames/",
+      "titulo": "Humita Games",
+      "canal": "#juegos",
+      "contexto": "rcarmonad compartió a Humita Games, un estudio de videojuegos que está mostrando sus avances.",
+      "tags": [
+        "juegos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=50328896",
+      "titulo": "Ask HN: Which TV do you recommend for privacy?",
+      "canal": "#lifehacks",
+      "contexto": "ivm abrió el hilo Ask HN: Which TV do you recommend for privacy? y eseceve sumó cleanyourtv, que desbloquea Android TV y Google TV por Wi-Fi y le deja una home estilo Apple TV.",
+      "tags": [
+        "hogar",
+        "seguridad",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "titulo": "cleanyourtv",
+      "canal": "#lifehacks",
+      "contexto": "ivm abrió el hilo Ask HN: Which TV do you recommend for privacy? y eseceve sumó cleanyourtv, que desbloquea Android TV y Google TV por Wi-Fi y le deja una home estilo Apple TV.",
+      "tags": [
+        "herramientas",
+        "hogar"
+      ]
+    },
+    {
+      "url": "https://pdimagearchive.org/infinite-view/",
+      "titulo": "Infinite View",
+      "canal": "#cultura",
+      "contexto": "raul compartió Infinite View, el archivo de imágenes de dominio público para perderse un rato.",
+      "tags": [
+        "lectura",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://missing.csail.mit.edu/",
+      "titulo": "The Missing Semester del MIT",
+      "canal": "#cultura",
+      "contexto": "electricmonk recomendó The Missing Semester del MIT —la línea de comandos, git y esas herramientas que nadie enseña—, If This Finds You, cartas reales escritas a mano entre 1395 y 1929, y Codevember 2026.",
+      "tags": [
+        "aprendizaje",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://ifthisfindsyou.app/",
+      "titulo": "If This Finds You",
+      "canal": "#cultura",
+      "contexto": "electricmonk recomendó The Missing Semester del MIT —la línea de comandos, git y esas herramientas que nadie enseña—, If This Finds You, cartas reales escritas a mano entre 1395 y 1929, y Codevember 2026.",
+      "tags": [
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://ttillberg.github.io/codevember-2026/05/",
+      "titulo": "Codevember 2026",
+      "canal": "#cultura",
+      "contexto": "electricmonk recomendó The Missing Semester del MIT —la línea de comandos, git y esas herramientas que nadie enseña—, If This Finds You, cartas reales escritas a mano entre 1395 y 1929, y Codevember 2026.",
+      "tags": [
+        "diseno",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://youtu.be/oee7Dg9Hrek",
+      "titulo": "el último video de My New Band Believe se produjo en Chile",
+      "canal": "#musiqueria",
+      "contexto": "janogonzalez avisó que el último video de My New Band Believe se produjo en Chile.",
+      "tags": [
+        "musica",
+        "chile",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=73wCQRQb7v0",
+      "titulo": "una sesión de jungle",
+      "canal": "#musiqueria",
+      "contexto": "electricmonk arrancó la semana con una sesión de jungle.",
+      "tags": [
+        "musica"
+      ]
+    }
+  ]
+}

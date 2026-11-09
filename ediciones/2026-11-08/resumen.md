@@ -2,7 +2,7 @@
 
 ## Actividad de la comunidad
 
-- **841 mensajes** 🐐 publicados en los canales de contenido.
+- **841 mensajes** publicados en los canales de contenido.
 - **Jueves 5** fue el día más activo, con **271 mensajes**: la conversación se concentró en #diy, donde un control de NVIDIA Shield que se come dos pilas AAA en un día terminó en diagnóstico colectivo —multímetro, BLE, pilas recargables de 1,5 V y hasta un interruptor casero con plástico de botella— y la tarde siguió entre soldadoras, flippers y antenas wifi.
 
 ## Pegas
@@ -18,17 +18,17 @@ Durante la semana se publicaron **176 pegas nuevas** en [pegas.devschile.cl](htt
 ### Más avisos compartidos
 
 - `jorgeepunan` fue quien más avisos manuales dejó: un [backend NestJS con AWS en Acid Labs](https://acidlabs.com/en/jobs/cms1099-backend-developer-nest-js-aws-5138), un [arquitecto con 200 certificaciones](https://www.linkedin.com/jobs/view/4484389739/), un perfil de [enfermera y programadora](https://lnkd.in/p/dmbbq-FU), un [Design Lead en SMU](https://smu.trabajando.cl/trabajo/6134622-lider-diseno-ux-ui), las [vacantes de Howdy en Chile](https://www.howdylatam.com/careers?country=Chile), un [frontend con HTMX, Alpine.js y React legacy](https://lnkd.in/p/diTf6Anb), un [ingeniero para usar AI en MercadoLibre](https://mercadolibre.eightfold.ai/careers?domain=mercadolibre.com&profile_type=candidate&start=0&pid=45372255&sort_by=hot), los [jobs de Tenpo](https://tenpo.teamtailor.com/jobs) y un [diseñador para UnoAFP](https://unoafp.buk.cl/seleccions/866b470528d061f24a45eeb24524a1f9e464c782e34caa81359f0b754d6f623f63e32afcb76a4b791dfd3b50e1d431b817e04de31b50829468c61513ee9eca88/postular).
-- `leslie` sumó [un aviso más](https://lnkd.in/p/ePK6gDgK).
+- `yixlo` sumó [un aviso más](https://lnkd.in/p/ePK6gDgK).
 
 ## #anuncios
 
-`hector` compartió un nuevo post del Log de devsChile: en [«De un sitio web personal a la App Store»](https://log.devschile.cl/de-un-sitio-web-personal-a-la-app-store-como-publique-mi-primera-app-de-ios-en-un-fin-de-semana/), `lucioadons` cuenta paso a paso cómo publicó su primera app de iOS en un fin de semana —qué implica, los bloqueos, los costos y todo lo necesario— y recordó que el [Log](https://log.devschile.cl) está abierto a contribuciones de la comunidad, con una sola regla: nada de slop.
+`hector` compartió un nuevo post del Log de devsChile: en [«De un sitio web personal a la App Store»](https://log.devschile.cl/de-un-sitio-web-personal-a-la-app-store-como-publique-mi-primera-app-de-ios-en-un-fin-de-semana/), `lucioadons` cuenta paso a paso cómo publicó su primera app de iOS en un fin de semana —qué implica, los bloqueos, los costos y todo lo necesario— y recordó que el [Log](https://log.devschile.cl) está abierto a contribuciones de la comunidad, con una sola regla: nada de AI slop.
 
 ## Links de la semana
 
 ### #ai
 
-- `dukuo` presentó [bag.dev](https://bag.dev), mensajería instantánea y gratuita para agentes —cross-platform, cross-agents y con relays gratuitos en París y Ámsterdam—, con el código en [GitHub](https://github.com/usebag/bag) y [guía para levantar un relay propio](https://bag.dev/docs/run-a-relay). También dejó [media-stack](https://github.com/navilg/media-stack) para levantar un servidor de medios completo y [BLA](https://github.com/qybaihe/bla), un escudo que envenena binarios y bundles para que los agentes de ingeniería inversa alucinen.
+- `electricmonk` presentó [bag.dev](https://bag.dev), mensajería instantánea y gratuita para agentes —cross-platform, cross-agents y con relays gratuitos en París y Ámsterdam—, con el código en [GitHub](https://github.com/usebag/bag) y [guía para levantar un relay propio](https://bag.dev/docs/run-a-relay). También dejó [media-stack](https://github.com/navilg/media-stack) para levantar un servidor de medios completo y [BLA](https://github.com/qybaihe/bla), un escudo que envenena binarios y bundles para que los agentes de ingeniería inversa alucinen.
 - `davidlaym` advirtió que [Postman Desktop instaló sus propios plugins en Claude Code, Codex y Cursor](https://sysnote.net/news/postman-desktop-auto-installed-its-plugins-into-claude-code-codex-and-cursor-and): otra razón para mirar qué se cuela en el entorno de desarrollo.
 - `janogonzalez` compartió [GPT-2 implementado entero en CSS](https://shubhampatil.dev/blog/gpt2-css), sin una línea de JavaScript: el modelo corre dentro de una hoja de estilos.
 - `arveja` trajo los [skills de Matt Pocock](https://github.com/mattpocock/skills) y la conversación terminó recomendando `grill-me` para ordenar las preguntas antes de escribir código.
@@ -37,19 +37,18 @@ Durante la semana se publicaron **176 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #comunidad
 
-- `jorgemedinaleigh` presentó [Tourin](https://play.google.com/store/apps/details?id=com.dolmen.tourinapp), la app de turismo gamificado que creó con su señora: pasaporte de sellos para sitios turísticos y patrimoniales, inspirada en los pasaportes del Día del Patrimonio y en Pokémon GO. Ya está aprobada en Google Play y en trámite para la App Store.
-- `leslie` compartió la [residencia de Anthropic para investigación en alineación](https://alignment.anthropic.com/2026/anthropic-residency/) y el [Immerse Santiago 2026 de Cloudflare](https://fieldmarketing.www.cloudflare.com/Immerse-Santiago-2026), el 11 de noviembre en el Hotel Le Méridien, con desayuno y almuerzo incluidos.
-- `dukuo` dejó [Zero-Breach-Toolkit](https://github.com/interplains/Zero-Breach-Toolkit), un chequeo gratuito de rastros de spyware mercenario (Pegasus, Predator, Graphite) en computadores, Android y respaldos de iPhone, y [zero-wire](https://blog.cloudflare.com/zero-wire), el nuevo hub de Cloudflare para investigar vulnerabilidades críticas.
+- `yixlo` compartió la [residencia de Anthropic para investigación en alineación](https://alignment.anthropic.com/2026/anthropic-residency/) y el [Immerse Santiago 2026 de Cloudflare](https://fieldmarketing.www.cloudflare.com/Immerse-Santiago-2026), el 11 de noviembre en el Hotel Le Méridien, con desayuno y almuerzo incluidos.
+- `electricmonk` dejó [Zero-Breach-Toolkit](https://github.com/interplains/Zero-Breach-Toolkit), un chequeo gratuito de rastros de spyware mercenario (Pegasus, Predator, Graphite) en computadores, Android y respaldos de iPhone, y [zero-wire](https://blog.cloudflare.com/zero-wire), el nuevo hub de Cloudflare para investigar vulnerabilidades críticas.
 - `nicolasaraya` publicó su primer post en LinkedIn sobre la incertidumbre de la industria y pidió opiniones: [¿les hace sentido?](https://lnkd.in/p/dwqpBVk4).
 
 ### #desarrollo
 
 - `janogonzalez` presentó [OpenChoreo](https://openchoreo.dev), el proyecto open source para armar una plataforma interna de desarrollo sobre Kubernetes, y [sshhole.com](https://sshhole.com), la investigación del bug de OpenSSH sobre musl que desde 2016 deja pasar cualquier contraseña de más de 256 caracteres en cuentas que deberían ser solo con llave.
-- `dukuo` recomendó [Arcify](https://www.arcify.io/), un par de extensiones que llevan la sidebar vertical y el spotlight de Arc a cualquier navegador.
+- `electricmonk` recomendó [Arcify](https://www.arcify.io/), un par de extensiones que llevan la sidebar vertical y el spotlight de Arc a cualquier navegador.
 
 ### #diy
 
-- `dukuo` avisó que el [Flipper One está en preventa a USD 379](https://flipper.net/products/flipper-one-preorder).
+- `electricmonk` avisó que el [Flipper One está en preventa a USD 379](https://flipper.net/products/flipper-one-preorder).
 - `iarodriguezch` mostró el [M5 Cardputer Zero](https://shop.m5stack.com/pages/m5-cardputerzero), que promete review contra el Flipper Zero cuando llegue.
 - La impresión 3D se llevó la semana: [un video de una Bambu Lab](https://www.youtube.com/watch?v=reLXvBtyxRQ) disparó la comparación de las multicolor (Snapmaker U1, Flashforge), la advertencia de que Bambu viene con trampa y el dato de comprar en Todotoner y no en PC Factory.
 
@@ -59,8 +58,8 @@ Durante la semana se publicaron **176 pegas nuevas** en [pegas.devschile.cl](htt
 
 ### #frontend
 
-- `dukuo` compartió [IconMCP](https://iconmcp.com/), 6.248 íconos con un servidor MCP para que el agente los busque por significado.
-- `leslie` celebró que [Safari 27.3 beta ya trae adaptive dark mode](https://webkit.org/blog/18541/introducing-adaptive-dark-mode/).
+- `electricmonk` compartió [IconMCP](https://iconmcp.com/), 6.248 íconos con un servidor MCP para que el agente los busque por significado.
+- `yixlo` celebró que [Safari 27.3 beta ya trae adaptive dark mode](https://webkit.org/blog/18541/introducing-adaptive-dark-mode/).
 
 ### #juegos
 
@@ -76,9 +75,30 @@ Durante la semana se publicaron **176 pegas nuevas** en [pegas.devschile.cl](htt
 ### #cultura
 
 - `raul` compartió [Infinite View](https://pdimagearchive.org/infinite-view/), el archivo de imágenes de dominio público para perderse un rato.
-- `dukuo` recomendó [The Missing Semester del MIT](https://missing.csail.mit.edu/) —la línea de comandos, git y esas herramientas que nadie enseña—, [If This Finds You](https://ifthisfindsyou.app/), cartas reales escritas a mano entre 1395 y 1929, y [Codevember 2026](https://ttillberg.github.io/codevember-2026/05/).
+- `electricmonk` recomendó [The Missing Semester del MIT](https://missing.csail.mit.edu/) —la línea de comandos, git y esas herramientas que nadie enseña—, [If This Finds You](https://ifthisfindsyou.app/), cartas reales escritas a mano entre 1395 y 1929, y [Codevember 2026](https://ttillberg.github.io/codevember-2026/05/).
 
 ### #musiqueria
 
 - `janogonzalez` avisó que [el último video de My New Band Believe se produjo en Chile](https://youtu.be/oee7Dg9Hrek).
-- `dukuo` arrancó la semana con [una sesión de jungle](https://www.youtube.com/watch?v=73wCQRQb7v0).
+- `electricmonk` arrancó la semana con [una sesión de jungle](https://www.youtube.com/watch?v=73wCQRQb7v0).
+
+<!-- SEMANARIO_VISUALES
+anuncio: assets/anuncio-log-ios.jpg
+anuncio_alt: Escena de dibujos animados en un laboratorio, con un científico y un robot manipulando tubos de ensayo junto a un logo de Apple
+screenshot: assets/screenshot-comunidad.jpg
+screenshot_link: https://bag.dev
+screenshot_alt: Tarjeta de presentación de bag.dev con el texto «A sealed bag between agents»
+screenshot_etiqueta: 💬 Un vistazo a #ai
+screenshot_canal: #ai
+screenshot_caption: El proyecto que abrió la conversación de la semana en #ai.
+-->
+
+<!-- SEMANARIO_CIERRE
+proyecto_link: https://play.google.com/store/apps/details?id=com.dolmen.tourinapp
+proyecto_titulo: Tourin: pasaporte de sellos para recorrer la ciudad
+proyecto_descripcion: `jorgemedinaleigh` y su señora crearon Tourin, la app de turismo gamificado que convierte cada visita a un sitio turístico o patrimonial en un sello para el pasaporte. Inspirada en los pasaportes del Día del Patrimonio y en Pokémon GO, ya está aprobada en Google Play y sigue en trámite para la App Store.
+proyecto_imagen: assets/tourin-card.jpg
+proyecto_imagen_alt: Dos pantallas de Tourin: el mapa de Santiago con puntos de interés y una ruta con sus paradas
+proyecto_cta: Descargar Tourin →
+despedida: Que el próximo commit venga con contexto y sin sorpresas.
+-->
