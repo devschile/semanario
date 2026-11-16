@@ -66,7 +66,10 @@ async function ultimaEdicion() {
   }
 
   const html = await readFile(path.join(dir, fecha, 'newsletter.html'), 'utf8');
-  const texto = await readFile(path.join(dir, fecha, 'resumen.md'), 'utf8').catch(() => '');
+  // Versión texto: la genera generar_correo.mjs (v2); si no está, cae al
+  // resumen.md del pipeline v1.
+  const texto = await readFile(path.join(dir, fecha, 'correo.txt'), 'utf8')
+    .catch(() => readFile(path.join(dir, fecha, 'resumen.md'), 'utf8').catch(() => ''));
   const titulo = html.match(/<title>([\s\S]*?)<\/title>/i)?.[1].trim() ?? 'Semanario devsChile';
 
   return { fecha, html, texto, titulo };
@@ -84,7 +87,7 @@ async function suscriptoresConfirmados() {
 /** Reemplaza el marcador <!-- BAJA_LINK --> del template por el link de baja. */
 function inyectarBajaHtml(html, bajaUrl) {
   const link =
-    `· <a href="${bajaUrl}" style="color:#2DD4BF;text-decoration:none;">` +
+    `· <a href="${bajaUrl}" style="color:#0A6B60;text-decoration:none;">` +
     'Darse de baja en un clic</a>';
   return html.replace(/<!--\s*BAJA_LINK[\s\S]*?-->/g, link);
 }
@@ -95,7 +98,7 @@ function inyectarBajaHtml(html, bajaUrl) {
  * del de baja), así que se inyecta una sola vez sobre el HTML base.
  */
 function inyectarVerHtml(html, verUrl) {
-  const link = `<a href="${verUrl}" style="color:#2DD4BF;text-decoration:none;">Ver la versión web →</a>`;
+  const link = `<a href="${verUrl}" style="color:#0A6B60;text-decoration:none;">Ver la versión web →</a>`;
   return html.replace(/<!--\s*VER_HTML\s*-->/g, link);
 }
 

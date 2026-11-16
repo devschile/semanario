@@ -1,0 +1,123 @@
+SEMANARIO devsChile — #16 · 9 al 15 de noviembre de 2026
+
+Agentes con patrones propios, navegadores que se copian y la nube que se encoge
+
+La semana giró en torno a cómo construir con agentes —catálogos de patrones, revisores, guías de serving— mientras el escritorio se recicla: emuladores de nube, clones de Arc y portes nativos. La conversación más larga fue sobre emulación retro en handhelds, y la comunidad abrió el piloto para publicar apps en Google Play bajo su propio sello.
+
+LO MÁS COMENTADO
+· Ardia — Un clon gratuito de Arc para Mac: barra lateral, espacios y esa sensación de navegador que muchos extrañaban. Arc se despidió, la idea sigue viva y ahora corre por cuenta de otros.
+  https://ardia.dev/
+  por electricmonk
+· Sensor Xiaomi sin nube — El sensor de temperatura y humedad se puede flashear para dejarlo sin app ni cuenta. El recordatorio incómodo: si se puede intervenir así, cualquiera en el espectro también puede. El flasher corre en el navegador.
+  https://github.com/pvvx/ATC_MiThermometer
+  por electricmonk
+· Panda Skills — Un panel de modelos que revisa lo que tu agente dejó pasar. Para quien ya usa Claude Code o Codex a diario, es el segundo par de ojos que faltaba. Trae USD 5 de crédito para probarlo.
+  https://panda.repair/
+  por igcodinap
+· OpenRB-338 — Rebirth vuelve como proyecto open source: el clásico de 1996 rescatado para Mac, Windows y Linux. Una de esas noticias que alegran a quien alguna vez secuenció con la vieja Reason.
+  https://www.hispasonic.com/noticias/openrb-338-propellerhead-rebirth-vuelve-proyecto-open-source-gratuito/49406
+  por nicoavila
+· Humble Bundle y su rediseño — El rediseño de cuentas dejó la seguridad abierta, según reportes de usuarios. Si tienes medios de pago guardados, conviene sacarlos hasta que se aclare.
+  https://www.reddit.com/r/humblebundles/comments/1xtwdj2/humble_bundle_rework_introduces_major_account/
+  por carlo
+
+DESTACADO DE LA COMUNIDAD
+Sello devsChile: tu app en Google Play sin pelear con la burocracia
+El piloto para publicar apps Android bajo la cuenta de devsChile en Google Play: la comunidad se hace cargo del pago, la verificación de organización y los 12 testers que exige Google. Tú conservas la propiedad de la app y puedes transferirla a tu cuenta cuando quieras monetizar. El único requisito es ser miembro Gold.
+  https://sello.devschile.cl
+  por gmq
+
+PROYECTOS DE LA COMUNIDAD
+· QRFolk — Una API para generar códigos QR por programa, con endpoints simples, diseño cuidado y planes para quien necesite volumen.
+  https://www.qrfolk.com/
+  por electricmonk
+· Local AI Server — Apple Intelligence como API local en macOS: resumir, clasificar o traducir sin pagar tokens y sin que el contenido salga del equipo. Gratis y sin dependencias de nube.
+  https://danielatik.com/localaiserver/
+  por daniel.atik
+
+IA Y AGENTES
+· Patrones para construir con agentes, más allá del spec-driven — La lista de lectura que se armó en #ai: catálogos de patrones, un observatorio de desarrollo dirigido por especificaciones y guías de ingeniería de harness.
+  awesome-agentic-engineering: https://awesomeagenticengineering.com/
+  SDD Observatory: https://sddobservatory.com/
+  Agent Patterns: https://agentpatterns.ai/
+  guía de Simon Willison: https://simonwillison.net/guides/agentic-engineering-patterns/
+  harness engineering de Fowler: https://martinfowler.com/articles/harness-engineering.html
+  por electricmonk
+· Colibri: modelos grandes en hardware modesto — Un engine que reparte las capas del modelo entre VRAM, RAM y SSD para correr pesos que no caben en la tarjeta. Buena puerta de entrada al serving casero.
+  justvugg.github.io/colibri: https://justvugg.github.io/colibri/
+  por davidlaym
+· Una vulnerabilidad en el servidor MCP de Go — Un cambio de mayúsculas en el método JSON-RPC permite saltarse el proxy. Si tienes servidores MCP expuestos, vale la pena revisar la versión.
+  pwn.watch: https://pwn.watch/i/mcp-go-jsonrpc-case-folding-proxy-bypass-go-2026-6911
+  por iarodriguezch
+
+DESARROLLO
+· AWS lanzó su propio emulador local: el «Floci» oficial — Tres formas de levantar la nube en el notebook, según lo que necesites: el emulador nuevo de AWS, LocalStack o Floci.
+  emulador de AWS: https://docs.aws.amazon.com/emulator/
+  LocalStack: https://www.localstack.cloud/
+  Floci: https://floci.io/
+  por nicoavila
+· La guía de inference engineering de Modelplane — Cómo servir modelos propios, qué medir (TTFT, KV cache, goodput) y por qué el cuello de botella suele estar en el serving y no en la GPU.
+  docs.modelplane.ai: https://docs.modelplane.ai/guides/inference-guide
+  por jorgeepunan
+· TanStack AI, la alternativa al AI SDK de Vercel — Para construir features y agentes en TypeScript sin amarrarse al ecosistema de Vercel. Llegó con documentación y ejemplos.
+  tanstack.com/ai: https://tanstack.com/ai/latest
+  por electricmonk
+· Yab, otro navegador para Mac inspirado en Arc — Y ahora con AI incluida. El patrón se repite: Arc propuso la interfaz y el resto la está copiando con más velocidad que criterio.
+  yetanotherbrowser.com: https://yetanotherbrowser.com/
+  por rcarmonad
+
+JUEGOS
+· Guitar Hero III portado a macOS a 120 fps — Un port nativo con static recomp que corre a 120 fps en 1440p, y que además bundleó una librería para reconocer las guitarras originales de Xbox 360.
+  GH3-macOS-Recomp: https://github.com/segovia-no/GH3-macOS-Recomp
+  por dsegoviaolivares
+· Supermuseum y Retrocatalog: preservación de lo retro — La galería de traducciones de Supermuseum sigue creciendo, y Retrocatalog se está convirtiendo en el «solotodo» de las handhelds retro.
+  Supermuseum: http://supermuseum.cc/play/psx/SLPS-01934
+  Retrocatalog: https://retrocatalog.com/
+  por livercake
+· Emulación en hardware raro — BananaNative como opción para Nintendo DS, y Fire Emblem: Fortunes Weave corriendo sorprendentemente bien en un Ayn Thor.
+  BananaNative: https://git.eden-emu.dev/moceure/BananaNative
+  Fire Emblem en Ayn Thor: https://www.reddit.com/r/AynThor/comments/1xtslxw/fire_emblem_fortunes_weave_is_running_so_good_on/
+  por gmq
+
+LIFEHACKS
+· Nothing: ¿Headphone 1 Pro o Ear 3? — Comparación desde la experiencia de uso, con el ecualizador de la app como argumento a favor para encontrar el punto justo.
+  Headphone 1 Pro: https://cl.nothing.tech/products/headphone-1-pro?Color=Black
+  Ear 3: https://cl.nothing.tech/products/ear-3?Colour=White
+  por iarodriguezch
+
+COMUNIDAD
+· Hack CChC 2026: postulaciones hasta el 4 de diciembre — Equipos de hasta cuatro personas. La convocatoria está abierta y el plazo se acorta.
+  Postular: https://lnkd.in/p/d-FEJ4-G
+  por yixlo
+
+También sonaron — lo que quedó dando vueltas
+· Rune, un IDE open source pensado para el teclado
+  https://rune.build/
+· Keystatic: edición de Markdown y YAML para gente no técnica
+  https://keystatic.com/
+· Kitesurf, el navegador de Cloudflare, ahora open source
+  https://developers.cloudflare.com/changelog/post/2026-11-12-kitesurf-open-source/
+· Nitro Sandboxes para EKS, ECS y EC2
+  https://aws.amazon.com/es/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/
+· Las cinco cosas que la IA todavía no puede hacer
+  https://youtu.be/uFnkARNKXTg
+· El dataset de ARC: 154 piezas con sus archivos de Blender
+  https://arc.art/dataset/
+· Bambu Lab H3C multicolor: precio parejo con el resto del mundo
+  https://www.todotoner.cl/impresoras/impresoras-3d/impresoras/h3c-combo-multicolor-bambu-lab
+· DevDay Exchange Community Santiago: Build Games with Codex
+  https://luma.com/zv06n9np
+
+PEGAS DE LA SEMANA
+La semana cerró con 212 pegas nuevas publicadas en pegas.devschile.cl: 59 declaradas remotas y 25 con sueldo a la vista. El viernes llegó la tanda más grande, con 42 de una vez.
+· Senior AI Engineer · Niuro · remoto desde Latinoamérica · USD 3.000–5.000/mes
+  https://app.niuro.io/source/nFG8GufC?ref=ps_0v4nLeg5JERNwdQ2wEAlGwKfpoYVLZJEgsh0U1aKpyk&utm_source=slack&utm_medium=channel&utm_campaign=devschile
+· Senior .NET (Modern y Legacy) · Niuro · remoto desde Latinoamérica · USD 3.000–4.500/mes
+  https://app.niuro.io/source/vECJ4t6g?ref=ps_8qBqwS1_yFjra1mj6lkQACJiaMszDWp_BJkmYEomlbk&utm_source=slack&utm_medium=community&utm_content=devschile
+  Ver todas las pegas → https://pegas.devschile.cl
+
+Nos leemos la próxima semana.
+
+Proyecto devsChile: ShowCase
+El escaparate de los proyectos de la comunidad: páginas, apps y experimentos hechos acá. Si tienes algo que mostrar, este es el lugar.
+  https://showcase.devschile.cl/
