@@ -66,7 +66,7 @@ function enlace(href, texto, estilo = '') {
 }
 
 function chips(links) {
-  return links.map(l => `<a href="${escapar(l.url)}" style="display:inline-block;margin:8px 6px 0 0;padding:3px 10px;border:1px solid #E7E3DC;border-radius:4px;font-family:${FONT};font-size:12px;font-weight:600;color:${TINTA};text-decoration:none;">${escapar(l.texto)} <span style="color:${CORAL};">↗</span></a>`).join('');
+  return links.map(l => `<a href="${escapar(l.url)}" style="font-family:${FONT};font-size:13px;font-weight:600;color:${CORAL};text-decoration:none;">${escapar(l.texto)} ↗</a>`).join(' <span style="color:#C9C5D2;">·</span> ');
 }
 
 function pill(texto) {
@@ -94,17 +94,16 @@ const auspicioBloque = auspicio
             </table>`
   : '';
 
-const destacados = (datos.destacados ?? []).map((d, i) => `
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="padding:14px 0 20px 0;border-bottom:1px solid ${BORDE};">
+const destacados = (datos.destacados ?? []).map(d => `
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="padding:16px 0;border-bottom:1px solid ${BORDE};">
               <tr>
-                <td valign="top" style="width:42px;padding-top:2px;">
-                  <span style="font-family:${FONT};font-size:26px;font-weight:800;letter-spacing:-0.04em;color:${CORAL};">${i + 1}</span>
+                <td valign="top" style="width:96px;padding:2px 16px 0 0;">
+                  <a href="${escapar(d.url)}" style="text-decoration:none;"><img src="${escapar(urlAsset(d.imagen))}" alt="${escapar(d.titulo)}" width="96" height="96" style="display:block;width:96px;height:96px;border:1px solid ${BORDE};border-radius:8px;object-fit:cover;"></a>
                 </td>
                 <td valign="top">
-                  <p style="margin:0 0 4px 0;">${pill(d.tema)}</p>
-                  <h3 style="margin:0;font-family:${FONT};font-size:19px;line-height:1.3;letter-spacing:-0.02em;font-weight:800;color:${TINTA};"><a href="${escapar(d.url)}" style="color:${TINTA};text-decoration:none;">${escapar(d.titulo)}</a> <span style="color:${CORAL};font-weight:700;">↗</span></h3>
-                  <p style="margin:8px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${escapar(d.descripcion)}</p>
-                  ${d.imagen ? `<a href="${escapar(d.url)}" style="text-decoration:none;display:block;margin:12px 0 0 0;"><img src="${escapar(urlAsset(d.imagen))}" alt="${escapar(d.titulo)}" width="488" style="display:block;width:100%;max-width:488px;height:auto;border:1px solid ${BORDE};border-radius:6px;"></a>` : ''}
+                  <p style="margin:0 0 5px 0;">${pill(d.tema)}</p>
+                  <h3 style="margin:0;font-family:${FONT};font-size:17px;line-height:1.3;letter-spacing:-0.01em;font-weight:800;color:${TINTA};"><a href="${escapar(d.url)}" style="color:${TINTA};text-decoration:none;">${escapar(d.titulo)} <span style="color:${CORAL};font-weight:700;">↗</span></a></h3>
+                  <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${escapar(d.descripcion)}</p>
                 </td>
               </tr>
             </table>`).join('\n');
@@ -114,7 +113,7 @@ const comunidad = datos.comunidad ? `
               <tr>
                 <td style="padding:18px 18px 16px 18px;">
                   <p style="margin:0;font-family:${MONO};font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#0F9E8E;font-weight:700;">${escapar(datos.comunidad.etiqueta)}</p>
-                  ${datos.comunidad.imagen ? `<a href="${escapar(datos.comunidad.url)}" style="text-decoration:none;display:block;margin:10px 0 12px 0;"><img src="${escapar(urlAsset(datos.comunidad.imagen))}" alt="${escapar(datos.comunidad.titulo)}" width="452" style="display:block;width:100%;max-width:452px;height:auto;border:1px solid #CFEDE7;border-radius:6px;"></a>` : ''}
+                  ${datos.comunidad.imagen ? `<a href="${escapar(datos.comunidad.url)}" style="text-decoration:none;display:block;margin:10px 0 14px 0;"><img src="${escapar(urlAsset(datos.comunidad.imagen))}" alt="${escapar(datos.comunidad.titulo)}" width="508" style="display:block;width:100%;max-width:508px;height:auto;border:1px solid #CFEDE7;border-radius:6px;"></a>` : ''}
                   <h3 style="margin:0;font-family:${FONT};font-size:19px;line-height:1.3;letter-spacing:-0.02em;font-weight:800;color:${TINTA};">${escapar(datos.comunidad.titulo)}</h3>
                   <p style="margin:8px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${escapar(datos.comunidad.descripcion)}</p>
                   <p style="margin:12px 0 0 0;font-family:${FONT};font-size:14px;font-weight:700;"><a href="${escapar(datos.comunidad.url)}" style="color:#0F9E8E;text-decoration:none;">${escapar(datos.comunidad.cta)}</a></p>
@@ -148,14 +147,11 @@ const secciones = (datos.secciones ?? []).map(s => `
 const compactos = datos.compactos ? `
             <h2 style="margin:10px 0 12px 0;font-family:${FONT};font-size:16px;font-weight:800;letter-spacing:-0.01em;color:${TINTA};">${escapar(datos.compactos.titulo)} <span style="color:${SUAVE};font-weight:500;">— lo que quedó dando vueltas</span></h2>
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid ${BORDE};">
-              ${datos.compactos.items.map((item, i, arr) => {
-                const temaVisible = item.tema && item.tema !== arr[i - 1]?.tema;
-                return `<tr>
+              ${datos.compactos.items.map(item => `<tr>
                 <td style="padding:9px 0;border-bottom:1px solid ${BORDE};">
-                  <p style="margin:0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};"><a href="${escapar(item.url)}" style="color:${TINTA};text-decoration:none;font-weight:600;">${escapar(item.titulo)} <span style="color:${CORAL};">↗</span></a>${temaVisible ? ` <span style="color:#9B97A8;font-size:12px;">· ${escapar(item.tema)}</span>` : ''}</p>
+                  <p style="margin:0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};"><a href="${escapar(item.url)}" style="color:${TINTA};text-decoration:none;font-weight:600;">${escapar(item.titulo)} <span style="color:${CORAL};">↗</span></a></p>
                 </td>
-              </tr>`;
-              }).join('\n              ')}
+              </tr>`).join('\n              ')}
             </table>` : '';
 
 const pegas = datos.pegas ? `

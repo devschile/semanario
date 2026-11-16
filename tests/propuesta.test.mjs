@@ -28,7 +28,7 @@ test('generar_propuesta: renderiza la edición sin nombres de personas', async (
 
   // Maqueta completa
   assert.doesNotMatch(html, /{{[A-Z_]+}}/, 'no deben quedar marcadores');
-  assert.ok(html.includes('Lo más relevante'));
+  assert.ok(html.includes('Lo más comentado'));
   assert.ok(html.includes('También sonaron'));
   assert.ok(html.includes('Pegas de la semana'));
   assert.ok(html.includes('Dr. M. Barros Borgoño 71'), 'dirección legal intacta');
