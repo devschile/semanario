@@ -76,6 +76,7 @@ function boton(texto, url, tono = 'coral') {
   const paletas = {
     coral: { fondo: '#E9F9F6', texto: '#0A6B60' },
     teal: { fondo: '#E9F9F6', texto: '#0A6B60' },
+    ambar: { fondo: '#FEF3E2', texto: '#92400E' },
     neutro: { fondo: '#F1F4F3', texto: TINTA },
   };
   const p = paletas[tono] ?? paletas.coral;
@@ -100,14 +101,14 @@ const heroBajada = (datos.hero.bajada ?? [])
 
 const auspicio = datos.hero.auspicio ?? null;
 const auspicioHeader = auspicio
-  ? `<a href="${escapar(auspicio.url)}" style="color:${ACENTO};text-decoration:none;font-weight:700;">Auspicia esta edición →</a>`
+  ? `<a href="${escapar(auspicio.url)}" style="color:#92400E;text-decoration:none;font-weight:700;">Auspicia esta edición →</a>`
   : '';
 const auspicioBloque = auspicio
-  ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0 0 0;background-color:#F1FBF9;border:1px solid #CBEAE4;border-radius:6px;">
+  ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0 0 0;background-color:#FEF9F2;border:1px solid #F2E4CD;border-radius:6px;">
               <tr>
                 <td style="padding:14px 16px;">
-                  <p style="margin:0;font-family:${MONO};font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:${ACENTO};font-weight:700;">${escapar(auspicio.texto)}</p>
-                  <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};">${escapar(auspicio.detalle)} · <a href="${escapar(auspicio.url)}" style="color:${ACENTO};text-decoration:none;font-weight:600;">empresas.devschile.cl →</a></p>
+                  <p style="margin:0;font-family:${MONO};font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#92400E;font-weight:700;">${escapar(auspicio.texto)}</p>
+                  <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};">${escapar(auspicio.detalle)} · <a href="${escapar(auspicio.url)}" style="color:#92400E;text-decoration:none;font-weight:600;">empresas.devschile.cl →</a></p>
                 </td>
               </tr>
             </table>`
@@ -177,13 +178,13 @@ const compactos = datos.compactos ? `
             </table>` : '';
 
 const pegas = datos.pegas ? `
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:6px 0 0 0;background-color:#F2F7F5;border:1px solid ${BORDE};border-radius:8px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:6px 0 0 0;background-color:#FEF9F2;border:1px solid #F2E4CD;border-radius:8px;">
               <tr>
                 <td style="padding:18px;">
-                  <h3 style="margin:0;font-family:${FONT};font-size:17px;font-weight:800;letter-spacing:-0.01em;color:${TINTA};"><span style="border-bottom:3px solid ${LINEA};padding-bottom:3px;">${escapar(datos.pegas.titulo)}</span></h3>
+                  <h3 style="margin:0;font-family:${FONT};font-size:17px;font-weight:800;letter-spacing:-0.01em;color:${TINTA};"><span style="border-bottom:3px solid #B45309;padding-bottom:3px;">${escapar(datos.pegas.titulo)}</span></h3>
                   <p style="margin:12px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(datos.pegas.intro)}</p>
                   ${(datos.pegas.destacadas ?? []).map(p => `<p style="margin:10px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};"><a href="${escapar(p.url)}" style="color:${TINTA};font-weight:700;text-decoration:underline;">${escapar(p.titulo)}</a> · ${escapar(p.empresa)} · ${escapar(p.detalle)} <span style="display:inline-block;margin-left:4px;padding:1px 8px;border-radius:999px;background-color:#E7F5EC;color:#146B3A;font-size:11px;font-weight:700;">${escapar(p.sueldo)}</span></p>`).join('\n                  ')}
-                  <p style="margin:16px 0 0 0;">${boton(datos.pegas.cta, datos.pegas.url, 'coral')}</p>
+                  <p style="margin:16px 0 0 0;">${boton(datos.pegas.cta, datos.pegas.url, 'ambar')}</p>
                 </td>
               </tr>
             </table>` : '';
