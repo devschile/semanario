@@ -228,6 +228,20 @@ for (const ed of ediciones) {
   if (existsSync(assets)) await cp(assets, path.join(carpeta, 'assets'), { recursive: true });
 }
 
+// Propuesta v2 (exploración en paralelo al correo): si una edición trae
+// propuesta.html, se publica aparte en /newsletter/YYYY-MM-DD/propuesta.html,
+// exista o no su newsletter.html. No altera el correo ni el listado.
+for (const entrada of await readdir(dirEdiciones, { withFileTypes: true })) {
+  if (!entrada.isDirectory() || !/^\d{4}-\d{2}-\d{2}$/.test(entrada.name)) continue;
+  const propuesta = path.join(dirEdiciones, entrada.name, 'propuesta.html');
+  if (!existsSync(propuesta)) continue;
+  const carpeta = path.join(dist, 'newsletter', entrada.name);
+  await mkdir(carpeta, { recursive: true });
+  await writeFile(path.join(carpeta, 'propuesta.html'), await readFile(propuesta, 'utf8'));
+  const assetsPropuesta = path.join(dirEdiciones, entrada.name, 'assets-propuesta');
+  if (existsSync(assetsPropuesta)) await cp(assetsPropuesta, path.join(carpeta, 'assets-propuesta'), { recursive: true });
+}
+
 const indice = await indiceBusqueda(ediciones);
 await writeFile(path.join(dist, 'buscar.json'), JSON.stringify(indice));
 
