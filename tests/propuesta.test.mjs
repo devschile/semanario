@@ -29,6 +29,7 @@ test('generar_propuesta: atribuye con «por usuario» y no en «También sonaron
   // Maqueta completa
   assert.doesNotMatch(html, /{{[A-Z_]+}}/, 'no deben quedar marcadores');
   assert.ok(html.includes('Lo más comentado'));
+  assert.ok(html.includes('Proyectos de la comunidad'));
   assert.ok(html.includes('También sonaron'));
   assert.ok(html.includes('Pegas de la semana'));
   assert.ok(html.includes('Dr. M. Barros Borgoño 71'), 'dirección legal intacta');

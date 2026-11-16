@@ -84,9 +84,12 @@ function boton(texto, url, tono = 'coral') {
 }
 
 function chips(links) {
-  // El separador va antes de cada enlace (no después): así nunca queda solo al
-  // final de una línea cuando el siguiente chip salta de renglón.
-  return links.map((l, i) => `${i ? '<span style="color:#C9C5D2;">·</span> ' : ''}<a href="${escapar(l.url)}" style="font-family:${FONT};font-size:13px;font-weight:600;color:${ACENTO};text-decoration:none;margin-right:2px;">${escapar(l.texto)} ↗</a>`).join(' ');
+  // El separador va antes de cada enlace y envuelto con él en un span nowrap:
+  // así el «·» nunca queda solo al final de una línea cuando hay salto.
+  return links.map((l, i) => {
+    const enlace = `<a href="${escapar(l.url)}" style="font-family:${FONT};font-size:13px;font-weight:600;color:${ACENTO};text-decoration:none;margin-right:2px;">${escapar(l.texto)} ↗</a>`;
+    return i ? `<span style="white-space:nowrap;"><span style="color:#C9C5D2;">·</span> ${enlace}</span>` : enlace;
+  }).join(' ');
 }
 
 function pill(texto) {
@@ -128,6 +131,34 @@ const destacados = (datos.destacados ?? []).map(d => `
                 </td>
               </tr>
             </table>`).join('\n');
+
+const proyectos = datos.proyectos ? `
+        <tr>
+          <td style="padding:26px 28px 0 28px;">
+            <h2 style="margin:0 0 2px 0;font-family:${FONT};font-size:20px;font-weight:800;letter-spacing:-0.02em;color:${TINTA};"><span style="border-bottom:3px solid ${LINEA};padding-bottom:4px;">${escapar(datos.proyectos.titulo)}</span></h2>
+            <p style="margin:12px 0 0 0;font-family:${FONT};font-size:13px;line-height:1.6;color:${SUAVE};">${escapar(datos.proyectos.intro)}</p>
+            ${datos.proyectos.items.map(p => `
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:14px 0 0 0;background-color:#F2FBF9;border:1px solid #CBEAE4;border-radius:8px;">
+              <tr>
+                <td style="padding:16px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td valign="top" style="width:72px;padding:0 14px 0 0;">
+                        <a href="${escapar(p.url)}" style="text-decoration:none;"><img src="${escapar(urlAsset(p.imagen))}" alt="${escapar(p.titulo)}" width="72" height="72" style="display:block;width:72px;height:72px;border:1px solid #CBEAE4;border-radius:8px;object-fit:cover;"></a>
+                      </td>
+                      <td valign="top">
+                        <h3 style="margin:0;font-family:${FONT};font-size:17px;font-weight:800;letter-spacing:-0.01em;color:${TINTA};"><a href="${escapar(p.url)}" style="color:${TINTA};text-decoration:none;">${escapar(p.titulo)} <span style="color:#0A6B60;">↗</span></a></h3>
+                        <p style="margin:5px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(p.descripcion)}</p>
+                        ${por(p.por)}
+                      </td>
+                    </tr>
+                  </table>
+                  <p style="margin:12px 0 0 0;">${boton(p.cta, p.url, 'teal')}</p>
+                </td>
+              </tr>
+            </table>`).join('\n')}
+          </td>
+        </tr>` : '';
 
 const comunidad = datos.comunidad ? `
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:22px 0 6px 0;background-color:#F2FBF9;border:1px solid #CBEAE4;border-radius:8px;">
@@ -205,6 +236,7 @@ const proyecto = proyectoData ? `
 const preheader = `${datos.destacados?.[0]?.titulo ?? 'El Semanario'} y ${datos.compactos?.items?.length ?? 0} links más de la semana en devsChile`;
 
 const totalLinks = (datos.destacados?.length ?? 0)
+  + (datos.proyectos?.items?.length ?? 0)
   + (datos.comunidad ? 1 : 0)
   + (datos.secciones ?? []).reduce((n, s) => n + s.items.reduce((m, it) => m + (it.links?.length ?? 0), 0), 0)
   + (datos.compactos?.items?.length ?? 0);
@@ -230,6 +262,7 @@ const reemplazos = {
   '{{HERO_BAJADA}}': heroBajada,
   '{{HERO_STATS}}': escapar(statsHero),
   '{{DESTACADOS}}': destacados,
+  '{{PROYECTOS}}': proyectos,
   '{{COMUNIDAD}}': comunidad,
   '{{SECCIONES}}': secciones,
   '{{COMPACTOS}}': compactos,
