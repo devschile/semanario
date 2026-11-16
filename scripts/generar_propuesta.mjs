@@ -25,10 +25,11 @@ const dir = path.join(raiz, 'ediciones', fecha);
 const datos = JSON.parse(await readFile(path.join(dir, 'propuesta.json'), 'utf8'));
 let html = await readFile(path.join(raiz, 'template-propuesta.html'), 'utf8');
 
-const CORAL = '#FF6154';
+const ACENTO = '#0A6B60';
+const LINEA = '#14B8A6';
 const TINTA = '#1F1D2B';
 const SUAVE = '#55536B';
-const BORDE = '#E7E3DC';
+const BORDE = '#DEE8E6';
 const FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
 const MONO = "'SF Mono',Menlo,Consolas,'Courier New',monospace";
 
@@ -64,7 +65,7 @@ function urlAsset(valor) {
 function formato(s) {
   return escapar(s)
     .replace(/\*\*([^*]+)\*\*/g, `<strong style="color:${TINTA};">$1</strong>`)
-    .replace(/`([^`]+)`/g, `<code style="font-family:${MONO};font-size:13px;color:${TINTA};background-color:#F4F2EF;padding:1px 5px;border-radius:4px;">$1</code>`);
+    .replace(/`([^`]+)`/g, `<code style="font-family:${MONO};font-size:13px;color:${TINTA};background-color:#F1F4F3;padding:1px 5px;border-radius:4px;">$1</code>`);
 }
 
 const por = usuario => usuario
@@ -73,20 +74,22 @@ const por = usuario => usuario
 
 function boton(texto, url, tono = 'coral') {
   const paletas = {
-    coral: { fondo: '#FFF1EF', texto: '#D9483B' },
-    teal: { fondo: '#E9F9F6', texto: '#0B8A7C' },
-    neutro: { fondo: '#F4F2EF', texto: TINTA },
+    coral: { fondo: '#E9F9F6', texto: '#0A6B60' },
+    teal: { fondo: '#E9F9F6', texto: '#0A6B60' },
+    neutro: { fondo: '#F1F4F3', texto: TINTA },
   };
   const p = paletas[tono] ?? paletas.coral;
   return `<a href="${escapar(url)}" style="display:inline-block;padding:9px 18px;border-radius:6px;background-color:${p.fondo};color:${p.texto};font-family:${FONT};font-size:13px;font-weight:700;text-decoration:none;">${escapar(texto)}</a>`;
 }
 
 function chips(links) {
-  return links.map(l => `<a href="${escapar(l.url)}" style="font-family:${FONT};font-size:13px;font-weight:600;color:${CORAL};text-decoration:none;">${escapar(l.texto)} ↗</a>`).join(' <span style="color:#C9C5D2;">·</span> ');
+  // El separador va antes de cada enlace (no después): así nunca queda solo al
+  // final de una línea cuando el siguiente chip salta de renglón.
+  return links.map((l, i) => `${i ? '<span style="color:#C9C5D2;">·</span> ' : ''}<a href="${escapar(l.url)}" style="font-family:${FONT};font-size:13px;font-weight:600;color:${ACENTO};text-decoration:none;margin-right:2px;">${escapar(l.texto)} ↗</a>`).join(' ');
 }
 
 function pill(texto) {
-  return `<span style="display:inline-block;padding:2px 8px;border-radius:4px;background-color:#F1EEE9;color:#6B6779;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">${escapar(texto)}</span>`;
+  return `<span style="display:inline-block;padding:2px 8px;border-radius:4px;background-color:#EEF4F2;color:#4E6F68;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">${escapar(texto)}</span>`;
 }
 
 /* ── bloques ────────────────────────────────────────────────────────────── */
@@ -97,14 +100,14 @@ const heroBajada = (datos.hero.bajada ?? [])
 
 const auspicio = datos.hero.auspicio ?? null;
 const auspicioHeader = auspicio
-  ? `<a href="${escapar(auspicio.url)}" style="color:${CORAL};text-decoration:none;font-weight:700;">Auspicia esta edición →</a>`
+  ? `<a href="${escapar(auspicio.url)}" style="color:${ACENTO};text-decoration:none;font-weight:700;">Auspicia esta edición →</a>`
   : '';
 const auspicioBloque = auspicio
-  ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0 0 0;background-color:#FFF7F5;border:1px solid #FFD9D3;border-radius:6px;">
+  ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:20px 0 0 0;background-color:#F1FBF9;border:1px solid #CBEAE4;border-radius:6px;">
               <tr>
                 <td style="padding:14px 16px;">
-                  <p style="margin:0;font-family:${MONO};font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:${CORAL};font-weight:700;">${escapar(auspicio.texto)}</p>
-                  <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};">${escapar(auspicio.detalle)} · <a href="${escapar(auspicio.url)}" style="color:${CORAL};text-decoration:none;font-weight:600;">empresas.devschile.cl →</a></p>
+                  <p style="margin:0;font-family:${MONO};font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:${ACENTO};font-weight:700;">${escapar(auspicio.texto)}</p>
+                  <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};">${escapar(auspicio.detalle)} · <a href="${escapar(auspicio.url)}" style="color:${ACENTO};text-decoration:none;font-weight:600;">empresas.devschile.cl →</a></p>
                 </td>
               </tr>
             </table>`
@@ -118,7 +121,7 @@ const destacados = (datos.destacados ?? []).map(d => `
                 </td>
                 <td valign="top">
                   <p style="margin:0 0 5px 0;">${pill(d.tema)}</p>
-                  <h3 style="margin:0;font-family:${FONT};font-size:17px;line-height:1.3;letter-spacing:-0.01em;font-weight:800;color:${TINTA};"><a href="${escapar(d.url)}" style="color:${TINTA};text-decoration:none;">${escapar(d.titulo)} <span style="color:${CORAL};font-weight:700;">↗</span></a></h3>
+                  <h3 style="margin:0;font-family:${FONT};font-size:17px;line-height:1.3;letter-spacing:-0.01em;font-weight:800;color:${TINTA};"><a href="${escapar(d.url)}" style="color:${TINTA};text-decoration:none;">${escapar(d.titulo)} <span style="color:${ACENTO};font-weight:700;">↗</span></a></h3>
                   <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(d.descripcion)}</p>
                   ${por(d.por)}
                 </td>
@@ -126,11 +129,11 @@ const destacados = (datos.destacados ?? []).map(d => `
             </table>`).join('\n');
 
 const comunidad = datos.comunidad ? `
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:22px 0 6px 0;background-color:#F7FBFA;border:1px solid #CFEDE7;border-radius:8px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:22px 0 6px 0;background-color:#F2FBF9;border:1px solid #CBEAE4;border-radius:8px;">
               <tr>
                 <td style="padding:18px 18px 16px 18px;">
-                  <p style="margin:0;font-family:${MONO};font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#0F9E8E;font-weight:700;">${escapar(datos.comunidad.etiqueta)}</p>
-                  ${datos.comunidad.imagen ? `<a href="${escapar(datos.comunidad.url)}" style="text-decoration:none;display:block;margin:10px 0 14px 0;"><img src="${escapar(urlAsset(datos.comunidad.imagen))}" alt="${escapar(datos.comunidad.titulo)}" width="508" style="display:block;width:100%;max-width:508px;height:auto;border:1px solid #CFEDE7;border-radius:6px;"></a>` : ''}
+                  <p style="margin:0;font-family:${MONO};font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#0A6B60;font-weight:700;">${escapar(datos.comunidad.etiqueta)}</p>
+                  ${datos.comunidad.imagen ? `<a href="${escapar(datos.comunidad.url)}" style="text-decoration:none;display:block;margin:10px 0 14px 0;"><img src="${escapar(urlAsset(datos.comunidad.imagen))}" alt="${escapar(datos.comunidad.titulo)}" width="508" style="display:block;width:100%;max-width:508px;height:auto;border:1px solid #CBEAE4;border-radius:6px;"></a>` : ''}
                   <h3 style="margin:0;font-family:${FONT};font-size:19px;line-height:1.3;letter-spacing:-0.02em;font-weight:800;color:${TINTA};">${escapar(datos.comunidad.titulo)}</h3>
                   <p style="margin:8px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(datos.comunidad.descripcion)}</p>
                   ${por(datos.comunidad.por)}
@@ -142,19 +145,19 @@ const comunidad = datos.comunidad ? `
 const secciones = (datos.secciones ?? []).map(s => `
         <tr>
           <td style="padding:24px 28px 0 28px;">
-            <h2 style="margin:0 0 2px 0;font-family:${FONT};font-size:20px;font-weight:800;letter-spacing:-0.02em;color:${TINTA};"><span style="border-bottom:3px solid ${CORAL};padding-bottom:4px;">${escapar(s.tema)}</span></h2>
+            <h2 style="margin:0 0 2px 0;font-family:${FONT};font-size:20px;font-weight:800;letter-spacing:-0.02em;color:${TINTA};"><span style="border-bottom:3px solid ${LINEA};padding-bottom:4px;">${escapar(s.tema)}</span></h2>
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:14px 0 0 0;">
               ${s.items.map(item => {
                 const principal = item.links?.[0]?.url;
                 const titulo = principal
-                  ? `<a href="${escapar(principal)}" style="color:${TINTA};text-decoration:none;">${escapar(item.titulo)} <span style="color:${CORAL};font-weight:700;">↗</span></a>`
+                  ? `<a href="${escapar(principal)}" style="color:${TINTA};text-decoration:none;">${escapar(item.titulo)} <span style="color:${ACENTO};font-weight:700;">↗</span></a>`
                   : escapar(item.titulo);
                 const extra = (item.links ?? []).slice(1);
                 return `<tr>
                 <td style="padding:0 0 18px 0;">
                   <p style="margin:0;font-family:${FONT};font-size:16px;line-height:1.4;font-weight:700;letter-spacing:-0.01em;color:${TINTA};">${titulo}</p>
                   <p style="margin:5px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(item.descripcion)}</p>
-                  ${extra.length ? `<p style="margin:0;">${chips(extra)}</p>` : ''}
+                  ${extra.length ? `<p style="margin:4px 0 0 0;">${chips(extra)}</p>` : ''}
                   ${por(item.por)}
                 </td>
               </tr>`;
@@ -168,16 +171,16 @@ const compactos = datos.compactos ? `
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid ${BORDE};">
               ${datos.compactos.items.map(item => `<tr>
                 <td style="padding:9px 0;border-bottom:1px solid ${BORDE};">
-                  <p style="margin:0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};"><a href="${escapar(item.url)}" style="color:${TINTA};text-decoration:none;font-weight:600;">${escapar(item.titulo)} <span style="color:${CORAL};">↗</span></a></p>
+                  <p style="margin:0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};"><a href="${escapar(item.url)}" style="color:${TINTA};text-decoration:none;font-weight:600;">${escapar(item.titulo)} <span style="color:${ACENTO};">↗</span></a></p>
                 </td>
               </tr>`).join('\n              ')}
             </table>` : '';
 
 const pegas = datos.pegas ? `
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:6px 0 0 0;background-color:#FAF8F5;border:1px solid ${BORDE};border-radius:8px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:6px 0 0 0;background-color:#F2F7F5;border:1px solid ${BORDE};border-radius:8px;">
               <tr>
                 <td style="padding:18px;">
-                  <h3 style="margin:0;font-family:${FONT};font-size:17px;font-weight:800;letter-spacing:-0.01em;color:${TINTA};"><span style="border-bottom:3px solid ${CORAL};padding-bottom:3px;">${escapar(datos.pegas.titulo)}</span></h3>
+                  <h3 style="margin:0;font-family:${FONT};font-size:17px;font-weight:800;letter-spacing:-0.01em;color:${TINTA};"><span style="border-bottom:3px solid ${LINEA};padding-bottom:3px;">${escapar(datos.pegas.titulo)}</span></h3>
                   <p style="margin:12px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(datos.pegas.intro)}</p>
                   ${(datos.pegas.destacadas ?? []).map(p => `<p style="margin:10px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};"><a href="${escapar(p.url)}" style="color:${TINTA};font-weight:700;text-decoration:underline;">${escapar(p.titulo)}</a> · ${escapar(p.empresa)} · ${escapar(p.detalle)} <span style="display:inline-block;margin-left:4px;padding:1px 8px;border-radius:999px;background-color:#E7F5EC;color:#146B3A;font-size:11px;font-weight:700;">${escapar(p.sueldo)}</span></p>`).join('\n                  ')}
                   <p style="margin:16px 0 0 0;">${boton(datos.pegas.cta, datos.pegas.url, 'coral')}</p>
