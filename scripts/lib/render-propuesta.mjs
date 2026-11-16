@@ -72,7 +72,7 @@ function formato(s) {
 }
 
 const por = usuario => usuario
-  ? `<span style="display:block;margin-top:6px;font-family:${MONO};font-size:11px;color:#8A8698;">por ${escapar(usuario)}</span>`
+  ? `<span style="display:block;margin-top:6px;font-family:${MONO};font-size:11px;color:#8A8698;">compartido por ${escapar(usuario)}</span>`
   : '';
 
 function boton(texto, url, tono = 'teal') {
@@ -300,18 +300,18 @@ export function textoPlano(datos, { fecha, numero } = {}) {
   ];
   for (const d of datos.destacados ?? []) {
     lineas.push(`· ${sinFormato(d.titulo)} — ${sinFormato(d.descripcion)}`, `  ${d.url}`);
-    if (d.por) lineas.push(`  por ${d.por}`);
+    if (d.por) lineas.push(`  compartido por ${d.por}`);
   }
   if (datos.comunidad) {
     lineas.push('', datos.comunidad.etiqueta.toUpperCase(), sinFormato(datos.comunidad.titulo),
       sinFormato(datos.comunidad.descripcion), `  ${datos.comunidad.url}`);
-    if (datos.comunidad.por) lineas.push(`  por ${datos.comunidad.por}`);
+    if (datos.comunidad.por) lineas.push(`  compartido por ${datos.comunidad.por}`);
   }
   if (datos.proyectos) {
     lineas.push('', datos.proyectos.titulo.toUpperCase());
     for (const p of datos.proyectos.items) {
       lineas.push(`· ${sinFormato(p.titulo)} — ${sinFormato(p.descripcion)}`, `  ${p.url}`);
-      if (p.por) lineas.push(`  por ${p.por}`);
+      if (p.por) lineas.push(`  compartido por ${p.por}`);
     }
   }
   for (const s of datos.secciones ?? []) {
@@ -319,7 +319,7 @@ export function textoPlano(datos, { fecha, numero } = {}) {
     for (const item of s.items) {
       lineas.push(`· ${sinFormato(item.titulo)} — ${sinFormato(item.descripcion)}`);
       for (const l of item.links ?? []) lineas.push(`  ${l.texto}: ${l.url}`);
-      if (item.por) lineas.push(`  por ${item.por}`);
+      if (item.por) lineas.push(`  compartido por ${item.por}`);
     }
   }
   if (datos.compactos) {

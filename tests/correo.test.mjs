@@ -57,6 +57,10 @@ test('generar_correo: arma el correo v2 con asunto, assets y links medibles', as
   assert.ok(!/semanario\.devschile\.cl[^<]*·\s*·/.test(final), 'el pie no debe dejar «· ·»');
   assert.doesNotMatch(final, /<!--(VER_HTML| BAJA_LINK)/, 'no deben quedar marcadores en el correo final');
 
+  // Atribución pedida por gmq: «compartido por …», no «por …» a secas.
+  assert.ok(html.includes('compartido por electricmonk'), 'falta la atribución «compartido por»');
+  assert.doesNotMatch(html, /<span[^>]*>(?<!compartido )por /, 'quedó una atribución «por» suelta');
+
   // Assets absolutos de producción y links con utm_source
   const srcs = [...html.matchAll(/src="([^"]+)"/g)].map(m => m[1]);
   assert.ok(srcs.length >= 9, `esperaba imágenes, hay ${srcs.length}`);
