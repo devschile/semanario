@@ -61,8 +61,24 @@ function urlAsset(valor) {
   return `${siteUrl}/newsletter/${fecha}/${relativo}`;
 }
 
-function enlace(href, texto, estilo = '') {
-  return `<a href="${escapar(href)}" style="color:inherit;text-decoration:underline;${estilo}">${texto}</a>`;
+function formato(s) {
+  return escapar(s)
+    .replace(/\*\*([^*]+)\*\*/g, `<strong style="color:${TINTA};">$1</strong>`)
+    .replace(/`([^`]+)`/g, `<code style="font-family:${MONO};font-size:13px;color:${TINTA};background-color:#F4F2EF;padding:1px 5px;border-radius:4px;">$1</code>`);
+}
+
+const por = usuario => usuario
+  ? `<span style="display:block;margin-top:6px;font-family:${MONO};font-size:11px;color:#8A8698;">por ${escapar(usuario)}</span>`
+  : '';
+
+function boton(texto, url, tono = 'coral') {
+  const paletas = {
+    coral: { fondo: '#FFF1EF', texto: '#D9483B' },
+    teal: { fondo: '#E9F9F6', texto: '#0B8A7C' },
+    neutro: { fondo: '#F4F2EF', texto: TINTA },
+  };
+  const p = paletas[tono] ?? paletas.coral;
+  return `<a href="${escapar(url)}" style="display:inline-block;padding:9px 18px;border-radius:6px;background-color:${p.fondo};color:${p.texto};font-family:${FONT};font-size:13px;font-weight:700;text-decoration:none;">${escapar(texto)}</a>`;
 }
 
 function chips(links) {
@@ -76,7 +92,7 @@ function pill(texto) {
 /* ── bloques ────────────────────────────────────────────────────────────── */
 
 const heroBajada = (datos.hero.bajada ?? [])
-  .map(p => `<p style="margin:14px 0 0 0;font-family:${FONT};font-size:16px;line-height:1.65;color:${SUAVE};">${escapar(p)}</p>`)
+  .map(p => `<p style="margin:14px 0 0 0;font-family:${FONT};font-size:16px;line-height:1.65;color:${SUAVE};">${formato(p)}</p>`)
   .join('\n            ');
 
 const auspicio = datos.hero.auspicio ?? null;
@@ -103,7 +119,8 @@ const destacados = (datos.destacados ?? []).map(d => `
                 <td valign="top">
                   <p style="margin:0 0 5px 0;">${pill(d.tema)}</p>
                   <h3 style="margin:0;font-family:${FONT};font-size:17px;line-height:1.3;letter-spacing:-0.01em;font-weight:800;color:${TINTA};"><a href="${escapar(d.url)}" style="color:${TINTA};text-decoration:none;">${escapar(d.titulo)} <span style="color:${CORAL};font-weight:700;">↗</span></a></h3>
-                  <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${escapar(d.descripcion)}</p>
+                  <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(d.descripcion)}</p>
+                  ${por(d.por)}
                 </td>
               </tr>
             </table>`).join('\n');
@@ -115,8 +132,9 @@ const comunidad = datos.comunidad ? `
                   <p style="margin:0;font-family:${MONO};font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#0F9E8E;font-weight:700;">${escapar(datos.comunidad.etiqueta)}</p>
                   ${datos.comunidad.imagen ? `<a href="${escapar(datos.comunidad.url)}" style="text-decoration:none;display:block;margin:10px 0 14px 0;"><img src="${escapar(urlAsset(datos.comunidad.imagen))}" alt="${escapar(datos.comunidad.titulo)}" width="508" style="display:block;width:100%;max-width:508px;height:auto;border:1px solid #CFEDE7;border-radius:6px;"></a>` : ''}
                   <h3 style="margin:0;font-family:${FONT};font-size:19px;line-height:1.3;letter-spacing:-0.02em;font-weight:800;color:${TINTA};">${escapar(datos.comunidad.titulo)}</h3>
-                  <p style="margin:8px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${escapar(datos.comunidad.descripcion)}</p>
-                  <p style="margin:12px 0 0 0;font-family:${FONT};font-size:14px;font-weight:700;"><a href="${escapar(datos.comunidad.url)}" style="color:#0F9E8E;text-decoration:none;">${escapar(datos.comunidad.cta)}</a></p>
+                  <p style="margin:8px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(datos.comunidad.descripcion)}</p>
+                  ${por(datos.comunidad.por)}
+                  <p style="margin:14px 0 0 0;">${boton(datos.comunidad.cta, datos.comunidad.url, 'teal')}</p>
                 </td>
               </tr>
             </table>` : '';
@@ -135,8 +153,9 @@ const secciones = (datos.secciones ?? []).map(s => `
                 return `<tr>
                 <td style="padding:0 0 18px 0;">
                   <p style="margin:0;font-family:${FONT};font-size:16px;line-height:1.4;font-weight:700;letter-spacing:-0.01em;color:${TINTA};">${titulo}</p>
-                  <p style="margin:5px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${escapar(item.descripcion)}</p>
+                  <p style="margin:5px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(item.descripcion)}</p>
                   ${extra.length ? `<p style="margin:0;">${chips(extra)}</p>` : ''}
+                  ${por(item.por)}
                 </td>
               </tr>`;
               }).join('\n              ')}
@@ -159,9 +178,9 @@ const pegas = datos.pegas ? `
               <tr>
                 <td style="padding:18px;">
                   <h3 style="margin:0;font-family:${FONT};font-size:17px;font-weight:800;letter-spacing:-0.01em;color:${TINTA};"><span style="border-bottom:3px solid ${CORAL};padding-bottom:3px;">${escapar(datos.pegas.titulo)}</span></h3>
-                  <p style="margin:12px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${escapar(datos.pegas.intro)}</p>
+                  <p style="margin:12px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(datos.pegas.intro)}</p>
                   ${(datos.pegas.destacadas ?? []).map(p => `<p style="margin:10px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.5;color:${SUAVE};"><a href="${escapar(p.url)}" style="color:${TINTA};font-weight:700;text-decoration:underline;">${escapar(p.titulo)}</a> · ${escapar(p.empresa)} · ${escapar(p.detalle)} <span style="display:inline-block;margin-left:4px;padding:1px 8px;border-radius:999px;background-color:#E7F5EC;color:#146B3A;font-size:11px;font-weight:700;">${escapar(p.sueldo)}</span></p>`).join('\n                  ')}
-                  <p style="margin:14px 0 0 0;font-family:${FONT};font-size:14px;font-weight:700;"><a href="${escapar(datos.pegas.url)}" style="color:${CORAL};text-decoration:none;">${escapar(datos.pegas.cta)}</a></p>
+                  <p style="margin:16px 0 0 0;">${boton(datos.pegas.cta, datos.pegas.url, 'coral')}</p>
                 </td>
               </tr>
             </table>` : '';
@@ -173,8 +192,8 @@ const proyecto = proyectoData ? `
                 <td style="padding:16px 18px;">
                   <p style="margin:0;font-family:${MONO};font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A7688;font-weight:700;">${escapar(proyectoData.etiqueta)}</p>
                   <h3 style="margin:7px 0 0 0;font-family:${FONT};font-size:18px;font-weight:800;letter-spacing:-0.02em;color:${TINTA};">${escapar(proyectoData.titulo)}</h3>
-                  <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${escapar(proyectoData.descripcion)}</p>
-                  <p style="margin:10px 0 0 0;font-family:${FONT};font-size:14px;font-weight:700;"><a href="${escapar(proyectoData.url)}" style="color:${CORAL};text-decoration:none;">${escapar(proyectoData.cta)}</a></p>
+                  <p style="margin:6px 0 0 0;font-family:${FONT};font-size:14px;line-height:1.6;color:${SUAVE};">${formato(proyectoData.descripcion)}</p>
+                  <p style="margin:14px 0 0 0;">${boton(proyectoData.cta, proyectoData.url, 'neutro')}</p>
                 </td>
               </tr>
             </table>` : '';
