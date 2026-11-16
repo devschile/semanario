@@ -93,7 +93,7 @@ function chips(links) {
 }
 
 function pill(texto) {
-  return `<span style="display:inline-block;padding:2px 8px;border-radius:4px;background-color:#EEF4F2;color:#4E6F68;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">${escapar(texto)}</span>`;
+  return `<span style="display:inline-block;padding:2px 8px;border-radius:4px;background-color:#EEF4F2;color:#4E6F68;font-family:${FONT};font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">${escapar(texto)}</span>`;
 }
 
 /* ── bloques ────────────────────────────────────────────────────────────── */
