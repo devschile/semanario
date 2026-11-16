@@ -1,0 +1,214 @@
+{
+  "hero": {
+    "titulo": "Modelos nuevos, navegadores reciclados y una API que no sale del Mac",
+    "bajada": [
+      "La semana dejó tres frentes claros: los agentes ya se diseñan con patrones propios, el software de escritorio vuelve a nacer —emuladores de nube, clones de Arc, portes nativos— y la IA local empieza a caber en un notebook. Además, la comunidad abrió el piloto para publicar apps en Google Play bajo su propio sello."
+    ],
+    "auspicio": {
+      "texto": "Espacio de auspicio disponible",
+      "detalle": "Presenta tu producto en la próxima edición",
+      "url": "https://empresas.devschile.cl"
+    }
+  },
+  "destacados": [
+    {
+      "titulo": "Gemini 4 Hydrogen",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "descripcion": "El modelo de la semana, apuntado de lleno a flujos de trabajo con agentes. Llegó junto a una API de decisiones que acepta entradas en varios formatos —texto, imagen, audio— para resolver casos simples sin montar un pipeline entero.",
+      "tema": "Modelos",
+      "imagen": "assets-propuesta/gemini-card.jpg"
+    },
+    {
+      "titulo": "Local AI Server",
+      "url": "https://danielatik.com/localaiserver/",
+      "descripcion": "Apple Intelligence expuesta como API local en macOS: resumir, clasificar o traducir sin pagar tokens y sin que el contenido salga del equipo. Gratis, y el ejemplo más claro de cómo se está moviendo la IA on-device.",
+      "tema": "IA local",
+      "imagen": "assets-propuesta/localai-card.jpg"
+    },
+    {
+      "titulo": "Apex Drawn",
+      "url": "https://apexdrawn.com/",
+      "descripcion": "Dibujas la pista y la corres en 3D, directo en el navegador. Simple, adictivo y del tipo de juguete que se comparte solo: en una semana pasó por media comunidad.",
+      "tema": "Juegos",
+      "imagen": "assets-propuesta/apexdrawn-card.jpg"
+    }
+  ],
+  "comunidad": {
+    "etiqueta": "Destacado de la comunidad",
+    "titulo": "Sello devsChile: tu app en Google Play sin pelear con la burocracia",
+    "url": "https://sello.devschile.cl",
+    "descripcion": "El piloto para publicar apps Android bajo la cuenta de devsChile en Google Play: la comunidad se hace cargo del pago, la verificación de organización y los 12 testers que exige Google. Tú conservas la propiedad de la app y puedes transferirla a tu cuenta cuando quieras monetizar. El único requisito es ser miembro Gold.",
+    "cta": "Postular al sello →",
+    "imagen": "assets-propuesta/sello-card.jpg"
+  },
+  "secciones": [
+    {
+      "tema": "IA y agentes",
+      "items": [
+        {
+          "titulo": "Patrones para construir con agentes, más allá del spec-driven",
+          "descripcion": "La lista de lectura que se armó en #ai esta semana: catálogos de patrones, un observatorio de desarrollo dirigido por especificaciones y guías de ingeniería de harness.",
+          "links": [
+            { "texto": "awesome-agentic-engineering", "url": "https://awesomeagenticengineering.com/" },
+            { "texto": "SDD Observatory", "url": "https://sddobservatory.com/" },
+            { "texto": "Agent Patterns", "url": "https://agentpatterns.ai/" },
+            { "texto": "guía de Simon Willison", "url": "https://simonwillison.net/guides/agentic-engineering-patterns/" },
+            { "texto": "harness engineering de Fowler", "url": "https://martinfowler.com/articles/harness-engineering.html" }
+          ]
+        },
+        {
+          "titulo": "Panda Skills: un segundo par de ojos para tu agente",
+          "descripcion": "Un panel de modelos que revisa lo que Claude Code o Codex dejaron pasar. Trae USD 5 de crédito para probarlo.",
+          "links": [{ "texto": "panda.repair", "url": "https://panda.repair/" }]
+        },
+        {
+          "titulo": "Colibri: modelos grandes en hardware modesto",
+          "descripcion": "Un engine que reparte las capas del modelo entre VRAM, RAM y SSD para correr pesos que no caben en la tarjeta. Buena puerta de entrada al mundo del serving casero.",
+          "links": [{ "texto": "justvugg.github.io/colibri", "url": "https://justvugg.github.io/colibri/" }]
+        },
+        {
+          "titulo": "Una vulnerabilidad en el servidor MCP de Go",
+          "descripcion": "Un cambio de mayúsculas en el método JSON-RPC permite saltarse el proxy. Si tienes servidores MCP expuestos, vale la pena revisar la versión.",
+          "links": [{ "texto": "pwn.watch", "url": "https://pwn.watch/i/mcp-go-jsonrpc-case-folding-proxy-bypass-go-2026-6911" }]
+        }
+      ]
+    },
+    {
+      "tema": "Desarrollo",
+      "items": [
+        {
+          "titulo": "AWS lanzó su propio emulador local: el «Floci» oficial",
+          "descripcion": "Tres formas de levantar la nube en el notebook, según lo que necesites: el emulador nuevo de AWS, LocalStack o Floci.",
+          "links": [
+            { "texto": "emulador de AWS", "url": "https://docs.aws.amazon.com/emulator/" },
+            { "texto": "LocalStack", "url": "https://www.localstack.cloud/" },
+            { "texto": "Floci", "url": "https://floci.io/" }
+          ]
+        },
+        {
+          "titulo": "La guía de inference engineering de Modelplane",
+          "descripcion": "Cómo servir modelos propios, qué medir (TTFT, KV cache, goodput) y por qué el cuello de botella suele estar en el serving y no en la GPU.",
+          "links": [{ "texto": "docs.modelplane.ai", "url": "https://docs.modelplane.ai/guides/inference-guide" }]
+        },
+        {
+          "titulo": "TanStack AI, la alternativa al AI SDK de Vercel",
+          "descripcion": "Para construir features y agentes en TypeScript sin amarrarse al ecosistema de Vercel. Llegó con documentación y ejemplos.",
+          "links": [{ "texto": "tanstack.com/ai", "url": "https://tanstack.com/ai/latest" }]
+        },
+        {
+          "titulo": "Yab, otro navegador para Mac inspirado en Arc",
+          "descripcion": "Y ahora con AI incluida. El patrón se repite: Arc propuso la interfaz y el resto la está copiando con más velocidad que criterio.",
+          "links": [{ "texto": "yetanotherbrowser.com", "url": "https://yetanotherbrowser.com/" }]
+        }
+      ]
+    },
+    {
+      "tema": "Juegos",
+      "items": [
+        {
+          "titulo": "Guitar Hero III portado a macOS a 120 fps",
+          "descripcion": "Un port nativo con static recomp que corre a 120 fps en 1440p, y que además bundleó una librería para reconocer las guitarras originales de Xbox 360.",
+          "links": [{ "texto": "GH3-macOS-Recomp", "url": "https://github.com/segovia-no/GH3-macOS-Recomp" }]
+        },
+        {
+          "titulo": "Supermuseum y Retrocatalog: preservación de lo retro",
+          "descripcion": "La galería de traducciones de Supermuseum sigue creciendo, y Retrocatalog se está convirtiendo en el «solotodo» de las handhelds retro.",
+          "links": [
+            { "texto": "Supermuseum", "url": "http://supermuseum.cc/play/psx/SLPS-01934" },
+            { "texto": "Retrocatalog", "url": "https://retrocatalog.com/" }
+          ]
+        },
+        {
+          "titulo": "Humble Bundle dejó la seguridad abierta tras el rediseño",
+          "descripcion": "Aviso para quien tenga medios de pago guardados: conviene sacarlos hasta que se aclare el problema reportado en el rediseño de cuentas.",
+          "links": [{ "texto": "hilo en Reddit", "url": "https://www.reddit.com/r/humblebundles/comments/1xtwdj2/humble_bundle_rework_introduces_major_account/" }]
+        },
+        {
+          "titulo": "Emulación en hardware raro",
+          "descripcion": "BananaNative como opción para Nintendo DS, y Fire Emblem: Fortunes Weave corriendo sorprendentemente bien en un Ayn Thor.",
+          "links": [
+            { "texto": "BananaNative", "url": "https://git.eden-emu.dev/moceure/BananaNative" },
+            { "texto": "Fire Emblem en Ayn Thor", "url": "https://www.reddit.com/r/AynThor/comments/1xtslxw/fire_emblem_fortunes_weave_is_running_so_good_on/" }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Lifehacks",
+      "items": [
+        {
+          "titulo": "Flashear el sensor Xiaomi para sacarlo de la nube",
+          "descripcion": "El sensor de temperatura y humedad se puede intervenir para dejarlo sin app ni cuenta. El recordatorio incómodo: si se puede flashear así, cualquiera en el espectro también puede.",
+          "links": [
+            { "texto": "ATC_MiThermometer", "url": "https://github.com/pvvx/ATC_MiThermometer" },
+            { "texto": "flasher web", "url": "https://pvvx.github.io/ATC_MiThermometer/TelinkMiFlasher.html" }
+          ]
+        },
+        {
+          "titulo": "Nothing: ¿Headphone 1 Pro o Ear 3?",
+          "descripcion": "Comparación desde la experiencia de uso, con el ecualizador de la app como argumento a favor para encontrar el punto justo.",
+          "links": [
+            { "texto": "Headphone 1 Pro", "url": "https://cl.nothing.tech/products/headphone-1-pro?Color=Black" },
+            { "texto": "Ear 3", "url": "https://cl.nothing.tech/products/ear-3?Colour=White" }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Comunidad",
+      "items": [
+        {
+          "titulo": "Hack CChC 2026: postulaciones hasta el 4 de diciembre",
+          "descripcion": "Equipos de hasta cuatro personas. La convocatoria está abierta y el plazo se acorta.",
+          "links": [{ "texto": "Postular", "url": "https://lnkd.in/p/d-FEJ4-G" }]
+        },
+        {
+          "titulo": "Encuesta de liderazgo en tech: cierra el 20 de noviembre",
+          "descripcion": "Ya lleva 63 respuestas de 8 países. Es la última semana para sumar la tuya.",
+          "links": [{ "texto": "Responder", "url": "https://app.youform.com/forms/m8nzm10h" }]
+        },
+        {
+          "titulo": "App Soy devsChile: activar las notificaciones",
+          "descripcion": "Se van a usar en serio desde ahora, así que conviene aceptar el permiso en Android.",
+          "links": [{ "texto": "Play Store", "url": "https://play.google.com/store/apps/details?id=cl.devschile.soy" }]
+        }
+      ]
+    }
+  ],
+  "compactos": {
+    "titulo": "También sonaron",
+    "items": [
+      { "titulo": "Rune, un IDE open source pensado para el teclado", "url": "https://rune.build/", "tema": "#desarrollo" },
+      { "titulo": "Keystatic: edición de Markdown y YAML para gente no técnica", "url": "https://keystatic.com/", "tema": "#desarrollo" },
+      { "titulo": "QRFolk: generar códigos QR por programa", "url": "http://api.qrfolk.com", "tema": "#desarrollo" },
+      { "titulo": "Kitesurf, el navegador de Cloudflare, ahora open source", "url": "https://developers.cloudflare.com/changelog/post/2026-11-12-kitesurf-open-source/", "tema": "#desarrollo" },
+      { "titulo": "Nitro Sandboxes para EKS, ECS y EC2", "url": "https://aws.amazon.com/es/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/", "tema": "#desarrollo" },
+      { "titulo": "Las cinco cosas que la IA todavía no puede hacer", "url": "https://youtu.be/uFnkARNKXTg", "tema": "#ai" },
+      { "titulo": "OpenRB-338: Rebirth vuelve como proyecto open source", "url": "https://www.hispasonic.com/noticias/openrb-338-propellerhead-rebirth-vuelve-proyecto-open-source-gratuito/49406", "tema": "#musiqueria" },
+      { "titulo": "El dataset de ARC: 154 piezas con sus archivos de Blender", "url": "https://arc.art/dataset/", "tema": "#cultura" },
+      { "titulo": "Bambu Lab H3C multicolor: precio parejo con el resto del mundo", "url": "https://www.todotoner.cl/impresoras/impresoras-3d/impresoras/h3c-combo-multicolor-bambu-lab", "tema": "#diy" },
+      { "titulo": "DevDay Exchange Community Santiago: Build Games with Codex", "url": "https://luma.com/zv06n9np", "tema": "#eventos-juntas" }
+    ]
+  },
+  "pegas": {
+    "titulo": "Pegas de la semana",
+    "total": 212,
+    "intro": "La semana cerró con 212 pegas nuevas publicadas en pegas.devschile.cl: 59 declaradas remotas y 25 con sueldo a la vista. El viernes llegó la tanda más grande, con 42 de una vez.",
+    "destacadas": [
+      { "titulo": "Senior AI Engineer", "empresa": "Niuro", "detalle": "remoto desde Latinoamérica", "sueldo": "USD 3.000–5.000/mes", "url": "https://app.niuro.io/source/nFG8GufC?ref=ps_0v4nLeg5JERNwdQ2wEAlGwKfpoYVLZJEgsh0U1aKpyk&utm_source=slack&utm_medium=channel&utm_campaign=devschile" },
+      { "titulo": "Senior .NET (Modern y Legacy)", "empresa": "Niuro", "detalle": "remoto desde Latinoamérica", "sueldo": "USD 3.000–4.500/mes", "url": "https://app.niuro.io/source/vECJ4t6g?ref=ps_8qBqwS1_yFjra1mj6lkQACJiaMszDWp_BJkmYEomlbk&utm_source=slack&utm_medium=community&utm_content=devschile" }
+    ],
+    "cta": "Ver todas las pegas →",
+    "url": "https://pegas.devschile.cl"
+  },
+  "cierre": {
+    "texto": "Nos leemos el domingo que viene. Que tengas una semana con menos ruido y mejores links.",
+    "proyecto": {
+      "etiqueta": "Proyecto devsChile",
+      "titulo": "ShowCase",
+      "descripcion": "El escaparate de los proyectos de la comunidad: páginas, apps y experimentos hechos acá. Si tienes algo que mostrar, este es el lugar.",
+      "url": "https://showcase.devschile.cl/",
+      "cta": "Ver proyectos →"
+    }
+  }
+}
