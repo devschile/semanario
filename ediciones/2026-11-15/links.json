@@ -1,0 +1,632 @@
+{
+  "edicion": "2026-11-15",
+  "links": [
+    {
+      "url": "https://app.niuro.io/source/nFG8GufC?ref=ps_0v4nLeg5JERNwdQ2wEAlGwKfpoYVLZJEgsh0U1aKpyk&utm_source=slack&utm_medium=channel&utm_campaign=devschile",
+      "titulo": "Senior AI Engineer en Niuro",
+      "canal": "#trabajos",
+      "contexto": "Senior AI Engineer en Niuro — remoto desde Latinoamérica, USD 3.000–5.000/mes según seniority.",
+      "tags": [
+        "pegas",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://app.niuro.io/source/vECJ4t6g?ref=ps_8qBqwS1_yFjra1mj6lkQACJiaMszDWp_BJkmYEomlbk&utm_source=slack&utm_medium=community&utm_content=devschile",
+      "titulo": "Senior .NET Modern",
+      "canal": "#trabajos",
+      "contexto": "Senior .NET Modern y Senior .NET Legacy en Niuro — remoto desde Latinoamérica, USD 3.500–4.500 y USD 3.000–4.000/mes.",
+      "tags": [
+        "pegas",
+        "lenguajes",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://app.niuro.io/source/m7VkQK4e?ref=ps_kt_PUaKmfFuqyMC-bGlv2yG_orz1L9FLWQxnwPmdXi4&utm_source=slack&utm_medium=community&utm_content=devschile",
+      "titulo": "Senior .NET Legacy",
+      "canal": "#trabajos",
+      "contexto": "Senior .NET Modern y Senior .NET Legacy en Niuro — remoto desde Latinoamérica, USD 3.500–4.500 y USD 3.000–4.000/mes.",
+      "tags": [
+        "pegas",
+        "lenguajes",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4487983905/",
+      "titulo": "diseñador en Multiplica",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan dejó cuatro avisos: diseñador en Multiplica, Forward Deployed Engineer en Plutto, diseñador UX experto y la búsqueda de Ripley.",
+      "tags": [
+        "pegas",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://app.notion.com/p/getplutto/Forward-Deployed-Engineer-3349396bb4ae8087b4bcc1722f749c9a",
+      "titulo": "Forward Deployed Engineer en Plutto",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan dejó cuatro avisos: diseñador en Multiplica, Forward Deployed Engineer en Plutto, diseñador UX experto y la búsqueda de Ripley.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4489654174/",
+      "titulo": "diseñador UX experto",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan dejó cuatro avisos: diseñador en Multiplica, Forward Deployed Engineer en Plutto, diseñador UX experto y la búsqueda de Ripley.",
+      "tags": [
+        "pegas",
+        "diseno"
+      ]
+    },
+    {
+      "url": "https://ripley.csod.com/ux/ats/careersite/4/home/requisition/32348?c=ripley",
+      "titulo": "la búsqueda de Ripley",
+      "canal": "#trabajos",
+      "contexto": "jorgeepunan dejó cuatro avisos: diseñador en Multiplica, Forward Deployed Engineer en Plutto, diseñador UX experto y la búsqueda de Ripley.",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.dattainc.com/en/jobs/821e5bba-f6f5-49e4-ae74-0e5c1d5aa775",
+      "titulo": "una vacante en Dattainc",
+      "canal": "#trabajos",
+      "contexto": "yixlo compartió una vacante en Dattainc, otra en Cenia y una convocatoria para gamers de Roblox en Maipú que paga $25.000 por semana.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://cenia.buk.cl/seleccions/c9512a5e37dafe38e1006a92a6a28ace23c58115d9943f045e570b187b69463c54334fd2e6829ad516e71acde33d5e42a59112d093b05a15fc3089afda281a62/postular?referrer=external",
+      "titulo": "otra en Cenia",
+      "canal": "#trabajos",
+      "contexto": "yixlo compartió una vacante en Dattainc, otra en Cenia y una convocatoria para gamers de Roblox en Maipú que paga $25.000 por semana.",
+      "tags": [
+        "pegas",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://lnkd.in/p/dKiE6xgy",
+      "titulo": "convocatoria para gamers de Roblox en Maipú",
+      "canal": "#trabajos",
+      "contexto": "yixlo compartió una vacante en Dattainc, otra en Cenia y una convocatoria para gamers de Roblox en Maipú que paga $25.000 por semana.",
+      "tags": [
+        "pegas",
+        "juegos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4488015252/",
+      "titulo": "un aviso en LinkedIn",
+      "canal": "#trabajos",
+      "contexto": "keldor, hector y jorgemedinaleigh sumaron un aviso en LinkedIn, cinco búsquedas de Multiplica y una pega más en LinkedIn.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://lnkd.in/p/dD5uqA5m",
+      "titulo": "cinco búsquedas de Multiplica",
+      "canal": "#trabajos",
+      "contexto": "keldor, hector y jorgemedinaleigh sumaron un aviso en LinkedIn, cinco búsquedas de Multiplica y una pega más en LinkedIn.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/jobs/view/4488260244/?trackingId=UUs4nC2mTVSCx2kOfRYEQQ%3D%3D",
+      "titulo": "una pega más en LinkedIn",
+      "canal": "#trabajos",
+      "contexto": "keldor, hector y jorgemedinaleigh sumaron un aviso en LinkedIn, cinco búsquedas de Multiplica y una pega más en LinkedIn.",
+      "tags": [
+        "pegas"
+      ]
+    },
+    {
+      "url": "https://sello.devschile.cl/",
+      "titulo": "Sello devsChile",
+      "canal": "#anuncios",
+      "contexto": "gmq presentó Sello devsChile, el piloto para publicar apps Android bajo la cuenta de devsChile en Google Play: la comunidad se encarga de la burocracia —pago, verificación de organización y los 12 testers que pide Google— y tú conservas la propiedad de la app, con la opción de transferirla a tu propia cuenta si más ad…",
+      "tags": [
+        "devschile",
+        "mobile"
+      ]
+    },
+    {
+      "url": "https://awesomeagenticengineering.com/",
+      "titulo": "awesome-agentic-engineering",
+      "canal": "#ai",
+      "contexto": "electricmonk armó una lista de lectura para arveja, que buscaba patrones de desarrollo con agentes más allá del spec-driven: awesome-agentic-engineering, SDD Observatory, Agent Patterns, la guía de Simon Willison y harness engineering de Martin Fowler.",
+      "tags": [
+        "agentes",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://sddobservatory.com/",
+      "titulo": "SDD Observatory",
+      "canal": "#ai",
+      "contexto": "electricmonk armó una lista de lectura para arveja, que buscaba patrones de desarrollo con agentes más allá del spec-driven: awesome-agentic-engineering, SDD Observatory, Agent Patterns, la guía de Simon Willison y harness engineering de Martin Fowler.",
+      "tags": [
+        "agentes",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://agentpatterns.ai/",
+      "titulo": "Agent Patterns",
+      "canal": "#ai",
+      "contexto": "electricmonk armó una lista de lectura para arveja, que buscaba patrones de desarrollo con agentes más allá del spec-driven: awesome-agentic-engineering, SDD Observatory, Agent Patterns, la guía de Simon Willison y harness engineering de Martin Fowler.",
+      "tags": [
+        "agentes",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/",
+      "titulo": "la guía de Simon Willison",
+      "canal": "#ai",
+      "contexto": "electricmonk armó una lista de lectura para arveja, que buscaba patrones de desarrollo con agentes más allá del spec-driven: awesome-agentic-engineering, SDD Observatory, Agent Patterns, la guía de Simon Willison y harness engineering de Martin Fowler.",
+      "tags": [
+        "agentes",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://martinfowler.com/articles/harness-engineering.html",
+      "titulo": "harness engineering de Martin Fowler",
+      "canal": "#ai",
+      "contexto": "electricmonk armó una lista de lectura para arveja, que buscaba patrones de desarrollo con agentes más allá del spec-driven: awesome-agentic-engineering, SDD Observatory, Agent Patterns, la guía de Simon Willison y harness engineering de Martin Fowler.",
+      "tags": [
+        "agentes",
+        "lectura"
+      ]
+    },
+    {
+      "url": "https://panda.repair/",
+      "titulo": "Panda Skills",
+      "canal": "#ai",
+      "contexto": "igcodinap presentó Panda Skills, un «segundo par de ojos» para Claude Code y Codex: un panel de modelos que revisa lo que tu agente dejó pasar, con USD 5 de crédito para quienes se registren.",
+      "tags": [
+        "agentes",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "titulo": "Gemini 4 Hydrogen",
+      "canal": "#ai",
+      "contexto": "janogonzalez compartió Gemini 4 Hydrogen, el modelo de la semana, y adriangomez.cl sumó la Gemini Decisions API, que acepta input multiformato para decisiones rápidas.",
+      "tags": [
+        "ia",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "titulo": "Gemini Decisions API",
+      "canal": "#ai",
+      "contexto": "janogonzalez compartió Gemini 4 Hydrogen, el modelo de la semana, y adriangomez.cl sumó la Gemini Decisions API, que acepta input multiformato para decisiones rápidas.",
+      "tags": [
+        "ia",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://github.com/leighstillard/boring-version",
+      "titulo": "boring-version",
+      "canal": "#ai",
+      "contexto": "davidlaym recomendó boring-version para que los agentes se atengan a lo que ya existe, y explicó Colibri, el engine que reparte las capas de un modelo entre VRAM, RAM y SSD para correr modelos grandes en hardware modesto (la pregunta la trajo camilorivera86).",
+      "tags": [
+        "agentes",
+        "herramientas",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://justvugg.github.io/colibri/",
+      "titulo": "Colibri",
+      "canal": "#ai",
+      "contexto": "davidlaym recomendó boring-version para que los agentes se atengan a lo que ya existe, y explicó Colibri, el engine que reparte las capas de un modelo entre VRAM, RAM y SSD para correr modelos grandes en hardware modesto (la pregunta la trajo camilorivera86).",
+      "tags": [
+        "ia",
+        "self-hosting"
+      ]
+    },
+    {
+      "url": "https://www.oreilly.com/live/intensive-agentic-engineering.html",
+      "titulo": "intensivo de agentic engineering de O'Reilly",
+      "canal": "#ai",
+      "contexto": "arveja encontró el intensivo de agentic engineering de O'Reilly, a unos módicos USD 2.000.",
+      "tags": [
+        "aprendizaje",
+        "agentes"
+      ]
+    },
+    {
+      "url": "https://pwn.watch/i/mcp-go-jsonrpc-case-folding-proxy-bypass-go-2026-6911",
+      "titulo": "una vulnerabilidad en el servidor MCP de Go",
+      "canal": "#ai",
+      "contexto": "iarodriguezch avisó de una vulnerabilidad en el servidor MCP de Go: un cambio de mayúsculas en el método JSON-RPC permite saltarse el proxy.",
+      "tags": [
+        "seguridad",
+        "agentes"
+      ]
+    },
+    {
+      "url": "https://lnkd.in/p/d-FEJ4-G",
+      "titulo": "Hack CChC 2026",
+      "canal": "#comunidad",
+      "contexto": "yixlo trajo la Hack CChC 2026, con postulaciones abiertas hasta el 4 de diciembre y equipos de hasta cuatro personas, y la encuesta sobre liderazgo en tech, que cierra el 20 de noviembre y ya lleva 63 respuestas de 8 países.",
+      "tags": [
+        "eventos",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://app.youform.com/forms/m8nzm10h",
+      "titulo": "encuesta sobre liderazgo en tech",
+      "canal": "#comunidad",
+      "contexto": "yixlo trajo la Hack CChC 2026, con postulaciones abiertas hasta el 4 de diciembre y equipos de hasta cuatro personas, y la encuesta sobre liderazgo en tech, que cierra el 20 de noviembre y ya lleva 63 respuestas de 8 países.",
+      "tags": [
+        "carrera"
+      ]
+    },
+    {
+      "url": "https://danielatik.com/localaiserver/",
+      "titulo": "Local AI Server",
+      "canal": "#comunidad",
+      "contexto": "daniel.atik presentó Local AI Server, una app gratuita para macOS que expone Apple Intelligence por una API local: resumir, clasificar o traducir sin pagar tokens en la nube y sin que el contenido salga del Mac.",
+      "tags": [
+        "ia",
+        "self-hosting"
+      ]
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=cl.devschile.soy",
+      "titulo": "app de Soy devsChile",
+      "canal": "#comunidad",
+      "contexto": "hector recordó a los usuarios de Android actualizar la app de Soy devsChile y aceptar las notificaciones push, que ahora se van a usar en serio.",
+      "tags": [
+        "devschile",
+        "mobile"
+      ]
+    },
+    {
+      "url": "https://docs.aws.amazon.com/emulator/",
+      "titulo": "AWS lanzó su propio emulador local",
+      "canal": "#desarrollo",
+      "contexto": "nicoavila avisó que AWS lanzó su propio emulador local —el «Floci» oficial— y iarodriguezch completó la cadena con LocalStack y Floci: tres formas de levantar la nube en el notebook.",
+      "tags": [
+        "infra",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://www.localstack.cloud/",
+      "titulo": "LocalStack",
+      "canal": "#desarrollo",
+      "contexto": "nicoavila avisó que AWS lanzó su propio emulador local —el «Floci» oficial— y iarodriguezch completó la cadena con LocalStack y Floci: tres formas de levantar la nube en el notebook.",
+      "tags": [
+        "infra",
+        "herramientas",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://floci.io/",
+      "titulo": "Floci",
+      "canal": "#desarrollo",
+      "contexto": "nicoavila avisó que AWS lanzó su propio emulador local —el «Floci» oficial— y iarodriguezch completó la cadena con LocalStack y Floci: tres formas de levantar la nube en el notebook.",
+      "tags": [
+        "infra",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://ardia.dev/",
+      "titulo": "Ardia",
+      "canal": "#desarrollo",
+      "contexto": "electricmonk dejó Ardia, un clon gratuito de Arc para Mac; Keystatic, para que gente no técnica edite contenido en Markdown o YAML; la API de QRFolk para generar QR por programa; y Kitesurf, el navegador de Cloudflare que ahora es open source.",
+      "tags": [
+        "herramientas",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://keystatic.com/",
+      "titulo": "Keystatic",
+      "canal": "#desarrollo",
+      "contexto": "electricmonk dejó Ardia, un clon gratuito de Arc para Mac; Keystatic, para que gente no técnica edite contenido en Markdown o YAML; la API de QRFolk para generar QR por programa; y Kitesurf, el navegador de Cloudflare que ahora es open source.",
+      "tags": [
+        "herramientas",
+        "open-source",
+        "frontend"
+      ]
+    },
+    {
+      "url": "http://api.qrfolk.com/",
+      "titulo": "la API de QRFolk",
+      "canal": "#desarrollo",
+      "contexto": "electricmonk dejó Ardia, un clon gratuito de Arc para Mac; Keystatic, para que gente no técnica edite contenido en Markdown o YAML; la API de QRFolk para generar QR por programa; y Kitesurf, el navegador de Cloudflare que ahora es open source.",
+      "tags": [
+        "devschile",
+        "backend"
+      ]
+    },
+    {
+      "url": "https://developers.cloudflare.com/changelog/post/2026-11-12-kitesurf-open-source/",
+      "titulo": "Kitesurf, el navegador de Cloudflare que ahora es open source",
+      "canal": "#desarrollo",
+      "contexto": "electricmonk dejó Ardia, un clon gratuito de Arc para Mac; Keystatic, para que gente no técnica edite contenido en Markdown o YAML; la API de QRFolk para generar QR por programa; y Kitesurf, el navegador de Cloudflare que ahora es open source.",
+      "tags": [
+        "herramientas",
+        "open-source",
+        "frontend"
+      ]
+    },
+    {
+      "url": "https://rune.build/",
+      "titulo": "Rune",
+      "canal": "#desarrollo",
+      "contexto": "jorgeepunan puso a prueba Rune, un IDE open source pensado para el teclado, y compartió la guía de inference engineering de Modelplane: cómo servir modelos propios, qué medir (TTFT, KV cache, goodput) y por qué el cuello de botella suele estar en el serving y no en la GPU.",
+      "tags": [
+        "herramientas",
+        "open-source",
+        "lenguajes"
+      ]
+    },
+    {
+      "url": "https://docs.modelplane.ai/guides/inference-guide",
+      "titulo": "la guía de inference engineering de Modelplane",
+      "canal": "#desarrollo",
+      "contexto": "jorgeepunan puso a prueba Rune, un IDE open source pensado para el teclado, y compartió la guía de inference engineering de Modelplane: cómo servir modelos propios, qué medir (TTFT, KV cache, goodput) y por qué el cuello de botella suele estar en el serving y no en la GPU.",
+      "tags": [
+        "ia",
+        "aprendizaje",
+        "self-hosting"
+      ]
+    },
+    {
+      "url": "https://yetanotherbrowser.com/",
+      "titulo": "Yab",
+      "canal": "#desarrollo",
+      "contexto": "rcarmonad compartió Yab, otro navegador para Mac inspirado en Arc, ahora con AI incluida.",
+      "tags": [
+        "herramientas",
+        "ia"
+      ]
+    },
+    {
+      "url": "https://aws.amazon.com/es/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/",
+      "titulo": "Nitro Sandboxes de AWS para EKS, ECS y EC2",
+      "canal": "#desarrollo",
+      "contexto": "yixlo compartió los Nitro Sandboxes de AWS para EKS, ECS y EC2.",
+      "tags": [
+        "infra"
+      ]
+    },
+    {
+      "url": "https://youtu.be/uFnkARNKXTg",
+      "titulo": "las cinco cosas que la IA todavía no puede hacer",
+      "canal": "#desarrollo",
+      "contexto": "tutorialeshonestos dejó las cinco cosas que la IA todavía no puede hacer, con la idea de que la IA se parece a jugar ajedrez asistido por un experto.",
+      "tags": [
+        "ia",
+        "video"
+      ]
+    },
+    {
+      "url": "https://www.todotoner.cl/impresoras/impresoras-3d/impresoras/h3c-combo-multicolor-bambu-lab",
+      "titulo": "Bambu Lab H3C combo multicolor en Todotoner",
+      "canal": "#diy",
+      "contexto": "cvallejosmenares encontró la Bambu Lab H3C combo multicolor en Todotoner y la conversación concluyó que el precio está parejo con otros países.",
+      "tags": [
+        "hardware",
+        "compras",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://luma.com/zv06n9np",
+      "titulo": "DevDay Exchange Community Santiago: Build Games with Codex",
+      "canal": "#eventos-juntas",
+      "contexto": "jorgeepunan dejó el registro del DevDay Exchange Community Santiago: Build Games with Codex.",
+      "tags": [
+        "eventos",
+        "chile",
+        "agentes"
+      ]
+    },
+    {
+      "url": "https://tanstack.com/ai/latest",
+      "titulo": "TanStack AI",
+      "canal": "#frontend",
+      "contexto": "electricmonk apuntó a TanStack AI como alternativa al AI SDK de Vercel para construir features y agentes en TypeScript.",
+      "tags": [
+        "frontend",
+        "ia",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://github.com/segovia-no/GH3-macOS-Recomp",
+      "titulo": "GH3-macOS-Recomp",
+      "canal": "#juegos",
+      "contexto": "dsegoviaolivares portó Guitar Hero 3 a macOS con static recomp: GH3-macOS-Recomp corre a 120 fps en 1440p y hasta bundleó una librería para reconocer guitarras de Xbox 360.",
+      "tags": [
+        "juegos",
+        "retro",
+        "open-source"
+      ]
+    },
+    {
+      "url": "http://supermuseum.cc/play/psx/SLPS-01934",
+      "titulo": "Supermuseum",
+      "canal": "#juegos",
+      "contexto": "livercake sigue cosechando joyas en Supermuseum —la galería de traducciones al inglés va cada vez mejor— y mostró Retrocatalog, el «solotodo» de handhelds retro.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://retrocatalog.com/",
+      "titulo": "Retrocatalog",
+      "canal": "#juegos",
+      "contexto": "livercake sigue cosechando joyas en Supermuseum —la galería de traducciones al inglés va cada vez mejor— y mostró Retrocatalog, el «solotodo» de handhelds retro.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://neal.fun/battle-draw/",
+      "titulo": "Battle Draw de Neal.fun",
+      "canal": "#juegos",
+      "contexto": "electricmonk pasó Battle Draw de Neal.fun, Goblin Survivors y el launcher de Recompia.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://goblinsurvivors.com/",
+      "titulo": "Goblin Survivors",
+      "canal": "#juegos",
+      "contexto": "electricmonk pasó Battle Draw de Neal.fun, Goblin Survivors y el launcher de Recompia.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://recomplauncher.com/game/recompia",
+      "titulo": "Recompia",
+      "canal": "#juegos",
+      "contexto": "electricmonk pasó Battle Draw de Neal.fun, Goblin Survivors y el launcher de Recompia.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/humblebundles/comments/1xtwdj2/humble_bundle_rework_introduces_major_account/",
+      "titulo": "Humble Bundle quedó con la seguridad abierta tras el rediseño",
+      "canal": "#juegos",
+      "contexto": "carlo advirtió que Humble Bundle quedó con la seguridad abierta tras el rediseño: si tienen medios de pago guardados, mejor sacarlos.",
+      "tags": [
+        "seguridad",
+        "juegos",
+        "noticias"
+      ]
+    },
+    {
+      "url": "https://git.eden-emu.dev/moceure/BananaNative",
+      "titulo": "BananaNative",
+      "canal": "#juegos",
+      "contexto": "gmq compartió BananaNative y Fire Emblem: Fortunes Weave corriendo en un Ayn Thor.",
+      "tags": [
+        "juegos",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/AynThor/comments/1xtslxw/fire_emblem_fortunes_weave_is_running_so_good_on/",
+      "titulo": "Fire Emblem: Fortunes Weave corriendo en un Ayn Thor",
+      "canal": "#juegos",
+      "contexto": "gmq compartió BananaNative y Fire Emblem: Fortunes Weave corriendo en un Ayn Thor.",
+      "tags": [
+        "juegos",
+        "retro",
+        "hardware"
+      ]
+    },
+    {
+      "url": "https://apexdrawn.com/",
+      "titulo": "Apex Drawn",
+      "canal": "#juegos",
+      "contexto": "jorgeepunan encontró Apex Drawn, un juego de carreras en el navegador donde dibujas la pista y la corres en 3D.",
+      "tags": [
+        "juegos"
+      ]
+    },
+    {
+      "url": "https://github.com/pvvx/ATC_MiThermometer",
+      "titulo": "ATC_MiThermometer",
+      "canal": "#lifehacks",
+      "contexto": "electricmonk descubrió que el sensor Xiaomi de temperatura y humedad se puede flashear para dejarlo sin app ni nube: ATC_MiThermometer y su flasher web, a cambio de aceptar que si se puede intervenir así, cualquiera en el espectro también puede.",
+      "tags": [
+        "hardware",
+        "self-hosting",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://pvvx.github.io/ATC_MiThermometer/TelinkMiFlasher.html",
+      "titulo": "flasher web",
+      "canal": "#lifehacks",
+      "contexto": "electricmonk descubrió que el sensor Xiaomi de temperatura y humedad se puede flashear para dejarlo sin app ni nube: ATC_MiThermometer y su flasher web, a cambio de aceptar que si se puede intervenir así, cualquiera en el espectro también puede.",
+      "tags": [
+        "hardware",
+        "herramientas"
+      ]
+    },
+    {
+      "url": "https://cl.nothing.tech/products/headphone-1-pro?Color=Black",
+      "titulo": "Nothing Headphone 1 Pro",
+      "canal": "#lifehacks",
+      "contexto": "iarodriguezch preguntó por los Nothing Headphone 1 Pro y jorgeepunan respondió desde la experiencia con los Ear 3; dsegoviaolivares sumó que el ecualizador de la app Nothing ayuda a encontrar el punto justo.",
+      "tags": [
+        "hardware",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://cl.nothing.tech/products/ear-3?Colour=White",
+      "titulo": "Ear 3",
+      "canal": "#lifehacks",
+      "contexto": "iarodriguezch preguntó por los Nothing Headphone 1 Pro y jorgeepunan respondió desde la experiencia con los Ear 3; dsegoviaolivares sumó que el ecualizador de la app Nothing ayuda a encontrar el punto justo.",
+      "tags": [
+        "hardware",
+        "compras"
+      ]
+    },
+    {
+      "url": "https://www.instagram.com/hq_climatizacion.cl/",
+      "titulo": "HQ Climatización",
+      "canal": "#lifehacks",
+      "contexto": "Para instalar aire acondicionado, cvallejosmenares recomendó HQ Climatización, y la conversación terminó defendiendo Midea por sobre Samsung entre quienes llevan años con equipos de esa marca.",
+      "tags": [
+        "hogar",
+        "chile"
+      ]
+    },
+    {
+      "url": "https://www.hispasonic.com/noticias/openrb-338-propellerhead-rebirth-vuelve-proyecto-open-source-gratuito/49406",
+      "titulo": "Propellerhead Rebirth vuelve como proyecto open source",
+      "canal": "#musiqueria",
+      "contexto": "nicoavila celebró que Propellerhead Rebirth vuelve como proyecto open source: OpenRB-338 rescata el clásico de 1996 para Mac, Windows y Linux.",
+      "tags": [
+        "musica",
+        "open-source",
+        "retro"
+      ]
+    },
+    {
+      "url": "https://arc.art/dataset/",
+      "titulo": "el dataset de ARC",
+      "canal": "#cultura",
+      "contexto": "electricmonk dejó el dataset de ARC, con los archivos de Blender y videos detrás de 154 de sus piezas.",
+      "tags": [
+        "diseno",
+        "datos"
+      ]
+    }
+  ]
+}
