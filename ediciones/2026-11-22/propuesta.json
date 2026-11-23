@@ -2,7 +2,7 @@
   "hero": {
     "titulo": "GTA VI llegó, Java pidió parche urgente y los agentes estrenaron auditoría",
     "bajada": [
-      "La semana la marcó **GTA VI**: impresiones, los 30 fps, los primeros bugs y el precio de la PS5 Pro coparon #juegos, que tuvo su día más activo el miércoles. En paralelo, una **vulnerabilidad crítica en OpenJDK** activó el llamado de CISA a parchar de inmediato, y la conversación sobre agentes sumó herramientas para **auditar lo que cargan y ejecutan** —Tegata, omp, bag.dev—. El cierre lo puso **Hack Infra Futuro**, la hackathon de ~500 personas en la UDD."
+      "La semana la marcó **GTA VI**: impresiones, los 30 fps, los primeros bugs y el precio de la PS5 Pro coparon #juegos, que tuvo su día más activo el miércoles. En paralelo, una **vulnerabilidad crítica en OpenJDK** activó el llamado de CISA a parchar de inmediato, y la conversación sobre agentes sumó herramientas para **auditar lo que cargan y ejecutan** —Tegata, omp, bag.dev—. El cierre lo puso **Hack Infra Futuro**, la hackathon de ~500 personas en la UDD: devsChile tiene ahí un **equipo oficial®** listo para ganar y donar el premio a la comunidad."
     ],
     "auspicio": {
       "texto": "Espacio de auspicio disponible",
