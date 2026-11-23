@@ -1,0 +1,155 @@
+SEMANARIO devsChile — #17 · 16 al 22 de noviembre de 2026
+
+GTA VI llegó, Java pidió parche urgente y los agentes estrenaron auditoría
+
+La semana la marcó GTA VI: impresiones, los 30 fps, los primeros bugs y el precio de la PS5 Pro coparon #juegos, que tuvo su día más activo el miércoles. En paralelo, una vulnerabilidad crítica en OpenJDK activó el llamado de CISA a parchar de inmediato, y la conversación sobre agentes sumó herramientas para auditar lo que cargan y ejecutan —Tegata, omp, bag.dev—. El cierre lo puso Hack Infra Futuro, la hackathon de ~500 personas en la UDD.
+
+LO MÁS COMENTADO
+· Recomp Launcher — Un launcher open source para recomps de consola: juegos recompilados que corren nativos en Windows, Linux y Mac, con instalación en un clic y actualizaciones al día. Lo que antes era bajar parches a mano, ahora es una biblioteca.
+  https://recomplauncher.com/
+  compartido por livercake
+· omp — Un coding agent para la terminal con subagentes, plan mode, LSP, DAP y memoria de decisiones, sobre un motor nativo en Rust. La pregunta de la semana fue si vale la pena cambiar de harness.
+  https://omp.sh
+  compartido por electricmonk
+· bag 0.4.3 — La nueva versión de bag.dev trae identidades locales: una identidad puede vivir solo en tu máquina y ningún relay la ve hasta que tú lo decidas. Para conversar con agentes sin depender de infraestructura ajena.
+  https://bag.dev/blog/bag-0-4-3
+  compartido por electricmonk
+· Hack Infra Futuro — Una hackathon de ~500 personas en la UDD, 24 horas y USD 12.000 en premios, el 5 y 6 de diciembre. La consigna: infraestructura que un agente pueda usar de verdad, con comida e IA gratis.
+  http://hackinfrafuturo.cl
+  compartido por holarenecaceres
+· SadServers — Laboratorios de troubleshooting de Linux y SRE para practicar: escenarios reales, un shell y una meta. Ideal para entrevistas técnicas o para dejar de memorizar comandos.
+  https://sadservers.com/
+  compartido por nicoavila
+
+PROYECTOS DE LA COMUNIDAD
+· Tegata — Un checkpoint de seguridad para agentes de IA: revisa qué hooks, MCPs y plugins cargan, encuentra las API keys que quedaron en los transcripts y avisa cuando algo cambia. tegata scan muestra el riesgo; fix y clean lo resuelven. Open source, para macOS.
+  https://www.tegata.cc/
+  compartido por jorgeepunan
+· Georg md — Un editor de Markdown nativo para macOS: vista formateada mientras escribes, modo raw o lado a lado, Quick Look y cero telemetría. Los archivos siguen siendo .md planos.
+  https://www.dasgeorg.cc/md/
+
+IA Y AGENTES
+· El modelo de la semana y la cadena que filtra datos — Qwen4 Max se llevó la conversación de modelos, mientras un reportaje de Ars Technica mostró cómo la cadena de suministro de IA está exponiendo datos de usuarios a un ritmo alarmante.
+  Qwen4 Max: https://qwen.ai/blog?id=qwen4-max
+  el reportaje de Ars Technica: https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/
+  compartido por janogonzalez
+· Probar agentes sin quemar la tarjeta — DeepInfra apareció como proveedor barato para modelos como DeepSeek Flash, y la lista para probar agentes se armó sola: Midscene, los test agents de Playwright y Hercules.
+  DeepInfra: http://deepinfra.com
+  Midscene: https://github.com/web-infra-dev/midscene
+  Playwright test agents: https://playwright.dev/docs/test-agents
+  Hercules: https://github.com/test-zeus-ai/testzeus-hercules
+  compartido por electricmonk
+· La tanda de modelos de Google y OpenAI — Google presentó Gemini 4 Neon, OpenAI sumó GPT-6.2 Astra Sol y la compañía aterrizó oficialmente en Chile con OpenAI for Chile.
+  Gemini 4 Neon: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/
+  GPT-6.2 Astra Sol: https://openai.com/index/introducing-gpt-6-2-astra-sol/
+  OpenAI for Chile: https://openai.com/index/introducing-openai-for-chile/
+  compartido por hector
+
+DESARROLLO
+· El libro de SRE de Google, gratis — La segunda edición del libro de SRE de Google está disponible sin costo: teoría, postmortems y práctica para equipos que operan en serio.
+  SRE Book, segunda edición: https://cloud.google.com/blog/products/devops-sre/sre-book-second-edition?e=48754805
+  compartido por arveja
+· Java4Shell y el parche que no podía esperar — Una corrupción de memoria en el decodificador Base64 de OpenJDK puso a media industria a parchar: el detalle técnico de Java4Shell y el aviso de CISA con el llamado a actualizar de inmediato.
+  Java4Shell: https://calif.io/java4shell/
+  alerta de CISA: https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching
+  compartido por carlo
+· voxl y Firecrawl: streaming en Rust y un crawler para agentes — voxl hace streaming de escritorio de baja latencia para el navegador, escrito en Rust; Firecrawl apareció como opción para alimentar asistentes y automatizaciones con contenido web.
+  voxl: https://github.com/tembo/voxl
+  Firecrawl: https://x.com/firecrawl/status/2123096169630912637
+  compartido por electricmonk
+
+HARDWARE Y DIY
+· Backplane: hardware asistido por agentes — Un workspace open source para desarrollo de hardware asistido por agentes: esquemas, placas y documentación en el mismo lugar.
+  Backplane: https://backplaneworks.com/
+  compartido por electricmonk
+· TRMNL: marco oficial o alternativas DIY — El marco oficial del TRMNL ya se vende, y en Seeed hay alternativas más baratas para el mismo display de tinta electrónica: el kit DIY de 7,5" y el reTerminal E1001.
+  marco TRMNL: https://shop.trmnl.com/products/frame
+  kit DIY de 7,5": https://www.seeedstudio.com/TRMNL-7-5-Inch-OG-DIY-Kit-p-6481.html?c_event_medium=category%3A%3Aresults&c_event_id=3509080128%3A%3A*
+  reTerminal E1001: https://www.seeedstudio.com/reTerminal-E1001-p-6534.html?c_event_medium=category%3A%3Aresults&c_event_id=3509080128%3A%3A*
+  compartido por gmq
+
+FRONTEND
+· Rubber Hose UI: controles de cartoon — Once controles de interfaz dibujados como personajes de cartoon de los años 30, cada uno en un solo archivo y sin dependencias.
+  Rubber Hose UI: https://rubber-hose-ui.vercel.app/gallery/
+  compartido por camilorivera86
+· Lo nuevo del navegador — El polyfill de WebMCP, los resultados de State of HTML 2026 y el preview de Spatial CSS en WebKit: tres frentes para mirar lo que viene en la web.
+  polyfill de WebMCP: https://www.npmjs.com/package/@w3c/webmcp-polyfill
+  State of HTML 2026: https://2026.stateofhtml.com/en-US
+  Spatial CSS en WebKit: https://webkit.org/blog/18621/introducing-spatial-css-a-developer-preview/
+  compartido por yixlo
+
+JUEGOS
+· Ronin: un survivors en cuatro días — 307 commits en cuatro días: TypeScript + Vite sin framework, netcode en Cloudflare Workers y arte generado en local con ComfyUI. Ya sumó soporte de control y arreglos de multiplayer.
+  Ronin: https://manyfall.com/ronin/
+  compartido por electricmonk
+· Clásicos que corren en el navegador — UT2004 y Quake II compilados a WebAssembly: dos clásicos que corren sin instalar nada, directo en el navegador.
+  UT2004: https://ut2004.dev/
+  Quake II en WebAssembly: https://qwasm2.m-h.org.uk/
+  compartido por carlo
+· La historia de las revistas y los pinballs — Un repaso a la historia de las revistas de videojuegos y una colección de pinballs en Supermuseum para perder una tarde.
+  Forgotten Worlds: https://www.forgottenworlds.net/video-game-magazine-history
+  pinballs de Supermuseum: https://supermuseum.cc/collections/ballbreakers
+  compartido por livercake
+· music.green.games: presta tus oídos — Un prototipo que pide escuchar canciones y marcar qué sensación provocan para entrenar el sistema que las elige. Se prueba con el oído.
+  music.green.games: https://music.green.games
+  compartido por mgodoyr
+
+LIFEHACKS
+· Post Inspector de LinkedIn — Sirve para revisar cómo se ve un link y si LinkedIn ya cacheó la imagen OG después de cambiar el título. Menos sorpresas al compartir.
+  Post Inspector: https://www.linkedin.com/post-inspector
+  compartido por electricmonk
+
+MÚSICA Y CULTURA
+· Totally Not Radio — Una radio continua con los DJ sets favoritos de la comunidad para jornadas presenciales. Sin algoritmo ni recomendaciones: solo música.
+  Totally Not Radio: https://totallynotradio.netlify.app/
+  compartido por livercake
+· NIN Live: el archivo de Nine Inch Nails — Conciertos, setlists, grabaciones y afiches de Nine Inch Nails desde 1988, ordenados y buscables.
+  NIN Live: https://ninlive.com/
+  compartido por carlo
+· East Asian Graphics Archive — Un archivo de diseño gráfico de Asia Oriental: afiches, revistas y material impreso para revisar con calma.
+  East Asian Graphics Archive: https://eastasiangraphicsarchive.com
+  compartido por ditt0
+· El catálogo de entomología de la UMCE — La colección de entomología de la UMCE abierta en catálogo: miles de especímenes para curiosear.
+  catálogo abierto: https://share.google/42co4D17b8kU3y8fB
+  compartido por l3cat70
+
+COMUNIDAD Y DINERO
+· NVIDIA, Anthropic y la semana bursátil — NVIDIA cayó hasta los 135 y Anthropic debutó en bolsa. La nota del Guardian explica el movimiento del precio de la acción.
+  la nota del Guardian: https://www.theguardian.com/technology/2026/nov/18/anthropic-share-price-stock-market-ipo
+  compartido por gmq
+
+También sonaron — lo que quedó dando vueltas
+· Cómo emitir boleta de honorarios para España, paso a paso
+  https://trabajoremoto.cl/emitir-boleta-a-extranjeros-paso-a-paso
+· ElevenReader: escuchar documentos y libros
+  https://elevenreader.io/
+· libraries.dev: efectos y modelos on-device
+  https://libraries.dev/
+· Paw Society, mascotas en el navegador
+  https://pawsociety.app/es/
+· ChatGPT for SNES: un modelo en el chip Super FX
+  https://www.bxfoundry.com/chatgpt_snes/
+· Analytics Debugger for Apps
+  https://analytics-debugger.com/tools/analytics-debugger-for-apps/
+· El TLD .amazon que se disputó la cuenca
+  https://www.bbc.com/news/business-47794353
+· El rol del engineering manager, otra vez bajo ataque
+  https://www.manager.dev/newsletter/the-engineering-manager-s-role-is-under-attack-again
+· yr.no: API de clima para proyectos propios
+  https://developer.yr.no/doc/
+· Carofix: baterías y scooters Xiaomi
+  https://www.instagram.com/carofixs/
+
+PEGAS DE LA SEMANA
+La semana cerró con 172 pegas nuevas publicadas en pegas.devschile.cl: 38 declaradas remotas y 34 con sueldo a la vista. El sábado llegó la tanda más grande, con 35 de una vez.
+· Cloud Data Infrastructure Engineer · ClickHouse · remoto · USD 155–230k/año
+  https://jobs.ashbyhq.com/clickhouse/b8799d90-9d53-40c7-be9b-6fb9cc061be0?utm_source=trabajoremoto.cl&utm_medium=feed
+· Full Stack Developer Senior · DataScope · Las Condes · CLP 2,8–4,0 MM
+  https://www.takealuk.com/job_offers/full-stack-developer-senior-datascope-chile-36829
+  Ver todas las pegas → https://pegas.devschile.cl
+
+Nos leemos la próxima semana.
+
+Proyecto devsChile: ShowCase
+El escaparate de los proyectos de la comunidad: páginas, apps y experimentos hechos acá. Si tienes algo que mostrar, este es el lugar.
+  https://showcase.devschile.cl/

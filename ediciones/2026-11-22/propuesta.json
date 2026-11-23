@@ -1,0 +1,328 @@
+{
+  "hero": {
+    "titulo": "GTA VI llegó, Java pidió parche urgente y los agentes estrenaron auditoría",
+    "bajada": [
+      "La semana la marcó **GTA VI**: impresiones, los 30 fps, los primeros bugs y el precio de la PS5 Pro coparon #juegos, que tuvo su día más activo el miércoles. En paralelo, una **vulnerabilidad crítica en OpenJDK** activó el llamado de CISA a parchar de inmediato, y la conversación sobre agentes sumó herramientas para **auditar lo que cargan y ejecutan** —Tegata, omp, bag.dev—. El cierre lo puso **Hack Infra Futuro**, la hackathon de ~500 personas en la UDD."
+    ],
+    "auspicio": {
+      "texto": "Espacio de auspicio disponible",
+      "detalle": "Presenta tu producto en la próxima edición",
+      "url": "https://empresas.devschile.cl"
+    }
+  },
+  "destacados": [
+    {
+      "titulo": "Recomp Launcher",
+      "url": "https://recomplauncher.com/",
+      "descripcion": "Un **launcher open source** para recomps de consola: juegos recompilados que corren nativos en Windows, Linux y Mac, con **instalación en un clic** y actualizaciones al día. Lo que antes era bajar parches a mano, ahora es una biblioteca.",
+      "tema": "Juegos",
+      "imagen": "assets-propuesta/recomplauncher-thumb.jpg",
+      "por": "livercake"
+    },
+    {
+      "titulo": "omp",
+      "url": "https://omp.sh",
+      "descripcion": "Un **coding agent para la terminal** con subagentes, plan mode, LSP, DAP y memoria de decisiones, sobre un motor nativo en **Rust**. La pregunta de la semana fue si vale la pena cambiar de harness.",
+      "tema": "Agentes",
+      "imagen": "assets-propuesta/omp-thumb.jpg",
+      "por": "electricmonk"
+    },
+    {
+      "titulo": "bag 0.4.3",
+      "url": "https://bag.dev/blog/bag-0-4-3",
+      "descripcion": "La nueva versión de bag.dev trae **identidades locales**: una identidad puede vivir solo en tu máquina y ningún relay la ve hasta que tú lo decidas. Para conversar con agentes **sin depender de infraestructura ajena**.",
+      "tema": "Agentes",
+      "imagen": "assets-propuesta/bag-thumb.jpg",
+      "por": "electricmonk"
+    },
+    {
+      "titulo": "Hack Infra Futuro",
+      "url": "http://hackinfrafuturo.cl",
+      "descripcion": "Una **hackathon de ~500 personas** en la UDD, 24 horas y **USD 12.000 en premios**, el 5 y 6 de diciembre. La consigna: infraestructura que un agente pueda usar de verdad, con comida e IA gratis.",
+      "tema": "Comunidad",
+      "imagen": "assets-propuesta/hack-thumb.jpg",
+      "por": "holarenecaceres"
+    },
+    {
+      "titulo": "SadServers",
+      "url": "https://sadservers.com/",
+      "descripcion": "**Laboratorios de troubleshooting** de Linux y SRE para practicar: escenarios reales, un shell y una meta. Ideal para entrevistas técnicas o para dejar de memorizar comandos.",
+      "tema": "Desarrollo",
+      "imagen": "assets-propuesta/sadservers-thumb.jpg",
+      "por": "nicoavila"
+    }
+  ],
+  "proyectos": {
+    "titulo": "Proyectos de la comunidad",
+    "intro": "Lo que se está construyendo acá. Cada semana elegimos uno o dos desde los issues del repositorio.",
+    "items": [
+      {
+        "titulo": "Tegata",
+        "url": "https://www.tegata.cc/",
+        "descripcion": "Un **checkpoint de seguridad para agentes de IA**: revisa qué hooks, MCPs y plugins cargan, encuentra las **API keys** que quedaron en los transcripts y avisa cuando algo cambia. `tegata scan` muestra el riesgo; `fix` y `clean` lo resuelven. Open source, para macOS.",
+        "imagen": "assets-propuesta/tegata-thumb.jpg",
+        "por": "jorgeepunan",
+        "cta": "Probar Tegata →"
+      },
+      {
+        "titulo": "Georg md",
+        "url": "https://www.dasgeorg.cc/md/",
+        "descripcion": "Un **editor de Markdown nativo para macOS**: vista formateada mientras escribes, modo raw o lado a lado, Quick Look y **cero telemetría**. Los archivos siguen siendo `.md` planos.",
+        "imagen": "assets-propuesta/georg-thumb.jpg",
+        "cta": "Conocer Georg md →"
+      }
+    ]
+  },
+  "secciones": [
+    {
+      "tema": "IA y agentes",
+      "items": [
+        {
+          "titulo": "El modelo de la semana y la cadena que filtra datos",
+          "descripcion": "**Qwen4 Max** se llevó la conversación de modelos, mientras un reportaje de Ars Technica mostró cómo la **cadena de suministro de IA** está exponiendo datos de usuarios a un ritmo alarmante.",
+          "por": "janogonzalez",
+          "links": [
+            { "texto": "Qwen4 Max", "url": "https://qwen.ai/blog?id=qwen4-max" },
+            { "texto": "el reportaje de Ars Technica", "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/" }
+          ]
+        },
+        {
+          "titulo": "Probar agentes sin quemar la tarjeta",
+          "descripcion": "**DeepInfra** apareció como proveedor barato para modelos como DeepSeek Flash, y la lista para probar agentes se armó sola: **Midscene**, los **test agents de Playwright** y **Hercules**.",
+          "por": "electricmonk",
+          "links": [
+            { "texto": "DeepInfra", "url": "http://deepinfra.com" },
+            { "texto": "Midscene", "url": "https://github.com/web-infra-dev/midscene" },
+            { "texto": "Playwright test agents", "url": "https://playwright.dev/docs/test-agents" },
+            { "texto": "Hercules", "url": "https://github.com/test-zeus-ai/testzeus-hercules" }
+          ]
+        },
+        {
+          "titulo": "La tanda de modelos de Google y OpenAI",
+          "descripcion": "Google presentó **Gemini 4 Neon**, OpenAI sumó **GPT-6.2 Astra Sol** y la compañía aterrizó oficialmente en Chile con **OpenAI for Chile**.",
+          "por": "hector",
+          "links": [
+            { "texto": "Gemini 4 Neon", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" },
+            { "texto": "GPT-6.2 Astra Sol", "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/" },
+            { "texto": "OpenAI for Chile", "url": "https://openai.com/index/introducing-openai-for-chile/" }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Desarrollo",
+      "items": [
+        {
+          "titulo": "El libro de SRE de Google, gratis",
+          "descripcion": "La **segunda edición** del libro de SRE de Google está disponible sin costo: teoría, postmortems y práctica para equipos que operan en serio.",
+          "por": "arveja",
+          "links": [
+            { "texto": "SRE Book, segunda edición", "url": "https://cloud.google.com/blog/products/devops-sre/sre-book-second-edition?e=48754805" }
+          ]
+        },
+        {
+          "titulo": "Java4Shell y el parche que no podía esperar",
+          "descripcion": "Una **corrupción de memoria en el decodificador Base64 de OpenJDK** puso a media industria a parchar: el detalle técnico de Java4Shell y el **aviso de CISA** con el llamado a actualizar de inmediato.",
+          "por": "carlo",
+          "links": [
+            { "texto": "Java4Shell", "url": "https://calif.io/java4shell/" },
+            { "texto": "alerta de CISA", "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching" }
+          ]
+        },
+        {
+          "titulo": "voxl y Firecrawl: streaming en Rust y un crawler para agentes",
+          "descripcion": "**voxl** hace streaming de escritorio de baja latencia para el navegador, escrito en **Rust**; **Firecrawl** apareció como opción para alimentar asistentes y automatizaciones con contenido web.",
+          "por": "electricmonk",
+          "links": [
+            { "texto": "voxl", "url": "https://github.com/tembo/voxl" },
+            { "texto": "Firecrawl", "url": "https://x.com/firecrawl/status/2123096169630912637" }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Hardware y DIY",
+      "items": [
+        {
+          "titulo": "Backplane: hardware asistido por agentes",
+          "descripcion": "Un **workspace open source** para desarrollo de hardware asistido por agentes: esquemas, placas y documentación en el mismo lugar.",
+          "por": "electricmonk",
+          "links": [
+            { "texto": "Backplane", "url": "https://backplaneworks.com/" }
+          ]
+        },
+        {
+          "titulo": "TRMNL: marco oficial o alternativas DIY",
+          "descripcion": "El **marco oficial del TRMNL** ya se vende, y en Seeed hay alternativas más baratas para el mismo display de tinta electrónica: el **kit DIY de 7,5\"** y el **reTerminal E1001**.",
+          "por": "gmq",
+          "links": [
+            { "texto": "marco TRMNL", "url": "https://shop.trmnl.com/products/frame" },
+            { "texto": "kit DIY de 7,5\"", "url": "https://www.seeedstudio.com/TRMNL-7-5-Inch-OG-DIY-Kit-p-6481.html?c_event_medium=category%3A%3Aresults&c_event_id=3509080128%3A%3A*" },
+            { "texto": "reTerminal E1001", "url": "https://www.seeedstudio.com/reTerminal-E1001-p-6534.html?c_event_medium=category%3A%3Aresults&c_event_id=3509080128%3A%3A*" }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Frontend",
+      "items": [
+        {
+          "titulo": "Rubber Hose UI: controles de cartoon",
+          "descripcion": "Once **controles de interfaz** dibujados como personajes de cartoon de los años 30, cada uno en un solo archivo y **sin dependencias**.",
+          "por": "camilorivera86",
+          "links": [
+            { "texto": "Rubber Hose UI", "url": "https://rubber-hose-ui.vercel.app/gallery/" }
+          ]
+        },
+        {
+          "titulo": "Lo nuevo del navegador",
+          "descripcion": "El **polyfill de WebMCP**, los resultados de **State of HTML 2026** y el preview de **Spatial CSS** en WebKit: tres frentes para mirar lo que viene en la web.",
+          "por": "yixlo",
+          "links": [
+            { "texto": "polyfill de WebMCP", "url": "https://www.npmjs.com/package/@w3c/webmcp-polyfill" },
+            { "texto": "State of HTML 2026", "url": "https://2026.stateofhtml.com/en-US" },
+            { "texto": "Spatial CSS en WebKit", "url": "https://webkit.org/blog/18621/introducing-spatial-css-a-developer-preview/" }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Juegos",
+      "items": [
+        {
+          "titulo": "Ronin: un survivors en cuatro días",
+          "descripcion": "**307 commits en cuatro días**: TypeScript + Vite sin framework, netcode en Cloudflare Workers y arte generado en local con ComfyUI. Ya sumó soporte de control y arreglos de multiplayer.",
+          "por": "electricmonk",
+          "links": [
+            { "texto": "Ronin", "url": "https://manyfall.com/ronin/" }
+          ]
+        },
+        {
+          "titulo": "Clásicos que corren en el navegador",
+          "descripcion": "**UT2004** y **Quake II** compilados a WebAssembly: dos clásicos que corren sin instalar nada, directo en el navegador.",
+          "por": "carlo",
+          "links": [
+            { "texto": "UT2004", "url": "https://ut2004.dev/" },
+            { "texto": "Quake II en WebAssembly", "url": "https://qwasm2.m-h.org.uk/" }
+          ]
+        },
+        {
+          "titulo": "La historia de las revistas y los pinballs",
+          "descripcion": "Un repaso a la **historia de las revistas de videojuegos** y una colección de **pinballs** en Supermuseum para perder una tarde.",
+          "por": "livercake",
+          "links": [
+            { "texto": "Forgotten Worlds", "url": "https://www.forgottenworlds.net/video-game-magazine-history" },
+            { "texto": "pinballs de Supermuseum", "url": "https://supermuseum.cc/collections/ballbreakers" }
+          ]
+        },
+        {
+          "titulo": "music.green.games: presta tus oídos",
+          "descripcion": "Un prototipo que pide **escuchar canciones y marcar qué sensación provocan** para entrenar el sistema que las elige. Se prueba con el oído.",
+          "por": "mgodoyr",
+          "links": [
+            { "texto": "music.green.games", "url": "https://music.green.games" }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Lifehacks",
+      "items": [
+        {
+          "titulo": "Post Inspector de LinkedIn",
+          "descripcion": "Sirve para revisar **cómo se ve un link** y si LinkedIn ya cacheó la imagen OG después de cambiar el título. Menos sorpresas al compartir.",
+          "por": "electricmonk",
+          "links": [
+            { "texto": "Post Inspector", "url": "https://www.linkedin.com/post-inspector" }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Música y cultura",
+      "items": [
+        {
+          "titulo": "Totally Not Radio",
+          "descripcion": "Una **radio continua** con los DJ sets favoritos de la comunidad para jornadas presenciales. Sin algoritmo ni recomendaciones: solo música.",
+          "por": "livercake",
+          "links": [
+            { "texto": "Totally Not Radio", "url": "https://totallynotradio.netlify.app/" }
+          ]
+        },
+        {
+          "titulo": "NIN Live: el archivo de Nine Inch Nails",
+          "descripcion": "Conciertos, **setlists, grabaciones y afiches** de Nine Inch Nails desde 1988, ordenados y buscables.",
+          "por": "carlo",
+          "links": [
+            { "texto": "NIN Live", "url": "https://ninlive.com/" }
+          ]
+        },
+        {
+          "titulo": "East Asian Graphics Archive",
+          "descripcion": "Un **archivo de diseño gráfico de Asia Oriental**: afiches, revistas y material impreso para revisar con calma.",
+          "por": "ditt0",
+          "links": [
+            { "texto": "East Asian Graphics Archive", "url": "https://eastasiangraphicsarchive.com" }
+          ]
+        },
+        {
+          "titulo": "El catálogo de entomología de la UMCE",
+          "descripcion": "La colección de **entomología de la UMCE** abierta en catálogo: miles de especímenes para curiosear.",
+          "por": "l3cat70",
+          "links": [
+            { "texto": "catálogo abierto", "url": "https://share.google/42co4D17b8kU3y8fB" }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Comunidad y dinero",
+      "items": [
+        {
+          "titulo": "NVIDIA, Anthropic y la semana bursátil",
+          "descripcion": "NVIDIA cayó hasta los **135** y **Anthropic debutó en bolsa**. La nota del Guardian explica el movimiento del precio de la acción.",
+          "por": "gmq",
+          "links": [
+            { "texto": "la nota del Guardian", "url": "https://www.theguardian.com/technology/2026/nov/18/anthropic-share-price-stock-market-ipo" }
+          ]
+        }
+      ]
+    }
+  ],
+  "compactos": {
+    "titulo": "También sonaron",
+    "items": [
+      { "titulo": "Cómo emitir boleta de honorarios para España, paso a paso", "url": "https://trabajoremoto.cl/emitir-boleta-a-extranjeros-paso-a-paso" },
+      { "titulo": "ElevenReader: escuchar documentos y libros", "url": "https://elevenreader.io/" },
+      { "titulo": "libraries.dev: efectos y modelos on-device", "url": "https://libraries.dev/" },
+      { "titulo": "Paw Society, mascotas en el navegador", "url": "https://pawsociety.app/es/" },
+      { "titulo": "ChatGPT for SNES: un modelo en el chip Super FX", "url": "https://www.bxfoundry.com/chatgpt_snes/" },
+      { "titulo": "Analytics Debugger for Apps", "url": "https://analytics-debugger.com/tools/analytics-debugger-for-apps/" },
+      { "titulo": "El TLD .amazon que se disputó la cuenca", "url": "https://www.bbc.com/news/business-47794353" },
+      { "titulo": "El rol del engineering manager, otra vez bajo ataque", "url": "https://www.manager.dev/newsletter/the-engineering-manager-s-role-is-under-attack-again" },
+      { "titulo": "yr.no: API de clima para proyectos propios", "url": "https://developer.yr.no/doc/" },
+      { "titulo": "Carofix: baterías y scooters Xiaomi", "url": "https://www.instagram.com/carofixs/" }
+    ]
+  },
+  "pegas": {
+    "titulo": "Pegas de la semana",
+    "total": 172,
+    "intro": "La semana cerró con **172 pegas nuevas** publicadas en pegas.devschile.cl: **38 declaradas remotas** y **34 con sueldo** a la vista. El sábado llegó la tanda más grande, con **35** de una vez.",
+    "destacadas": [
+      { "titulo": "Cloud Data Infrastructure Engineer", "empresa": "ClickHouse", "detalle": "remoto", "sueldo": "USD 155–230k/año", "url": "https://jobs.ashbyhq.com/clickhouse/b8799d90-9d53-40c7-be9b-6fb9cc061be0?utm_source=trabajoremoto.cl&utm_medium=feed" },
+      { "titulo": "Full Stack Developer Senior", "empresa": "DataScope", "detalle": "Las Condes", "sueldo": "CLP 2,8–4,0 MM", "url": "https://www.takealuk.com/job_offers/full-stack-developer-senior-datascope-chile-36829" }
+    ],
+    "cta": "Ver todas las pegas →",
+    "url": "https://pegas.devschile.cl"
+  },
+  "cierre": {
+    "texto": "Nos leemos la próxima semana.",
+    "proyecto": {
+      "etiqueta": "Proyecto devsChile",
+      "titulo": "ShowCase",
+      "descripcion": "El escaparate de los proyectos de la comunidad: páginas, apps y experimentos hechos acá. Si tienes algo que mostrar, este es el lugar.",
+      "url": "https://showcase.devschile.cl/",
+      "cta": "Ver proyectos →"
+    }
+  }
+}
