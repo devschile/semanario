@@ -63,13 +63,6 @@
         "imagen": "assets-propuesta/tegata-thumb.jpg",
         "por": "jorgeepunan",
         "cta": "Probar Tegata →"
-      },
-      {
-        "titulo": "Georg md",
-        "url": "https://www.dasgeorg.cc/md/",
-        "descripcion": "Un **editor de Markdown nativo para macOS**: vista formateada mientras escribes, modo raw o lado a lado, Quick Look y **cero telemetría**. Los archivos siguen siendo `.md` planos.",
-        "imagen": "assets-propuesta/georg-thumb.jpg",
-        "cta": "Conocer Georg md →"
       }
     ]
   },
@@ -319,10 +312,10 @@
     "texto": "Nos leemos la próxima semana.",
     "proyecto": {
       "etiqueta": "Proyecto devsChile",
-      "titulo": "ShowCase",
-      "descripcion": "El escaparate de los proyectos de la comunidad: páginas, apps y experimentos hechos acá. Si tienes algo que mostrar, este es el lugar.",
-      "url": "https://showcase.devschile.cl/",
-      "cta": "Ver proyectos →"
+      "titulo": "Sello devsChile",
+      "descripcion": "Publica tu app Android **bajo la cuenta de devsChile** en Google Play: la comunidad se hace cargo del pago, la verificación de organización y los **12 testers** que exige Google. Tú **conservas la propiedad** de la app y puedes transferirla a tu cuenta cuando quieras monetizar. El único requisito es ser miembro **Gold**.",
+      "url": "https://sello.devschile.cl/",
+      "cta": "Postular al sello →"
     }
   }
 }

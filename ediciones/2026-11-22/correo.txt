@@ -25,8 +25,6 @@ PROYECTOS DE LA COMUNIDAD
 · Tegata — Un checkpoint de seguridad para agentes de IA: revisa qué hooks, MCPs y plugins cargan, encuentra las API keys que quedaron en los transcripts y avisa cuando algo cambia. tegata scan muestra el riesgo; fix y clean lo resuelven. Open source, para macOS.
   https://www.tegata.cc/
   compartido por jorgeepunan
-· Georg md — Un editor de Markdown nativo para macOS: vista formateada mientras escribes, modo raw o lado a lado, Quick Look y cero telemetría. Los archivos siguen siendo .md planos.
-  https://www.dasgeorg.cc/md/
 
 IA Y AGENTES
 · El modelo de la semana y la cadena que filtra datos — Qwen4 Max se llevó la conversación de modelos, mientras un reportaje de Ars Technica mostró cómo la cadena de suministro de IA está exponiendo datos de usuarios a un ritmo alarmante.
@@ -150,6 +148,6 @@ La semana cerró con 172 pegas nuevas publicadas en pegas.devschile.cl: 38 decla
 
 Nos leemos la próxima semana.
 
-Proyecto devsChile: ShowCase
-El escaparate de los proyectos de la comunidad: páginas, apps y experimentos hechos acá. Si tienes algo que mostrar, este es el lugar.
-  https://showcase.devschile.cl/
+Proyecto devsChile: Sello devsChile
+Publica tu app Android bajo la cuenta de devsChile en Google Play: la comunidad se hace cargo del pago, la verificación de organización y los 12 testers que exige Google. Tú conservas la propiedad de la app y puedes transferirla a tu cuenta cuando quieras monetizar. El único requisito es ser miembro Gold.
+  https://sello.devschile.cl/
